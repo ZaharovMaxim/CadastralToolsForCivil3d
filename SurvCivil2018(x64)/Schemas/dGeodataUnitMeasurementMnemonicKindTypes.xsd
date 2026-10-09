@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2020 rel. 2 sp1 (x64) (http://www.altova.com) by  () -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/geodataUnitMeasurementMnemonic/types/1.0" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/geodataUnitMeasurementMnemonic/types/1.0" elementFormDefault="qualified">
+	<xs:simpleType name="GeodataUnitMeasurementMnemonicKindEType">
+		<xs:annotation>
+			<xs:documentation>Вид площади</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="squareMeter">
+				<xs:annotation>
+					<xs:documentation>Квадратный метр</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="hectare">
+				<xs:annotation>
+					<xs:documentation>Гектар</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

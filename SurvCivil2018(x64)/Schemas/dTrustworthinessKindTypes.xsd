@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/trustworthiness/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/trustworthiness/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:simpleType name="TrustworthinessKindEType">
+		<xs:annotation>
+			<xs:documentation>Благонадежность подроста</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="notEvaluated">
+				<xs:annotation>
+					<xs:documentation>Не оценивалось (подроста (молодняка) нет)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="trustworthy">
+				<xs:annotation>
+					<xs:documentation>Благонадежный (здоровые)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="unreliable">
+				<xs:annotation>
+					<xs:documentation>Неблагонадежный</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

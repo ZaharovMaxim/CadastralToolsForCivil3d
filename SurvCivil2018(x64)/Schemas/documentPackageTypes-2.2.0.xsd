@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+    НЕ МЕНЯТЬ!
+    ВВС опубликована на портале СМЭВ 12.04.2024
+    https://lkuv.gosuslugi.ru/paip-portal/#/schemes/card/69e002ac-9788-4720-8cbe-30e4764ec933
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:att="http://rosleshoz.gov.ru/fgis-lk/common/attachment/types/2.1.0"
+           xmlns:doc="http://rosleshoz.gov.ru/fgis-lk/common/document/types/2.2.0"
+           xmlns:idatt="http://rosleshoz.gov.ru/fgis-lk/common/enums/idatt/types/2.0.1"
+           xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/documentPackageTypes/types/2.2.0"
+           elementFormDefault="qualified"
+           targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/documentPackageTypes/types/2.2.0">
+
+    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/attachment/types/2.1.0" schemaLocation="attachmentTypes-2.1.0.xsd"/>
+    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/idatt/types/2.0.1" schemaLocation="dAdditionalDocumentKindTypes-2.0.1.xsd"/>
+    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/document/types/2.2.0" schemaLocation="documentTypes-2.2.0.xsd"/>
+
+    <xs:group name="DocumentAttachmentsGroup">
+        <xs:annotation>
+            <xs:documentation>Группа Вложений документа</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="contentId" type="att:AttachmentIdRefSType">
+                <xs:annotation>
+                    <xs:documentation>Идентификатор основного вложения (ссылка на элемент описи вложений)
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="attachmentId" type="att:AttachmentIdRefSType">
+                <xs:annotation>
+                    <xs:documentation>Идентификатор дополнительного вложения (ссылка на элемент описи вложений)
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:group>
+    <xs:complexType name="AdditionalDocumentType">
+        <xs:annotation>
+            <xs:documentation>Тип Приложение к прикладываемому документу</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="kind" type="idatt:AdditionalDocumentKindEType">
+                <xs:annotation>
+                    <xs:documentation>Вид приложения</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="requisites" type="doc:FoundationDocumentType">
+                <xs:annotation>
+                    <xs:documentation>Реквизиты документа</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:group ref="tns:DocumentAttachmentsGroup"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

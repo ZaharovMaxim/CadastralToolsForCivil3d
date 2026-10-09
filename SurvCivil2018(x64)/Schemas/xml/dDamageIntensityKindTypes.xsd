@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/damageIntensity/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/damageIntensity/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:simpleType name="DamageIntensityKindEType">
+		<xs:annotation>
+			<xs:documentation>Интенсивность повреждения</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="neOtsenivalas">
+				<xs:annotation>
+					<xs:documentation>Не оценивалась</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="silnoye">
+				<xs:annotation>
+					<xs:documentation>Сильное</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="slaboye">
+				<xs:annotation>
+					<xs:documentation>Слабое</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

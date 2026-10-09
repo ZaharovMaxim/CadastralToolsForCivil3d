@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/statusIufro/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/statusIufro/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:simpleType name="StatusIufroKindEType">
+		<xs:annotation>
+			<xs:documentation>Социальный статус по IUFRO</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="class1">
+				<xs:annotation>
+					<xs:documentation>1 класс</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="class2">
+				<xs:annotation>
+					<xs:documentation>2 класс</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="class3">
+				<xs:annotation>
+					<xs:documentation>3 класс</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="niskhodyashchaya">
+				<xs:annotation>
+					<xs:documentation>Нисходящая</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="nizhniyYarus">
+				<xs:annotation>
+					<xs:documentation>Нижний ярус</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="sredniyYarus">
+				<xs:annotation>
+					<xs:documentation>Средний ярус</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="tendentsiyaRosta">
+				<xs:annotation>
+					<xs:documentation>Тенденция роста</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ustoychivaya">
+				<xs:annotation>
+					<xs:documentation>Устойчивая</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="verkhniyYarus">
+				<xs:annotation>
+					<xs:documentation>Верхний ярус</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="voskhodyashchaya">
+				<xs:annotation>
+					<xs:documentation>Восходящая</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="vysota">
+				<xs:annotation>
+					<xs:documentation>Высота</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="zhivuchest">
+				<xs:annotation>
+					<xs:documentation>Живучесть</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

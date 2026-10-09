@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/usageReason/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/usageReason/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="UsageReasonKindEType">
+        <xs:annotation>
+            <xs:documentation>Основания предоставления участков</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="accordingToTheResultsOfTheComp">
+                <xs:annotation>
+                    <xs:documentation>По результатам конкурса</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="basedOnAuctionResultsRentalOn">
+                <xs:annotation>
+                    <xs:documentation>По результатам аукциона (только аренда)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="byAgreementBetweenTheParties">
+                <xs:annotation>
+                    <xs:documentation>По соглашению между сторонами</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="byDecisionOfTheFederalAuthorit">
+                <xs:annotation>
+                    <xs:documentation>По решению федерального органа власти</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="byDecisionOfTheStateAuthority">
+                <xs:annotation>
+                    <xs:documentation>По решению органа государственной власти субъекта Российской Федерации в области лесных отношений</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="byTheTribunal'SDecision">
+                <xs:annotation>
+                    <xs:documentation>По решению суда</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="forPriorityInvestmentProjects">
+                <xs:annotation>
+                    <xs:documentation>По приоритетным инвестиционным проектам (только аренда)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="toBringThemInLineWithTheForest">
+                <xs:annotation>
+                    <xs:documentation>По приведению в соответствие с Лесным кодексом</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

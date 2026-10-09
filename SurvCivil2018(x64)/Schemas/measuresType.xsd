@@ -1,0 +1,593 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+           targetNamespace="http://rosleshoz.gov.ru/xmlns/measuresType/5.0"
+           xmlns:tns="http://rosleshoz.gov.ru/xmlns/measuresType/5.0"
+           xmlns:st="http://rosleshoz.gov.ru/fgis-lk/common/simple/types/2.0"
+           xmlns:comR="http://rosleshoz.gov.ru/fgis-lk/common/commonReport/types/2.1"
+           xmlns:purF="http://rosleshoz.gov.ru/fgis-lk/common/enums/purposeForests/types/2.1"
+           xmlns:cLand="http://rosleshoz.gov.ru/fgis-lk/common/enums/categoryLand/types/2.0"
+           xmlns:chFireCl="http://rosleshoz.gov.ru/xmlns/characteristicFireClassesType/5.0"
+           xmlns:prev="http://rosleshoz.gov.ru/xmlns/preventionType/5.0"
+           xmlns:cType="http://rosleshoz.gov.ru/xmlns/commonType/5.0"
+           xmlns:areaF="http://rosleshoz.gov.ru/xmlns/areaForestCareType/5.0"
+           xmlns:sanRec="http://rosleshoz.gov.ru/xmlns/sanitaryRecreationalMeasuresType/5.0"
+           xmlns:refPlan="http://rosleshoz.gov.ru/xmlns/reforestationPlanType/5.0">
+
+    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/simple/types/2.0" schemaLocation="simpleTypes.xsd"/>
+    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/commonReport/types/2.1" schemaLocation="commonReport.xsd"/>
+    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/categoryLand/types/2.0" schemaLocation="dCategoryLandKindTypes.xsd"/>
+    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/purposeForests/types/2.1" schemaLocation="dPurposeForestsKindTypes.xsd"/>
+    <xs:import namespace="http://rosleshoz.gov.ru/xmlns/commonType/5.0" schemaLocation="commonType.xsd"/>
+    <xs:import namespace="http://rosleshoz.gov.ru/xmlns/reforestationPlanType/5.0" schemaLocation="reforestationPlanType.xsd"/>
+    <xs:import namespace="http://rosleshoz.gov.ru/xmlns/characteristicFireClassesType/5.0" schemaLocation="characteristicFireClassesType.xsd"/>
+    <xs:import namespace="http://rosleshoz.gov.ru/xmlns/preventionType/5.0" schemaLocation="preventionType.xsd"/>
+    <xs:import namespace="http://rosleshoz.gov.ru/xmlns/sanitaryRecreationalMeasuresType/5.0" schemaLocation="sanitaryRecreationalMeasuresType.xsd"/>
+    <xs:import namespace="http://rosleshoz.gov.ru/xmlns/areaForestCareType/5.0" schemaLocation="areaForestCareType.xsd"/>
+
+    <xs:complexType name="characteristicFireClasses">
+        <xs:annotation>
+            <xs:documentation>Тип описания раздела</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="content" type="cType:contentType"/>
+            <xs:element name="table" type="chFireCl:characteristicFireClassesType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="characteristicWaterObjects">
+        <xs:annotation>
+            <xs:documentation>Тип описания раздела</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="content" type="cType:contentType"/>
+            <xs:element name="table">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="row" type="tns:characteristicWaterObjectsRow" minOccurs="0" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="characteristicWaterObjectsRow">
+        <xs:sequence>
+            <xs:element name="waterObject" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>Водный объект</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="location" type="comR:Location2Type">
+                <xs:annotation>
+                    <xs:documentation>Расположение ООПТ</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="area" type="st:PositiveDecimalFourSType">
+                <xs:annotation>
+                    <xs:documentation>Площадь, га</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="designedFirePrevention">
+        <xs:annotation>
+            <xs:documentation>Тип описания раздела</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="content" type="cType:contentType"/>
+            <xs:element name="table">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="row" type="tns:designedFirePreventionRow" minOccurs="0" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="designedFirePreventionRow">
+        <xs:sequence>
+            <xs:element name="firePreventionObject" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>Объект противопожарного обустройства</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="typeEvent" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>Вид мероприятия</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="position" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Описание местоположения места складирования пожарного инвентаря</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="location" type="comR:Location2Type" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation/>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="specialPurpose" type="purF:PurposeForestsKindEType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Целевое назначение лесов</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="unitType" type="comR:UnitTypeType">
+                <xs:annotation>
+                    <xs:documentation>Единица измерения</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="need" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>Потребность</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="availability" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>В наличие</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="designedTotalVolume" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>Проектируемый общий объем</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="designedAnnualVolume" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>Проектируемый ежегодный объем</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="deadlines" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>Сроки выполнения мероприятий</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="fireEquipment">
+        <xs:annotation>
+            <xs:documentation>Тип описания раздела</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="content" type="cType:contentType"/>
+            <xs:element name="table">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="row" type="tns:fireEquipmentRow" minOccurs="0" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="fireEquipmentRow">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>Наименование</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="unitType" type="comR:UnitTypeType">
+                <xs:annotation>
+                    <xs:documentation>Единица измерения</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="regulations" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>В соответствии с действующими нормативами</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="availability" type="xs:float">
+                <xs:annotation>
+                    <xs:documentation>Имеется в наличии</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="need" type="xs:float">
+                <xs:annotation>
+                    <xs:documentation>Проектируется приобретение, аренда, изготовление</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="position" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>Место расположения</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="prevention">
+        <xs:annotation>
+            <xs:documentation>Тип описания раздела</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="content" type="cType:contentType"/>
+            <xs:element name="table" type="prev:preventionType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="fociHarmfulOrganisms">
+        <xs:annotation>
+            <xs:documentation>Тип описания раздела</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="content" type="cType:contentType"/>
+            <xs:element name="table">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="row" type="tns:fociHarmfulOrganismsRow" minOccurs="0" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="fociHarmfulOrganismsRow">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>Наименование очагов вредных организмов</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="specialPurpose" type="purF:PurposeForestsKindEType">
+                <xs:annotation>
+                    <xs:documentation>Целевое назначение лесов</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="location" type="comR:Location2Type">
+                <xs:annotation>
+                    <xs:documentation>Место расположения</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="area" type="st:PositiveDecimalFourSType">
+                <xs:annotation>
+                    <xs:documentation>Площадь, га</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="measure" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>Мероприятия, необходимые для ликвидации очагов вредных организмов
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="rootVolume" type="st:PositiveDecimalTwoSType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Общий запас</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="liquidVolume" type="st:PositiveDecimalTwoSType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Ликвидный запас</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="commodityVolume" type="st:PositiveDecimalTwoSType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Деловой запас</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="year" type="st:DateYearSType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Год проведения</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="damageDeath">
+        <xs:annotation>
+            <xs:documentation>Тип описания раздела</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="content" type="cType:contentType"/>
+            <xs:element name="table">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="row" type="tns:damageDeathRow" minOccurs="0" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="damageDeathRow">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>Наименование причин повреждения и гибели лесов</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="specialPurpose" type="purF:PurposeForestsKindEType">
+                <xs:annotation>
+                    <xs:documentation>Целевое назначение лесов</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="location" type="comR:Location2Type">
+                <xs:annotation>
+                    <xs:documentation>Место расположения</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="areaDamage" type="st:PositiveDecimalFourSType">
+                <xs:annotation>
+                    <xs:documentation>Площадь поврежденных и погибших насаждений нарастающим итогом, га
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="areaDeath" type="st:PositiveDecimalFourSType">
+                <xs:annotation>
+                    <xs:documentation>Площадь погибших насаждений нарастающим итогом, га</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="sanitaryRecreationalMeasures">
+        <xs:annotation>
+            <xs:documentation>Тип описания раздела</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="content" type="cType:contentType"/>
+            <xs:element name="table" type="sanRec:sanitaryRecreationalMeasuresType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="zonesRadioactiveContamination">
+        <xs:annotation>
+            <xs:documentation>Тип описания раздела</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="content" type="cType:contentType"/>
+            <xs:element name="table">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="row" type="tns:zonesRadioactiveContaminationRow" minOccurs="0" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="zonesRadioactiveContaminationRow">
+        <xs:sequence>
+            <xs:element name="location" type="comR:Location2Type">
+                <xs:annotation>
+                    <xs:documentation>Место расположения</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="area" type="st:PositiveDecimalFourSType">
+                <xs:annotation>
+                    <xs:documentation>Площадь, га</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="contaminatedZone" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>Зона загрязнения (слабая, средняя, сильная)</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="installationWarningBoards" type="xs:float">
+                <xs:annotation>
+                    <xs:documentation>Установка предупреждающих аншлагов, шт.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="radiationControl" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>Радиационный контроль лесных ресурсов (по видам)</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="dosimetricControl" type="st:PositiveDecimalFourSType">
+                <xs:annotation>
+                    <xs:documentation>Дозиметрический контроль при проведении лесохозяйственных работ</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="otherEvents" type="st:PositiveDecimalFourSType">
+                <xs:annotation>
+                    <xs:documentation>Прочие защитные мероприятия</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="listTaxationUnitRadioactiveZone">
+        <xs:annotation>
+            <xs:documentation>Тип описания раздела</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="content" type="cType:contentType"/>
+            <xs:element name="table">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="row" type="tns:listTaxationUnitRadioactiveZoneRow" minOccurs="0" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="listTaxationUnitRadioactiveZoneRow">
+        <xs:sequence>
+            <xs:element name="location" type="comR:Location2Type">
+                <xs:annotation>
+                    <xs:documentation>Место расположения</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="area" type="st:PositiveDecimalFourSType">
+                <xs:annotation>
+                    <xs:documentation>Площадь, га</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="contaminatedZone" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>Зона загрязнения (слабая, средняя, сильная)</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="usageRestriction" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>Ограничение использования лесного участка</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="areaNeedReforestation">
+        <xs:annotation>
+            <xs:documentation>Тип описания раздела</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="content" type="cType:contentType"/>
+            <xs:element name="table">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="row" type="tns:areaNeedReforestationRow" minOccurs="0" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="areaNeedReforestationRow">
+        <xs:sequence>
+            <xs:element name="landCategory" type="cLand:CategoryLandKindEType">
+                <xs:annotation>
+                    <xs:documentation>Категория земель</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="location" type="comR:Location2Type">
+                <xs:annotation>
+                    <xs:documentation>Место расположения</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="area" type="st:PositiveDecimalFourSType">
+                <xs:annotation>
+                    <xs:documentation>Площадь, га</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="reforestationPlan">
+        <xs:annotation>
+            <xs:documentation>Тип описания раздела</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="content" type="cType:contentType"/>
+            <xs:element name="table" type="refPlan:reforestationPlanType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="listReforestation">
+        <xs:annotation>
+            <xs:documentation>Тип описания раздела</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="content" type="cType:contentType"/>
+            <xs:element name="table">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="row" type="tns:listReforestationRow" minOccurs="0" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="listReforestationRow">
+        <xs:sequence>
+            <xs:element name="landCategory" type="cLand:CategoryLandKindEType">
+                <xs:annotation>
+                    <xs:documentation>Категория земель</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="location" type="comR:Location2Type">
+                <xs:annotation>
+                    <xs:documentation>Место расположения</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="area" type="st:PositiveDecimalFourSType">
+                <xs:annotation>
+                    <xs:documentation>Площадь, га</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="conditionsProjectedMethod" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>Планируемый способ лесовосстановления</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="listForestCare">
+        <xs:annotation>
+            <xs:documentation>Тип описания раздела</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="content" type="cType:contentType"/>
+            <xs:element name="table">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="row" type="tns:listForestCareRow" minOccurs="0" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="listForestCareRow">
+        <xs:sequence>
+            <xs:element name="typeCare" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>Вид ухода</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="location" type="comR:Location2Type">
+                <xs:annotation>
+                    <xs:documentation>Место расположения</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="tree" type="comR:TreeType">
+                <xs:annotation>
+                    <xs:documentation>Целевая порода</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="area" type="st:PositiveDecimalFourSType">
+                <xs:annotation>
+                    <xs:documentation>Площадь, га</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="areaForestCare">
+        <xs:annotation>
+            <xs:documentation>Тип описания раздела</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="content" type="cType:contentType"/>
+            <xs:element name="table" type="areaF:areaForestCareType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="listProtection">
+        <xs:annotation>
+            <xs:documentation>Тип описания раздела</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="content" type="cType:contentType"/>
+            <xs:element name="table">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="row" type="tns:listProtectionRow" minOccurs="0" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="listProtectionRow">
+        <xs:sequence>
+            <xs:element name="objectProtection" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>Наименование объекта, строения, сооружения</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="measureProtection" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>Проектируемые мероприятия</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="location" type="comR:Location2Type">
+                <xs:annotation>
+                    <xs:documentation>Место расположения</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="area" type="st:PositiveDecimalFourSType">
+                <xs:annotation>
+                    <xs:documentation>Площадь, га</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="unitType" type="comR:UnitTypeType">
+                <xs:annotation>
+                    <xs:documentation>Единица измерения</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="volume" type="xs:float">
+                <xs:annotation>
+                    <xs:documentation>Объем</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

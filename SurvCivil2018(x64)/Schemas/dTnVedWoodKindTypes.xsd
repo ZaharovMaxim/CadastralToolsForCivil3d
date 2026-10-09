@@ -1,0 +1,1604 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/tnVed/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/tnVed/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="TnVedKindEType">
+        <xs:annotation>
+            <xs:documentation>Товарная номенклатура внешнеэкономической деятельности - ТН ВЭД (древесина)</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="4401110001">
+                <xs:annotation>
+                    <xs:documentation>Древесина топливная в виде бревен длиной до 1 м или расколотых бревен и поленьев, хвойных пород</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4401110009">
+                <xs:annotation>
+                    <xs:documentation>Древесина топливная в виде бревен длиной от 1 м или нерасколотых бревен и поленьев, ветвей, вязанок хвороста или в аналогичных видах, хвойных пород</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4401120001">
+                <xs:annotation>
+                    <xs:documentation>Древесина топливная в виде бревен длиной до 1 м или расколотых бревен и поленьев, лиственных пород</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4401120009">
+                <xs:annotation>
+                    <xs:documentation>Древесина топливная в виде бревен длиной от 1 м или нерасколотых бревен и поленьев, ветвей, вязанок хвороста или в аналогичных видах, лиственных пород</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4403110001">
+                <xs:annotation>
+                    <xs:documentation>Бревна из древесины хвойных пород, любой степени пропитки, не менее 6м, но не более 18м в длину и с окружностью комеля более 45см, но не более 90 см, обработанные краской, травителями, креозотом или другими консервантами</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4403110009">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы хвойных пород, обработанные краской, травителями, креозотом или другими консервантами</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4403120001">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из дуба, обработанные краской, травителями, креозотом или другими консервантами</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4403120002">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из бука, обработанные краской, травителями, креозотом или другими консервантами</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4403120003">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из ясеня, обработанные краской, травителями, креозотом или другими консервантами</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4403120009">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из прочих лиственных пород, обработанные краской, травителями, креозотом или другими консервантами</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4403211100">
+                <xs:annotation>
+                    <xs:documentation>Бревна из сосны обыкновенной вида "PINYS SYLVESTRIS L. " с размером наибольшего поперечного сечения 15 см или более</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4403211200">
+                <xs:annotation>
+                    <xs:documentation>Бревна из сосны обыкновенной вида "PINYS SYLVESTRIS L. " с размером наименьшего поперечного сечения 15 см или более</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4403211800">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из сосны обыкновенной вида "PINYS SYLVESTRIS L. " с размером наименьшего поперечного сечения 15 см или более</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4403211900">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из сосны обыкновенной вида "PINYS SYLVESTRIS L. " с размером наибольшего поперечного сечения 15 см или более</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4403219100">
+                <xs:annotation>
+                    <xs:documentation>Бревна из сосны прочей</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4403219200">
+                <xs:annotation>
+                    <xs:documentation>Бревна из сосны прочей, с размером наименьшего поперечного сечения 15 см или более</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4403219800">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из сосны прочей, с размером наименьшего поперечного сечения 15 см или более</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4403219900">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из сосны прочей</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4403221000">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из сосны обыкновенной вида "PINYS SYLVESTRIS L. "</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4403222000">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из сосны обыкновенной вида "PINUS SYLVESTRIS L. "</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4403228000">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из сосны (PINUS SPP. ), прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4403229000">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из сосны прочей</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4403231100">
+                <xs:annotation>
+                    <xs:documentation>Бревна из ели обыкновенной вида "PICEA ABIES KARST. " или пихты белой европейской вида "ABIES ALBA MILL. ", с размером наибольшего поперечного сечения 15 см или более</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4403231200">
+                <xs:annotation>
+                    <xs:documentation>Бревна из ели обыкновенной вида "PICEA ABIES KARST. " или пихты белой европейского вида "ABIES ALBA MILL. ", , с размером наименьшего поперечного сечения 15 см или более</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4403231800">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы прочие из ели обыкновенной вида "PICEA ABIES KARST. " или пихты белой европейского вида "ABIES ALBA MILL. ", , с размером наименьшего поперечного сечения 15 см или более</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4403231900">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы необработанные прочие из ели обыкновенной вида "PICEA ABIES KARST. " или пихты белой европейского вида "ABIES ALBA MILL. ", с размером наибольшего поперечного сечения 15 см или более</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4403239100">
+                <xs:annotation>
+                    <xs:documentation>Бревна из ели прочей или пихты прочей, с размером наибольшего поперечного сечения 15 см или более</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4403239200">
+                <xs:annotation>
+                    <xs:documentation>Бревна из ели прочей или пихты прочей, с размером наименьшего поперечного сечения 15 см или более</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4403239800">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы прочие, из ели прочей или пихты прочей, с размером наименьшего поперечного сечения 15 см или более</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4403239900">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из ели прочей или пихты прочей, с размером наибольшего поперечного сечения 15 см или более</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4403241000">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из ели обыкновенной вида "PICEA ABIES KARST. " или пихты белой европейской вида "ABIES ALBA MILL. "</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4403242000">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из ели обыкновенной вида "PICEA ABIES KARST. " или пихты белой европейского вида "ABIES ALBA MILL. "</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4403248000">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из ели прочей или пихты прочей</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4403249000">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из ели прочей или пихты прочей</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4403251000">
+                <xs:annotation>
+                    <xs:documentation>Бревна хвойных пород прочие, с размером наименьшего поперечного сечения 15 см или более</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4403259000">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы хвойных пород прочие, с размером наименьшего поперечного сечения 15 см или более</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4403259100">
+                <xs:annotation>
+                    <xs:documentation>Бревна хвойных пород прочие, с размером наибольшего поперечного сечения 15 см или более</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4403259900">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы хвойных пород прочие, с размером наибольшего поперечного сечения 15 см или более</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4403260000">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы хвойных пород прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4403499509">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы необработанные из древесины тропических пород, с удаленной или неудаленной корой или заболонью или грубо брусованные или небрусованные, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4403911000">
+                <xs:annotation>
+                    <xs:documentation>Бревна из дуба необработанные, с удаленной или неудаленной корой или заболонью или грубо брусованные или небрусованные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4403919000">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из дуба, необработанные, с удаленной или неудаленной корой или заболонью или грубо брусованные или небрусованные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4403931000">
+                <xs:annotation>
+                    <xs:documentation>Прочие бревна из бука (FAGUS SPP. ), с размером наибольшего поперечного сечения 15 см или более</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4403932000">
+                <xs:annotation>
+                    <xs:documentation>Бревна из бука (FAGUS SPP. ), с размером наименьшего поперечного сечения 15 см или более</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4403938000">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из бука (FAGUS SPP. ), с размером наименьшего поперечного сечения 15 см или более</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4403939000">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из бука (FAGUS SPP. ), с размером наибольшего поперечного сечения 15 см или более</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4403940000">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из бука (FAGUS SPP. ), прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4403950000">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из березы (BETULA SPP. ), с размером наименьшего поперечного сечения 15 см или более</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4403950001">
+                <xs:annotation>
+                    <xs:documentation>Прочие бревна из березы (BETULA SPP. )с размером наибольшего поперечного сечения не менее 15 см, длиной не менее 1 м</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4403950002">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы необработанные, с удаленной или неудаленной корой или заболонью, неокантованные, из березы (BETULA SPP. ), с диаметром наименьшего поперечного сечения менее 15 см</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4403950009">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из березы (BETULA SPP. ) с размером наибольшего поперечного сечения 15 см и более, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4403960001">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы необработанные с удаленной или неудаленной корой или заболонью, неокантованные, с диаметром наименьшего поперечного сечения менее 15 см, из березы (BETULA SPP. )</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4403960002">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы необработанные, с удаленной или неудаленной корой или заболонью, неокантованные, диаметром наименьшего поперечного сечения менее 15 см, из березы (BETULA SPP. )</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4403960008">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы прочие, из березы (BETULA SPP. )</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4403960009">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из березы (BETULA SPP. ), с размером наибольшего поперечного сечения 15 см и более, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4403970001">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из тополя, необработанные, с удаленной или неудаленной корой, заболонью или грубо окантованные или неокантованные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4403970002">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из осины (POPULUS ADENOPODA. . ), необработанные, с удаленной или неудаленной корой, заболонью или грубо окантованные или неокантованные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4403980000">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из эвкалипта (EUCALYPTUS SPP. ), необработанные, с удаленной или неудаленной корой, заболонью или грубо окантованные или неокантованные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4403990001">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из ясеня, необработанные, с удаленной или неудаленной корой, заболонью или грубо окантованные или неокантованные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4403990009">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы, необработанные, с удаленной или неудаленной корой, заболонью или грубо окантованные или неокантованные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4406110000">
+                <xs:annotation>
+                    <xs:documentation>Шпалы деревянные для железнодорожных или трамвайных путей, непропитанные, хвойных пород</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4406120000">
+                <xs:annotation>
+                    <xs:documentation>Шпалы деревянные для железнодорожных или трамвайных путей, непропитанные, лиственных пород</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4406911504">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из дуба (QUERCUS SPP. ), обработанные шлифованием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407111500">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из сосны (PINUS SPP. ), обработанные шлифованием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407111600">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из сосны (PINUS SPP. ), обработанные шлифованием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407111601">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из сосны (PINUS SPP. ), влажностью не более 22%, обработанные строганием или шлифованием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407111603">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из сосны (PINUS SPP. ), влажностью не более 22%, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407111604">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из сосны (PINUS SPP. ), обработанные шлифованием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407111605">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из сосны (PINUS SPP. ), обработанные шлифованием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407111609">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из сосны (PINUS SPP. ), обработанные шлифованием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407113300">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из сосны обыкновенной вида "PINUS SYLVESTRIS L. ", обработанные строганием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407113400">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы, обработанные строганием, из сосны обыкновенной вида "PINUS SYLVESTRIS L. "</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407113401">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из сосны обыкновенной вида "PINUS SYLVESTRIS L. ", обработанные строганием, влажностью не более 22%</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407113405">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из сосны обыкновенной вида "PINUS SYLVESTRIS L. ", обработанные строганием, у которых две или более плоскопараллельные пласти получены распиловкой, толщиной не менее 100 мм и шириной не менее 100 мм</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407113406">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из сосны обыкновенной вида "PINUS SYLVESTRIS L. ", обработанные строганием, у которых две или более плоскопараллельные пласти получены распиловкой, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407113409">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из сосны обыкновенной вида "PINUS SYLVESTRIS L. ", обработанные строганием, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407113800">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из сосны (PINUS SPP. ), обработанные строганием, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407113900">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из сосны (PINUS SPP. ), обработанные строганием, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407113901">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из сосны (PINUS SPP. ), обработанные строганием, влажностью не более 22%</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407113905">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из сосны (PINUS SPP. ), обработанные строганием, у которых две или более плоскопараллельные пласти получены распиловкой, толщиной не менее 100 мм и шириной не менее 100 мм</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407113906">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из сосны (PINUS SPP. ), обработанные строганием, у которых две или более плоскопараллельные пласти получены распиловкой, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407113909">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из сосны (PINUS SPP. ), обработанные строганием, прочие, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407119300">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из сосны обыкновенной вида "PINUS SYLVESTRIS L. ", прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407119400">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из сосны обыкновенной вида "PINUS SYLVESTRIS L. "</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407119401">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из сосны обыкновенной вида "PINUS SYLVESTRIS L. ", влажностью не более 22%</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407119405">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из сосны обыкновенной вида "PINUS SYLVESTRIS L. ", у которых две или более плоскопараллельные пласти получены распиловкой, толщиной не менее 100 мм и шириной не менее 100 мм</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407119406">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из сосны обыкновенной вида "PINUS SYLVESTRIS L. ", у которых две или более плоскопараллельные пласти получены распиловкой, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407119409">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из сосны обыкновенной вида "PINUS SYLVESTRIS L. ", прочие, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407119800">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из сосны (PINUS SPP. ), прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407119900">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из сосны (PINUS SPP. ), прочие, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407119901">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из сосны (PINUS SPP. ), влажностью не более 22%</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407119905">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из сосны (PINUS SPP. ), у которых две или более плоскопараллельные пласти получены распиловкой, толщиной не менее 100 мм и шириной не менее 100 мм</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407119906">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из сосны (PINUS SPP. ), у которых две или более плоскопараллельные пласти получены распиловкой, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407119909">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из сосны (PINUS SPP. ), прочие, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407121500">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из пихты и ели, обработанные шлифованием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407121600">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из пихты (ABIES SPP. ) и ели (PICEA SPP. ), обработанные шлифованием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407121601">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из пихты (ABIES SPP. ) и ели (PICEA SPP. ), обработанные строганием или шлифованием, влажностью не более 22%</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407121603">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из пихты (ABIES SPP. ) и ели (PICEA SPP. ), обработанные шлифованием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407121604">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из пихты (ABIES SPP. ) и ели (PICEA SPP. ), обработанные шлифованием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407121605">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из пихты (ABIES SPP. ) и ели (PICEA SPP. ), обработанные шлифованием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407121609">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из пихты (ABIES SPP. ) и ели (PICEA SPP. ), обработанные шлифованием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407123100">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из ели обыкновенной или пихты белой европейской, обработанные строганием, имеющие или не имеющие торцевые соединения, толщиной более 6 мм</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407123200">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из ели обыкновенной вида "PICEA ABIES KARST. " или пихты белой европейской (ABIES ALBA MILL. ), обработанные строганием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407123201">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из ели обыкновенной вида "PICEA ABIES KARST. " или пихты белой европейской (ABIES ALBA MILL. ), обработанные строганием, влажностью не более 22%</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407123205">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из ели обыкновенной вида "PICEA ABIES KARST. " или пихты белой европейской (ABIES ALBA MILL. ), обработанные строганием, толщиной не менее 100 мм и шириной не менее 100 мм</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407123206">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из ели обыкновенной вида "PICEA ABIES KARST. " или пихты белой европейской (ABIES ALBA MILL. ), обработанные строганием, у которых две или более плоскопараллельные пласти получены распиловкой, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407123209">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из ели обыкновенной вида "PICEA ABIES KARST. " или пихты белой европейской (ABIES ALBA MILL. ), обработанные строганием, прочие, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407123800">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из пихты и ели, обработанные строганием, имеющие или не имеющие торцевые соединения, толщиной более 6 мм, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407123900">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из пихты (ABIES SPP. ) и ели (PICEA SPP. ), обработанные строганием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407123901">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из пихты (ABIES SPP. ) и ели (PICEA SPP. ), обработанные строганием, влажностью не более 22%</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407123905">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из пихты (ABIES SPP. ) и ели (PICEA SPP. ), обработанные строганием, у которых две или более плоскопараллельные пласти получены распиловкой, толщиной не менее 100 мм и шириной не менее 100 мм</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407123906">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из пихты (ABIES SPP. ) и ели (PICEA SPP. ), обработанные строганием, у которых две или более плоскопараллельные пласти получены распиловкой, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407123909">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из пихты (ABIES SPP. ) и ели (PICEA SPP. ), обработанные строганием, прочие, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407129100">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из ели обыкновенной или пихты белой европейской, имеющие или не имеющие торцевые соединения, толщиной более 6 мм</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407129200">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из ели обыкновенной вида "PICEA ABIES KARST. " или пихты белой европейской (ABIES ALBA MILL. )"</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407129201">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из ели обыкновенной вида "PICEA ABIES KARST. " или пихты белой европейской (ABIES ALBA MILL. ), влажностью не более 22%</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407129205">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из ели обыкновенной вида "PICEA ABIES KARST. " или пихты белой европейской (ABIES ALBA MILL. ), у которых две или более плоскопараллельные пласти получены распиловкой, толщиной не менее 100 мм и шириной не менее 100 мм</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407129206">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из ели обыкновенной вида "PICEA ABIES KARST. " или пихты белой европейской (ABIES ALBA MILL. ), у которых две или более плоскопараллельные пласти получены распиловкой, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407129209">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из ели обыкновенной вида "PICEA ABIES KARST. " или пихты белой европейской (ABIES ALBA MILL. ), прочие, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407129800">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из хвойных пород, имеющие или не имеющие торцевые соединения, толщиной более 6 мм, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407129900">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из пихты (ABIES SPP. ) и ели (PICEA SPP. ), прочие, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407129901">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из пихты (ABIES SPP. ) и ели (PICEA SPP. ), прочие, влажностью не более 22%</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407129905">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из пихты (ABIES SPP. ) и ели (PICEA SPP. ), у которых две или более плоскопараллельные пласти получены распиловкой, толщиной не менее 100 мм и шириной не менее 100 мм</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407129906">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из пихты (ABIES SPP. ) и ели (PICEA SPP. ), у которых две или более плоскопараллельные пласти получены распиловкой, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407129909">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из пихты (ABIES SPP. ) и ели (PICEA SPP. ), прочие, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407130001">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы, полученные распиловкой или расщеплением вдоль, строганием или лущением, не обработанные или обработанные строганием, шлифованием, имеющие или не имеющие торцевые соединения, толщиной более 6 мм: - хвойные: - - из S-P-F (ель (Picea spp.), сосна (Pinus spp.) и пихта (Abies spp.)): влажностью не более 22%: обработанные строганием или шлифованием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407130003">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы, полученные распиловкой или расщеплением вдоль, строганием или лущением, не обработанные или обработанные строганием, шлифованием, имеющие или не имеющие торцевые соединения, толщиной более 6 мм:  хвойные:  из S-P-F (ель (Picea spp.), сосна (Pinus spp.) и пихта (Abies spp.)):  влажностью не более 22%: прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407130004">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы, полученные распиловкой или расщеплением вдоль, строганием или лущением, не обработанные или обработанные строганием, шлифованием, имеющие или не имеющие торцевые соединения, толщиной более 6 мм: хвойные: из S-P-F (ель (Picea spp.), сосна (Pinus spp.) и пихта (Abies spp.)): прочие: у которых две или более плоскопараллельные пласти получены распиловкой: толщиной не менее 100 мм и шириной не менее 100 мм</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407130005">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы, полученные распиловкой или расщеплением вдоль, строганием или лущением, не обработанные или обработанные строганием, шлифованием, имеющие или не имеющие торцевые соединения, толщиной более 6 мм:  хвойные:  из S-P-F (ель (Picea spp.), сосна (Pinus spp.) и пихта (Abies spp.)): прочие: у которых две или более плоскопараллельные пласти получены распиловкой: прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407130009">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы, полученные распиловкой или расщеплением вдоль, строганием или лущением, не обработанные или обработанные строганием, шлифованием, имеющие или не имеющие торцевые соединения, толщиной более 6 мм: - хвойные:  из S-P-F (ель (Picea spp.), сосна (Pinus spp.) и пихта (Abies spp.)): прочие: прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407140001">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы, полученные распиловкой или расщеплением вдоль, строганием или лущением, не обработанные или обработанные строганием, шлифованием, имеющие или не имеющие торцевые соединения, толщиной более 6 мм:хвойные:из Hem-fir (тсуга западная (Tsuga heterophylla) и пихта (Abies spp.)), обработанные строганием или шлифованием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407140003">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы, полученные распиловкой или расщеплением вдоль, строганием или лущением, не обработанные или обработанные строганием, шлифованием, имеющие или не имеющие торцевые соединения, толщиной более 6 мм:хвойные:из Hem-fir (тсуга западная (Tsuga heterophylla) и пихта (Abies spp.)),прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407140004">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы, полученные распиловкой или расщеплением вдоль, строганием или лущением, не обработанные или обработанные строганием, шлифованием, имеющие или не имеющие торцевые соединения, толщиной более 6 мм:хвойные:из Hem-fir (тсуга западная (Tsuga heterophylla) и пихта (Abies spp.)), толщиной не менее 100 мм и шириной не менее 100 мм</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407140005">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы, полученные распиловкой или расщеплением вдоль, строганием или лущением, не обработанные или обработанные строганием, шлифованием, имеющие или не имеющие торцевые соединения, толщиной более 6 мм:хвойные:из Hem-fir (тсуга западная (Tsuga heterophylla) и пихта (Abies spp.)), прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407140009">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы, полученные распиловкой или расщеплением вдоль, строганием или лущением, не обработанные или обработанные строганием, шлифованием, имеющие или не имеющие торцевые соединения, толщиной более 6 мм:хвойные:из Hem-fir (тсуга западная (Tsuga heterophylla) и пихта (Abies spp.)), прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407191500">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из хвойных пород, обработанные шлифованием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407191600">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из хвойных пород, обработанные шлифованием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407191601">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из хвойных пород, влажностью не более 22%, обработанные строганием или шлифованием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407191603">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из хвойных пород, влажностью не более 22%, обработанные шлифованием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407191609">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из хвойных пород, обработанные шлифованием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407199100">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из хвойных пород, обработанные строганием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407199200">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из хвойных пород, обработанные строганием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407199201">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из хвойных пород, обработанные строганием, влажностью не более 22%</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407199205">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из хвойных пород, обработанные строганием, у которых две или более плоскопараллельные пласти получены распиловкой, толщиной не менее 100 мм и шириной не менее 100 мм</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407199209">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из хвойных пород, обработанные строганием, прочие, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407199700">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из хвойных пород, прочие, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407199701">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из хвойных пород, влажностью не более 22%</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407199705">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из хвойных пород, у которых две или более плоскопараллельные пласти получены распиловкой, толщиной не менее 100 мм и шириной не менее 100 мм</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407199706">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из хвойных пород, у которых две или более плоскопараллельные пласти получены распиловкой, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407199709">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из хвойных пород, прочие, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407199800">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из хвойных пород, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407211000">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы, полученные распиловкой или расщеплением вдоль, строганием или лущением, обработанные или не обработанные строганием, шлифованием, имеющие или не имеющие торцевые соединения, толщиной более 6 мм:из древесины тропических пород:махогониевое дерево (Swietenia sрр.), обработанные шлифованием; имеющие торцевые соединения, не обработанные или обработанные строганием или шлифованием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407211500">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы, полученные распиловкой или расщеплением вдоль, строганием или лущением, обработанные или не обработанные строганием, шлифованием, имеющие или не имеющие торцевые соединения, толщиной более 6 мм:из древесины тропических пород:махогониевое дерево (Swietenia sрр.), имеющие торцевые соединения,  строганные или нестроганные, шлифованные или не шлифованные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407213000">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы, полученные распиловкой или расщеплением вдоль, строганием или лущением, обработанные или не обработанные строганием, шлифованием, имеющие или не имеющие торцевые соединения, толщиной более 6 мм:из древесины тропических пород:махогониевое дерево (Swietenia sрр.), строганные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407219000">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы, полученные распиловкой или расщеплением вдоль, строганием или лущением, обработанные или не обработанные строганием, шлифованием, имеющие или не имеющие торцевые соединения, толщиной более 6 мм:из древесины тропических пород:махогониевое дерево (Swietenia sрр.), прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407219100">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы, полученные распиловкой или расщеплением вдоль, строганием или лущением, обработанные или не обработанные строганием, шлифованием, имеющие или не имеющие торцевые соединения, толщиной более 6 мм:из древесины тропических пород:махогониевое дерево (Swietenia sрр.), обработанные строганием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407219900">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы, полученные распиловкой или расщеплением вдоль, строганием или лущением, обработанные или не обработанные строганием, шлифованием, имеющие или не имеющие торцевые соединения, толщиной более 6 мм:из древесины тропических пород:махогониевое дерево (Swietenia sрр.), прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407221000">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы, полученные распиловкой или расщеплением вдоль, строганием или лущением, обработанные или не обработанные строганием, шлифованием, имеющие или не имеющие торцевые соединения, толщиной более 6 мм: из древесины тропических пород: вирола суринамская, феба пористая и бальза, обработанные шлифованием; имеющие торцевые соединения, не обработанные или обработанные строганием или шлифованием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407221500">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы, полученные распиловкой или расщеплением вдоль, строганием или лущением, обработанные или не обработанные строганием, шлифованием, имеющие или не имеющие торцевые соединения, толщиной более 6 мм:из древесины тропических пород: вирола суринамская, феба пористая и бальза, шлифованные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407223000">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы, полученные распиловкой или расщеплением вдоль, строганием или лущением, обработанные или не обработанные строганием, шлифованием, имеющие или не имеющие торцевые соединения, толщиной более 6 мм: из древесины тропических пород: вирола суринамская, феба пористая и бальза, строганнные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407229000">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы, полученные распиловкой или расщеплением вдоль, строганием или лущением, обработанные или не обработанные строганием, шлифованием, имеющие или не имеющие торцевые соединения, толщиной более 6 мм: из древесины тропических пород: вирола суринамская, феба пористая и бальза, нестроганная, прочая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407229100">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы, полученные распиловкой или расщеплением вдоль, строганием или лущением, обработанные или не обработанные строганием, шлифованием, имеющие или не имеющие торцевые соединения, толщиной более 6 мм:из древесины тропических пород: вирола суринамская, феба пористая и бальза,обработанные строганием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407229900">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы, полученные распиловкой или расщеплением вдоль, строганием или лущением, обработанные или не обработанные строганием, шлифованием, имеющие или не имеющие торцевые соединения, толщиной более 6 мм:из древесины тропических пород: вирола суринамская, феба пористая и бальза, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407230000">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы, полученные распиловкой или расщеплением вдоль, строганием или лущением, обработанные или не обработанные строганием, шлифованием, имеющие или не имеющие торцевые соединения, толщиной более 6 мм:из древесины тропических пород:тик</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407251000">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы, полученные распиловкой или расщеплением вдоль, строганием или лущением, обработанные или не обработанные строганием, шлифованием, имеющие или не имеющие торцевые соединения, толщиной более 6 мм: из древесины тропических пород: Шорея с темно-красной древесиной, шорея с бледно-красной и шорея бакау, соединенные в шип, строганные или нестроганные, шлифованные или нешлифованные, толщиной более 6 мм</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407253000">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы, полученные распиловкой или расщеплением вдоль, строганием или лущением, обработанные или не обработанные строганием, шлифованием, имеющие или не имеющие торцевые соединения, толщиной более 6 мм: из древесины тропических пород: Шорея с темно-красной древесиной, шорея с бледно-красной и шорея бакау, соединенные в шип, строганные или нестроганные, шлифованные или нешлифованные, толщиной более 6 мм, обработанные строганием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407255000">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы, полученные распиловкой или расщеплением вдоль, строганием или лущением, обработанные или не обработанные строганием, шлифованием, имеющие или не имеющие торцевые соединения, толщиной более 6 мм: из древесины тропических пород: Шорея с темно-красной древесиной, шорея с бледно-красной и шорея бакау, соединенные в шип, строганные или нестроганные, шлифованные или нешлифованные, толщиной более 6 мм, обработанные шлифованием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407259000">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы, полученные распиловкой или расщеплением вдоль, строганием или лущением, обработанные или не обработанные строганием, шлифованием, имеющие или не имеющие торцевые соединения, толщиной более 6 мм: из древесины тропических пород: Шорея с темно-красной древесиной, шорея с бледно-красной и шорея бакау, соединенные в шип, строганные или нестроганные, шлифованные или нешлифованные, толщиной более 6 мм, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407261000">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы, полученные распиловкой или расщеплением вдоль, строганием или лущением, обработанные или не обработанные строганием, шлифованием, имеющие или не имеющие торцевые соединения, толщиной более 6 мм:из древесины тропических пород:древесина различных видов шореи, парашореи, пентакме, заболонная древесина шореи всех видов, парашорея, шорея фагуцина и другие виды шореи и фрагрэа душистая, имеющие торцевые соединения, не обработанные или обработанные строганием или шлифованием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407263000">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы, полученные распиловкой или расщеплением вдоль, строганием или лущением, обработанные или не обработанные строганием, шлифованием, имеющие или не имеющие торцевые соединения, толщиной более 6 мм:из древесины тропических пород:древесина различных видов шореи, парашореи, пентакме, заболонная древесина шореи всех видов, парашорея, шорея фагуцина и другие виды шореи и фрагрэа душистая, обработанные строганием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407265000">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы, полученные распиловкой или расщеплением вдоль, строганием или лущением, обработанные или не обработанные строганием, шлифованием, имеющие или не имеющие торцевые соединения, толщиной более 6 мм:из древесины тропических пород:древесина различных видов шореи, парашореи, пентакме, заболонная древесина шореи всех видов, парашорея, шорея фагуцина и другие виды шореи и фрагрэа душистая, обработанные шлифованием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407269000">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы, полученные распиловкой или расщеплением вдоль, строганием или лущением, обработанные или не обработанные строганием, шлифованием, имеющие или не имеющие торцевые соединения, толщиной более 6 мм:из древесины тропических пород:древесина различных видов шореи, парашореи, пентакме, заболонная древесина шореи всех видов, парашорея, шорея фагуцина и другие виды шореи и фрагрэа душистая, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407271000">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы, полученные распиловкой или расщеплением вдоль, строганием или лущением, обработанные или не обработанные строганием, шлифованием, имеющие или не имеющие торцевые соединения, толщиной более 6 мм: из древесины тропических пород: энтандрофрагма цилиндрическая,  обработанные шлифованием; имеющие торцевые соединения, не обработанные или обработанные строганием или шлифованием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407273000">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы, полученные распиловкой или расщеплением вдоль, строганием или лущением, не обработанные или обработанные строганием, шлифованием, имеющие или не имеющие торцевые соединения, толщиной более 6 мм, энтандрофрагма цилиндрическая, строганные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407279000">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы, полученные распиловкой или расщеплением вдоль, строганием или лущением, обработанные или не обработанные строганием, шлифованием, имеющие или не имеющие торцевые соединения, толщиной более 6 мм: из древесины тропических пород: энтандрофрагма цилиндрическая, прочая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407279100">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы, полученные распиловкой или расщеплением вдоль, строганием или лущением, обработанные или не обработанные строганием, шлифованием, имеющие или не имеющие торцевые соединения, толщиной более 6 мм: из древесины тропических пород: энтандрофрагма цилиндрическая, обработанные строганием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407279900">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы, полученные распиловкой или расщеплением вдоль, строганием или лущением, обработанные или не обработанные строганием, шлифованием, имеющие или не имеющие торцевые соединения, толщиной более 6 мм: из древесины тропических пород: энтандрофрагма цилиндрическая, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407281000">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы, полученные распиловкой или расщеплением вдоль, строганием или лущением, обработанные или не обработанные строганием, шлифованием, имеющие или не имеющие торцевые соединения, толщиной более 6 мм: из древесины тропических пород: хлорофора высокая, или африканское тиковое дерево, обработанные шлифованием; имеющие торцевые соединения, не обработанные или обработанные строганием или шлифованием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407283000">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы, полученные распиловкой или расщеплением вдоль, строганием или лущением, обработанные или не обработанные строганием, шлифованием, имеющие или не имеющие торцевые соединения, толщиной более 6 мм: из древесины тропических пород: хлорофора высокая, или африканское тиковое дерево, строганные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407289000">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы, полученные распиловкой или расщеплением вдоль, строганием или лущением, обработанные или не обработанные строганием, шлифованием, имеющие или не имеющие торцевые соединения, толщиной более 6 мм: из древесины тропических пород: хлорофора высокая, или африканское тиковое дерево, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407289100">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы, полученные распиловкой или расщеплением вдоль, строганием или лущением, обработанные или не обработанные строганием, шлифованием, имеющие или не имеющие торцевые соединения, толщиной более 6 мм: из древесины тропических пород:  хлорофора высокая, или африканское тиковое дерево, обработанные строганием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407289900">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы, полученные распиловкой или расщеплением вдоль, строганием или лущением, обработанные или не обработанные строганием, шлифованием, имеющие или не имеющие торцевые соединения, толщиной более 6 мм: из древесины тропических пород: хлорофора высокая, или африканское тиковое дерево, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407291000">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы, полученные распиловкой или расщеплением вдоль, строганием или лущением, обработанные или не обработанные строганием, шлифованием, имеющие или не имеющие торцевые соединения, толщиной более 6 мм: из древесины тропических пород, прочие лесоматериалы, имеющие торцевые соединения, строганые или нестроганые, шлифованные или нешлифованные: двукрылоплодник, гонистилюс Варбурга, дриабаланопс ароматный, или камфорное дерево, тик, или джатовое дерево, jongkong</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407291502">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы, полученные распиловкой или расщеплением вдоль, строганием или лущением, обработанные или не обработанные строганием, шлифованием, имеющие или не имеющие торцевые соединения, толщиной более 6 мм: из древесины тропических пород, из древесины тропических пород, указанных в дополнительном примечании Евразийского экономического союза 1 к данной группе, кроме указанных в субпозициях 4407 21, 4407 22, 4407 23 000 0, 4407 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407291509">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы, полученные распиловкой или расщеплением вдоль, строганием или лущением, обработанные или не обработанные строганием, шлифованием, имеющие или не имеющие торцевые соединения, толщиной более 6 мм: из древесины тропических пород, имеющие торцевые соединения, не обработанные или обработанные строганием или шлифованием: прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407292000">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы, полученные распиловкой или расщеплением вдоль, строганием или лущением, обработанные или не обработанные строганием, шлифованием, имеющие или не имеющие торцевые соединения, толщиной более 6 мм:из древесины тропических пород, прочие строганые лесоматериалы из палисандра Рио, палисандра Пара и бразильского розового дерева</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407292500">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы, полученные распиловкой или расщеплением вдоль, строганием или лущением, обработанные или не обработанные строганием, шлифованием, имеющие или не имеющие торцевые соединения, толщиной более 6 мм: из древесины тропических пород, древесина из древесины тропических пород, указанных в примечании 1 к субпозициям данной группы, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407292600">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы, полученные распиловкой или расщеплением вдоль, строганием или лущением, обработанные или не обработанные строганием, шлифованием, имеющие или не имеющие торцевые соединения, толщиной более 6 мм: из древесины тропических пород, обработанные строганием: прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407294500">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы, полученные распиловкой или расщеплением вдоль, строганием или лущением, обработанные или не обработанные строганием, шлифованием, имеющие или не имеющие торцевые соединения, толщиной более 6 мм: из древесины тропических пород, лесоматериалы распиленные или расколотые вдоль, прочие, шлифованные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407294600">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы, полученные распиловкой или расщеплением вдоль, строганием или лущением, обработанные или не обработанные строганием, шлифованием, имеющие или не имеющие торцевые соединения, толщиной более 6 мм: из древесины тропических пород, обработанные шлифованием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407295000">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы, полученные распиловкой или расщеплением вдоль, строганием или лущением, обработанные или не обработанные строганием, шлифованием, имеющие или не имеющие торцевые соединения, толщиной более 6 мм: из древесины тропических пород, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407296100">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы, полученные распиловкой или расщеплением вдоль, строганием или лущением, обработанные или не обработанные строганием, шлифованием, имеющие или не имеющие торцевые соединения, толщиной более 6 мм: из древесины тропических пород, прочие лесоматериалы из древесины лофиры крылатой, нешлифованные, нестроганые, толщиной более 6 мм</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407296800">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы, полученные распиловкой или расщеплением вдоль, строганием или лущением, обработанные или не обработанные строганием, шлифованием, имеющие или не имеющие торцевые соединения, толщиной более 6 мм:из древесины тропических пород, лесоматериалы распиленные или расколотые вдоль, хвойные, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407298300">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы, полученные распиловкой или расщеплением вдоль, строганием или лущением, обработанные или не обработанные строганием, шлифованием, имеющие или не имеющие торцевые соединения, толщиной более 6 мм: из древесины тропических пород, прочие строганые лесоматериалы из древесины прочих тропических пород, толщиной более 6 мм</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407298301">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы, полученные распиловкой или расщеплением вдоль, строганием или лущением, обработанные или не обработанные строганием, шлифованием, имеющие или не имеющие торцевые соединения, толщиной более 6 мм: из древесины тропических пород, прочие, из древесины тропических пород, указанных в дополнительном примечании Евразийского экономического союза 1 к данной группе, кроме указанных в субпозициях 4407 21, 4407 22, 4407 23 000 0, 44</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407298309">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы, полученные распиловкой или расщеплением вдоль, строганием или лущением, обработанные или не обработанные строганием, шлифованием, имеющие или не имеющие торцевые соединения, толщиной более 6 мм: из древесины тропических пород: прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407298500">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы, полученные распиловкой или расщеплением вдоль, строганием или лущением, обработанные или не обработанные строганием, шлифованием, имеющие или не имеющие торцевые соединения, толщиной более 6 мм: из древесины тропических пород, прочие шлифованные лесоматериалы из древесины прочих тропических пород, толщиной более 6 мм</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407298501">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы, полученные распиловкой или расщеплением вдоль, строганием или лущением, обработанные или не обработанные строганием, шлифованием, имеющие или не имеющие торцевые соединения, толщиной более 6 мм: из древесины тропических пород, из древесины тропических пород, указанных в дополнительном примечании Евразийского экономического союза 1 к данной группе, кроме указанных в субпозициях 4407 21, 4407 22, 4407 23 000 0, 44</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407298509">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы, полученные распиловкой или расщеплением вдоль, строганием или лущением, обработанные или не обработанные строганием, шлифованием, имеющие или не имеющие торцевые соединения, толщиной более 6 мм: из древесины тропических пород, обработанные шлифованием: прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407299500">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы, полученные распиловкой или расщеплением вдоль, строганием или лущением, обработанные или не обработанные строганием, шлифованием, имеющие или не имеющие торцевые соединения, толщиной более 6 мм: из древесины тропических пород, прочие лесоматериалы из древесины тропических пород</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407299501">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы, полученные распиловкой или расщеплением вдоль, строганием или лущением, обработанные или не обработанные строганием, шлифованием, имеющие или не имеющие торцевые соединения, толщиной более 6 мм: из древесины тропических пород, прочие, из древесины тропических пород, указанных в дополнительном примечании Евразийского экономического союза 1 к данной группе, кроме указанных в субпозициях 4407 21, 4407 22, 4407 23 000 0, 44</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407299509">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы, полученные распиловкой или расщеплением вдоль, строганием или лущением, обработанные или не обработанные строганием, шлифованием, имеющие или не имеющие торцевые соединения, толщиной более 6 мм: из древесины тропических пород, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407911500">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из дуба (QUERCUS SPP. ) обработанные шлифованием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407911501">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из дуба (QUERCUS SPP. ), влажностью не более 22%, обработанные строганием или шлифованием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407911503">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из дуба (QUERCUS SPP. ), влажностью не более 22%, обработанные шлифованием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407911505">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из дуба (QUERCUS SPP. ), обработанные шлифованием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407911509">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из дуба (QUERCUS SPP. ), обработанные шлифованием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407913100">
+                <xs:annotation>
+                    <xs:documentation>Прочие дубовые лесоматериалы строганые: бруски, планки, фризы для паркетного покрытия полов, несобранные, толщиной более 6 мм</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407913900">
+                <xs:annotation>
+                    <xs:documentation>Прочие дубовые лесоматериалы строганые, не соединенные в шип, толщиной более 6 мм</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407913901">
+                <xs:annotation>
+                    <xs:documentation>Прочие дубовые лесоматериалы обработанные строганием, влажностью не более 22%</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407913905">
+                <xs:annotation>
+                    <xs:documentation>Прочие дубовые лесоматериалы обработанные строганием, у которых две или более плоскопараллельные пласти получены распиловкой, толщиной не менее 100 мм и шириной не менее 100 мм</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407913906">
+                <xs:annotation>
+                    <xs:documentation>Прочие дубовые лесоматериалы обработанные строганием, у которых две или более плоскопараллельные пласти получены распиловкой, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407913909">
+                <xs:annotation>
+                    <xs:documentation>Прочие дубовые лесоматериалы обработанные строганием, прочие, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407919000">
+                <xs:annotation>
+                    <xs:documentation>Прочие дубовые лесоматериалы, нестроганые, не соединеные в шип, толщиной более 6 мм, нешлифованные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407919001">
+                <xs:annotation>
+                    <xs:documentation>Прочие дубовые лесоматериалы, нестроганые, влажностью не более 22%</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407919005">
+                <xs:annotation>
+                    <xs:documentation>Прочие дубовые лесоматериалы, нестроганые, у которых две или более плоскопараллельные пласти получены распиловкой, толщиной не менее 100 мм и шириной не менее 100 мм</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407919006">
+                <xs:annotation>
+                    <xs:documentation>Прочие дубовые лесоматериалы, нестроганые, у которых две или более плоскопараллельные пласти получены распиловкой, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407919009">
+                <xs:annotation>
+                    <xs:documentation>Прочие дубовые лесоматериалы, нестроганые, прочие, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407920000">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из бука распиленные или расколотые</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407931000">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из клена (ACER SPP. ) обработанные строганием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407931001">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из клена (ACER SPP. ), влажностью не более 22%, обработанные строганием или шлифованием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407931003">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из клена (ACER SPP. ), влажностью не более 22%, обработанные строганием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407931004">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из клена (ACER SPP. ), обработанные строганием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407931005">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из клена (ACER SPP. ), обработанные строганием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407931009">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из клена (ACER SPP. ), обработанные строганием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407939900">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из клена (ACER SPP. ) прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407939901">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из клена (ACER SPP. ) прочие, влажностью не более 22%</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407939905">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из клена (ACER SPP. ) прочие, у которых две или более плоскопараллельные пласти получены распиловкой, толщиной не менее 100 мм и шириной не менее 100 мм</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407939906">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из клена (ACER SPP. ) прочие, у которых две или более плоскопараллельные пласти получены распиловкой, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407939909">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из клена (ACER SPP. ) прочие, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407941000">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из вишни (PRUNUS SPP. ) обработанные строганием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407941001">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из вишни (PRUNUS SPP. ), влажностью не более 22%, обработанные строганием или шлифованием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407941003">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из вишни (PRUNUS SPP. ), влажностью не более 22%, обработанные строганием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407941004">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из вишни (PRUNUS SPP. ), обработанные строганием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407941005">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из вишни (PRUNUS SPP. ), обработанные строганием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407941009">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из вишни (PRUNUS SPP. ), обработанные строганием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407949100">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из вишни (PRUNUS SPP. ) обработанные шлифованием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407949101">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из вишни (PRUNUS SPP. ), обработанные шлифованием, влажностью не более 22%</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407949105">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из вишни (PRUNUS SPP. ), обработанные шлифованием, у которых две или более плоскопараллельные пласти получены распиловкой, толщиной не менее 100 мм и шириной не менее 100 мм</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407949106">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из вишни (PRUNUS SPP. ), обработанные шлифованием, у которых две или более плоскопараллельные пласти получены распиловкой, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407949109">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из вишни (PRUNUS SPP. ), обработанные шлифованием, прочие, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407949900">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из вишни (PRUNUS SPP. ), прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407949901">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из вишни (PRUNUS SPP. ), прочие, влажностью не более 22%</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407949905">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из вишни (PRUNUS SPP. ), прочие, у которых две или более плоскопараллельные пласти получены распиловкой, толщиной не менее 100 мм и шириной не менее 100 мм</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407949906">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из вишни (PRUNUS SPP. ), прочие, у которых две или более плоскопараллельные пласти получены распиловкой, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407949909">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из вишни (PRUNUS SPP. ), прочие, прочие, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407951000">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из ясеня (FRAXINUS SPP. ), обработанные строганием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407951001">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из ясеня (FRAXINUS SPP. ), влажностью не более 22%, обработанные строганием или шлифованием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407951003">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из ясеня (FRAXINUS SPP. ), влажностью не более 22%, обработанные строганием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407951004">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из ясеня (FRAXINUS SPP. ), обработанные строганием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407951005">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из ясеня (FRAXINUS SPP. ), обработанные строганием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407951009">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из ясеня (FRAXINUS SPP. ), обработанные строганием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407959100">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из ясеня (FRAXINUS SPP. ) обработанные шлифованием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407959101">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из ясеня (FRAXINUS SPP. ) обработанные шлифованием, влажностью не более 22%</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407959105">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из ясеня (FRAXINUS SPP. ) обработанные шлифованием, у которых две или более плоскопараллельные пласти получены распиловкой, толщиной не менее 100 мм и шириной не менее 100 мм</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407959106">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из ясеня (FRAXINUS SPP. ) обработанные шлифованием, у которых две или более плоскопараллельные пласти получены распиловкой, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407959109">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из ясеня (FRAXINUS SPP. ) обработанные шлифованием, прочие, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407959900">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из ясеня (FRAXINUS SPP. ), прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407959901">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из ясеня (FRAXINUS SPP. ), прочие, влажностью не более 22%</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407959905">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из ясеня (FRAXINUS SPP. ), прочие, у которых две или более плоскопараллельные пласти получены распиловкой, толщиной не менее 100 мм и шириной не менее 100 мм</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407959906">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из ясеня (FRAXINUS SPP. ), прочие, у которых две или более плоскопараллельные пласти получены распиловкой, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407959909">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из ясеня (FRAXINUS SPP. ), прочие, прочие, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407961000">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из березы, обработанные строганием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407961001">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из березы (BETULA SPP. ), влажностью не более 22%, обработанные строганием или шлифованием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407961003">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из березы (BETULA SPP. ), влажностью не более 22%, прочие обработанные строганием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407961004">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из березы (BETULA SPP. ), прочие, обработанные строганием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407961005">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из березы (BETULA SPP. ), прочие, обработанные строганием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407961009">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из березы (BETULA SPP. ), прочие, обработанные строганием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407964000">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из березы, обработанные шлифованием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407964001">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из березы (BETULA SPP. ), обработанные шлифованием, влажностью не более 22%</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407964005">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из березы (BETULA SPP. ), обработанные шлифованием, у которых две или более плоскопараллельные пласти получены распиловкой, толщиной не менее 100 мм и шириной не менее 100 мм</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407964006">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из березы (BETULA SPP. ), обработанные шлифованием, у которых две или более плоскопараллельные пласти получены распиловкой, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407964009">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из березы (BETULA SPP. ), обработанные шлифованием, прочие, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407969001">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из березы, распиленные вдоль</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407969002">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из березы (BETULA SPP. ), влажностью не более 22%</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407969005">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из березы (BETULA SPP. ), у которых две или более плоскопараллельные пласти получены распиловкой, толщиной не менее 100 мм и шириной не менее 100 мм</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407969006">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из березы (BETULA SPP. ), у которых две или более плоскопараллельные пласти получены распиловкой, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407969008">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из березы (BETULA SPP. ), прочие, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407969009">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из березы, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407971000">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из тополя и осины, обработанные строганием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407971001">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из тополя и осины (POPULUS SPP. ), влажностью не более 22%, обработанные строганием или шлифованием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407971003">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из тополя и осины (POPULUS SPP. ), влажностью не более 22%, обработанные строганием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407971004">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из тополя и осины (POPULUS SPP. ), прочие, обработанные строганием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407971005">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из тополя и осины (POPULUS SPP. ), прочие, обработанные строганием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407971009">
+                <xs:annotation>
+                    <xs:documentation>Лесоматериалы из тополя и осины (POPULUS SPP. ), прочие, обработанные строганием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407974000">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из тополя и осины, обработанные шлифованием, толщиной более 6 мм</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407974001">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из тополя и осины (POPULUS SPP. ), обработанные шлифованием, влажностью не более 22%</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407974005">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из тополя и осины (POPULUS SPP. ), обработанные шлифованием, у которых две или более плоскопараллельные пласти получены распиловкой, толщиной не менее 100 мм и шириной не менее 100 мм</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407974006">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из тополя и осины (POPULUS SPP. ), обработанные шлифованием, у которых две или более плоскопараллельные пласти получены распиловкой, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407974009">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из тополя и осины (POPULUS SPP. ), обработанные шлифованием, прочие, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407979001">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из осины (POPULUS ADENOPODA, POPULUS DAVIDIANA, POPULUS GRANDIDENTATA, POPULUS SIEBOLDII, POPULUS TREMULA, POPULUS TREMULOIDES), влажностью не более 22%</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407979002">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из осины (POPULUS ADENOPODA, POPULUS DAVIDIANA, POPULUS GRANDIDENTATA, POPULUS SIEBOLDII, POPULUS TREMULA, POPULUS TREMULOIDES), у которых две или более плоскопараллельные пласти получены распиловкой, толщиной не менее 100 мм и шириной не менее 100 мм</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407979003">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из осины (POPULUS ADENOPODA, POPULUS DAVIDIANA, POPULUS GRANDIDENTATA, POPULUS SIEBOLDII, POPULUS TREMULA, POPULUS TREMULOIDES), у которых две или более плоскопараллельные пласти получены распиловкой, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407979004">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из осины (POPULUS ADENOPODA, POPULUS DAVIDIANA, POPULUS GRANDIDENTATA, POPULUS SIEBOLDII, POPULUS TREMULA, POPULUS TREMULOIDES), прочие, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407979005">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из тополя и осины (POPULUS SPP. ), влажностью не более 22%, прочие, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407979006">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из тополя и осины (POPULUS SPP. ), прочие, у которых две или более плоскопараллельные пласти получены распиловкой, толщиной не менее 100 мм и шириной не менее 100 мм, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407979007">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из тополя и осины (POPULUS SPP. ), прочие, у которых две или более плоскопараллельные пласти получены распиловкой, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407979008">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из тополя и осины (POPULUS SPP. ), прочие, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407979009">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы, не обработанные или обработанные строганием, шлифованием, имеющие или не имеющие торцевые соединения, толщиной более 6 мм из тополя и осины</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407991000">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы, обработанные строганием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407991001">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы, влажностью не более 22%, обработанные строганием или шлифованием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407991003">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы, влажностью не более 22%, обработанные строганием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407991004">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы, обработанные строганием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407991005">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы, обработанные строганием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407991009">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы, обработанные строганием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407994000">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы обработанные шлифованием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407994001">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы обработанные шлифованием, влажностью не более 22%</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407994005">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы обработанные шлифованием, у которых две или более плоскопараллельные пласти получены распиловкой, толщиной не менее 100 мм и шириной не менее 100 мм</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407994006">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы обработанные шлифованием, у которых две или более плоскопараллельные пласти получены распиловкой, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407994009">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы обработанные шлифованием, прочие, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407999001">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из ореха, полученные распиловкой или расщеплением вдоль, строганием или лущением. . , влажностью не более 22%</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407999002">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из ореха, полученные распиловкой или расщеплением вдоль, строганием или лущением. . , у которых две или более плоскопараллельные пласти получены распиловкой, толщиной не менее 100 мм и шириной не менее 100 мм</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407999003">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из ореха, полученные распиловкой или расщеплением вдоль, строганием или лущением. . , у которых две или более плоскопараллельные пласти получены распиловкой, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407999004">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы из ореха, полученные распиловкой или расщеплением вдоль, строганием или лущением. . , прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407999005">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы, полученные распиловкой или расщеплением вдоль, строганием или лущением. . , влажностью не более 22%</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407999006">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы, полученные распиловкой или расщеплением вдоль, строганием или лущением. . , у которых две или более плоскопараллельные пласти получены распиловкой, толщиной не менее 100 мм и шириной не менее 100 мм</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407999007">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы, полученные распиловкой или расщеплением вдоль, строганием или лущением. . , у которых две или более плоскопараллельные пласти получены распиловкой, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407999008">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы, полученные распиловкой или расщеплением вдоль, строганием или лущением. . , прочие, прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4407999009">
+                <xs:annotation>
+                    <xs:documentation>Прочие лесоматериалы, полученные распиловкой или расщеплением вдоль, строганием или лущением, обработанные или не обработанные строганием, шлифованием, имеющие или не имеющие торцевые соединения, толщиной более 6 мм</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

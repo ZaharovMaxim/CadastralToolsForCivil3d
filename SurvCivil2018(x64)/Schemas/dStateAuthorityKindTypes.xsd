@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema
+    xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/stateAuthority/types/2.0"
+    elementFormDefault="qualified"
+    targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/stateAuthority/types/2.0"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="StateAuthorityKindEType">
+        <xs:annotation>
+            <xs:documentation>Органы исполнительной власти</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="altaiRegion">
+                <xs:annotation>
+                    <xs:documentation>Министерство природных ресурсов и экологии Алтайского края</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="altaiRepublic">
+                <xs:annotation>
+                    <xs:documentation>Министерство природных ресурсов, экологии и туризма Республики Алтай</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="amurskayaOblast">
+                <xs:annotation>
+                    <xs:documentation>Министерство лесного хозяйства и пожарной безопасности Амурской области</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="arkhangelskRegion">
+                <xs:annotation>
+                    <xs:documentation>Министерство природных ресурсов и лесопромышленного комплекса Архангельской области</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="astrakhanRegion">
+                <xs:annotation>
+                    <xs:documentation>Служба природопользования и охраны окружающей среды Астраханской области</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="belgorodRegion">
+                <xs:annotation>
+                    <xs:documentation>Министерство природопользования Белгородской области</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="bryanskRegion">
+                <xs:annotation>
+                    <xs:documentation>Управление лесами Брянской области</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="chechenRepublic">
+                <xs:annotation>
+                    <xs:documentation>Министерство природных ресурсов и охраны окружающей среды Чеченской Республики</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="chelyabinskRegion">
+                <xs:annotation>
+                    <xs:documentation>Главное управление лесами Челябинской области</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="chukotkaAutonomousOkrug">
+                <xs:annotation>
+                    <xs:documentation>Департамент природных ресурсов и экологии Чукотского автономного округа</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="chuvashRepublic">
+                <xs:annotation>
+                    <xs:documentation>Министерство природных ресурсов и экологии Чувашской Республики</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="irkutskRegion">
+                <xs:annotation>
+                    <xs:documentation>Министерство лесного комплекса Иркутской области</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="ivanovoRegion">
+                <xs:annotation>
+                    <xs:documentation>Комитет Ивановской области по лесному хозяйству</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="jewishAutonomousRegion">
+                <xs:annotation>
+                    <xs:documentation>Департамент управления лесами Правительства Еврейской АО</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="kabardinoBalkarianRepublic">
+                <xs:annotation>
+                    <xs:documentation>Министерство природных ресурсов и экологии Кабардино-Балкарской Республики</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="kaliningradRegion">
+                <xs:annotation>
+                    <xs:documentation>Министерство природных ресурсов и экологии Калининградской области</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="kalugaRegion">
+                <xs:annotation>
+                    <xs:documentation>Министерство природных ресурсов и экологии Калужской области</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="kamchatkaKrai">
+                <xs:annotation>
+                    <xs:documentation>Агентство лесного хозяйства Камчатского края</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="karachayCherkessRepublic">
+                <xs:annotation>
+                    <xs:documentation>Министерство природных ресурсов и экологии Карачаево-Черкесской Республики</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="kemerovoRegionKuzbass">
+                <xs:annotation>
+                    <xs:documentation>Департамент лесного комплекса Кузбасса</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="khabarovskRegion">
+                <xs:annotation>
+                    <xs:documentation>Министерство лесного хозяйства и лесопереработки Хабаровского края</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="khantyMansiAutonomousOkrugYugr">
+                <xs:annotation>
+                    <xs:documentation>Департамент недропользования и природных ресурсов Ханты-Мансийского автономного округа- Югры / Служба по контролю и надзору в сфере охраны окружающей среды, объектов животного мира и лесных отношений Ханты-Мансийского автономного округа – Югры</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="kirovRegion">
+                <xs:annotation>
+                    <xs:documentation>Министерство лесного хозяйства Кировской области</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="komiRepublic">
+                <xs:annotation>
+                    <xs:documentation>Министерство природных ресурсов и охраны окружающей среды Республики Коми</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="kostromaRegion">
+                <xs:annotation>
+                    <xs:documentation>Департамент лесного хозяйства Костромской области</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="krasnodarRegion">
+                <xs:annotation>
+                    <xs:documentation>Министерство природных ресурсов Краснодарского края</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="krasnoyarskRegion">
+                <xs:annotation>
+                    <xs:documentation>Министерство лесного хозяйства Красноярского края</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="kurganRegion">
+                <xs:annotation>
+                    <xs:documentation>Департамент природных ресурсов и охраны окружающей среды Курганской области</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="kurskRegion">
+                <xs:annotation>
+                    <xs:documentation>Комитет природных ресурсов Курской области</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="leningradRegion">
+                <xs:annotation>
+                    <xs:documentation>Комитет по природным ресурсам Ленинградской области/ Комитет государственного экологического надзора Ленинградской области</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="lipetskRegion">
+                <xs:annotation>
+                    <xs:documentation>Управление лесного хозяйства Липецкой области</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="magadanRegion">
+                <xs:annotation>
+                    <xs:documentation>Министерство природных ресурсов и экологии Магаданской области</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="mariElRepublic">
+                <xs:annotation>
+                    <xs:documentation>Министерство природных ресурсов, экологии и охраны окружающей среды Республики Марий Эл</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="moscowRegion">
+                <xs:annotation>
+                    <xs:documentation>Комитет лесного хозяйства Московской области</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="murmanskRegion">
+                <xs:annotation>
+                    <xs:documentation>Министерство природных ресурсов и экологии Мурманской области</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="nenetsAutonomousOkrug">
+                <xs:annotation>
+                    <xs:documentation>Департамент природных ресурсов, экологии и агропромышленного комплекса Ненецкого автономного округа</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="nizhnyNovgorodRegion">
+                <xs:annotation>
+                    <xs:documentation>Министерство лесного хозяйства и охраны объектов животного мира Нижегородской области</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="novgorodRegion">
+                <xs:annotation>
+                    <xs:documentation>Министерство природных ресурсов, лесного хозяйства и экологии Новгородской области</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="novosibirskRegion">
+                <xs:annotation>
+                    <xs:documentation>Министерство природных ресурсов и экологии Новосибирской области</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="omskRegion">
+                <xs:annotation>
+                    <xs:documentation>Главное управление лесного хозяйства Омской области</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="orenburgRegion">
+                <xs:annotation>
+                    <xs:documentation>Министерство природных ресурсов, экологии и имущественных отношений Оренбургской области</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="oryolRegion">
+                <xs:annotation>
+                    <xs:documentation>Управление лесами Орловской области</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="penzaRegion">
+                <xs:annotation>
+                    <xs:documentation>Министерство лесного, охотничьего хозяйства и природопользования Пензенской области</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="permRegion">
+                <xs:annotation>
+                    <xs:documentation>Министерство природных ресурсов, лесного хозяйства и экологии Пермского края</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="primorskyKrai">
+                <xs:annotation>
+                    <xs:documentation>Министерство лесного хозяйства и охраны объектов животного мира Приморского края</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="pskovRegion">
+                <xs:annotation>
+                    <xs:documentation>Комитет по природным ресурсам и экологии Псковской области</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="republicOfAdygea">
+                <xs:annotation>
+                    <xs:documentation>Управление лесами Республики Адыгея</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="republicOfBashkortostan">
+                <xs:annotation>
+                    <xs:documentation>Министерство лесного хозяйства Республики Башкортостан</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="republicOfCrimea">
+                <xs:annotation>
+                    <xs:documentation>Министерство экологии и природных ресурсов Республики Крым</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="republicOfKalmykia">
+                <xs:annotation>
+                    <xs:documentation>Министерство природных ресурсов и охраны окружающей среды Республики Калмыкия</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="republicOfKarelia">
+                <xs:annotation>
+                    <xs:documentation>Министерство природных ресурсов и экологии Республики Карелия</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="republicOfNorthOssetiaAlania">
+                <xs:annotation>
+                    <xs:documentation>Министерство природных ресурсов и экологии Республики Северная Осетия-Алания</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="republicOfTatarstan">
+                <xs:annotation>
+                    <xs:documentation>Министерство лесного хозяйства Республики Татарстан</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="rostovRegion">
+                <xs:annotation>
+                    <xs:documentation>Министерство природных ресурсов и экологии Ростовской области</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="ryazanOblast">
+                <xs:annotation>
+                    <xs:documentation>Министерство природопользования Рязанской области</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sakhalinRegion">
+                <xs:annotation>
+                    <xs:documentation>Агентство лесного и охотничьего хозяйства Сахалинской области</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="samaraRegion">
+                <xs:annotation>
+                    <xs:documentation>Министерство лесного хозяйства, охраны окружающей среды и природопользования Самарской области</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="saratovRegion">
+                <xs:annotation>
+                    <xs:documentation>Министерство природных ресурсов и экологии Саратовской области</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sevastopol">
+                <xs:annotation>
+                    <xs:documentation>Департамент природных ресурсов и экологии города Севастополя</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="smolenskRegion">
+                <xs:annotation>
+                    <xs:documentation>Департамент Смоленской области по охране, контролю и регулированию использования лесного хозяйства, объектов животного мира и среды их обитания</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="stPetersburg">
+                <xs:annotation>
+                    <xs:documentation>Комитет по благоустройству Санкт-Петербурга</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="stavropolRegion">
+                <xs:annotation>
+                    <xs:documentation>Министерство природных ресурсов и охраны окружающей среды Ставропольского края</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sverdlovskRegion">
+                <xs:annotation>
+                    <xs:documentation>Министерство природных ресурсов и экологии Свердловской области</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="tambovRegion">
+                <xs:annotation>
+                    <xs:documentation>Управление лесами Тамбовской области</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="theRepublicOfBuryatia">
+                <xs:annotation>
+                    <xs:documentation>Республиканское агентство лесного хозяйства Республики Бурятия</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="theRepublicOfDagestan">
+                <xs:annotation>
+                    <xs:documentation>Комитет по лесному хозяйству Республики Дагестан</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="theRepublicOfIngushetia">
+                <xs:annotation>
+                    <xs:documentation>Министерство природных ресурсов и экологии Республики Ингушетия</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="theRepublicOfKhakassia">
+                <xs:annotation>
+                    <xs:documentation>Министерство природных ресурсов и экологии Республики Хакасия</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="theRepublicOfMordovia">
+                <xs:annotation>
+                    <xs:documentation>Министерство лесного, охотничьего хозяйства и природопользования Республики Мордовия</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="theRepublicOfSakhaYakutia">
+                <xs:annotation>
+                    <xs:documentation>Министерство экологии, природопользования и лесного хозяйства Республики Саха (Якутия)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="theRussianFederation">
+                <xs:annotation>
+                    <xs:documentation>Федеральное агентство лесного хозяйства</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="tomskRegion">
+                <xs:annotation>
+                    <xs:documentation>Департамент лесного хозяйства Томской области</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="tulaRegion">
+                <xs:annotation>
+                    <xs:documentation>Министерство природных ресурсов и экологии Тульской области</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="tverRegion">
+                <xs:annotation>
+                    <xs:documentation>Министерство лесного комплекса Тверской области</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="tyumenRegion">
+                <xs:annotation>
+                    <xs:documentation>Департамент лесного комплекса Тюменской области</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="tyvaRepublic">
+                <xs:annotation>
+                    <xs:documentation>Министерство лесного хозяйства и природопользования Республики Тыва</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="udmurtia">
+                <xs:annotation>
+                    <xs:documentation>Министерство природных ресурсов и охраны окружающей среды Удмуртской Республики</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="ulyanovskRegion">
+                <xs:annotation>
+                    <xs:documentation>Министерство природных ресурсов и экологии Ульяновской области</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="vladimirRegion">
+                <xs:annotation>
+                    <xs:documentation>Департамент лесного хозяйства Владимирской области</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="volgogradRegion">
+                <xs:annotation>
+                    <xs:documentation>Комитет природных ресурсов, лесного хозяйства и экологии Волгоградской области</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="vologodskayaOblast">
+                <xs:annotation>
+                    <xs:documentation>Департамент лесного комплекса Вологодской области</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="voronezhRegion">
+                <xs:annotation>
+                    <xs:documentation>Управление лесного хозяйства Воронежской области</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="yamaloNenetsAutonomousOkrug">
+                <xs:annotation>
+                    <xs:documentation>Департамент природных ресурсов и экологии Ямало-Ненецкого автономного округа</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="yaroslavskayaOblast">
+                <xs:annotation>
+                    <xs:documentation>Департамент лесного хозяйства Ярославской области</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="zabaykalskyKrai">
+                <xs:annotation>
+                    <xs:documentation>Министерство природных ресурсов Забайкальского края</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

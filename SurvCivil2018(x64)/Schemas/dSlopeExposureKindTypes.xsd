@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/slopeExposure/types/2.1" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/slopeExposure/types/2.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="SlopeExposureKindEType">
+        <xs:annotation>
+            <xs:documentation>Экспозиция склона (Склон/Уклон)</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="36900001">
+                <xs:annotation>
+                    <xs:documentation>северный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="36900002">
+                <xs:annotation>
+                    <xs:documentation>северно-восточный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="36900003">
+                <xs:annotation>
+                    <xs:documentation>восточный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="36900004">
+                <xs:annotation>
+                    <xs:documentation>юго-восточный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="36900005">
+                <xs:annotation>
+                    <xs:documentation>южный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="36900006">
+                <xs:annotation>
+                    <xs:documentation>юго-западный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="36900007">
+                <xs:annotation>
+                    <xs:documentation>западный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="36900008">
+                <xs:annotation>
+                    <xs:documentation>северно-западный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="36900009">
+                <xs:annotation>
+                    <xs:documentation>разная, склоны нескольких экспозиций</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="36900010">
+                <xs:annotation>
+                    <xs:documentation>равнина (крутизна склона до ± 5)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="36900011">
+                <xs:annotation>
+                    <xs:documentation>не оценивалось (неисправная карта)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

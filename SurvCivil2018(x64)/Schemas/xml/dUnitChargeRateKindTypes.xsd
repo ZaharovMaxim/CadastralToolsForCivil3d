@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/unitChargeRate/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/unitChargeRate/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="UnitChargeRateKindEType">
+        <xs:annotation>
+            <xs:documentation>Единицы измерения для ставок платы</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="rubleyZaGektar">
+                <xs:annotation>
+                    <xs:documentation>рублей за гектар</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="rubleyZaKilogramm">
+                <xs:annotation>
+                    <xs:documentation>рублей за килограмм</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="rubleyZaKubicheskiyMetr">
+                <xs:annotation>
+                    <xs:documentation>рублей за кубический метр</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="rubleyZaPchelosemyu">
+                <xs:annotation>
+                    <xs:documentation>рублей за пчелосемью</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="rubleyZaShtuku">
+                <xs:annotation>
+                    <xs:documentation>рублей за штуку</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="rubleyZaTonnu">
+                <xs:annotation>
+                    <xs:documentation>рублей за тонну</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="rubleyZaTsentner">
+                <xs:annotation>
+                    <xs:documentation>рублей за центнер</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

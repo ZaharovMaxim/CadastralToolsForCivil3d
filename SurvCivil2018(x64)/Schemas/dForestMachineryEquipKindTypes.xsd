@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/forestMachineryEquip/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/forestMachineryEquip/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="ForestMachineryEquipKindEType">
+        <xs:annotation>
+            <xs:documentation>Лесопожарная техника и оборудование</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="30200001">
+                <xs:annotation>
+                    <xs:documentation>Авиационные пожарные емкости</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30200002">
+                <xs:annotation>
+                    <xs:documentation>Автомобили и/или вахтовые автомобили</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30200003">
+                <xs:annotation>
+                    <xs:documentation>Автомобиль патрульный лесопожарный (малый лесопатрульный комплекс)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30200004">
+                <xs:annotation>
+                    <xs:documentation>Бензопилы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30200005">
+                <xs:annotation>
+                    <xs:documentation>Беспилотные летательные аппараты (комплексы)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30200006">
+                <xs:annotation>
+                    <xs:documentation>Бульдозеры</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30200007">
+                <xs:annotation>
+                    <xs:documentation>Вездеход лесопожарный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30200008">
+                <xs:annotation>
+                    <xs:documentation>Вездеходы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30200009">
+                <xs:annotation>
+                    <xs:documentation>Вездеходы на гусеничном шасси (МТЛБ и др.) плавающие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30200010">
+                <xs:annotation>
+                    <xs:documentation>Вертолетные водосливные устройства</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30200011">
+                <xs:annotation>
+                    <xs:documentation>Вертолеты</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30200012">
+                <xs:annotation>
+                    <xs:documentation>Водосливное устройства для вертолета</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30200013">
+                <xs:annotation>
+                    <xs:documentation>Воздуходувки</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30200014">
+                <xs:annotation>
+                    <xs:documentation>Грузовые автомобили грузоподъемностью свыше 1,5 т.</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30200015">
+                <xs:annotation>
+                    <xs:documentation>Грузовые машины</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30200016">
+                <xs:annotation>
+                    <xs:documentation>Гусеничный трактор</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30200017">
+                <xs:annotation>
+                    <xs:documentation>Зажигательные аппараты</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30200018">
+                <xs:annotation>
+                    <xs:documentation>Катер</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30200019">
+                <xs:annotation>
+                    <xs:documentation>Колесный трактор</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30200020">
+                <xs:annotation>
+                    <xs:documentation>Комплект технологический оснастки</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30200021">
+                <xs:annotation>
+                    <xs:documentation>Легковые машины</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30200022">
+                <xs:annotation>
+                    <xs:documentation>Лесопожарные автоцистерны (лесопожарные машины)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30200023">
+                <xs:annotation>
+                    <xs:documentation>Лесопожарный трактор</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30200024">
+                <xs:annotation>
+                    <xs:documentation>Лопаты</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30200025">
+                <xs:annotation>
+                    <xs:documentation>Малый лесопатрульный комплекс</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30200026">
+                <xs:annotation>
+                    <xs:documentation>Мотопомпы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30200027">
+                <xs:annotation>
+                    <xs:documentation>Моторные лодки</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30200028">
+                <xs:annotation>
+                    <xs:documentation>Напорные пожарные рукава</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30200029">
+                <xs:annotation>
+                    <xs:documentation>Насосные станции мобильные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30200030">
+                <xs:annotation>
+                    <xs:documentation>Плуги лесные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30200031">
+                <xs:annotation>
+                    <xs:documentation>Пожарная емкость закрытого типа</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30200032">
+                <xs:annotation>
+                    <xs:documentation>Пожарные автоцистерны (пожарные машины) АЦЛ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30200033">
+                <xs:annotation>
+                    <xs:documentation>Пожарные емкости</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30200034">
+                <xs:annotation>
+                    <xs:documentation>Прицепной модуль</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30200035">
+                <xs:annotation>
+                    <xs:documentation>Прочая техника</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30200036">
+                <xs:annotation>
+                    <xs:documentation>Прочее оборудование</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30200037">
+                <xs:annotation>
+                    <xs:documentation>Радиостанции КВ-диапазона</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30200038">
+                <xs:annotation>
+                    <xs:documentation>Радиостанции УКВ-диапазона</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30200039">
+                <xs:annotation>
+                    <xs:documentation>Ранцевые лесные огнетушители</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30200040">
+                <xs:annotation>
+                    <xs:documentation>Самолеты</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30200041">
+                <xs:annotation>
+                    <xs:documentation>Специализированная гусеничная техника</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30200042">
+                <xs:annotation>
+                    <xs:documentation>Ствол пожарный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30200043">
+                <xs:annotation>
+                    <xs:documentation>Ствол торфяной</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30200044">
+                <xs:annotation>
+                    <xs:documentation>Топоры-мотыги</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30200045">
+                <xs:annotation>
+                    <xs:documentation>Тралы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30200046">
+                <xs:annotation>
+                    <xs:documentation>Трейлеры</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30200047">
+                <xs:annotation>
+                    <xs:documentation>Экскаваторы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30200048">
+                <xs:annotation>
+                    <xs:documentation>Автолесовозы, средства транспортные для перевозки грузов с использованием прицепа-роспуска, средства транспортные, оснащенные кранами-манипуляторами</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30200049">
+                <xs:annotation>
+                    <xs:documentation>Прицепы и полуприцепы, технически допустимая масса которых свыше 10 тонн, прицепы и полуприцепы тракторные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30200050">
+                <xs:annotation>
+                    <xs:documentation>Краны на гусеничном ходу</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30200051">
+                <xs:annotation>
+                    <xs:documentation>Краны на колесном ходу</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30200052">
+                <xs:annotation>
+                    <xs:documentation>Автопогрузчики</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30200053">
+                <xs:annotation>
+                    <xs:documentation>Электропогрузчики</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30200054">
+                <xs:annotation>
+                    <xs:documentation>Тракторы колесные для полуприцепов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30200055">
+                <xs:annotation>
+                    <xs:documentation>Тракторы колесные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30200056">
+                <xs:annotation>
+                    <xs:documentation>Лесопогрузчики</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30200057">
+                <xs:annotation>
+                    <xs:documentation>Сучкорезно-раскряжевочные машины (процессоры)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30200058">
+                <xs:annotation>
+                    <xs:documentation>Погрузочно-транспортирующие лесозаготовительные машины (форвардеры)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30200059">
+                <xs:annotation>
+                    <xs:documentation>Трелевочные тракторы (скиддеры) для лесного хозяйства</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30200060">
+                <xs:annotation>
+                    <xs:documentation>Бульдозеры гусеничные с неповоротным или поворотным отвалом</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30200061">
+                <xs:annotation>
+                    <xs:documentation>Бульдозеры колесные с неповоротным или поворотным отвалом</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30200062">
+                <xs:annotation>
+                    <xs:documentation>Погрузчики фронтальные одноковшовые, погрузчики с бортовым поворотом</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30200063">
+                <xs:annotation>
+                    <xs:documentation>Одноковшовые полноповоротные экскаваторы, экскаваторы-перегружатели</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30200064">
+                <xs:annotation>
+                    <xs:documentation>Экскаваторы многоковшовые</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30200065">
+                <xs:annotation>
+                    <xs:documentation>Валочные машины</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30200066">
+                <xs:annotation>
+                    <xs:documentation>Гусеничные тракторы,не оснащенные отвалом</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30200067">
+                <xs:annotation>
+                    <xs:documentation>Валочно-пакетирующие машины</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30200068">
+                <xs:annotation>
+                    <xs:documentation>Многооперационные лесозаготовительные машины (харвестеры)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30200069">
+                <xs:annotation>
+                    <xs:documentation>Самоходные машины для измельчения древесины (мульчеры)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

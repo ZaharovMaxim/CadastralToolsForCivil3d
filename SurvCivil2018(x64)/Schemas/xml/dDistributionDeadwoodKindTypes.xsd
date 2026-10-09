@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/distributionDeadwood/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/distributionDeadwood/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:simpleType name="DistributionDeadwoodKindEType">
+		<xs:annotation>
+			<xs:documentation>Распределение валежа на постоянных пробных площадях</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="kurtiny">
+				<xs:annotation>
+					<xs:documentation>Куртины</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="neOtsenivalosValezhaNet">
+				<xs:annotation>
+					<xs:documentation>Не оценивалось (валежа нет)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="regulyarnoye">
+				<xs:annotation>
+					<xs:documentation>Регулярное</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="shtabelyami">
+				<xs:annotation>
+					<xs:documentation>Штабелями</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="sluchaynoye">
+				<xs:annotation>
+					<xs:documentation>Случайное</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

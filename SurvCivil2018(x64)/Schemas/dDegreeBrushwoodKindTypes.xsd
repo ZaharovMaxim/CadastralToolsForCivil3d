@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/degreeBrushwood/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/degreeBrushwood/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:simpleType name="DegreeBrushwoodKindEType">
+		<xs:annotation>
+			<xs:documentation>Степень покрытия хворостом</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="fiftyOneToSeventyFivePercent">
+				<xs:annotation>
+					<xs:documentation>51-75%</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="notFound">
+				<xs:annotation>
+					<xs:documentation>Не встречается</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="oneToFivePercent">
+				<xs:annotation>
+					<xs:documentation>1-5%</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="seventySixToOneHundredPercent">
+				<xs:annotation>
+					<xs:documentation>76-100%</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="sixToTwentyFivePercent">
+				<xs:annotation>
+					<xs:documentation>6-25%</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="solitary">
+				<xs:annotation>
+					<xs:documentation>Единично</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="toZeroPointTwoPercent">
+				<xs:annotation>
+					<xs:documentation>До 0,2%</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="twentySixToFiftyPercent">
+				<xs:annotation>
+					<xs:documentation>26-50%</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="zeroPointTwoToZeroPointNinePer">
+				<xs:annotation>
+					<xs:documentation>0,2-0,9%</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

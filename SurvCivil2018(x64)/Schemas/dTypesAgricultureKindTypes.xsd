@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/typesAgriculture/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/typesAgriculture/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="TypesAgricultureKindEType">
+        <xs:annotation>
+            <xs:documentation>Виды сельского хозяйства</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="32600001">
+                <xs:annotation>
+                    <xs:documentation>выпас сельскохозяйственных животных</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32600002">
+                <xs:annotation>
+                    <xs:documentation>выращивание сельскохозяйственных культур</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32600003">
+                <xs:annotation>
+                    <xs:documentation>иная сельскохозяйственная деятельность</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32600004">
+                <xs:annotation>
+                    <xs:documentation>пантовое оленеводство</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32600005">
+                <xs:annotation>
+                    <xs:documentation>пчеловодство</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32600006">
+                <xs:annotation>
+                    <xs:documentation>северное оленеводство</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32600007">
+                <xs:annotation>
+                    <xs:documentation>сенокошение</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32600008">
+                <xs:annotation>
+                    <xs:documentation>товарная аквакультура (товарное рыбоводство)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

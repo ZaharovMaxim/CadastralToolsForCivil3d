@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+    НЕ МЕНЯТЬ!
+    опубликована на портале СМЭВ 21.11.2023
+    https://lkuv.gosuslugi.ru/paip-portal/#/schemes/card/609ed430-3a5e-4f0e-a3f4-dc1bd385a585
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:st="http://rosleshoz.gov.ru/fgis-lk/common/simple/types/2.0.0"
+           xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/attachment/types/2.0.0"
+           elementFormDefault="qualified"
+           targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/attachment/types/2.0.0">
+
+    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/simple/types/2.0.0" schemaLocation="simpleTypes-2.0.0.xsd"/>
+
+    <xs:simpleType name="AttachmentIdSType">
+        <xs:annotation>
+            <xs:documentation>Тип Идентификатор прилагаемого файла</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:ID">
+            <xs:maxLength value="50"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="AttachmentIdRefSType">
+        <xs:annotation>
+            <xs:documentation>Тип Ссылка на прилагаемый файла по идентификатору</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:IDREF">
+            <xs:maxLength value="50"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="AttachmentFileType">
+        <xs:annotation>
+            <xs:documentation>Описание файла</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="fileURI" type="st:String128SType">
+                <xs:annotation>
+                    <xs:documentation>идентификатор файла (имя файла в архиве документа или пакета документов)</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="md5sum" type="st:String128SType">
+                <xs:annotation>
+                    <xs:documentation>Хэш (по алгоритму MD5) от данных прикладываемого файла</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="AttachmentType">
+        <xs:annotation>
+            <xs:documentation>Приложенный файл с ЭП</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="id" type="tns:AttachmentIdSType">
+                <xs:annotation>
+                    <xs:documentation>Идентификатор прилагаемого вложения</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element minOccurs="0" name="desc" type="st:String255SType">
+                <xs:annotation>
+                    <xs:documentation>Описание файла</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="file" type="tns:AttachmentFileType">
+                <xs:annotation>
+                    <xs:documentation>Атрибуты файла</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element minOccurs="0" name="signature" type="tns:AttachmentFileType">
+                <xs:annotation>
+                    <xs:documentation>Атрибуты файла подписи</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="AttachmentListType">
+        <xs:annotation>
+            <xs:documentation>Опись приложенных файлов</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="attachment" type="tns:AttachmentType">
+                <xs:annotation>
+                    <xs:documentation>Приложенный файл</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="AttachExtendedListType">
+        <xs:annotation>
+            <xs:documentation>Опись приложенных файлов</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="attachExtended" type="tns:AttachExtendedType">
+                <xs:annotation>
+                    <xs:documentation>Приложенный файл</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="AttachExtendedType">
+        <xs:annotation>
+            <xs:documentation>Приложенный файл с ЭП</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="id" type="tns:AttachmentIdSType">
+                <xs:annotation>
+                    <xs:documentation>Идентификатор прилагаемого вложения</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element minOccurs="0" name="desc" type="st:String255SType">
+                <xs:annotation>
+                    <xs:documentation>Описание файла</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="file" type="tns:AttachmentFileType">
+                <xs:annotation>
+                    <xs:documentation>Атрибуты файла</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element minOccurs="0" name="signature" type="tns:AttachmentFileType">
+                <xs:annotation>
+                    <xs:documentation>Атрибуты файла подписи</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element minOccurs="0" name="scale" type="st:String128SType">
+                <xs:annotation>
+                    <xs:documentation>Масштаб</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>

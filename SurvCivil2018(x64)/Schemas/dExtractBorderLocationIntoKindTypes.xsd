@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/extractBorderLocationInto/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/extractBorderLocationInto/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="ExtractBorderLocationIntoKindEType">
+        <xs:annotation>
+            <xs:documentation>Сведения о внесении описания местоположения границы лесничества в Единый государственный реестр недвижимости</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="made">
+                <xs:annotation>
+                    <xs:documentation>внесена</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="notIncluded">
+                <xs:annotation>
+                    <xs:documentation>не внесена</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

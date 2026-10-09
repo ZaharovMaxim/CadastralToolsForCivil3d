@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/ageClass/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/ageClass/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="AgeClassKindEType">
+        <xs:annotation>
+            <xs:documentation>Класс возраста лесного насаждения</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="ageClass3ConiferousAndHardwood">
+                <xs:annotation>
+                    <xs:documentation>хвойные и твердолиственные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="2AgeClassConiferousAndHardwood">
+                <xs:annotation>
+                    <xs:documentation>хвойные и твердолиственные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="3AgeClassSoftLeaved">
+                <xs:annotation>
+                    <xs:documentation>мягколиственные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4AgeClassCedarSpruceFir">
+                <xs:annotation>
+                    <xs:documentation>кедр, ель, пихта</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="2AgeClassCedarSpruceFir">
+                <xs:annotation>
+                    <xs:documentation>кедр, ель, пихта</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="3AgeClassShrubs">
+                <xs:annotation>
+                    <xs:documentation>кустарники</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4AgeClassSoftLeaved">
+                <xs:annotation>
+                    <xs:documentation>мягколиственные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="1StAgeClassConifersAndHardwood">
+                <xs:annotation>
+                    <xs:documentation>хвойные и твердолиственные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="ageClass4ConiferousAndHardwood">
+                <xs:annotation>
+                    <xs:documentation>хвойные и твердолиственные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="ageClass5ConiferousAndHardwood">
+                <xs:annotation>
+                    <xs:documentation>хвойные и твердолиственные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4AgeClassShrubs">
+                <xs:annotation>
+                    <xs:documentation>кустарники</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="5ThClassOfAgeShrubs">
+                <xs:annotation>
+                    <xs:documentation>кустарники</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="1StAgeClassCedarSpruceFir">
+                <xs:annotation>
+                    <xs:documentation>кедр, ель, пихта</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="1AgeClassSoftwood">
+                <xs:annotation>
+                    <xs:documentation>мягколиственные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="3AgeClassCedarSpruceFir">
+                <xs:annotation>
+                    <xs:documentation>кедр, ель, пихта</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="2AgeClassSoftLeaved">
+                <xs:annotation>
+                    <xs:documentation>мягколиственные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="1StAgeClassShrubs">
+                <xs:annotation>
+                    <xs:documentation>кустарники</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="2NdAgeClassShrubs">
+                <xs:annotation>
+                    <xs:documentation>кустарники</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="5AgeClassCedarSpruceFir">
+                <xs:annotation>
+                    <xs:documentation>кедр, ель, пихта</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="5AgeClassSoftwood">
+                <xs:annotation>
+                    <xs:documentation>мягколиственные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

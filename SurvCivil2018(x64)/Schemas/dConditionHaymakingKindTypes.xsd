@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/conditionHaymaking/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/conditionHaymaking/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="ConditionHaymakingKindEType">
+        <xs:annotation>
+            <xs:documentation>Состояние сенокоса</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="chistyy">
+                <xs:annotation>
+                    <xs:documentation>Чистый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="impRoved">
+                <xs:annotation>
+                    <xs:documentation>Коренного улучшения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="korennogoUluchsheniya">
+                <xs:annotation>
+                    <xs:documentation>Коренного улучшения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="natUral">
+                <xs:annotation>
+                    <xs:documentation>Естественное</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="otherFactors">
+                <xs:annotation>
+                    <xs:documentation>Другие факторы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="poverkhnostnogoUluchsheniya">
+                <xs:annotation>
+                    <xs:documentation>Поверхностного улучшения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sVihodomKamney">
+                <xs:annotation>
+                    <xs:documentation>С выходом каменистых пород</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sVykhodomKamney">
+                <xs:annotation>
+                    <xs:documentation>С выходом камней</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="surfaceImprovement">
+                <xs:annotation>
+                    <xs:documentation>Поверхностного улучшения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="uluchshennyye">
+                <xs:annotation>
+                    <xs:documentation>Улучшенные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="zakochkarennyy">
+                <xs:annotation>
+                    <xs:documentation>Покрытый кочками</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="zakustarennyy">
+                <xs:annotation>
+                    <xs:documentation>Закустаренный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="zalesennyy">
+                <xs:annotation>
+                    <xs:documentation>Залесенный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="zarosshiy">
+                <xs:annotation>
+                    <xs:documentation>Заросший</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

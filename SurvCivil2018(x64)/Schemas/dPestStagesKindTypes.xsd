@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/pestStages/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/pestStages/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="PestStagesKindEType">
+        <xs:annotation>
+            <xs:documentation>Стадии развития вредителей</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="36300010">
+                <xs:annotation>
+                    <xs:documentation>Яйцо</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="36300020">
+                <xs:annotation>
+                    <xs:documentation>Личинка, гусеница</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="36300021">
+                <xs:annotation>
+                    <xs:documentation>Личинка, гусеница I-го возраста</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="36300022">
+                <xs:annotation>
+                    <xs:documentation>Личинка, гусеница 2-го возраста</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="36300023">
+                <xs:annotation>
+                    <xs:documentation>Личинка, гусеница 3-го возраста</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="36300024">
+                <xs:annotation>
+                    <xs:documentation>Личинка, гусеница 4-го возраста</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="36300025">
+                <xs:annotation>
+                    <xs:documentation>Личинка, гусеница 5-го возраста</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="36300026">
+                <xs:annotation>
+                    <xs:documentation>Личинка, гусеница 6-го возраста</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="36300027">
+                <xs:annotation>
+                    <xs:documentation>Личинка, гусеница 7-го возраста</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="36300028">
+                <xs:annotation>
+                    <xs:documentation>Личинка, гусеница 8-го возраста</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="36300029">
+                <xs:annotation>
+                    <xs:documentation>Кокон</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="36300030">
+                <xs:annotation>
+                    <xs:documentation>Эонимфа</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="36300040">
+                <xs:annotation>
+                    <xs:documentation>Пронимфа</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="36300050">
+                <xs:annotation>
+                    <xs:documentation>Куколка</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="36300060">
+                <xs:annotation>
+                    <xs:documentation>Имаго</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="36300081">
+                <xs:annotation>
+                    <xs:documentation>Изменение цвета древесины</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="36300082">
+                <xs:annotation>
+                    <xs:documentation>Нарушение твердости древесины</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="36300083">
+                <xs:annotation>
+                    <xs:documentation>Расслоение на волокна</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="36300084">
+                <xs:annotation>
+                    <xs:documentation>Наличие углублений и пустот</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="36300085">
+                <xs:annotation>
+                    <xs:documentation>Наличие дупел</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="36300831">
+                <xs:annotation>
+                    <xs:documentation>Расслоение на кусочки призматической формы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

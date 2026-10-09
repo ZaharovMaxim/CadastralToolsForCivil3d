@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/purposeForests/types/2.1" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/purposeForests/types/2.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="PurposeForestsKindEType">
+        <xs:annotation>
+            <xs:documentation>Целевое назначение лесов и категории защитности</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="32310000">
+                <xs:annotation>
+                    <xs:documentation>Защитные леса - </xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32311001">
+                <xs:annotation>
+                    <xs:documentation>Защитные леса - Леса, расположенные на особо охраняемых природных территориях</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32312002">
+                <xs:annotation>
+                    <xs:documentation>Защитные леса - Леса, расположенные в водоохранных зонах</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32313000">
+                <xs:annotation>
+                    <xs:documentation>Защитные леса - Леса, выполняющие функции защиты природных и иных объектов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32313015">
+                <xs:annotation>
+                    <xs:documentation>Защитные леса - Леса, расположенные в первом и втором поясах зон санитарной охраны источников питьевого и хозяйственно-бытового водоснабжения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32313016">
+                <xs:annotation>
+                    <xs:documentation>Защитные леса - Леса, расположенные в защитных полосах лесов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32313017">
+                <xs:annotation>
+                    <xs:documentation>Защитные леса - Леса, расположенные в зеленых зонах</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32313018">
+                <xs:annotation>
+                    <xs:documentation>Защитные леса - Леса, расположенные в лесопарковых зонах</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32313019">
+                <xs:annotation>
+                    <xs:documentation>Защитные леса - Горно-санитарные леса</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32313020">
+                <xs:annotation>
+                    <xs:documentation>Защитные леса - Пустынные, полупустынные леса</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32314000">
+                <xs:annotation>
+                    <xs:documentation>Защитные леса - Ценные леса</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32314030">
+                <xs:annotation>
+                    <xs:documentation>Защитные леса - Государственные защитные лесные полосы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32314031">
+                <xs:annotation>
+                    <xs:documentation>Защитные леса - Противоэрозионные леса</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32314033">
+                <xs:annotation>
+                    <xs:documentation>Защитные леса - Горные леса</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32314034">
+                <xs:annotation>
+                    <xs:documentation>Защитные леса - Лесотундровые леса</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32314035">
+                <xs:annotation>
+                    <xs:documentation>Защитные леса - Лесостепные леса</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32314037">
+                <xs:annotation>
+                    <xs:documentation>Защитные леса - Леса, имеющие научное или историко-культурное значение</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32314038">
+                <xs:annotation>
+                    <xs:documentation>Защитные леса - Леса, расположенные в орехово-промысловых зонах</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32314039">
+                <xs:annotation>
+                    <xs:documentation>Защитные леса - Лесные плодовые насаждения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32314040">
+                <xs:annotation>
+                    <xs:documentation>Защитные леса - Ленточные боры</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32314041">
+                <xs:annotation>
+                    <xs:documentation>Защитные леса - Запретные полосы лесов, расположенные вдоль водных объектов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32314042">
+                <xs:annotation>
+                    <xs:documentation>Защитные леса - Нерестоохранные полосы лесов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32315000">
+                <xs:annotation>
+                    <xs:documentation>Защитные леса - Городские леса</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32320200">
+                <xs:annotation>
+                    <xs:documentation>Эксплуатационные леса - </xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32330300">
+                <xs:annotation>
+                    <xs:documentation>Резервные леса - </xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

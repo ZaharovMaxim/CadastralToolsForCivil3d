@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/decompositionDegree/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/decompositionDegree/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:simpleType name="DecompositionDegreeKindEType">
+		<xs:annotation>
+			<xs:documentation>Степень разложения валежа и пня</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="razlozheniyaNet">
+				<xs:annotation>
+					<xs:documentation>Разложения нет</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="silnaya">
+				<xs:annotation>
+					<xs:documentation>Сильная</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="slabaya">
+				<xs:annotation>
+					<xs:documentation>Слабая</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="srednyaya">
+				<xs:annotation>
+					<xs:documentation>Средняя</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

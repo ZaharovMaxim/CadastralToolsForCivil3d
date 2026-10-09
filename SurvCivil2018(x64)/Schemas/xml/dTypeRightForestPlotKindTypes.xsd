@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/typeRightForestPlot/types/2.0"
+           elementFormDefault="qualified"
+           targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/typeRightForestPlot/types/2.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="TypeRightForestPlotKindEType">
+        <xs:annotation>
+            <xs:documentation>Вид права на лесной участок</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="1001000000">
+                <xs:annotation>
+                    <xs:documentation>Собственность</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="1002000000">
+                <xs:annotation>
+                    <xs:documentation>Общая долевая собственность</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="1003000000">
+                <xs:annotation>
+                    <xs:documentation>Общая совместная собственность</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="1004000000">
+                <xs:annotation>
+                    <xs:documentation>Хозяйственное ведение</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="1005000000">
+                <xs:annotation>
+                    <xs:documentation>Оперативное управление</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="1005000000.2">
+                <xs:annotation>
+                    <xs:documentation>Оперативное управление</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="1006000000">
+                <xs:annotation>
+                    <xs:documentation>Пожизненное наследуемое владение</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="1007000000">
+                <xs:annotation>
+                    <xs:documentation>Постоянное (бессрочное) пользование</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="1008000000">
+                <xs:annotation>
+                    <xs:documentation>Сервитут</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="1009000000">
+                <xs:annotation>
+                    <xs:documentation>Право владения, пользования и распоряжения имуществом Банка России
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="22001001000">
+                <xs:annotation>
+                    <xs:documentation>Публичный сервитут</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="22006000000">
+                <xs:annotation>
+                    <xs:documentation>Аренда</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="22009000000">
+                <xs:annotation>
+                    <xs:documentation>Безвозмездное пользование</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

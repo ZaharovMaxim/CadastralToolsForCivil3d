@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/violationMonitoring/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/violationMonitoring/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:simpleType name="ViolationMonitoringKindEType">
+		<xs:annotation>
+			<xs:documentation>Признаки нарушений при проведении дистанционного мониторинга</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="fellingBeforeOrAfterTheValidit">
+				<xs:annotation>
+					<xs:documentation>рубка до или после сроков действия лесной декларации</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="fellingInExcessOfTheOperationa">
+				<xs:annotation>
+					<xs:documentation>рубка с превышением эксплуатационной площади лесосек</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="fellingOfForestPlantationsLk">
+				<xs:annotation>
+					<xs:documentation>рубка лесных насаждений без правоустанавливающих документов</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="fellingOfForestPlantationsOut">
+				<xs:annotation>
+					<xs:documentation>рубка лесных насаждений без лесной декларации</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="fellingOutsideTheAllotmentOfLo">
+				<xs:annotation>
+					<xs:documentation>рубка за пределами отвода лесосек</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="illegalLoggingOfForestPlantati">
+				<xs:annotation>
+					<xs:documentation>незаконная рубка лесных насаждений в различных категориях защитных лесов и ОЗУ, где рубки запрещены или ограничены</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="useOfForestsWithoutAForestDecl">
+				<xs:annotation>
+					<xs:documentation>использование лесов без лесной декларации</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="useOfForestsWithoutTitleDocume">
+				<xs:annotation>
+					<xs:documentation>использование лесов без правоустанавливающих документов</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="violationsOfTheOrganizationalA">
+				<xs:annotation>
+					<xs:documentation>нарушения организационно-технических элементов рубок (ОТЭ)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="violationsWhenSubmittingDataTo">
+				<xs:annotation>
+					<xs:documentation>нарушения при подаче данных в ЛесЕГАИС</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

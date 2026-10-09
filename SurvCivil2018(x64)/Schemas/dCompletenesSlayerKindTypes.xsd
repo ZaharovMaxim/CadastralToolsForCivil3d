@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/completenesSlayer/types/2.1" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/completenesSlayer/types/2.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="CompletenesSlayerKindEType">
+        <xs:annotation>
+            <xs:documentation>Полнота лесного насаждения (в долях единицы)</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="43000001">
+                <xs:annotation>
+                    <xs:documentation>0.1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="43000002">
+                <xs:annotation>
+                    <xs:documentation>0.2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="43000003">
+                <xs:annotation>
+                    <xs:documentation>0.3</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="43000004">
+                <xs:annotation>
+                    <xs:documentation>0.4</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="43000005">
+                <xs:annotation>
+                    <xs:documentation>0.5</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="43000006">
+                <xs:annotation>
+                    <xs:documentation>0.6</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="43000007">
+                <xs:annotation>
+                    <xs:documentation>0.7</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="43000008">
+                <xs:annotation>
+                    <xs:documentation>0.8</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="43000009">
+                <xs:annotation>
+                    <xs:documentation>0.9</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="43000010">
+                <xs:annotation>
+                    <xs:documentation>1.0</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="43000011">
+                <xs:annotation>
+                    <xs:documentation>1.1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="43000012">
+                <xs:annotation>
+                    <xs:documentation>1.2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="43000013">
+                <xs:annotation>
+                    <xs:documentation>1.3</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="43000014">
+                <xs:annotation>
+                    <xs:documentation>1.4</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="43000015">
+                <xs:annotation>
+                    <xs:documentation>1.5</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

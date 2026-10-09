@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/specialObjectsClearcut/types/2.1" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/specialObjectsClearcut/types/2.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="SpecialObjectsClearcutKindEType">
+        <xs:annotation>
+            <xs:documentation>Специальные объекты лесосеки (объекты биоразнообразия и неэксплуатационные площади)</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="4760001">
+                <xs:annotation>
+                    <xs:documentation>Объект биоразнообразия</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4760002">
+                <xs:annotation>
+                    <xs:documentation>Неэксплуатационная площадь</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

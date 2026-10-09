@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/varietyHeightsDiamet/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/varietyHeightsDiamet/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:simpleType name="VarietyHeightsDiametKindEType">
+		<xs:annotation>
+			<xs:documentation>Разнообразие высот и диаметров</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="drevostoyaNet">
+				<xs:annotation>
+					<xs:documentation>Древостоя нет</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="nizkoye">
+				<xs:annotation>
+					<xs:documentation>Низкое</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="sredneye">
+				<xs:annotation>
+					<xs:documentation>Среднее</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="vysokoye">
+				<xs:annotation>
+					<xs:documentation>Высокое</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

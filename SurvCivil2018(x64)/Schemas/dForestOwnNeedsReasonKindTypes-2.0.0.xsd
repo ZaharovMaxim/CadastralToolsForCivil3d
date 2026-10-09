@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+    xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/forestOwnNeedsReason/types/2.0.0" 
+    targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/forestOwnNeedsReason/types/2.0.0">
+    
+    <xs:simpleType name="ForestOwnNeedsReasonKindEType">
+        <xs:annotation>
+            <xs:documentation>Цели использования древесины для собственных нужд</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="49200001">
+                <xs:annotation>
+                    <xs:documentation>Для целей отопления</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="49200002">
+                <xs:annotation>
+                    <xs:documentation>Для целей ремонта и строительства хозяйственных построек</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="49200003">
+                <xs:annotation>
+                    <xs:documentation>Для возведения строений и иных сооружений</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="49200004">
+                <xs:annotation>
+                    <xs:documentation>Для заготовки хвойных растений в новогодние праздники</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

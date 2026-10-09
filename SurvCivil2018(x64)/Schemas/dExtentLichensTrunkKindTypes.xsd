@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/extentLichensTrunk/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/extentLichensTrunk/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:simpleType name="ExtentLichensTrunkKindEType">
+		<xs:annotation>
+			<xs:documentation>Протяженность эпифитных лишайников по высоте ствола</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="noLichens">
+				<xs:annotation>
+					<xs:documentation>Лишайников нет</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="onePointOneTenthOrMore">
+				<xs:annotation>
+					<xs:documentation>1,1 и более</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="toZeroPointFive">
+				<xs:annotation>
+					<xs:documentation>до 0,5</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="zeroPointFiftyOneToOne">
+				<xs:annotation>
+					<xs:documentation>0,51 - 1,0</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

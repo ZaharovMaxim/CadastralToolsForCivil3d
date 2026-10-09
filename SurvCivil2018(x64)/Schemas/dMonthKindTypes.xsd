@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/month/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/month/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="MonthKindEType">
+        <xs:annotation>
+            <xs:documentation>Месяц отчетного периода</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="aprel">
+                <xs:annotation>
+                    <xs:documentation>Апрель</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="avgust">
+                <xs:annotation>
+                    <xs:documentation>Август</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="dekabr">
+                <xs:annotation>
+                    <xs:documentation>Декабрь</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="fevral">
+                <xs:annotation>
+                    <xs:documentation>Февраль</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="iyul">
+                <xs:annotation>
+                    <xs:documentation>Июль</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="iyun">
+                <xs:annotation>
+                    <xs:documentation>Июнь</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="mart">
+                <xs:annotation>
+                    <xs:documentation>Март</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="may">
+                <xs:annotation>
+                    <xs:documentation>Май</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="noyabr">
+                <xs:annotation>
+                    <xs:documentation>Ноябрь</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="oktyabr">
+                <xs:annotation>
+                    <xs:documentation>Октябрь</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sentyabr">
+                <xs:annotation>
+                    <xs:documentation>Сентябрь</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="yanvar">
+                <xs:annotation>
+                    <xs:documentation>Январь</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

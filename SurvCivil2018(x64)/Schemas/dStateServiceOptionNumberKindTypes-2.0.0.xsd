@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/stateServiceOptionNumber/types/2.0.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/stateServiceOptionNumber/types/2.0.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="StateServiceOptionNumberKindEType">
+        <xs:annotation>
+            <xs:documentation>Номера вариантов предоставления Государственных услуг ПУЛ</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="stateServiceOptionNumber01">
+                <xs:annotation>
+                    <xs:documentation>Вариант №1 (ЮЛ, Согласование документации, Без представителя)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="stateServiceOptionNumber02">
+                <xs:annotation>
+                    <xs:documentation>Вариант №2 (ЮЛ, Согласование документации, С представителем)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="stateServiceOptionNumber03">
+                <xs:annotation>
+                    <xs:documentation>Вариант №3 (ИП, Согласование документации, Без представителя)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="stateServiceOptionNumber04">
+                <xs:annotation>
+                    <xs:documentation>Вариант №4 (ИП, Согласование документации, С представителем)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="stateServiceOptionNumber05">
+                <xs:annotation>
+                    <xs:documentation>Вариант №5 (ФЛ, Согласование документации, Без представителя)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="stateServiceOptionNumber06">
+                <xs:annotation>
+                    <xs:documentation>Вариант №6 (ФЛ, Согласование документации, С представителем)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="stateServiceOptionNumber07">
+                <xs:annotation>
+                    <xs:documentation>Вариант №7 (ЮЛ, Исправление документации, Без представителя)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="stateServiceOptionNumber08">
+                <xs:annotation>
+                    <xs:documentation>Вариант №8 (ЮЛ, Исправление документации, С представителем)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="stateServiceOptionNumber09">
+                <xs:annotation>
+                    <xs:documentation>Вариант №9 (ИП, Исправление документации, Без представителя)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="stateServiceOptionNumber10">
+                <xs:annotation>
+                    <xs:documentation>Вариант №10 (ИП, Исправление документации, С представителем)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="stateServiceOptionNumber11">
+                <xs:annotation>
+                    <xs:documentation>Вариант №11 (ФЛ, Исправление документации, Без представителя)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="stateServiceOptionNumber12">
+                <xs:annotation>
+                    <xs:documentation>Вариант №12 (ФЛ, Исправление документации, С представителем)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="stateServiceOptionNumber13">
+                <xs:annotation>
+                    <xs:documentation>ЮЛ, Отправка ходатайства</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="stateServiceOptionNumber14">
+                <xs:annotation>
+                    <xs:documentation>ИП, Отправка ходатайства</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="stateServiceOptionNumber15">
+                <xs:annotation>
+                    <xs:documentation>ФЛ, Отправка ходатайства</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="stateServiceOptionNumber16">
+                <xs:annotation>
+                    <xs:documentation>ЮЛ, Исправление полученной документации</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="stateServiceOptionNumber17">
+                <xs:annotation>
+                    <xs:documentation>ИП, Исправление полученной документации</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="stateServiceOptionNumber18">
+                <xs:annotation>
+                    <xs:documentation>ФЛ, Исправление полученной документации</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

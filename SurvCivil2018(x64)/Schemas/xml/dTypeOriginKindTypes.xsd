@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/typeOrigin/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/typeOrigin/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="TypeOriginKindEType">
+        <xs:annotation>
+            <xs:documentation>Вид происхождения подроста (молодняка)</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="estestvennoeVegetativKorneotpr">
+                <xs:annotation>
+                    <xs:documentation>Естественное вегетативное корнеотпрысковое</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="estestvennoeVegetativPoroslev">
+                <xs:annotation>
+                    <xs:documentation>Естественное вегетативное порослевое</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="iskusstvennoe">
+                <xs:annotation>
+                    <xs:documentation>Искусственное (лесные культуры - посадка)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="iskusstvennoeSemennoe">
+                <xs:annotation>
+                    <xs:documentation>Искусственное семенное (лесные культуры - посев)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="vegetativeandCalcareousReprod">
+                <xs:annotation>
+                    <xs:documentation>Вегетативное отводковое</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="yestestvennoyeSemennoye">
+                <xs:annotation>
+                    <xs:documentation>Естественное семенное</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="yestestvennoyeSmeshannoye">
+                <xs:annotation>
+                    <xs:documentation>Естественное смешанное</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

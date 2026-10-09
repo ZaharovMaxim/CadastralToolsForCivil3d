@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/protectionMeasures/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/protectionMeasures/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="ProtectionMeasuresKindEType">
+        <xs:annotation>
+            <xs:documentation>Мероприятия по защите лесов</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="45410100">
+                <xs:annotation>
+                    <xs:documentation>Профилактические мероприятия</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="45410130">
+                <xs:annotation>
+                    <xs:documentation>Профилактические биотехнические мероприятия</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="45410131">
+                <xs:annotation>
+                    <xs:documentation>Развешивание искусственных гнездовий</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="45410132">
+                <xs:annotation>
+                    <xs:documentation>Улучшение условий обитания и размножения насекомоядных птиц и других насекомоядных животных</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="45410137">
+                <xs:annotation>
+                    <xs:documentation>Охрана местообитаний, выпуск, расселение и интродукция насекомых-энтомофагов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="45410138">
+                <xs:annotation>
+                    <xs:documentation>Посев травянистых нектароносных растений</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="45410139">
+                <xs:annotation>
+                    <xs:documentation>Посадка ремиз</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="45410140">
+                <xs:annotation>
+                    <xs:documentation>Уходы за ремизами</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="45410141">
+                <xs:annotation>
+                    <xs:documentation>Использование феромонов для массового отлова вредителей леса</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="45410143">
+                <xs:annotation>
+                    <xs:documentation>Заделка дупел и морозобойных трещин</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="45410144">
+                <xs:annotation>
+                    <xs:documentation>Устройство ловче-заградительных канав</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="45410150">
+                <xs:annotation>
+                    <xs:documentation>Профилактические лесохозяйственные мероприятия</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="45410151">
+                <xs:annotation>
+                    <xs:documentation>Обработка насаждений репеллентами</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="45410152">
+                <xs:annotation>
+                    <xs:documentation>Протравка почвы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="45410154">
+                <xs:annotation>
+                    <xs:documentation>Использование удобрений и минеральных добавок для повышения устойчивости лесных насаждений в неблагоприятные периоды</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="45410155">
+                <xs:annotation>
+                    <xs:documentation>Применение пестицидов и биологических средств защиты леса для предотвращения появления очагов вредных организмов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="45410156">
+                <xs:annotation>
+                    <xs:documentation>Внутристволовое инъектирование деревьев</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="45410160">
+                <xs:annotation>
+                    <xs:documentation>Лечение деревьев</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="45410476">
+                <xs:annotation>
+                    <xs:documentation>Сбор и уничтожение плодовых тел грибов, вызывающих заболевания у древесных пород</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="45440350">
+                <xs:annotation>
+                    <xs:documentation>Лесопатологическое обследование лесов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="45440370">
+                <xs:annotation>
+                    <xs:documentation>Проведение ЛПО инструментальным способом</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="45440371">
+                <xs:annotation>
+                    <xs:documentation>Проведение ЛПО визуальным способом наземным методом</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="45440372">
+                <xs:annotation>
+                    <xs:documentation>Проведение ЛПО визуальным способом дистанционным методом</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="45450511">
+                <xs:annotation>
+                    <xs:documentation>Сплошная санитарная рубка</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="45450512">
+                <xs:annotation>
+                    <xs:documentation>Выборочная санитарная рубка</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="45450534">
+                <xs:annotation>
+                    <xs:documentation>Уборка неликвидной древисины</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="45460600">
+                <xs:annotation>
+                    <xs:documentation>Агитационные мероприятия</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="45460610">
+                <xs:annotation>
+                    <xs:documentation>Беседы с населением</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="45460611">
+                <xs:annotation>
+                    <xs:documentation>Проведение открытых уроков в образовательных учреждениях</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="45460620">
+                <xs:annotation>
+                    <xs:documentation>Развешивание аншлагов и плакатов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="45460621">
+                <xs:annotation>
+                    <xs:documentation>Размещение информационных материалов в СМИ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

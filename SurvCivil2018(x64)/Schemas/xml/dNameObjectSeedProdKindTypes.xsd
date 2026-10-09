@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/nameObjectSeedProd/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/nameObjectSeedProd/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="NameObjectSeedProdKindEType">
+        <xs:annotation>
+            <xs:documentation>Наименование объекта лесного семеноводства, созданного в границе лесотаксационного выдела</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="30600001">
+                <xs:annotation>
+                    <xs:documentation>архивы клонов плюсовых деревьев</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30600002">
+                <xs:annotation>
+                    <xs:documentation>генетические резерваты</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30600003">
+                <xs:annotation>
+                    <xs:documentation>географические культуры</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30600004">
+                <xs:annotation>
+                    <xs:documentation>испытательные культуры</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30600005">
+                <xs:annotation>
+                    <xs:documentation>лесосеменные плантации</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30600006">
+                <xs:annotation>
+                    <xs:documentation>маточные плантации</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30600007">
+                <xs:annotation>
+                    <xs:documentation>плюсовые деревья</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30600008">
+                <xs:annotation>
+                    <xs:documentation>плюсовые насаждения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30600009">
+                <xs:annotation>
+                    <xs:documentation>популяционно-экологические культуры</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30600010">
+                <xs:annotation>
+                    <xs:documentation>постоянные лесосеменные участки</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

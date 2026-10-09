@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/documentKind/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/documentKind/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="DocumentKindKindEType">
+        <xs:annotation>
+            <xs:documentation>Виды документов</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="act">
+                <xs:annotation>
+                    <xs:documentation>Акт</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="decree">
+                <xs:annotation>
+                    <xs:documentation>Указ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="disposition">
+                <xs:annotation>
+                    <xs:documentation>Распоряжение</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="order">
+                <xs:annotation>
+                    <xs:documentation>Приказ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="other">
+                <xs:annotation>
+                    <xs:documentation>Иное</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="resolution">
+                <xs:annotation>
+                    <xs:documentation>Постановление</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

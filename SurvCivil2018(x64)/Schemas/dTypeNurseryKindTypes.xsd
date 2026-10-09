@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/typeNursery/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/typeNursery/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="TypeNurseryKindEType">
+        <xs:annotation>
+            <xs:documentation>Вид питомника</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="50200001">
+                <xs:annotation>
+                    <xs:documentation>постонянный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="50200002">
+                <xs:annotation>
+                    <xs:documentation>временный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

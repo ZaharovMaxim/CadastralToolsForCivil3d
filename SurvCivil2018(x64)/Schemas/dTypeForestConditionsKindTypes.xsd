@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/typeForestConditions/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/typeForestConditions/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="TypeForestConditionsKindEType">
+        <xs:annotation>
+            <xs:documentation>Тип лесорастительных условий</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="333">
+                <xs:annotation>
+                    <xs:documentation>333</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="334">
+                <xs:annotation>
+                    <xs:documentation>334</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="335">
+                <xs:annotation>
+                    <xs:documentation>335</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="336">
+                <xs:annotation>
+                    <xs:documentation>336</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="337">
+                <xs:annotation>
+                    <xs:documentation>337</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="341">
+                <xs:annotation>
+                    <xs:documentation>341</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="342">
+                <xs:annotation>
+                    <xs:documentation>342</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="351">
+                <xs:annotation>
+                    <xs:documentation>351</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="361">
+                <xs:annotation>
+                    <xs:documentation>361</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="362">
+                <xs:annotation>
+                    <xs:documentation>362</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="363">
+                <xs:annotation>
+                    <xs:documentation>363</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="371">
+                <xs:annotation>
+                    <xs:documentation>371</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="372">
+                <xs:annotation>
+                    <xs:documentation>372</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="373">
+                <xs:annotation>
+                    <xs:documentation>373</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="374">
+                <xs:annotation>
+                    <xs:documentation>374</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="375">
+                <xs:annotation>
+                    <xs:documentation>375</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="376">
+                <xs:annotation>
+                    <xs:documentation>376</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="a0">
+                <xs:annotation>
+                    <xs:documentation>A0</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="a1">
+                <xs:annotation>
+                    <xs:documentation>A1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="a2">
+                <xs:annotation>
+                    <xs:documentation>A2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="a3">
+                <xs:annotation>
+                    <xs:documentation>A3</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="a4">
+                <xs:annotation>
+                    <xs:documentation>A4</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="a5">
+                <xs:annotation>
+                    <xs:documentation>A5</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="b0">
+                <xs:annotation>
+                    <xs:documentation>B0</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="b1">
+                <xs:annotation>
+                    <xs:documentation>B1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="b2">
+                <xs:annotation>
+                    <xs:documentation>B2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="b3">
+                <xs:annotation>
+                    <xs:documentation>B3</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="b4">
+                <xs:annotation>
+                    <xs:documentation>B4</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="b5">
+                <xs:annotation>
+                    <xs:documentation>B5</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="c0">
+                <xs:annotation>
+                    <xs:documentation>C0</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="c1">
+                <xs:annotation>
+                    <xs:documentation>C1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="c2">
+                <xs:annotation>
+                    <xs:documentation>C2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="c3">
+                <xs:annotation>
+                    <xs:documentation>C3</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="c4">
+                <xs:annotation>
+                    <xs:documentation>C4</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="c5">
+                <xs:annotation>
+                    <xs:documentation>C5</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="d0">
+                <xs:annotation>
+                    <xs:documentation>D0</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="d1">
+                <xs:annotation>
+                    <xs:documentation>D1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="d2">
+                <xs:annotation>
+                    <xs:documentation>D2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="d3">
+                <xs:annotation>
+                    <xs:documentation>D3</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="d4">
+                <xs:annotation>
+                    <xs:documentation>D4</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="d5">
+                <xs:annotation>
+                    <xs:documentation>D5</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

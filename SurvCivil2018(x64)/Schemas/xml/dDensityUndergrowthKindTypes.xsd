@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/densityUndergrowth/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/densityUndergrowth/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:simpleType name="DensityUndergrowthKindEType">
+		<xs:annotation>
+			<xs:documentation>Оценка густоты подлеска</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="dense">
+				<xs:annotation>
+					<xs:documentation>Густой (&gt;5 тыс.кустов/ га)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="mediumDensity">
+				<xs:annotation>
+					<xs:documentation>Средней густоты (2-5 тыс.кустов/га)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="rare">
+				<xs:annotation>
+					<xs:documentation>Редкий (до 2 тыс. кустов/га)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

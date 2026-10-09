@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/brokenTrunk/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/brokenTrunk/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:simpleType name="BrokenTrunkKindEType">
+		<xs:annotation>
+			<xs:documentation>Слом ствола</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="derevoNePovrezhdeno">
+				<xs:annotation>
+					<xs:documentation>Дерево не повреждено</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="izognutostDereva">
+				<xs:annotation>
+					<xs:documentation>Изогнутость дерева</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="kronovyySlom">
+				<xs:annotation>
+					<xs:documentation>Кроновый слом</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="povtornayaZapasnayaVerkhushka">
+				<xs:annotation>
+					<xs:documentation>Повторная запасная верхушка</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="stvolovyySlomOstolop">
+				<xs:annotation>
+					<xs:documentation>Стволовый слом (остолоп)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="verkhushechnyySlom">
+				<xs:annotation>
+					<xs:documentation>Верхушечный слом</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="zapasnayaVerkhushka">
+				<xs:annotation>
+					<xs:documentation>Запасная верхушка</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

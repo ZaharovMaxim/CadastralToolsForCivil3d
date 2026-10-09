@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/locationForestArea/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/locationForestArea/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="LocationForestAreaKindEType">
+        <xs:annotation>
+            <xs:documentation>Расположении лесного участка в границе зеленой зоны, лесопарковой зоны</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="lesoparkovayaZona">
+                <xs:annotation>
+                    <xs:documentation>лесопарковая зона</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="zelenayaZona">
+                <xs:annotation>
+                    <xs:documentation>зеленая зона</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

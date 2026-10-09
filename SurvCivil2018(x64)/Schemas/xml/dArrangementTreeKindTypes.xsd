@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/arrangementTree/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/arrangementTree/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:simpleType name="ArrangementTreeKindEType">
+		<xs:annotation>
+			<xs:documentation>Размещение древесных пород</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="drevostoyaNet">
+				<xs:annotation>
+					<xs:documentation>Древостоя нет</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="gruppovoyeAgregirovannoye">
+				<xs:annotation>
+					<xs:documentation>Групповое (агрегированное)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="individualnoye">
+				<xs:annotation>
+					<xs:documentation>Индивидуальное</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="odnaPoroda">
+				<xs:annotation>
+					<xs:documentation>Одна порода</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

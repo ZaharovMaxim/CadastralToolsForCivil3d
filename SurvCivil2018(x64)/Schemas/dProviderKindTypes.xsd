@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/provider/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/provider/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="ProviderKindEType">
+        <xs:annotation>
+            <xs:documentation>Информационная система поставщика данных</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="lesFond">
+                <xs:annotation>
+                    <xs:documentation>ЛесФондGEO</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="avers">
+                <xs:annotation>
+                    <xs:documentation>АВЕРС: Электронные документы лесопользователя, редакция 1.1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

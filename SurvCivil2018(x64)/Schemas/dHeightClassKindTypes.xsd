@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/heightClass/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/heightClass/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:simpleType name="HeightClassKindEType">
+		<xs:annotation>
+			<xs:documentation>Класс высоты подроста</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="oneAndHalfHeightAndSixDiameter">
+				<xs:annotation>
+					<xs:documentation>3 (&gt; 1.5 м (по высоте) и &lt; 6 см (по диаметру))</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="zeroPointFiftyOneToOneAndHalf">
+				<xs:annotation>
+					<xs:documentation>2 (0.51 - 1.5 м)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="zeroPointTwoZeroPointFiveMeter">
+				<xs:annotation>
+					<xs:documentation>1 (0.2 - 0.5 м)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

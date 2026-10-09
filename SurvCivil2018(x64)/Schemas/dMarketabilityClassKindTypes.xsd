@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/marketabilityClass/types/2.1" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/marketabilityClass/types/2.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="MarketabilityClassKindEType">
+        <xs:annotation>
+            <xs:documentation>Класс товарности</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="41400001">
+                <xs:annotation>
+                    <xs:documentation>1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="41400002">
+                <xs:annotation>
+                    <xs:documentation>2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="41400003">
+                <xs:annotation>
+                    <xs:documentation>3</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="41400004">
+                <xs:annotation>
+                    <xs:documentation>4</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

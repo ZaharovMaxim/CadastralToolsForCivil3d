@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+           targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/popdContoursLocation/types/0.2.0"
+           xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/popdContoursLocation/types/0.2.0"
+           xmlns:st="http://rosleshoz.gov.ru/fgis-lk/common/simple/types/2.0"
+           xmlns:extform="http://rosleshoz.gov.ru/fgis-lk/common/enums/geodataExternalFormat/types/2.0"
+           xmlns:stor="http://rosleshoz.gov.ru/fgis-lk/common/enums/geodataStorage/types/2.0"
+           xmlns:gunmes="http://rosleshoz.gov.ru/fgis-lk/common/enums/unitMeasurement/types/2.1"
+           xmlns:medetpo="http://rosleshoz.gov.ru/fgis-lk/common/enums/methodDeterminPoint/types/2.0"
+           xmlns:spatprim="http://rosleshoz.gov.ru/fgis-lk/common/enums/spatialPrimitive/types/2.0"
+           xmlns:corsis="http://rosleshoz.gov.ru/fgis-lk/common/enums/coordinateSystem/types/2.1">
+
+    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/simple/types/2.0"
+               schemaLocation="simpleTypes.xsd"/>
+    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/geodataExternalFormat/types/2.0"
+               schemaLocation="dGeodataExternalFormatKindTypes.xsd"/>
+    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/geodataStorage/types/2.0"
+               schemaLocation="dGeodataStorageKindTypes.xsd"/>
+    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/unitMeasurement/types/2.1"
+               schemaLocation="dUnitMeasurementKindTypes.xsd"/>
+    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/methodDeterminPoint/types/2.0"
+               schemaLocation="dMethodDeterminPointKindTypes.xsd"/>
+    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/spatialPrimitive/types/2.0"
+               schemaLocation="dSpatialPrimitiveKindTypes.xsd"/>
+    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/coordinateSystem/types/2.1"
+               schemaLocation="dCoordinateSystemKindTypes.xsd"/>
+
+    <xs:element name="popdContoursLocation" type="tns:PopdContoursLocationType">
+        <xs:annotation>
+            <xs:documentation>Описание местоположения границ пространственного объекта записи ГЛР</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:complexType name="PopdContoursLocationType">
+        <xs:annotation>
+            <xs:documentation>Описание местоположения границ пространственного объекта записи ГЛР</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="contours" type="tns:ContoursType">
+                <xs:annotation>
+                    <xs:documentation>Контуры</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="locationText" type="st:String1000SType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Текстовое описание местоположения</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="specialMarks" type="st:String1000SType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Особые отметки</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="AreaType">
+        <xs:sequence>
+            <xs:element name="type" type="tns:TypeType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Единицы измерения площади</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="value" type="xs:decimal">
+                <xs:annotation>
+                    <xs:documentation>Значение в кв. метрах</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="inaccuracy" type="xs:decimal" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Погрешность</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="ContoursType">
+        <xs:sequence>
+            <xs:element name="contour" type="tns:ContourType" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Контур</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="TypeType">
+        <xs:sequence>
+            <xs:element name="code" type="gunmes:UnitMeasurementKindEType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Код справочника</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="value" type="st:String128SType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Значение справочника</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="ContourType">
+        <xs:sequence>
+            <xs:element name="numberPp" type="st:PositiveDecimalSType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Порядковый номер контура в случае если пространсвенный объект является
+                        многоконтурным
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="area" type="tns:AreaType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Площадь контура</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="entitySpatial">
+                <xs:annotation>
+                    <xs:documentation>Пространственные данные</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:complexContent>
+                        <xs:extension base="tns:EntitySpatialType"/>
+                    </xs:complexContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="definition" type="st:String20SType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Обозначение</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="ByDefinitionType">
+        <xs:sequence>
+            <xs:element name="nmbContour" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Номер контура</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="spatialElement" type="st:PositiveDecimalSType">
+                <xs:annotation>
+                    <xs:documentation>Порядковый номер элемента контура</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="point1" type="st:PositiveDecimalSType">
+                <xs:annotation>
+                    <xs:documentation>Порядковый номер точки1 в элементе</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="point2" type="st:PositiveDecimalSType">
+                <xs:annotation>
+                    <xs:documentation>Порядковый номер точки2 в элементе</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="definition" type="st:String20SType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Описание границы</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="BorderType">
+        <xs:sequence>
+            <xs:element name="byDefinition" type="tns:ByDefinitionType">
+                <xs:annotation>
+                    <xs:documentation>Граница по описанию</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="BordersType">
+        <xs:sequence>
+            <xs:element name="border" type="tns:BorderType">
+                <xs:annotation>
+                    <xs:documentation>Участок границы</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="EntitySpatialType">
+        <xs:sequence>
+            <xs:element name="externalFormat" type="extform:GeodataExternalFormatKindETyp" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Формат файла геоданных</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="storage" type="stor:GeodataStorageKindEType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Вариант хранения геоданных</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="csCode" type="tns:CsCodeType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Система координат по справочнику</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="spatialsElements" type="tns:SpatialsElementsType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Элементы контура</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="specialFiles" type="tns:SpecialFilesType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Файлы с геоданными</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="CsCodeType">
+        <xs:sequence>
+            <xs:element name="code" type="corsis:CoordinateSystemKindEType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Код справочника</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="value" type="st:String128SType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Значение справочника</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="SpatialsElementsType">
+        <xs:sequence>
+            <xs:element name="spatialsElement" type="tns:SpatialsElementType" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Элемент контура</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="SpatialsElementType">
+        <xs:sequence>
+            <xs:element name="typeUnit" type="tns:TypeUnitType">
+                <xs:annotation>
+                    <xs:documentation>Вид пространственного примитива</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ordinates" type="tns:OrdinatesType">
+                <xs:annotation>
+                    <xs:documentation>Список координат</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="TypeUnitType">
+        <xs:sequence>
+            <xs:element name="code" type="spatprim:SpatialPrimitiveKindEType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Код справочника</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="value" type="st:String128SType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Значение справочника</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="GeopointOpredType">
+        <xs:sequence>
+            <xs:element name="code" type="medetpo:MethodDeterminPointKindEType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Код справочника</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="value" type="st:String128SType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Значение справочника</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="OrdinateType">
+        <xs:sequence>
+            <xs:element name="x" type="xs:decimal">
+                <xs:annotation>
+                    <xs:documentation>Координата X</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="y" type="xs:decimal">
+                <xs:annotation>
+                    <xs:documentation>Координата Y</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="z" type="xs:decimal" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Координата Z</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="ordNmb" type="st:PositiveDecimalSType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Номер точки (порядок обхода)</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="geopointOpred" type="tns:GeopointOpredType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Метод определения точки</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="deltaGeopoint" type="xs:decimal" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Погрешность</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="spatialsElementId" type="st:PositiveDecimalSType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Номер элемента контура</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="OrdinatesType">
+        <xs:sequence>
+            <xs:element name="ordinate" type="tns:OrdinateType" maxOccurs="unbounded">
+                <xs:annotation>
+                    <xs:documentation>Координаты</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="SpecialFilesType">
+        <xs:sequence>
+            <xs:element name="specialFile" type="tns:SpecialFileType">
+                <xs:annotation>
+                    <xs:documentation>Файл с геоданными</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="SpecialFileType">
+        <xs:sequence>
+            <xs:element name="filePath" type="st:String1000SType">
+                <xs:annotation>
+                    <xs:documentation>Путь к файлу</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="geopointOpred" type="tns:GeopointOpredType">
+                <xs:annotation>
+                    <xs:documentation>Метод определения точки</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="deltaGeopoint" type="xs:decimal" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Погрешность</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

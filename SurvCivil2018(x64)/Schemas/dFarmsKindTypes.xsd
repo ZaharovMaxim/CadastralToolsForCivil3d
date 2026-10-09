@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/farms/types/2.1" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/farms/types/2.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="FarmsKindEType">
+        <xs:annotation>
+            <xs:documentation>Хозяйства</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="3510001">
+                <xs:annotation>
+                    <xs:documentation>Хвойное</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="3510002">
+                <xs:annotation>
+                    <xs:documentation>Твердолиственное</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="3510003">
+                <xs:annotation>
+                    <xs:documentation>Мягколиственное</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="3510004">
+                <xs:annotation>
+                    <xs:documentation>Кустарниковое</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="3510005">
+                <xs:annotation>
+                    <xs:documentation>Другое</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="3510006">
+                <xs:annotation>
+                    <xs:documentation>Древостой отсутствует</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

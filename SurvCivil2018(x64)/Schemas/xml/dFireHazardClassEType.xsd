@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/fireHazardClass/types/2.0"
+    elementFormDefault="qualified"
+    targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/fireHazardClass/types/2.0"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="FireHazardClassKindEType">
+        <xs:annotation>
+            <xs:documentation>Классы природной пожарной опасности</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="1StClass">
+                <xs:annotation>
+                    <xs:documentation>1-й класс</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="2NdGrade">
+                <xs:annotation>
+                    <xs:documentation>2-й класс</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="3RdGrade">
+                <xs:annotation>
+                    <xs:documentation>3-й класс</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4ThGrade">
+                <xs:annotation>
+                    <xs:documentation>4-й класс</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="5ThGrade">
+                <xs:annotation>
+                    <xs:documentation>5-й класс</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

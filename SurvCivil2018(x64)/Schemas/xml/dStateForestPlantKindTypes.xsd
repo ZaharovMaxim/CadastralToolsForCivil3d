@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/stateForestPlant/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/stateForestPlant/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="StateForestPlantKindEType">
+        <xs:annotation>
+            <xs:documentation>Состояние лесного насаждения</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="3740001">
+                <xs:annotation>
+                    <xs:documentation>удовлетворительное</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="3740002">
+                <xs:annotation>
+                    <xs:documentation>неудовлетворительное с усыхающими деревьями</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="3740003">
+                <xs:annotation>
+                    <xs:documentation>заселение вредителями</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="3740004">
+                <xs:annotation>
+                    <xs:documentation>устойчивое (СКС &lt;1,50)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="3740005">
+                <xs:annotation>
+                    <xs:documentation>с нарушенной устойчивостью (СКС ?1,51-?4,50)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="3740006">
+                <xs:annotation>
+                    <xs:documentation>c утраченной устойчивостью (СКС ?4,51)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

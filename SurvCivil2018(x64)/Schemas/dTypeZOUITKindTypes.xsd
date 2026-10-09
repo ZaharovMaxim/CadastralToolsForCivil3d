@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/typeZOUIT/types/2.0" elementFormDefault="qualified"
+    targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/typeZOUIT/types/2.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="TypeZOUITKindEType">
+        <xs:annotation>
+            <xs:documentation>Виды зон с особыми условиями использования территорий</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="aerodromeArea">
+                <xs:annotation>
+                    <xs:documentation>приаэродромная территория</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="bufferZoneOfASpeciallyProtect">
+                <xs:annotation>
+                    <xs:documentation>охранная зона особо охраняемой природной территории (государственного природного заповедника, национального парка, природного парка, памятника природы)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="coastalProtectionStrip">
+                <xs:annotation>
+                    <xs:documentation>прибрежная защитная полоса</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="culturalHeritageProtectionZone">
+                <xs:annotation>
+                    <xs:documentation>зоны охраны объектов культурного наследия</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="districtOfSanitaryMountain">
+                <xs:annotation>
+                    <xs:documentation>округ санитарной (горно-санитарной) охраны лечебно-оздоровительных местностей, курортов и природных лечебных ресурсов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="fisheryProtectedArea">
+                <xs:annotation>
+                    <xs:documentation>рыбохозяйственная заповедная зона</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="fisheryProtectedAreaLakeBaikal">
+                <xs:annotation>
+                    <xs:documentation>рыбохозяйственная заповедная зона озера Байкал</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="floodAndFloodZones">
+                <xs:annotation>
+                    <xs:documentation>зоны затопления и подтопления</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="protectedObjectZone">
+                <xs:annotation>
+                    <xs:documentation>зона охраняемого объекта</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="protectionZoneOfAHydropower">
+                <xs:annotation>
+                    <xs:documentation>охранная зона гидроэнергетического объекта</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="protectiveZoneOfACulturalHerit">
+                <xs:annotation>
+                    <xs:documentation>защитная зона объекта культурного наследия</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="railwaySecurityZone">
+                <xs:annotation>
+                    <xs:documentation>охранная зона железных дорог</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="restrictedAreaOfATransmitting">
+                <xs:annotation>
+                    <xs:documentation>зона ограничений передающего радиотехнического объекта, являющегося объектом капитального строительства</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="roadsideLanes">
+                <xs:annotation>
+                    <xs:documentation>придорожные полосы автомобильных дорог</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sanitaryProtectionZone">
+                <xs:annotation>
+                    <xs:documentation>санитарно-защитная зона</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="securityZoneOfCommunication">
+                <xs:annotation>
+                    <xs:documentation>охранная зона линий и сооружений связи</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="securityZoneOfElectricPower">
+                <xs:annotation>
+                    <xs:documentation>охранная зона объектов электроэнергетики (объектов электросетевого хозяйства и объектов по производству электрической энергии)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="securityZoneOfHeatingNetworks">
+                <xs:annotation>
+                    <xs:documentation>охранная зона тепловых сетей</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="securityZoneOfMetroInfrastruct">
+                <xs:annotation>
+                    <xs:documentation>охранная зона объектов инфраструктуры метрополитена</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="securityZoneOfPipelinesGasPipe">
+                <xs:annotation>
+                    <xs:documentation>охранная зона трубопроводов (газопроводов, нефтепроводов и нефтепродуктопроводов, аммиакопроводов)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="securityZoneOfPointsOfTheState">
+                <xs:annotation>
+                    <xs:documentation>охранная зона пунктов государственной геодезической сети, государственной нивелирной сети и государственной гравиметрической сети</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="securityZoneOfStationaryObserv">
+                <xs:annotation>
+                    <xs:documentation>охранная зона стационарных пунктов наблюдений за состоянием окружающей среды, ее загрязнением</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="securityZoneWithASpecialLegal">
+                <xs:annotation>
+                    <xs:documentation>зона безопасности с особым правовым режимом</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="surveillanceZone">
+                <xs:annotation>
+                    <xs:documentation>зона наблюдения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="waterProtectionZone">
+                <xs:annotation>
+                    <xs:documentation>водоохранная зона</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="zoneOfAGuardedMilitaryFacility">
+                <xs:annotation>
+                    <xs:documentation>зона охраняемого военного объекта, охранная зона военного объекта, запретные и специальные зоны, устанавливаемые в связи с размещением указанных объектов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="zoneOfMinimumDistancesToMain">
+                <xs:annotation>
+                    <xs:documentation>зона минимальных расстояний до магистральных или промышленных трубопроводов (газопроводов, нефтепроводов и нефтепродуктопроводов, аммиакопроводов)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="zonesOfSanitaryProtection">
+                <xs:annotation>
+                    <xs:documentation>зоны санитарной охраны источников питьевого и хозяйственно-бытового водоснабжения, а также устанавливаемые в случаях, предусмотренных Водным кодексом Российской Федерации, в отношении подземных водных объектов зоны специальной охраны</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

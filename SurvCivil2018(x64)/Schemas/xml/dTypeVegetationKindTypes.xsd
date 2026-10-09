@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/typeVegetation/types/2.0"
+           elementFormDefault="qualified"
+           targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/typeVegetation/types/2.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="TypeVegetationKindEType">
+        <xs:annotation>
+            <xs:documentation>Преобладающая болотная растительность</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="hvochevoe">
+                <xs:annotation>
+                    <xs:documentation>хвощевое</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="osokoSfagnovoye">
+                <xs:annotation>
+                    <xs:documentation>осоко-сфагновое</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="osokovoye">
+                <xs:annotation>
+                    <xs:documentation>осоковое</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="rogozovoe">
+                <xs:annotation>
+                    <xs:documentation>рогозовое</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sfagnovoye">
+                <xs:annotation>
+                    <xs:documentation>сфагновое</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="talnikovoe">
+                <xs:annotation>
+                    <xs:documentation>тальниковое</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="tavolgovoe">
+                <xs:annotation>
+                    <xs:documentation>таволговое</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="trostnikovoye">
+                <xs:annotation>
+                    <xs:documentation>тростниковое</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

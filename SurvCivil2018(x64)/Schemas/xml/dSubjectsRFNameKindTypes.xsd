@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+	targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/subjectsRFName/types/1.0"
+	xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/subjectsRFName/types/1.0">
+	
+	<xs:simpleType name="SubjectsRFNameKindEType">
+		<xs:annotation>
+			<xs:documentation>Субъекты РФ</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Республика Адыгея (Адыгея)">
+				<xs:annotation>
+					<xs:documentation>Республика Адыгея (Адыгея)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Республика Башкортостан">
+				<xs:annotation>
+					<xs:documentation>Республика Башкортостан</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Республика Бурятия">
+				<xs:annotation>
+					<xs:documentation>Республика Бурятия</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Республика Алтай">
+				<xs:annotation>
+					<xs:documentation>Республика Алтай</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Республика Дагестан">
+				<xs:annotation>
+					<xs:documentation>Республика Дагестан</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Республика Ингушетия">
+				<xs:annotation>
+					<xs:documentation>Республика Ингушетия</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Кабардино-Балкарская Республика">
+				<xs:annotation>
+					<xs:documentation>Кабардино-Балкарская Республика</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Республика Калмыкия">
+				<xs:annotation>
+					<xs:documentation>Республика Калмыкия</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Карачаево-Черкесская Республика">
+				<xs:annotation>
+					<xs:documentation>Карачаево-Черкесская Республика</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Республика Карелия">
+				<xs:annotation>
+					<xs:documentation>Республика Карелия</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Республика Коми">
+				<xs:annotation>
+					<xs:documentation>Республика Коми</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Республика Марий Эл">
+				<xs:annotation>
+					<xs:documentation>Республика Марий Эл</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Республика Мордовия">
+				<xs:annotation>
+					<xs:documentation>Республика Мордовия</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Республика Саха (Якутия)">
+				<xs:annotation>
+					<xs:documentation>Республика Саха (Якутия)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Республика Северная Осетия-Алания">
+				<xs:annotation>
+					<xs:documentation>Республика Северная Осетия-Алания</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Республика Татарстан (Татарстан)">
+				<xs:annotation>
+					<xs:documentation>Республика Татарстан (Татарстан)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Республика Тыва">
+				<xs:annotation>
+					<xs:documentation>Республика Тыва</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Удмуртская Республика">
+				<xs:annotation>
+					<xs:documentation>Удмуртская Республика</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Республика Хакасия">
+				<xs:annotation>
+					<xs:documentation>Республика Хакасия</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Чеченская Республика">
+				<xs:annotation>
+					<xs:documentation>Чеченская Республика</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Чувашская Республика-Чувашия">
+				<xs:annotation>
+					<xs:documentation>Чувашская Республика-Чувашия</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Алтайский край">
+				<xs:annotation>
+					<xs:documentation>Алтайский край</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Краснодарский край">
+				<xs:annotation>
+					<xs:documentation>Краснодарский край</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Красноярский край">
+				<xs:annotation>
+					<xs:documentation>Красноярский край</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Приморский край">
+				<xs:annotation>
+					<xs:documentation>Приморский край</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Ставропольский край">
+				<xs:annotation>
+					<xs:documentation>Ставропольский край</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Хабаровский край">
+				<xs:annotation>
+					<xs:documentation>Хабаровский край</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Амурская область">
+				<xs:annotation>
+					<xs:documentation>Амурская область</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Архангельская область">
+				<xs:annotation>
+					<xs:documentation>Архангельская область</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Астраханская область">
+				<xs:annotation>
+					<xs:documentation>Астраханская область</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Белгородская область">
+				<xs:annotation>
+					<xs:documentation>Белгородская область</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Брянская область">
+				<xs:annotation>
+					<xs:documentation>Брянская область</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Владимирская область">
+				<xs:annotation>
+					<xs:documentation>Владимирская область</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Волгоградская область">
+				<xs:annotation>
+					<xs:documentation>Волгоградская область</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Вологодская область">
+				<xs:annotation>
+					<xs:documentation>Вологодская область</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Воронежская область">
+				<xs:annotation>
+					<xs:documentation>Воронежская область</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Ивановская область">
+				<xs:annotation>
+					<xs:documentation>Ивановская область</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Иркутская область">
+				<xs:annotation>
+					<xs:documentation>Иркутская область</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Калининградская область">
+				<xs:annotation>
+					<xs:documentation>Калининградская область</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Калужская область">
+				<xs:annotation>
+					<xs:documentation>Калужская область</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Камчатский край">
+				<xs:annotation>
+					<xs:documentation>Камчатский край</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Кемеровская область">
+				<xs:annotation>
+					<xs:documentation>Кемеровская область</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Кировская область">
+				<xs:annotation>
+					<xs:documentation>Кировская область</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Костромская область">
+				<xs:annotation>
+					<xs:documentation>Костромская область</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Курганская область">
+				<xs:annotation>
+					<xs:documentation>Курганская область</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Курская область">
+				<xs:annotation>
+					<xs:documentation>Курская область</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Ленинградская область">
+				<xs:annotation>
+					<xs:documentation>Ленинградская область</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Липецкая область">
+				<xs:annotation>
+					<xs:documentation>Липецкая область</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Липецкая область">
+				<xs:annotation>
+					<xs:documentation>Магаданская область</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Московская область">
+				<xs:annotation>
+					<xs:documentation>Московская область</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Мурманская область">
+				<xs:annotation>
+					<xs:documentation>Мурманская область</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Нижегородская область">
+				<xs:annotation>
+					<xs:documentation>Нижегородская область</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Новгородская область">
+				<xs:annotation>
+					<xs:documentation>Новгородская область</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Новосибирская область">
+				<xs:annotation>
+					<xs:documentation>Новосибирская область</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Омская область">
+				<xs:annotation>
+					<xs:documentation>Омская область</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Оренбургская область">
+				<xs:annotation>
+					<xs:documentation>Оренбургская область</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Орловская область">
+				<xs:annotation>
+					<xs:documentation>Орловская область</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Пензенская область">
+				<xs:annotation>
+					<xs:documentation>Пензенская область</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Пермский край">
+				<xs:annotation>
+					<xs:documentation>Пермский край</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Псковская область">
+				<xs:annotation>
+					<xs:documentation>Псковская область</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Ростовская область">
+				<xs:annotation>
+					<xs:documentation>Ростовская область</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Рязанская область">
+				<xs:annotation>
+					<xs:documentation>Рязанская область</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Самарская область">
+				<xs:annotation>
+					<xs:documentation>Самарская область</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Саратовская область">
+				<xs:annotation>
+					<xs:documentation>Саратовская область</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Сахалинская область">
+				<xs:annotation>
+					<xs:documentation>Сахалинская область</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Свердловская область">
+				<xs:annotation>
+					<xs:documentation>Свердловская область</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Смоленская область">
+				<xs:annotation>
+					<xs:documentation>Смоленская область</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Тамбовская область">
+				<xs:annotation>
+					<xs:documentation>Тамбовская область</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Тверская область">
+				<xs:annotation>
+					<xs:documentation>Тверская область</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Томская область">
+				<xs:annotation>
+					<xs:documentation>Томская область</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Тульская область">
+				<xs:annotation>
+					<xs:documentation>Тульская область</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Тюменская область">
+				<xs:annotation>
+					<xs:documentation>Тюменская область</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Ульяновская область">
+				<xs:annotation>
+					<xs:documentation>Ульяновская область</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Челябинская область">
+				<xs:annotation>
+					<xs:documentation>Челябинская область</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Забайкальский край">
+				<xs:annotation>
+					<xs:documentation>Забайкальский край</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Ярославская область">
+				<xs:annotation>
+					<xs:documentation>Ярославская область</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Москва">
+				<xs:annotation>
+					<xs:documentation>Москва</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Санкт-Петербург">
+				<xs:annotation>
+					<xs:documentation>Санкт-Петербург</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Еврейская автономная область">
+				<xs:annotation>
+					<xs:documentation>Еврейская автономная область</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Ненецкий автономный округ">
+				<xs:annotation>
+					<xs:documentation>Ненецкий автономный округ</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Ханты-Мансийский автономный округ - Югра">
+				<xs:annotation>
+					<xs:documentation>Ханты-Мансийский автономный округ - Югра</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Чукотский автономный округ">
+				<xs:annotation>
+					<xs:documentation>Чукотский автономный округ</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Ямало-Ненецкий автономный округ">
+				<xs:annotation>
+					<xs:documentation>Ямало-Ненецкий автономный округ</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Республика Крым">
+				<xs:annotation>
+					<xs:documentation>Республика Крым</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Севастополь">
+				<xs:annotation>
+					<xs:documentation>Севастополь</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Неопределено">
+				<xs:annotation>
+					<xs:documentation>Неопределено</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="Значение отсутствует">
+				<xs:annotation>
+					<xs:documentation>Значение отсутствует</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

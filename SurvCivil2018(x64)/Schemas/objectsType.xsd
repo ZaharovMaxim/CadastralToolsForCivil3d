@@ -1,0 +1,361 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+           targetNamespace="http://rosleshoz.gov.ru/xmlns/objectsType/5.0"
+           xmlns:tns="http://rosleshoz.gov.ru/xmlns/objectsType/5.0"
+           xmlns:st="http://rosleshoz.gov.ru/fgis-lk/common/simple/types/2.0"
+           xmlns:comR="http://rosleshoz.gov.ru/fgis-lk/common/commonReport/types/2.1"
+           xmlns:fFac="http://rosleshoz.gov.ru/fgis-lk/common/enums/forestFacilities/types/2.0"
+           xmlns:fnon="http://rosleshoz.gov.ru/fgis-lk/common/enums/forestNonInfrastruct/types/2.0"
+           xmlns:purF="http://rosleshoz.gov.ru/fgis-lk/common/enums/purposeForests/types/2.1"
+           xmlns:fa="http://rosleshoz.gov.ru/fgis-lk/common/enums/farms/types/2.1"
+           xmlns:cLand="http://rosleshoz.gov.ru/fgis-lk/common/enums/categoryLand/types/2.0"
+           xmlns:bon="http://rosleshoz.gov.ru/fgis-lk/common/enums/bonitet/types/2.1"
+           xmlns:complet="http://rosleshoz.gov.ru/fgis-lk/common/enums/completenesSlayer/types/2.1"
+           xmlns:measures="http://rosleshoz.gov.ru/fgis-lk/common/enums/measuresOZVL/types/2.0">
+
+    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/simple/types/2.0" schemaLocation="simpleTypes.xsd"/>
+    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/commonReport/types/2.1"
+               schemaLocation="commonReport.xsd"/>
+    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/forestFacilities/types/2.0"
+               schemaLocation="dForestFacilitiesKindTypes.xsd"/>
+    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/forestNonInfrastruct/types/2.0"
+               schemaLocation="dForestNonInfrastructKindTypes.xsd"/>
+    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/measuresOZVL/types/2.0"
+               schemaLocation="dMeasuresOZVLKindTypes.xsd"/>
+    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/purposeForests/types/2.1"
+               schemaLocation="dPurposeForestsKindTypes.xsd"/>
+    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/farms/types/2.1"
+               schemaLocation="dFarmsKindTypes.xsd"/>
+    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/categoryLand/types/2.0"
+               schemaLocation="dCategoryLandKindTypes.xsd"/>
+    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/bonitet/types/2.1"
+               schemaLocation="dBonitetKindTypes.xsd"/>
+    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/completenesSlayer/types/2.1"
+               schemaLocation="dCompletenesSlayerKindTypes.xsd"/>
+
+    <xs:complexType name="objectsForestType">
+        <xs:annotation>
+            <xs:documentation>7. Сведения о наличии зданий, сооружений, объектов, связанных с созданием лесной
+                инфраструктуры и объектов, не связанных с созданием лесной инфраструктуры на проектируемом лесном
+                участке
+            </xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="existingObjects">
+                <xs:annotation>
+                    <xs:documentation>Существующие объекты</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="forestInfrastructure">
+                            <xs:annotation>
+                                <xs:documentation>Объекты лесной инфраструктуры</xs:documentation>
+                            </xs:annotation>
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="row" type="tns:objectsInfoRow" minOccurs="0"
+                                                maxOccurs="unbounded"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="nonforestInfrastructure">
+                            <xs:annotation>
+                                <xs:documentation>Объекты не связанные с созданием лесной инфраструктуры
+                                </xs:documentation>
+                            </xs:annotation>
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="row" type="tns:objectsInfoRow" minOccurs="0"
+                                                maxOccurs="unbounded"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="projectedObjects">
+                <xs:annotation>
+                    <xs:documentation>Проектируемые объекты</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="forestInfrastructure">
+                            <xs:annotation>
+                                <xs:documentation>Объекты лесной инфраструктуры</xs:documentation>
+                            </xs:annotation>
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="row" type="tns:objectsInfoRow" minOccurs="0"
+                                                maxOccurs="unbounded"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="nonforestInfrastructure">
+                            <xs:annotation>
+                                <xs:documentation>Объекты не связанные с созданием лесной инфраструктуры
+                                </xs:documentation>
+                            </xs:annotation>
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="row" type="tns:objectsInfoRow" minOccurs="0"
+                                                maxOccurs="unbounded"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="objectsInfoRow">
+        <xs:annotation>
+            <xs:documentation>Таблица описания проектируемого объекта в лесном участке</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="object" type="tns:ObjectInfoType">
+                <xs:annotation>
+                    <xs:documentation>Наименование объекта</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="areaObject" type="st:PositiveDecimalFourSType">
+                <xs:annotation>
+                    <xs:documentation>Площадь объекта(га)</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="locationInfo">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="row" type="tns:locationInfoRow" minOccurs="0" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="ObjectInfoType">
+        <xs:choice>
+            <xs:element name="objectName" type="fFac:ForestFacilitiesKindEType">
+                <xs:annotation>
+                    <xs:documentation>Наименование объекта лесной инфраструктуры</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="otherObjectName" type="fnon:ForestNonInfrastructKindEType">
+                <xs:annotation>
+                    <xs:documentation>Наименование объекта не лесной инфраструктуры</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:choice>
+    </xs:complexType>
+    <xs:complexType name="locationInfoRow">
+        <xs:annotation>
+            <xs:documentation>Таблица описания проектируемого объекта в лесном участке</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="location" type="comR:Location2Type"/>
+            <xs:element name="area" type="st:PositiveDecimalFourSType">
+                <xs:annotation>
+                    <xs:documentation>Площадь объекта(га)</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="length" type="xs:float" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Протяженность объекта</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="measure" type="measures:MeasuresOZVLKindEType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Проектируемые мероприятия</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="characteristic" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Характеристика объекта</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="year" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Год проведения</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="objectTaxationRates">
+        <xs:annotation>
+            <xs:documentation>Таксационные показатели лесного участка в разрезе проектируемых объектов
+            </xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="row" type="tns:objectTaxationRatesRow" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="objectTaxationRatesRow">
+        <xs:annotation>
+            <xs:documentation>Таксационные показатели</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="object" type="tns:ObjectInfoType">
+                <xs:annotation>
+                    <xs:documentation>Наименование объекта</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="area" type="st:PositiveDecimalFourSType">
+                <xs:annotation>
+                    <xs:documentation>Площадь (га)</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="cadastralNumber" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Кадастровый номер лесного участка, номер учетной записи в государственном лесном
+                        реестре
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="taxationRatesInfo">
+                <xs:annotation>
+                    <xs:documentation>Таксационные показатели лесного участка на объекте</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="row" type="tns:taxationRatesInfoRow" minOccurs="0" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="taxationRatesInfoRow">
+        <xs:annotation>
+            <xs:documentation>Таксационные показатели</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="location" type="comR:Location2Type"/>
+            <xs:element name="specialPurpose" type="purF:PurposeForestsKindEType">
+                <xs:annotation>
+                    <xs:documentation>Справочник "Целевое назначение лесов"</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="protectionCategory" type="purF:PurposeForestsKindEType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Справочник "Категории защитности"</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="farm" type="fa:FarmsKindEType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Справочник "Хозяйства"</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="tree" type="comR:TreeType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Преобладающая порода (Указывается элемент справочника "Породы древесины")
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="nameLand" type="cLand:CategoryLandKindEType">
+                <xs:annotation>
+                    <xs:documentation>Категория земель</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="bonitet" type="bon:BonitetKindEType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Бонитет</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="area" type="st:PositiveDecimalFourSType">
+                <xs:annotation>
+                    <xs:documentation>Площадь (га)</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="volume" type="st:PositiveDecimalTwoSType">
+                <xs:annotation>
+                    <xs:documentation>Запас древесины при наличии (куб. м)</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="treeStoreyInfo">
+                <xs:annotation>
+                    <xs:documentation>Породный состав (при наличии)</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="row" type="tns:treeStoreyInfoRow" minOccurs="0" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="treeStoreyInfoRow">
+        <xs:annotation>
+            <xs:documentation>Таксационные показатели</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="treeStorey" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>Ярус насаждения</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="composition" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>Описание состава насаждения</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="completeness" type="complet:CompletenesSlayerKindEType">
+                <xs:annotation>
+                    <xs:documentation>Полнота насаждения</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="age"
+                        type="xs:int">
+                <xs:annotation>
+                    <xs:documentation>Возраст преобладающей породы</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="volume" type="st:PositiveDecimalTwoSType">
+                <xs:annotation>
+                    <xs:documentation>Запас яруса</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="treeInfo">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="row" type="tns:treeInfoRow" minOccurs="0" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="treeInfoRow">
+        <xs:annotation>
+            <xs:documentation>Таксационные показатели</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="tree" type="comR:TreeType">
+                <xs:annotation>
+                    <xs:documentation>Порода</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="coefficient" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>Коэффициент состава</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="diameter" type="xs:float">
+                <xs:annotation>
+                    <xs:documentation>Средний диаметр</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="height" type="xs:float">
+                <xs:annotation>
+                    <xs:documentation>Средняя высота</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="marketabilityClass" type="xs:float">
+                <xs:annotation>
+                    <xs:documentation>Класс товарности</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="volume" type="st:PositiveDecimalTwoSType">
+                <xs:annotation>
+                    <xs:documentation>Запас породы</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

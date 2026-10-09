@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/typeRegisterObject/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/typeRegisterObject/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="TypeRegisterObjectKindEType">
+        <xs:annotation>
+            <xs:documentation>Вид объекта реестра границ</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="speciallyProtectedNaturalArea">
+                <xs:annotation>
+                    <xs:documentation>Особо охраняемая природная территория</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="zoneWithSpecialConditions">
+                <xs:annotation>
+                    <xs:documentation>Зона с особыми условиями использования территории, территория объекта культурного наследия</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="publicEasement">
+                <xs:annotation>
+                    <xs:documentation>Публичный сервитут</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

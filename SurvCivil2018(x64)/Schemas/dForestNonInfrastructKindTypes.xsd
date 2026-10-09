@@ -1,0 +1,2364 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/forestNonInfrastruct/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/forestNonInfrastruct/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="ForestNonInfrastructKindEType">
+        <xs:annotation>
+            <xs:documentation>Объекты, не связанные с созданием лесной инфраструктуры</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="30300001">
+                <xs:annotation>
+                    <xs:documentation>Амбар аварийный (емкость, резервуар)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300002">
+                <xs:annotation>
+                    <xs:documentation>База механизации для обслуживания и ремонта строительных машин и механизмов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300003">
+                <xs:annotation>
+                    <xs:documentation>База бурения промысловая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300004">
+                <xs:annotation>
+                    <xs:documentation>База бурильных труб</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300005">
+                <xs:annotation>
+                    <xs:documentation>База насосно-компрессорных труб</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300006">
+                <xs:annotation>
+                    <xs:documentation>База обсадных труб</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300007">
+                <xs:annotation>
+                    <xs:documentation>База обустройства месторождения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300008">
+                <xs:annotation>
+                    <xs:documentation>База по ремонту бурового оборудования</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300009">
+                <xs:annotation>
+                    <xs:documentation>База по ремонту труб</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300010">
+                <xs:annotation>
+                    <xs:documentation>База производственная горизонтального бурения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300011">
+                <xs:annotation>
+                    <xs:documentation>База производственного обслуживания</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300012">
+                <xs:annotation>
+                    <xs:documentation>База сжиженных газов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300013">
+                <xs:annotation>
+                    <xs:documentation>База социально-бытового обустройства месторождений</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300014">
+                <xs:annotation>
+                    <xs:documentation>База тампонажного участка</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300015">
+                <xs:annotation>
+                    <xs:documentation>База управления производственно-технического обеспечения и комплектации</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300016">
+                <xs:annotation>
+                    <xs:documentation>База управления производственно-технического обслуживания и комплектации оборудования</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300017">
+                <xs:annotation>
+                    <xs:documentation>База управления сервисного обслуживания техники и оборудования</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300018">
+                <xs:annotation>
+                    <xs:documentation>База эксплуатационно-разведочного бурения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300019">
+                <xs:annotation>
+                    <xs:documentation>Берегоукрепление</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300020">
+                <xs:annotation>
+                    <xs:documentation>Вертолетная площадка</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300021">
+                <xs:annotation>
+                    <xs:documentation>водоем противопожарный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300022">
+                <xs:annotation>
+                    <xs:documentation>водопровод</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300023">
+                <xs:annotation>
+                    <xs:documentation>газопровод магистральный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300024">
+                <xs:annotation>
+                    <xs:documentation>Газопровод</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300025">
+                <xs:annotation>
+                    <xs:documentation>Газопровод-отвод</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300026">
+                <xs:annotation>
+                    <xs:documentation>гараж</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300027">
+                <xs:annotation>
+                    <xs:documentation>Градирня</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300028">
+                <xs:annotation>
+                    <xs:documentation>Дамба</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300029">
+                <xs:annotation>
+                    <xs:documentation>дорога автомобильная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300030">
+                <xs:annotation>
+                    <xs:documentation>Дорога вдольтрассовая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300031">
+                <xs:annotation>
+                    <xs:documentation>Здание административно-бытовое (временная постройка), в том числе для временного проживания, для охраны, для размещения противопожарной техники и инвентаря</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300032">
+                <xs:annotation>
+                    <xs:documentation>Здание диспетчерской службы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300033">
+                <xs:annotation>
+                    <xs:documentation>Здание, сооружение производственное</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300034">
+                <xs:annotation>
+                    <xs:documentation>здание электрических сетей</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300035">
+                <xs:annotation>
+                    <xs:documentation>Здание, сооружение вахтового поселка</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300036">
+                <xs:annotation>
+                    <xs:documentation>Канал, траншея, шурф</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300037">
+                <xs:annotation>
+                    <xs:documentation>канализация</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300038">
+                <xs:annotation>
+                    <xs:documentation>Комплекс дробильно-сортировочный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300039">
+                <xs:annotation>
+                    <xs:documentation>комплекс перегрузочный портовый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300040">
+                <xs:annotation>
+                    <xs:documentation>комплекс сгущения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300041">
+                <xs:annotation>
+                    <xs:documentation>Комплекс электроснабжения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300042">
+                <xs:annotation>
+                    <xs:documentation>Конвейер</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300043">
+                <xs:annotation>
+                    <xs:documentation>Конденсатопровод и продуктопровод магистральные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300044">
+                <xs:annotation>
+                    <xs:documentation>Котельная, теплоэлектроцентраль</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300045">
+                <xs:annotation>
+                    <xs:documentation>Лаборатория</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300046">
+                <xs:annotation>
+                    <xs:documentation>линия связи</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300047">
+                <xs:annotation>
+                    <xs:documentation>линия электропередачи воздушная, кабельная всех классов напряжения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300048">
+                <xs:annotation>
+                    <xs:documentation>Межпромысловый коллектор</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300049">
+                <xs:annotation>
+                    <xs:documentation>Нефтепровод межпромысловый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300050">
+                <xs:annotation>
+                    <xs:documentation>Оборудование пользовательское для передачи и (или) приема сигналов электросвязи</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300051">
+                <xs:annotation>
+                    <xs:documentation>Объект канализационных насосных станций</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300052">
+                <xs:annotation>
+                    <xs:documentation>Объект подземного хранения газа</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300053">
+                <xs:annotation>
+                    <xs:documentation>Объект производственно-технологического транспорта и спецтехники</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300054">
+                <xs:annotation>
+                    <xs:documentation>Объект, обеспечивающий выполнение требований безопасности (пожарной, антитеррористической, промышленной)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300055">
+                <xs:annotation>
+                    <xs:documentation>Объекты технической эксплуатации трубопроводного транспорта (для внутрипромысловых и межпромысловых трубопроводов)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300056">
+                <xs:annotation>
+                    <xs:documentation>Отвал</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300057">
+                <xs:annotation>
+                    <xs:documentation>Переход подводный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300058">
+                <xs:annotation>
+                    <xs:documentation>Переход трубопроводов через естественные и искусственные препятствия</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300059">
+                <xs:annotation>
+                    <xs:documentation>платформа стационарная для разведочного бурения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300060">
+                <xs:annotation>
+                    <xs:documentation>плотина</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300061">
+                <xs:annotation>
+                    <xs:documentation>Площадка инструментальная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300062">
+                <xs:annotation>
+                    <xs:documentation>площадка производственная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300063">
+                <xs:annotation>
+                    <xs:documentation>Площадка размещения, накопления и обезвреживания отходов, в том числе шламовый амбар, полигон, шламонакопитель, хвостохранилище</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300064">
+                <xs:annotation>
+                    <xs:documentation>подстанция трансформаторная всех классов напряжения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300065">
+                <xs:annotation>
+                    <xs:documentation>Порт речной, причал, пристань</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300066">
+                <xs:annotation>
+                    <xs:documentation>Промежуточный склад баллонов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300067">
+                <xs:annotation>
+                    <xs:documentation>пруд-отстойник</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300068">
+                <xs:annotation>
+                    <xs:documentation>Пульпопровод</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300069">
+                <xs:annotation>
+                    <xs:documentation>пункт аварийно-ремонтный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300070">
+                <xs:annotation>
+                    <xs:documentation>Пункт центральный сбора и подготовки нефти, газа и воды</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300071">
+                <xs:annotation>
+                    <xs:documentation>пункт электрический распределительный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300072">
+                <xs:annotation>
+                    <xs:documentation>Резервуар, парк резервуарный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300073">
+                <xs:annotation>
+                    <xs:documentation>Ремонтно-механическая мастерская</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300074">
+                <xs:annotation>
+                    <xs:documentation>септик</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300075">
+                <xs:annotation>
+                    <xs:documentation>сеть нефтегазосборная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300076">
+                <xs:annotation>
+                    <xs:documentation>сеть тепловая магистральная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300077">
+                <xs:annotation>
+                    <xs:documentation>Скважина артезианская</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300078">
+                <xs:annotation>
+                    <xs:documentation>Скважина поглощающая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300079">
+                <xs:annotation>
+                    <xs:documentation>Склад нефти и нефтепродуктов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300080">
+                <xs:annotation>
+                    <xs:documentation>склад производственный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300081">
+                <xs:annotation>
+                    <xs:documentation>Сооружение водозаборное</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300082">
+                <xs:annotation>
+                    <xs:documentation>сооружение газохимического комплекса</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300083">
+                <xs:annotation>
+                    <xs:documentation>Сооружение головное по подготовке газа</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300084">
+                <xs:annotation>
+                    <xs:documentation>сооружение для поддержания пластового давления</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300085">
+                <xs:annotation>
+                    <xs:documentation>сооружение для сжижения, хранения и регазификации газа</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300086">
+                <xs:annotation>
+                    <xs:documentation>Сооружение мостовое</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300087">
+                <xs:annotation>
+                    <xs:documentation>Сооружение обустройства нефтяного месторождения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300088">
+                <xs:annotation>
+                    <xs:documentation>Сооружение обустройства разведочных площадей</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300089">
+                <xs:annotation>
+                    <xs:documentation>сооружение очистное</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300090">
+                <xs:annotation>
+                    <xs:documentation>Сооружение противооползневое, противоселевое</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300091">
+                <xs:annotation>
+                    <xs:documentation>станция газораспределительная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300092">
+                <xs:annotation>
+                    <xs:documentation>станция кислородная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300093">
+                <xs:annotation>
+                    <xs:documentation>станция компрессорная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300094">
+                <xs:annotation>
+                    <xs:documentation>Станция насосная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300095">
+                <xs:annotation>
+                    <xs:documentation>Станция нефтенасосная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300096">
+                <xs:annotation>
+                    <xs:documentation>Станция нефтеперекачивающая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300097">
+                <xs:annotation>
+                    <xs:documentation>Станция охлаждения газа</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300098">
+                <xs:annotation>
+                    <xs:documentation>Станция холодильная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300099">
+                <xs:annotation>
+                    <xs:documentation>Стоянка автотранспорта</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300100">
+                <xs:annotation>
+                    <xs:documentation>Тоннель, мост, эстакада</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300101">
+                <xs:annotation>
+                    <xs:documentation>трубопровод технологический</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300102">
+                <xs:annotation>
+                    <xs:documentation>Установка комплексной подготовки газа абсорбционная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300103">
+                <xs:annotation>
+                    <xs:documentation>установка комплексной подготовки газа</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300104">
+                <xs:annotation>
+                    <xs:documentation>Установка нефтепромысловая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300105">
+                <xs:annotation>
+                    <xs:documentation>установка обезвоживания и обессоливания нефти</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300106">
+                <xs:annotation>
+                    <xs:documentation>Установка обезвоживания нефти с очисткой пластовой воды</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300107">
+                <xs:annotation>
+                    <xs:documentation>Установка осушки газа в блочно-комплектном исполнении</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300108">
+                <xs:annotation>
+                    <xs:documentation>Установка очистки газа от сероводорода</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300109">
+                <xs:annotation>
+                    <xs:documentation>Установка подготовки нефти</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300110">
+                <xs:annotation>
+                    <xs:documentation>Установка подготовки нефтяного газа</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300111">
+                <xs:annotation>
+                    <xs:documentation>установка утилизации попутного нефтяного газа</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300112">
+                <xs:annotation>
+                    <xs:documentation>участок (площадка) кучного выщелачивания</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300113">
+                <xs:annotation>
+                    <xs:documentation>хранилище газа подземное</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300114">
+                <xs:annotation>
+                    <xs:documentation>Электростанция газопоршневая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300115">
+                <xs:annotation>
+                    <xs:documentation>Электростанция газотурбинная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300116">
+                <xs:annotation>
+                    <xs:documentation>электростанция дизельная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300117">
+                <xs:annotation>
+                    <xs:documentation>эстакада кабельная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300118">
+                <xs:annotation>
+                    <xs:documentation>эстакада технологических трубопроводов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300119">
+                <xs:annotation>
+                    <xs:documentation>база полевая торфяная производственная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300120">
+                <xs:annotation>
+                    <xs:documentation>карьер</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300121">
+                <xs:annotation>
+                    <xs:documentation>Предприятие по добыче и обогащению апатит-нефелиновой руды</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300122">
+                <xs:annotation>
+                    <xs:documentation>Предприятие по добыче и обогащению природных руд, содержащих серу, бор, мышьяк и барий</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300123">
+                <xs:annotation>
+                    <xs:documentation>Предприятие по добыче и обогащению фосфорной руды</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300124">
+                <xs:annotation>
+                    <xs:documentation>Предприятие по добыче торфа</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300125">
+                <xs:annotation>
+                    <xs:documentation>Предприятие угольной и сланцевой добывающей промышленности</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300126">
+                <xs:annotation>
+                    <xs:documentation>рудник</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300127">
+                <xs:annotation>
+                    <xs:documentation>разрез угольный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300128">
+                <xs:annotation>
+                    <xs:documentation>Фабрика (участок, цех) золотоизвлекательная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300129">
+                <xs:annotation>
+                    <xs:documentation>дамба обвалованная земляная или каменной наброски</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300130">
+                <xs:annotation>
+                    <xs:documentation>дамба фильтрационная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300131">
+                <xs:annotation>
+                    <xs:documentation>канава дренажная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300132">
+                <xs:annotation>
+                    <xs:documentation>Канал магистральный оросительных систем</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300133">
+                <xs:annotation>
+                    <xs:documentation>Коллектор, селевое русло, другие каналы, включая сооружения на трассах, мосты, переходы, перепады, быстротоки</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300134">
+                <xs:annotation>
+                    <xs:documentation>колодец шандорный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300135">
+                <xs:annotation>
+                    <xs:documentation>колодец шахтный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300136">
+                <xs:annotation>
+                    <xs:documentation>объект водоотведения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300137">
+                <xs:annotation>
+                    <xs:documentation>объекты системы охраны гидротехнического сооружения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300139">
+                <xs:annotation>
+                    <xs:documentation>система для осушения и обводнения лесных площадей</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300140">
+                <xs:annotation>
+                    <xs:documentation>сооружение ирригационных и мелиоративных систем</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300141">
+                <xs:annotation>
+                    <xs:documentation>сооружение судоподъемное</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300142">
+                <xs:annotation>
+                    <xs:documentation>участок автоматизированного полива</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300143">
+                <xs:annotation>
+                    <xs:documentation>шлюз, полушлюз судоходный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300144">
+                <xs:annotation>
+                    <xs:documentation>Знак путевой береговой</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300146">
+                <xs:annotation>
+                    <xs:documentation>водохранилище с плотинами из грунтовых материалов с железобетонными водопропускными сооружениями</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300147">
+                <xs:annotation>
+                    <xs:documentation>комплекс перегрузочный портовый специализированный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300148">
+                <xs:annotation>
+                    <xs:documentation>комплекс перегрузочный портовый универсальный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300149">
+                <xs:annotation>
+                    <xs:documentation>пирс</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300150">
+                <xs:annotation>
+                    <xs:documentation>порт-убежище</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300151">
+                <xs:annotation>
+                    <xs:documentation>порт речной механизированный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300152">
+                <xs:annotation>
+                    <xs:documentation>пристань</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300153">
+                <xs:annotation>
+                    <xs:documentation>причал морской, набережная морская</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300154">
+                <xs:annotation>
+                    <xs:documentation>причал речной грузовой</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300155">
+                <xs:annotation>
+                    <xs:documentation>причал речной пассажирский</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300156">
+                <xs:annotation>
+                    <xs:documentation>Район портовый грузовой для переработки грузов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300157">
+                <xs:annotation>
+                    <xs:documentation>Система оросительная и отдельно орошаемые массивы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300158">
+                <xs:annotation>
+                    <xs:documentation>сооружения специализированные водного транспорта (за исключением знаков путевых береговых)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300159">
+                <xs:annotation>
+                    <xs:documentation>эллинг для хранения катеров и лодок</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300161">
+                <xs:annotation>
+                    <xs:documentation>мачта и сооружение молниезащиты</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300162">
+                <xs:annotation>
+                    <xs:documentation>мачты локальных систем оповещения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300163">
+                <xs:annotation>
+                    <xs:documentation>мачты системы ГЛОНАСС</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300164">
+                <xs:annotation>
+                    <xs:documentation>маяк</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300165">
+                <xs:annotation>
+                    <xs:documentation>Опора вдольтрассовой линии электропередачи</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300167">
+                <xs:annotation>
+                    <xs:documentation>сооружения противооползневые</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300168">
+                <xs:annotation>
+                    <xs:documentation>сооружения противоэрозионные гидротехнические и противоселевые</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300169">
+                <xs:annotation>
+                    <xs:documentation>трансформаторная подстанция всех классов напряжения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300170">
+                <xs:annotation>
+                    <xs:documentation>трубопровод подземный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300174">
+                <xs:annotation>
+                    <xs:documentation>блокировка автоматическая путевая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300175">
+                <xs:annotation>
+                    <xs:documentation>водоподъемное сооружение</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300176">
+                <xs:annotation>
+                    <xs:documentation>Ворота</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300178">
+                <xs:annotation>
+                    <xs:documentation>Дорога автомобильная с усовершенствованным облегченным или переходным типом дорожного покрытия</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300179">
+                <xs:annotation>
+                    <xs:documentation>дорога железная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300180">
+                <xs:annotation>
+                    <xs:documentation>здание производственное насосных и компрессорных станций, трансформаторных подстанций</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300181">
+                <xs:annotation>
+                    <xs:documentation>здание электрических и тепловых сетей</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300182">
+                <xs:annotation>
+                    <xs:documentation>здание производственной проходной</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300184">
+                <xs:annotation>
+                    <xs:documentation>конденсатопровод и продуктопровод магистральный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300185">
+                <xs:annotation>
+                    <xs:documentation>котельная отопительная и отопительно-производственная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300186">
+                <xs:annotation>
+                    <xs:documentation>Лестница с ограждением для обслуживания и осмотра технологического оборудования (кроме одинаковых с лестницами зданий)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300187">
+                <xs:annotation>
+                    <xs:documentation>линия железнодорожной сигнализации и связи кабельная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300188">
+                <xs:annotation>
+                    <xs:documentation>мост</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300189">
+                <xs:annotation>
+                    <xs:documentation>отвод от магистральных трубопроводов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300190">
+                <xs:annotation>
+                    <xs:documentation>площадка с ограждением для обслуживания и осмотра технологического оборудования</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300191">
+                <xs:annotation>
+                    <xs:documentation>Площадь производственная с покрытиями</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300192">
+                <xs:annotation>
+                    <xs:documentation>пункт аварийно-ремонтный отдельный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300193">
+                <xs:annotation>
+                    <xs:documentation>путь второй двухпутной вставки</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300194">
+                <xs:annotation>
+                    <xs:documentation>путь подъездной (железнодорожный)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300195">
+                <xs:annotation>
+                    <xs:documentation>сеть газовая распределительная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300197">
+                <xs:annotation>
+                    <xs:documentation>система оборотного водоснабжения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300198">
+                <xs:annotation>
+                    <xs:documentation>сооружение доочистки сточных вод</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300199">
+                <xs:annotation>
+                    <xs:documentation>сооружение защитное дорожное</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300200">
+                <xs:annotation>
+                    <xs:documentation>сооружение искусственное дорожное</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300201">
+                <xs:annotation>
+                    <xs:documentation>сооружение магистрального трубопроводного транспорта</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300204">
+                <xs:annotation>
+                    <xs:documentation>станция насосная головная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300205">
+                <xs:annotation>
+                    <xs:documentation>станция насосная канализационная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300206">
+                <xs:annotation>
+                    <xs:documentation>станция нефтеперекачивающая промежуточная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300207">
+                <xs:annotation>
+                    <xs:documentation>станция промежуточная перекачивающая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300208">
+                <xs:annotation>
+                    <xs:documentation>тоннель</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300209">
+                <xs:annotation>
+                    <xs:documentation>трубопровод магистральный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300211">
+                <xs:annotation>
+                    <xs:documentation>установка аккумуляторная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300212">
+                <xs:annotation>
+                    <xs:documentation>Устройство заземляющее</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300213">
+                <xs:annotation>
+                    <xs:documentation>Фонарь</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300214">
+                <xs:annotation>
+                    <xs:documentation>Централизация диспетчерская</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300215">
+                <xs:annotation>
+                    <xs:documentation>Централизация электрическая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300216">
+                <xs:annotation>
+                    <xs:documentation>Цистерна (бак), резервуар и другие емкости (кроме емкостей для сжиженного газа) из черных металлов и алюминия</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300217">
+                <xs:annotation>
+                    <xs:documentation>Электрификация существующих железных дорог</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300218">
+                <xs:annotation>
+                    <xs:documentation>элемент обустройства автомобильной дороги</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300219">
+                <xs:annotation>
+                    <xs:documentation>эстакада, галерея транспортная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300220">
+                <xs:annotation>
+                    <xs:documentation>водозаборные сооружения (водозабор)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300223">
+                <xs:annotation>
+                    <xs:documentation>Здание административно-бытовое, в том числе для временного проживания, для охраны, для размещения противопожарной техники и инвентаря</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300224">
+                <xs:annotation>
+                    <xs:documentation>источник автономного электропитания силовой</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300226">
+                <xs:annotation>
+                    <xs:documentation>колодец</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300227">
+                <xs:annotation>
+                    <xs:documentation>котельная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300229">
+                <xs:annotation>
+                    <xs:documentation>мастерская ремонтно-механическая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300230">
+                <xs:annotation>
+                    <xs:documentation>Насосная станция</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300231">
+                <xs:annotation>
+                    <xs:documentation>площадка погрузочно-разгрузочная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300233">
+                <xs:annotation>
+                    <xs:documentation>пути подкрановые</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300234">
+                <xs:annotation>
+                    <xs:documentation>путь подъездной (железнодорожный, автомобильный)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300235">
+                <xs:annotation>
+                    <xs:documentation>Рейд сплавной</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300237">
+                <xs:annotation>
+                    <xs:documentation>сеть тепловая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300238">
+                <xs:annotation>
+                    <xs:documentation>система дренажная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300239">
+                <xs:annotation>
+                    <xs:documentation>склад вспомогательных материалов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300240">
+                <xs:annotation>
+                    <xs:documentation>склад горюче-смазочных материалов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300241">
+                <xs:annotation>
+                    <xs:documentation>склад готовой продукции</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300242">
+                <xs:annotation>
+                    <xs:documentation>склад запасных частей</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300243">
+                <xs:annotation>
+                    <xs:documentation>склад комплектующих изделий</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300244">
+                <xs:annotation>
+                    <xs:documentation>склад сырья</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300246">
+                <xs:annotation>
+                    <xs:documentation>стенка причальная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300247">
+                <xs:annotation>
+                    <xs:documentation>Сток промышленный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300248">
+                <xs:annotation>
+                    <xs:documentation>теплоэлектроцентраль</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300249">
+                <xs:annotation>
+                    <xs:documentation>цех производственный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300251">
+                <xs:annotation>
+                    <xs:documentation>Эстакада</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300252">
+                <xs:annotation>
+                    <xs:documentation>Площадка для игр (детская), отдыха, занятий спортом, установки мусоросборников</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300253">
+                <xs:annotation>
+                    <xs:documentation>Форма малая архитектурная (некапитальное нестационарное сооружение, включая беседки, ротонды, веранды, дровницы, навесы, объекты мелкорозничной торговли)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300254">
+                <xs:annotation>
+                    <xs:documentation>Элемент благоустройства лесного участка (пешеходная дорожка, скамейка, урна, наземная туалетная кабина)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300256">
+                <xs:annotation>
+                    <xs:documentation>Постройка временная, используемая в рекреационных целях</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300258">
+                <xs:annotation>
+                    <xs:documentation>бассейн крытый для плавания</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300259">
+                <xs:annotation>
+                    <xs:documentation>бассейн открытый искусственный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300260">
+                <xs:annotation>
+                    <xs:documentation>велодром</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300261">
+                <xs:annotation>
+                    <xs:documentation>велотрек</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300262">
+                <xs:annotation>
+                    <xs:documentation>зал спортивный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300264">
+                <xs:annotation>
+                    <xs:documentation>каток с искусственным льдом крытый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300265">
+                <xs:annotation>
+                    <xs:documentation>каток с искусственным льдом открытый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300266">
+                <xs:annotation>
+                    <xs:documentation>Кемпинг</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300267">
+                <xs:annotation>
+                    <xs:documentation>комплекс открытых плоскостных спортивных сооружений</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300268">
+                <xs:annotation>
+                    <xs:documentation>комплекс физкультурно-оздоровительный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300269">
+                <xs:annotation>
+                    <xs:documentation>комплекс физкультурных сооружений</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300270">
+                <xs:annotation>
+                    <xs:documentation>корт теннисный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300272">
+                <xs:annotation>
+                    <xs:documentation>манеж легкоатлетический</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300274">
+                <xs:annotation>
+                    <xs:documentation>Площадка спортивная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300276">
+                <xs:annotation>
+                    <xs:documentation>Поле для гольфа</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300277">
+                <xs:annotation>
+                    <xs:documentation>Поле для стрельбы из лука</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300278">
+                <xs:annotation>
+                    <xs:documentation>Поле футбольное</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300281">
+                <xs:annotation>
+                    <xs:documentation>сооружение спортивное</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300282">
+                <xs:annotation>
+                    <xs:documentation>стадион</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300283">
+                <xs:annotation>
+                    <xs:documentation>стрельбище для пулевой стрельбы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300284">
+                <xs:annotation>
+                    <xs:documentation>стрельбище для стендовой стрельбы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300285">
+                <xs:annotation>
+                    <xs:documentation>тир</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300286">
+                <xs:annotation>
+                    <xs:documentation>Трибуна стадиона с подтрибунными помещениями</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300287">
+                <xs:annotation>
+                    <xs:documentation>трибуна стадиона</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300289">
+                <xs:annotation>
+                    <xs:documentation>Строение некапитальное, сооружение религиозного и (или) благотворительного назначения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300290">
+                <xs:annotation>
+                    <xs:documentation>Форма малая архитектурная религиозного и (или) благотворительного назначения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300291">
+                <xs:annotation>
+                    <xs:documentation>Элемент благоустройства лесного участка (пешеходная дорожка, скамейка, урна, наземная туалетная кабина)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300292">
+                <xs:annotation>
+                    <xs:documentation>здание, строение, сооружение религиозного и (или) благотворительного назначения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300293">
+                <xs:annotation>
+                    <xs:documentation>Геолого-геофизический профиль и (или) сейсмический профиль</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300294">
+                <xs:annotation>
+                    <xs:documentation>Сооружения и оборудование, используемые при прокладке геолого-геофизических и сейсмических профилей</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300295">
+                <xs:annotation>
+                    <xs:documentation>Скважина поисковая временная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300296">
+                <xs:annotation>
+                    <xs:documentation>Канал водоотводный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300297">
+                <xs:annotation>
+                    <xs:documentation>Строение, сооружение административно-бытовое (временная постройка), в том числе для временного проживания, охраны, размещения противопожарной техники</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300298">
+                <xs:annotation>
+                    <xs:documentation>Стоянка автомобильная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300299">
+                <xs:annotation>
+                    <xs:documentation>Электростанция дизельная передвижная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300300">
+                <xs:annotation>
+                    <xs:documentation>Сооружения горных выработок, имеющих или не имеющих непосредственного выхода на земную поверхность, и их элементы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300301">
+                <xs:annotation>
+                    <xs:documentation>Рукав</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300302">
+                <xs:annotation>
+                    <xs:documentation>Разрез</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300303">
+                <xs:annotation>
+                    <xs:documentation>Сооружения и оборудование, являющиеся неотъемлемой технологической частью карьера и предусмотренные в утвержденных в установленном порядке технических проектах разработки месторождений полезных ископаемых, технических проектах строительства и эксплуатации подземных сооружений, технических проектах ликвидации и консервации горных выработок, буровых скважин и иных сооружений, связанных с пользованием недрами</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300304">
+                <xs:annotation>
+                    <xs:documentation>Cооружения и оборудование, используемые при прокладке геолого-геофизических и сейсмических профилей (если их размещение не требует проведения рубок лесных насаждений)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300305">
+                <xs:annotation>
+                    <xs:documentation>Сооружение берегоукрепительное некапитального характера</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300306">
+                <xs:annotation>
+                    <xs:documentation>Руслорегулирующее сооружение некапитального характера</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300307">
+                <xs:annotation>
+                    <xs:documentation>Специальные информационные знаки, обозначающие на местности границы водоохранных зон и границ прибрежных защитных полос водных объектов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300308">
+                <xs:annotation>
+                    <xs:documentation>Предупреждающие знаки для обозначения границ охранных зон гидроэнергетических объектов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300309">
+                <xs:annotation>
+                    <xs:documentation>Водные подходы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300310">
+                <xs:annotation>
+                    <xs:documentation>Временные вспомогательные сооружения, необходимые для обеспечения строительства, реконструкции, эксплуатации линейных объектов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300311">
+                <xs:annotation>
+                    <xs:documentation>Система наружного освещения (фонарь)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300312">
+                <xs:annotation>
+                    <xs:documentation>Ограждение защитное (сигнальное)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300313">
+                <xs:annotation>
+                    <xs:documentation>Административно-бытовое строение</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300314">
+                <xs:annotation>
+                    <xs:documentation>Склад вспомогательных материалов, запасных частей, комплектующих изделий</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300315">
+                <xs:annotation>
+                    <xs:documentation>Площадка для игр (детская), отдыха, занятий спортом, для установки мусоросборников</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300316">
+                <xs:annotation>
+                    <xs:documentation>Элемент благоустройства лесного участка (информационный стенд (щит), информационная табличка (доска), дорожный знак, домовый знак, указатель, вывеска, учрежденческая доска, бортовой камень, бордюр, подпорная стенка, мостик, лестница, пандус (подъемник), ограждение, малая архитектурная форма (уличная мебель, элемент оформления озеленения, кормушка для птиц, скворечник, ротонда, урна, контейнер-мусоросборник), приствольная решетка, элемент озеленения, конструкция велопарковки, георешетка, настил, газон рулонный, посевной, мягкое покрытие, иные виды некапитальных покрытий)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300317">
+                <xs:annotation>
+                    <xs:documentation>Система наружного освещения (фонарь, светильник (прожектор), осветительный прибор (установка), опора, кронштейн, провод, кабель, прибор учета, фотореле, реле времени, рубильник, контактор, трансформатор, выключатель, магнитный пускатель)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300318">
+                <xs:annotation>
+                    <xs:documentation>Строения и сооружения попутного бытового обслуживания и питания (объект для предоставления услуг общественного питания, охраны, билетных касс, информационных центров, фотоателье, душевых с раздевальнями и комнатой матери и ребенка)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300319">
+                <xs:annotation>
+                    <xs:documentation>Некапитальное нестационарное сооружение (включая навесы, веранды, беседки, дровницы, остановочные павильоны), туалетные кабины, контейнер-мусоросборник</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300320">
+                <xs:annotation>
+                    <xs:documentation>Пешеходная дорожка (тропа), велопешеходная дорожка (аллея), туристская тропа, экологическая тропа</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300321">
+                <xs:annotation>
+                    <xs:documentation>лыжная трасса, роллерная трасса</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300322">
+                <xs:annotation>
+                    <xs:documentation>Строения, сооружения сопутствующей инфраструктуры для трасс, троп, аллей и дорожек (включая беседки, навесы, лавочки, скамейки, урны)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300323">
+                <xs:annotation>
+                    <xs:documentation>Веревочный парк, скейтпарк и иные специализированные сооружения для занятий физической культурой и спортом</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300324">
+                <xs:annotation>
+                    <xs:documentation>Лесной проезд</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300325">
+                <xs:annotation>
+                    <xs:documentation>пешеходный мост</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300326">
+                <xs:annotation>
+                    <xs:documentation>Объект электросетевого хозяйства (электроустановка, кабель, распределительное устройство, трансформаторная, пункт электрический распределительный, вводное устройство, прибор учета, рубильник, контактор, магнитный пускатель, технологическое и вспомогательное оборудование для обеспечения электрических связей и передачи электрической энергии)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300327">
+                <xs:annotation>
+                    <xs:documentation>Дренаж, ливнеотвод</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300328">
+                <xs:annotation>
+                    <xs:documentation>Система видеонаблюдения, оповещения, управления эвакуацией, пожарной, охранной сигнализации</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300329">
+                <xs:annotation>
+                    <xs:documentation>Площадка смотровая, площадка для массовых, культурно-просветительных мероприятий, размещения аттракционов для детей (каруселей, качелей, батутов), зимних горок и ледяных катков, выгула животных</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300330">
+                <xs:annotation>
+                    <xs:documentation>Элемент монументально-декоративного оформления (скульптура, инсталляция, арт-объект, входная группа)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300331">
+                <xs:annotation>
+                    <xs:documentation>Уличный обогреватель</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300332">
+                <xs:annotation>
+                    <xs:documentation>Уличный зонт (тент), пергола (навес)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300333">
+                <xs:annotation>
+                    <xs:documentation>Кабинка для переодевания, душевая кабинка</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300334">
+                <xs:annotation>
+                    <xs:documentation>Вспомогательные постройки (медицинский пункт первой помощи, пункт проката инвентаря, водно-спасательная станция (пост), смотровая вышка)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300335">
+                <xs:annotation>
+                    <xs:documentation>Платежный терминал для оплаты услуг и штрафов, вендинговый автомат</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300336">
+                <xs:annotation>
+                    <xs:documentation>Пирс, плавучий домик для птиц</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300337">
+                <xs:annotation>
+                    <xs:documentation>Стоянки индивидуального легкового автотранспорта, специализированного автотранспорта, велосипедного транспорта, индивидуальный тепловой пункт, насосная, котельная, антенно-мачтовое сооружение, водоисточник технической и питьевой воды, сооружение (технологическое, вспомогательное оборудование) для транспортировки, распределения, редуцирования, потребления газа, теплоснабжения, обеззараживания, водоподготовки, транспортировки, приготовления, хранения, подачи технической и питьевой воды, водоотведения, очистки дождевых, талых, инфильтрационных, поливомоечных, дренажных сточных вод, предотвращения негативного воздействия вод, защиты от наводнений, разрушений берегов, автоматического полива, водное устройство (питьевой фонтанчик, фонтан, искусственный декоративный водоем, водопад)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300338">
+                <xs:annotation>
+                    <xs:documentation>Площадка для занятий спортом</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300339">
+                <xs:annotation>
+                    <xs:documentation>Строение, сооружение религиозного и (или) благотворительного назначения;</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300340">
+                <xs:annotation>
+                    <xs:documentation>здание базы производственного обслуживания нефтегазодобывающего управления при добыче нефти и газа (здание базы механизации для обслуживания и ремонта строительных машин и механизмов)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300341">
+                <xs:annotation>
+                    <xs:documentation>здание промыслово-геофизической базы при добыче нефти и газа (здание базы бурения (промысловое)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300342">
+                <xs:annotation>
+                    <xs:documentation>здание базы производственного обслуживания управления буровых работ, управления разведочного бурения (здание базы бурильных труб, здание базы обсадных труб, здание базы обустройства месторождения, здание базы эксплуатационно-разведочного бурения)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300343">
+                <xs:annotation>
+                    <xs:documentation>здание базы насосно-компрессорных труб</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300344">
+                <xs:annotation>
+                    <xs:documentation>здание базы производственного обслуживания управления технологического транспорта и спецтехники</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300345">
+                <xs:annotation>
+                    <xs:documentation>здание базы по ремонту бурового оборудования</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300346">
+                <xs:annotation>
+                    <xs:documentation>здание базы по ремонту труб</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300347">
+                <xs:annotation>
+                    <xs:documentation>сооружения наклонно-направленной газовой скважины кустового бурения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300348">
+                <xs:annotation>
+                    <xs:documentation>здание производственной базы горизонтального бурения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300349">
+                <xs:annotation>
+                    <xs:documentation>здание базы производственного обслуживания</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300350">
+                <xs:annotation>
+                    <xs:documentation>здание базы тампонажного участка</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300351">
+                <xs:annotation>
+                    <xs:documentation>здания (сооружения) подготовки нефти, газа и воды (здание базы управления сервисного обслуживания техники и оборудования)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300352">
+                <xs:annotation>
+                    <xs:documentation>берегоукрепительные и защитные гидротехнические сооружения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300353">
+                <xs:annotation>
+                    <xs:documentation>сооружения водозабора подземных вод</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300354">
+                <xs:annotation>
+                    <xs:documentation>сооружения хозяйственно-питьевого водоснабжения и противопожарного водопровода</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300355">
+                <xs:annotation>
+                    <xs:documentation>газопроводы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300356">
+                <xs:annotation>
+                    <xs:documentation>сооружение градирни (градирня)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300357">
+                <xs:annotation>
+                    <xs:documentation>водоподпорные и защитные гидротехнические сооружения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300358">
+                <xs:annotation>
+                    <xs:documentation>здание линейной производственно-диспетчерской станции</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300359">
+                <xs:annotation>
+                    <xs:documentation>здания и сооружения вахтового поселка</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300360">
+                <xs:annotation>
+                    <xs:documentation>здание цеха водоснабжения и канализации</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300361">
+                <xs:annotation>
+                    <xs:documentation>здание дробильно-сортировочного комплекса</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300362">
+                <xs:annotation>
+                    <xs:documentation>комплекс электроснабжения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300363">
+                <xs:annotation>
+                    <xs:documentation>сооружения конвейерного транспорта</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300364">
+                <xs:annotation>
+                    <xs:documentation>продуктопроводы и конденсатопроводы магистральные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300365">
+                <xs:annotation>
+                    <xs:documentation>здания и сооружения сети производства и разводки спецгазов паротурбинных конденсационных электрических станций, теплоэлектроцентрали, котельных, электрокотельных, дизельных электростанций, газотурбинных электрических станций (котельная, теплоэлектроцентраль)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300366">
+                <xs:annotation>
+                    <xs:documentation>здание лабораторное</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300367">
+                <xs:annotation>
+                    <xs:documentation>кабельные линии связи</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300368">
+                <xs:annotation>
+                    <xs:documentation>линии электропередачи всех видов и классов напряжения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300369">
+                <xs:annotation>
+                    <xs:documentation>коллекторы общего назначения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300370">
+                <xs:annotation>
+                    <xs:documentation>сооружения блочной канализации общего назначения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300371">
+                <xs:annotation>
+                    <xs:documentation>межпромысловые коллекторы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300372">
+                <xs:annotation>
+                    <xs:documentation>сооружения технологической связи магистрального и межпромыслового нефтепроводов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300373">
+                <xs:annotation>
+                    <xs:documentation>объекты канализационных насосных станций</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300374">
+                <xs:annotation>
+                    <xs:documentation>сооружения перехода трубопроводов через естественные и искусственные преграды</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300375">
+                <xs:annotation>
+                    <xs:documentation>объекты обеспечения пожарной, антитеррористической, промышленной безопасности</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300376">
+                <xs:annotation>
+                    <xs:documentation>парк резервуарный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300377">
+                <xs:annotation>
+                    <xs:documentation>внутрипромысловые и межпромысловые объекты технической эксплуатации трубопроводного транспорта</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300378">
+                <xs:annotation>
+                    <xs:documentation>сооружения переходов трубопроводов через естественные и искусственные препятствия</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300379">
+                <xs:annotation>
+                    <xs:documentation>плотины</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300380">
+                <xs:annotation>
+                    <xs:documentation>здание цеха по производству комплектных трансформаторных подстанций и комплектных распределительных устройств всех классов напряжения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300381">
+                <xs:annotation>
+                    <xs:documentation>порт речной</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300382">
+                <xs:annotation>
+                    <xs:documentation>причал</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300383">
+                <xs:annotation>
+                    <xs:documentation>здания (сооружения) переработки газа</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300384">
+                <xs:annotation>
+                    <xs:documentation>сооружение водоподготовительной установки подпитки тепловых сетей</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300385">
+                <xs:annotation>
+                    <xs:documentation>здания (сооружения) сбора нефти и нефтяного газа</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300386">
+                <xs:annotation>
+                    <xs:documentation>скважины поглощающие, добычные, вентиляционные, технологические</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300387">
+                <xs:annotation>
+                    <xs:documentation>сооружение по подготовке газа</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300388">
+                <xs:annotation>
+                    <xs:documentation>сооружение для обустройства нефтяного месторождения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300389">
+                <xs:annotation>
+                    <xs:documentation>Мостовые сооружения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300390">
+                <xs:annotation>
+                    <xs:documentation>сооружения очистные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300391">
+                <xs:annotation>
+                    <xs:documentation>противооползневые и противоселевые сооружения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300392">
+                <xs:annotation>
+                    <xs:documentation>сооружение замерного устройства магистрального трубопровода</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300393">
+                <xs:annotation>
+                    <xs:documentation>станции нефтенасосная, нефтеперекачивающая, холодильная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300394">
+                <xs:annotation>
+                    <xs:documentation>тоннели</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300395">
+                <xs:annotation>
+                    <xs:documentation>сооружение автоматизации, телемеханизации и технологической связи</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300396">
+                <xs:annotation>
+                    <xs:documentation>установка подготовки нефти и нефтяного газа</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300397">
+                <xs:annotation>
+                    <xs:documentation>сооружения средств очистки и диагностики газопровода</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300398">
+                <xs:annotation>
+                    <xs:documentation>установки осушки и очистки газа</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300399">
+                <xs:annotation>
+                    <xs:documentation>Объекты капитального строительства, являющиеся неотъемлемой технологической частью объектов, указанных в абзацах третьем - восемьдесят восьмом настоящего подпункта, и предусмотренные в утвержденных в установленном порядке технических проектах разработки месторождений полезных ископаемых, технических проектах строительства и эксплуатации подземных сооружений, технических проектах ликвидации и консервации горных выработок, буровых скважин и иных сооружений, связанных с пользованием недрами</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300400">
+                <xs:annotation>
+                    <xs:documentation>здание склада нефтепродуктов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300401">
+                <xs:annotation>
+                    <xs:documentation>сооружения промежуточного склада сжиженных углеводородов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300402">
+                <xs:annotation>
+                    <xs:documentation>объекты по добыче, подготовке и обогащению полезных ископаемых</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300403">
+                <xs:annotation>
+                    <xs:documentation>шахта</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300404">
+                <xs:annotation>
+                    <xs:documentation>фабрики обогатительная и золотоизвлекательная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300405">
+                <xs:annotation>
+                    <xs:documentation>площадка размещения, накопления и обезвреживания отходов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300406">
+                <xs:annotation>
+                    <xs:documentation>шламовый амбар</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300407">
+                <xs:annotation>
+                    <xs:documentation>полигон</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300408">
+                <xs:annotation>
+                    <xs:documentation>шламонакопитель</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300409">
+                <xs:annotation>
+                    <xs:documentation>хвостохранилище</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300410">
+                <xs:annotation>
+                    <xs:documentation>шахтные стволы без исключений (вертикальный и наклонный, скиповой и клетевой, главный, вспомогательный, закладочный, вентиляционный, слепой)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300411">
+                <xs:annotation>
+                    <xs:documentation>штольня</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300412">
+                <xs:annotation>
+                    <xs:documentation>штрек</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300413">
+                <xs:annotation>
+                    <xs:documentation>квершлаг</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300414">
+                <xs:annotation>
+                    <xs:documentation>бремсберг</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300415">
+                <xs:annotation>
+                    <xs:documentation>спуск</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300416">
+                <xs:annotation>
+                    <xs:documentation>уклон</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300417">
+                <xs:annotation>
+                    <xs:documentation>канавы водоотводные и нагорные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300418">
+                <xs:annotation>
+                    <xs:documentation>водосборники и зумпфы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300419">
+                <xs:annotation>
+                    <xs:documentation>скважины добычные и разведочные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300420">
+                <xs:annotation>
+                    <xs:documentation>траншея капитальная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300421">
+                <xs:annotation>
+                    <xs:documentation>сооружения отвала</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300422">
+                <xs:annotation>
+                    <xs:documentation>Объекты капитального строительства, являющиеся неотъемлемой технологической частью объектов, указанных в абзацах девяносто первом - сто девятнадцатом</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300423">
+                <xs:annotation>
+                    <xs:documentation>каналы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300424">
+                <xs:annotation>
+                    <xs:documentation>коллектор, селевое русло, включая сооружения на трассах, мосты, переходы, перепады, быстротоки</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300425">
+                <xs:annotation>
+                    <xs:documentation>сооружение берегоукрепления</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300426">
+                <xs:annotation>
+                    <xs:documentation>сооружение водопропускное</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300427">
+                <xs:annotation>
+                    <xs:documentation>сооружение рыбопропускное</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300428">
+                <xs:annotation>
+                    <xs:documentation>канал судоходный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300429">
+                <xs:annotation>
+                    <xs:documentation>объекты системы управления гидротехническим сооружением</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300430">
+                <xs:annotation>
+                    <xs:documentation>сооружение оградительное</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300431">
+                <xs:annotation>
+                    <xs:documentation>сооружение выправительное</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300432">
+                <xs:annotation>
+                    <xs:documentation>антенно-мачтовое сооружение для сотовой связи</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300433">
+                <xs:annotation>
+                    <xs:documentation>опора вдоль трассовой линии электропередачи</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300434">
+                <xs:annotation>
+                    <xs:documentation>водовод</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300435">
+                <xs:annotation>
+                    <xs:documentation>дорожные сооружения, являющиеся неотъемлемой технологической частью дорог автомобильных</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300436">
+                <xs:annotation>
+                    <xs:documentation>лестница для обслуживания и осмотра технологического оборудования</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300437">
+                <xs:annotation>
+                    <xs:documentation>площадка производственная с покрытием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300438">
+                <xs:annotation>
+                    <xs:documentation>объект системы диспетчерской централизации</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300439">
+                <xs:annotation>
+                    <xs:documentation>объект системы электрической централизации</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300440">
+                <xs:annotation>
+                    <xs:documentation>объект электрификации существующих железных дорог</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300441">
+                <xs:annotation>
+                    <xs:documentation>здание административно-бытовое</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300442">
+                <xs:annotation>
+                    <xs:documentation>Велосипедная дорожка, беговая дорожка</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300443">
+                <xs:annotation>
+                    <xs:documentation>Объекты, указанные в абзацах втором и четвертом - шестом настоящего подпункта</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300444">
+                <xs:annotation>
+                    <xs:documentation>площадка для игр (детская), отдыха, занятий спортом, для массовых мероприятий, для размещения аттракционов, для установки мусоросборников, для выгула животных</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300445">
+                <xs:annotation>
+                    <xs:documentation>подъездной путь</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300446">
+                <xs:annotation>
+                    <xs:documentation>автостоянка</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300447">
+                <xs:annotation>
+                    <xs:documentation>сооружения связи</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300448">
+                <xs:annotation>
+                    <xs:documentation>Объект попутного бытового обслуживания и питания (объект для предоставления услуг общественного питания, охраны, билетных касс, информационных центров</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300449">
+                <xs:annotation>
+                    <xs:documentation>канатная дорога</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300450">
+                <xs:annotation>
+                    <xs:documentation>здания санатория</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300451">
+                <xs:annotation>
+                    <xs:documentation>объекты инфраструктуры для осуществления религиозной деятельности</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300452">
+                <xs:annotation>
+                    <xs:documentation>Элемент благоустройства лесного участка - информационный стенд (щит)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300453">
+                <xs:annotation>
+                    <xs:documentation>Элемент благоустройства лесного участка - информационная табличка (доска)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300454">
+                <xs:annotation>
+                    <xs:documentation>Элемент благоустройства лесного участка - дорожный знак</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300455">
+                <xs:annotation>
+                    <xs:documentation>Элемент благоустройства лесного участка - домовый знак</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300456">
+                <xs:annotation>
+                    <xs:documentation>Элемент благоустройства лесного участка - указатель</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300457">
+                <xs:annotation>
+                    <xs:documentation>Элемент благоустройства лесного участка - вывеска</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300458">
+                <xs:annotation>
+                    <xs:documentation>Элемент благоустройства лесного участка - учрежденческая доска</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300459">
+                <xs:annotation>
+                    <xs:documentation>Элемент благоустройства лесного участка - бортовой камень</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300460">
+                <xs:annotation>
+                    <xs:documentation>Элемент благоустройства лесного участка - бордюр</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300461">
+                <xs:annotation>
+                    <xs:documentation>Элемент благоустройства лесного участка - подпорная стенка</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300462">
+                <xs:annotation>
+                    <xs:documentation>Элемент благоустройства лесного участка - мостик</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300463">
+                <xs:annotation>
+                    <xs:documentation>Элемент благоустройства лесного участка - лестница</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300464">
+                <xs:annotation>
+                    <xs:documentation>Элемент благоустройства лесного участка - пандус (подъемник)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300465">
+                <xs:annotation>
+                    <xs:documentation>Элемент благоустройства лесного участка - ограждение</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300466">
+                <xs:annotation>
+                    <xs:documentation>Элемент благоустройства лесного участка - малая архитектурная форма - уличная мебель</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300467">
+                <xs:annotation>
+                    <xs:documentation>Элемент благоустройства лесного участка - малая архитектурная форма - элемент оформления озеленения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300468">
+                <xs:annotation>
+                    <xs:documentation>Элемент благоустройства лесного участка - малая архитектурная форма - кормушка для птиц</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300469">
+                <xs:annotation>
+                    <xs:documentation>Элемент благоустройства лесного участка - малая архитектурная форма - скворечник</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300470">
+                <xs:annotation>
+                    <xs:documentation>Элемент благоустройства лесного участка - малая архитектурная форма - ротонда</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300471">
+                <xs:annotation>
+                    <xs:documentation>Элемент благоустройства лесного участка - малая архитектурная форма - контейнер-мусоросборник</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300472">
+                <xs:annotation>
+                    <xs:documentation>Элемент благоустройства лесного участка - приствольная решетка</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300473">
+                <xs:annotation>
+                    <xs:documentation>Элемент благоустройства лесного участка - элемент озеленения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300474">
+                <xs:annotation>
+                    <xs:documentation>Элемент благоустройства лесного участка - конструкция велопарковки</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300475">
+                <xs:annotation>
+                    <xs:documentation>Элемент благоустройства лесного участка - георешетка</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300476">
+                <xs:annotation>
+                    <xs:documentation>Элемент благоустройства лесного участка - настил</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300477">
+                <xs:annotation>
+                    <xs:documentation>Элемент благоустройства лесного участка - газон рулонный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300478">
+                <xs:annotation>
+                    <xs:documentation>Элемент благоустройства лесного участка - посевной</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300479">
+                <xs:annotation>
+                    <xs:documentation>Элемент благоустройства лесного участка - мягкое покрытие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300480">
+                <xs:annotation>
+                    <xs:documentation>Элемент благоустройства лесного участка - иные виды некапитальных покрытий</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300481">
+                <xs:annotation>
+                    <xs:documentation>Строения и сооружения попутного бытового обслуживания и питания - объект для предоставления услуг общественного питания</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300482">
+                <xs:annotation>
+                    <xs:documentation>Строения и сооружения попутного бытового обслуживания и питания - объект для предоставления услуг охраны</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300483">
+                <xs:annotation>
+                    <xs:documentation>Строения и сооружения попутного бытового обслуживания и питания - билетная касса</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300484">
+                <xs:annotation>
+                    <xs:documentation>Строения и сооружения попутного бытового обслуживания и питания - фотоателье</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300485">
+                <xs:annotation>
+                    <xs:documentation>Строения и сооружения попутного бытового обслуживания и питания - душевые с раздевальнями и комнатой матери и ребенка</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300486">
+                <xs:annotation>
+                    <xs:documentation>Некапитальное нестационарное сооружение - навес</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300487">
+                <xs:annotation>
+                    <xs:documentation>Некапитальное нестационарное сооружение - веранда</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300488">
+                <xs:annotation>
+                    <xs:documentation>Некапитальное нестационарное сооружение - беседка</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300489">
+                <xs:annotation>
+                    <xs:documentation>Некапитальное нестационарное сооружение - дровницы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300490">
+                <xs:annotation>
+                    <xs:documentation>Некапитальное нестационарное сооружение - остановочные павильоны</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300491">
+                <xs:annotation>
+                    <xs:documentation>Туалетная кабина</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300492">
+                <xs:annotation>
+                    <xs:documentation>Контейнер-мусоросборник</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300493">
+                <xs:annotation>
+                    <xs:documentation>Пешеходная дорожка (тропа)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300494">
+                <xs:annotation>
+                    <xs:documentation>Велопешеходная дорожка (аллея)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300495">
+                <xs:annotation>
+                    <xs:documentation>Туристская тропа</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30300496">
+                <xs:annotation>
+                    <xs:documentation>Экологическая тропа</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="anObjectOfPassingConsumerServi">
+                <xs:annotation>
+                    <xs:documentation>объект попутного бытового обслуживания и питания (объект для предоставления услуг общественного питания, охраны, билетных касс, информационных центров, фотоателье, душевых с раздевалками и комнатой матери и ребенка)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="bridgeStructures">
+                <xs:annotation>
+                    <xs:documentation>мостовые сооружения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="capitalConstructionFacilitiesT">
+                <xs:annotation>
+                    <xs:documentation>объекты капитального строительства, являющиеся неотъемлемой технологической частью объектов и предусмотренные в утвержденных в установленном порядке технических проектах разработки месторождений полезных ископаемых, технических проектах строительства и эксплуатации подземных сооружений, технических проектах ликвидации и консервации горных выработок, буровых скважин и иных сооружений, связанных с пользованием недрами</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="industrialDrain">
+                <xs:annotation>
+                    <xs:documentation>сток промышленный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="pumpingStation">
+                <xs:annotation>
+                    <xs:documentation>насосная станция</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

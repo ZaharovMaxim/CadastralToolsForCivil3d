@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:st="http://rosleshoz.gov.ru/fgis-lk/common/simple/types/2.0"
+    xmlns:addr="http://rosleshoz.gov.ru/fgis-lk/common/address/types/2.0"
+    xmlns:dtype="http://rosleshoz.gov.ru/fgis-lk/common/enums/documentType/types/2.1"
+    xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/serviceInfo/types/1.0"
+    targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/serviceInfo/types/1.0"
+    elementFormDefault="qualified"
+    attributeFormDefault="unqualified">
+
+    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/simple/types/2.0"
+        schemaLocation="../common2/simpleTypes.xsd"/>
+    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/documentType/types/2.1"
+        schemaLocation="../common2/dDocumentTypeKindTypes.xsd" />
+    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/address/types/2.0"
+        schemaLocation="../common2/addressTypes.xsd"/>
+
+    <xs:complexType name="serviceInfo">
+        <xs:sequence>
+            <xs:element name="region" type="addr:RegionCodeSType">
+                <xs:annotation>
+                    <xs:documentation>Код региона</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="type" type="tns:DocumentTypeFilteredRefType">
+                <xs:annotation>
+                    <xs:documentation>Тип документа</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="provider" type="st:String1000SType" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="DocumentTypeFilteredRefType">
+        <xs:annotation>
+            <xs:documentation>Типы документов</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="code" type="tns:DocumentTypeFilteredEType">
+                <xs:annotation>
+                    <xs:documentation>Код справочника</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="value" type="st:String1000SType">
+                <xs:annotation>
+                    <xs:documentation>Значение справочника</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="DocumentTypeFilteredEType">
+        <xs:restriction base="dtype:DocumentTypeKindEType">
+            <xs:enumeration value="46613015">
+                <xs:annotation>
+                    <xs:documentation>Лесная декларация</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46602022">
+                <xs:annotation>
+                    <xs:documentation>Отчёт об использовании лесов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46602035">
+                <xs:annotation>
+                    <xs:documentation>Таксационное описание лесосеки</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46604001">
+                <xs:annotation>
+                    <xs:documentation>Отчёт о защите лесов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46603009">
+                <xs:annotation>
+                    <xs:documentation>Отчёт об охране лесов от загрязнения и иного негативного воздействия
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46603010">
+                <xs:annotation>
+                    <xs:documentation>Отчёт об охране лесов от пожаров</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46607002">
+                <xs:annotation>
+                    <xs:documentation>Отчёт о воспроизводстве лесов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46615010">
+                <xs:annotation>
+                    <xs:documentation>Извещение об окончании лесосечных работ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46603018">
+                <xs:annotation>
+                    <xs:documentation>Акт лесопатологического обследования</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46603011">
+                <xs:annotation>
+                    <xs:documentation>Проект лесовосстановления</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="46603012">
+                <xs:annotation>
+                    <xs:documentation>Проект лесоразведения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

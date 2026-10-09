@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/specialCustoms/types/2.0"
+    elementFormDefault="qualified"
+    targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/specialCustoms/types/2.0"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="SpecialCustomsKindEType">
+        <xs:annotation>
+            <xs:documentation>Пункты пропуска через границу РФ для вывоза отдельных видов древесины
+                и (или) продукции ее переработки</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="bugristoe">
+                <xs:annotation>
+                    <xs:documentation>Автомобильный пункт пропуска Бугристое</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="krasnayaGorka">
+                <xs:annotation>
+                    <xs:documentation>Пункт пограничного контроля Красная горка (на участке
+                        государственной границы Российской Федерации с Республикой
+                        Белоруссия)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="kulunda">
+                <xs:annotation>
+                    <xs:documentation>Автомобильный пункт пропуска Кулунда</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="olhovka">
+                <xs:annotation>
+                    <xs:documentation>Автомобильный пункт пропуска Ольховка</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="ozinki">
+                <xs:annotation>
+                    <xs:documentation>Автомобильный пункт пропуска Озинки</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="petuhovo">
+                <xs:annotation>
+                    <xs:documentation>Автомобильный пункт пропуска Петухово</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="veseloyarsk">
+                <xs:annotation>
+                    <xs:documentation>Автомобильный пункт пропуска Веселоярск</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

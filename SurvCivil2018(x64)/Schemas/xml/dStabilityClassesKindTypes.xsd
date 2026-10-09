@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/stabilityClasses/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/stabilityClasses/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:simpleType name="StabilityClassesKindEType">
+		<xs:annotation>
+			<xs:documentation>Классы биологической устойчивости насаждения</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="class1">
+				<xs:annotation>
+					<xs:documentation>1 класс</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="class2">
+				<xs:annotation>
+					<xs:documentation>2 класс</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="class3">
+				<xs:annotation>
+					<xs:documentation>3 класс</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="class4">
+				<xs:annotation>
+					<xs:documentation>4 класс</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="class5">
+				<xs:annotation>
+					<xs:documentation>5 класс</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="neOtsenivalosDrevostoyaNet">
+				<xs:annotation>
+					<xs:documentation>Не оценивалось (древостоя нет)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

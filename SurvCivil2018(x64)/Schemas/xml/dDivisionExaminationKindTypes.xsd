@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/divisionExamination/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/divisionExamination/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="DivisionExaminationKindEType">
+        <xs:annotation>
+            <xs:documentation>Обследование выдела</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="examinationOfTheEntireSection">
+                <xs:annotation>
+                    <xs:documentation>Обследование всего выдела</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="examinationPartOfTheAllotment">
+                <xs:annotation>
+                    <xs:documentation>Обследование части выдела</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

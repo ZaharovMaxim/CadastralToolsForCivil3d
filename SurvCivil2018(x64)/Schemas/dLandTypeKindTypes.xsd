@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/landType/types/2.1"
+           elementFormDefault="qualified"
+           targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/landType/types/2.1"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">    <xs:simpleType name="LandTypeKindEType">
+        <xs:annotation>
+            <xs:documentation>Вид земель</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="32111002">
+                <xs:annotation>
+                    <xs:documentation>Насаждение естественного происхождения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32111003">
+                <xs:annotation>
+                    <xs:documentation>Земли, занятые кустарниками</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32111005">
+                <xs:annotation>
+                    <xs:documentation>Насаждение в стадии реконструкции</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32111009">
+                <xs:annotation>
+                    <xs:documentation>Культуры с культурами под пологом</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32111012">
+                <xs:annotation>
+                    <xs:documentation>Насаждение с примесью пород искусственного происхождения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32111014">
+                <xs:annotation>
+                    <xs:documentation>Плантация лесных древесных пород</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32111213">
+                <xs:annotation>
+                    <xs:documentation>Усадьба служебная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32112001">
+                <xs:annotation>
+                    <xs:documentation>Ветровал, бурелом</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32112002">
+                <xs:annotation>
+                    <xs:documentation>Вырубка</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32112003">
+                <xs:annotation>
+                    <xs:documentation>Гари</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32112004">
+                <xs:annotation>
+                    <xs:documentation>Другие земли, предназначенные для лесовосстановления</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32112005">
+                <xs:annotation>
+                    <xs:documentation>Естественная редина</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32112007">
+                <xs:annotation>
+                    <xs:documentation>Лесные культуры</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32112008">
+                <xs:annotation>
+                    <xs:documentation>Лесосека</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32112009">
+                <xs:annotation>
+                    <xs:documentation>Насаждение из подроста</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32112014">
+                <xs:annotation>
+                    <xs:documentation>Несомкнувшиеся лесные культуры</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32112017">
+                <xs:annotation>
+                    <xs:documentation>Питомники и лесные плантации</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32112018">
+                <xs:annotation>
+                    <xs:documentation>Погибшее лесное насаждение</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32112019">
+                <xs:annotation>
+                    <xs:documentation>Поляна</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32112020">
+                <xs:annotation>
+                    <xs:documentation>Прогалина</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32123005">
+                <xs:annotation>
+                    <xs:documentation>Окружная граница</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32123009">
+                <xs:annotation>
+                    <xs:documentation>Дорога общего пользования</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32123013">
+                <xs:annotation>
+                    <xs:documentation>Другие линейные объекты</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32123014">
+                <xs:annotation>
+                    <xs:documentation>Другие объекты, необходимые для освоения лесов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32123015">
+                <xs:annotation>
+                    <xs:documentation>Железная дорога</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32123019">
+                <xs:annotation>
+                    <xs:documentation>Карьер</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32123021">
+                <xs:annotation>
+                    <xs:documentation>Квартальная просека</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32123023">
+                <xs:annotation>
+                    <xs:documentation>Кладбище</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32123028">
+                <xs:annotation>
+                    <xs:documentation>Лесная дорога</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32123029">
+                <xs:annotation>
+                    <xs:documentation>Трасса линии связи</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32123030">
+                <xs:annotation>
+                    <xs:documentation>Трасса линии электропередачи</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32123032">
+                <xs:annotation>
+                    <xs:documentation>Населенный пункт</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32123035">
+                <xs:annotation>
+                    <xs:documentation>Объект переработки заготовленной древесины и другой лесной продукции</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32123036">
+                <xs:annotation>
+                    <xs:documentation>Оздоровительное учреждение с элементами благоустройства (усадьба)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32123042">
+                <xs:annotation>
+                    <xs:documentation>Постоянный лесной склад</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32123044">
+                <xs:annotation>
+                    <xs:documentation>Противопожарный разрыв</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32123046">
+                <xs:annotation>
+                    <xs:documentation>Прочие трассы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32123050">
+                <xs:annotation>
+                    <xs:documentation>Свалка мусора и производственных отходов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32123052">
+                <xs:annotation>
+                    <xs:documentation>Склад</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32123054">
+                <xs:annotation>
+                    <xs:documentation>Служебный кордон</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32123060">
+                <xs:annotation>
+                    <xs:documentation>Торфоразработка</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32123062">
+                <xs:annotation>
+                    <xs:documentation>Трасса мелиоративного канала</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32123063">
+                <xs:annotation>
+                    <xs:documentation>Тропа</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32123064">
+                <xs:annotation>
+                    <xs:documentation>Трасса трубопровода</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32123065">
+                <xs:annotation>
+                    <xs:documentation>Усадьба частная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32124002">
+                <xs:annotation>
+                    <xs:documentation>Другие земли, пригодные для сельскохозяйственного использования</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32124003">
+                <xs:annotation>
+                    <xs:documentation>Сад, виноградник</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32124006">
+                <xs:annotation>
+                    <xs:documentation>Луг</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32124009">
+                <xs:annotation>
+                    <xs:documentation>Пастбище, выгон</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32124010">
+                <xs:annotation>
+                    <xs:documentation>Пашня</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32124013">
+                <xs:annotation>
+                    <xs:documentation>Сенокос</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32124015">
+                <xs:annotation>
+                    <xs:documentation>Скотопрогон</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32125001">
+                <xs:annotation>
+                    <xs:documentation>Другие водоемы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32125003">
+                <xs:annotation>
+                    <xs:documentation>Другие водные объекты (определенные водным кодексом)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32125004">
+                <xs:annotation>
+                    <xs:documentation>Ледник</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32125005">
+                <xs:annotation>
+                    <xs:documentation>Природный выход подземных вод (родники, гейзеры)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32125006">
+                <xs:annotation>
+                    <xs:documentation>Снежник</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32127002">
+                <xs:annotation>
+                    <xs:documentation>Безлесный крутой склон</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32127003">
+                <xs:annotation>
+                    <xs:documentation>Болото</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32127004">
+                <xs:annotation>
+                    <xs:documentation>Гольцы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32127006">
+                <xs:annotation>
+                    <xs:documentation>Другие виды земель, непригодные для выращивания леса</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32127007">
+                <xs:annotation>
+                    <xs:documentation>Каменистые россыпи</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32127011">
+                <xs:annotation>
+                    <xs:documentation>Марь</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32127019">
+                <xs:annotation>
+                    <xs:documentation>Отвал пород, золы, шлака, дражный отвал и т.п.</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32127020">
+                <xs:annotation>
+                    <xs:documentation>Пески</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32127021">
+                <xs:annotation>
+                    <xs:documentation>Плавни</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32127023">
+                <xs:annotation>
+                    <xs:documentation>Пустырь</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32127024">
+                <xs:annotation>
+                    <xs:documentation>Земли рекультивированные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32127030">
+                <xs:annotation>
+                    <xs:documentation>Тундра</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32131001">
+                <xs:annotation>
+                    <xs:documentation>Озеро</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32131002">
+                <xs:annotation>
+                    <xs:documentation>Река</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32131003">
+                <xs:annotation>
+                    <xs:documentation>Ручей</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32131004">
+                <xs:annotation>
+                    <xs:documentation>Пруд</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32131005">
+                <xs:annotation>
+                    <xs:documentation>Водохранилище</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32131007">
+                <xs:annotation>
+                    <xs:documentation>Канал мелиоративный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32131008">
+                <xs:annotation>
+                    <xs:documentation>Насаждение, расстроенное рубками</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32131009">
+                <xs:annotation>
+                    <xs:documentation>Другая просека</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32131010">
+                <xs:annotation>
+                    <xs:documentation>Проезд лесной</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32131011">
+                <xs:annotation>
+                    <xs:documentation>Садовое, огородное товарищество</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32131012">
+                <xs:annotation>
+                    <xs:documentation>Морская акватория</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32131013">
+                <xs:annotation>
+                    <xs:documentation>Галечная отмель</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32131014">
+                <xs:annotation>
+                    <xs:documentation>Пустошь</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32131015">
+                <xs:annotation>
+                    <xs:documentation>Другие объекты, не связанные с созданием лесной инфраструктуры</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32131016">
+                <xs:annotation>
+                    <xs:documentation>Прочие земли</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32131017">
+                <xs:annotation>
+                    <xs:documentation>Канал</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32131018">
+                <xs:annotation>
+                    <xs:documentation>Другие земли, на которых расположены леса</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32131026">
+                <xs:annotation>
+                    <xs:documentation>Hеиспользуемые земли</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32131027">
+                <xs:annotation>
+                    <xs:documentation>Другие земли, не занятые лесными насаждениями</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

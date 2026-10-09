@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/machEquipMeasures/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/machEquipMeasures/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="MachEquipMeasuresKindEType">
+        <xs:annotation>
+            <xs:documentation>Лесохозяйственная техника и оборудование для проведения комплекса мероприятий по лесовосстановлению и лесоразведению</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="30500001">
+                <xs:annotation>
+                    <xs:documentation>Гусеничный трактор</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30500002">
+                <xs:annotation>
+                    <xs:documentation>Лесопогрузчики</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30500003">
+                <xs:annotation>
+                    <xs:documentation>Экскаваторы-перегружатели</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30500004">
+                <xs:annotation>
+                    <xs:documentation>Плуги</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30500005">
+                <xs:annotation>
+                    <xs:documentation>Погрузочно-транспортирующие лесозаготовительные машины (форвардеры)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30500006">
+                <xs:annotation>
+                    <xs:documentation>Краны на колесном ходу</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30500007">
+                <xs:annotation>
+                    <xs:documentation>Погрузчики с бортовым поворотом</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30500008">
+                <xs:annotation>
+                    <xs:documentation>Культиваторы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30500009">
+                <xs:annotation>
+                    <xs:documentation>Трелевочные тракторы (скиддеры) для лесного хозяйства</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30500010">
+                <xs:annotation>
+                    <xs:documentation>Валочные машины</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30500011">
+                <xs:annotation>
+                    <xs:documentation>Бульдозеры колесные с неповоротным или поворотным отвалом</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30500012">
+                <xs:annotation>
+                    <xs:documentation>Тракторы колесные для полуприцепов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30500013">
+                <xs:annotation>
+                    <xs:documentation>Бульдозеры гусеничные с неповоротным или поворотным отвалом</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30500014">
+                <xs:annotation>
+                    <xs:documentation>Средства транспортные, оснащенные кранами-манипуляторами</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30500015">
+                <xs:annotation>
+                    <xs:documentation>Самоходные машины для измельчения древесины (мульчеры)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30500016">
+                <xs:annotation>
+                    <xs:documentation>Бороны</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30500017">
+                <xs:annotation>
+                    <xs:documentation>Прочая техника</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30500018">
+                <xs:annotation>
+                    <xs:documentation>Электропогрузчики</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30500019">
+                <xs:annotation>
+                    <xs:documentation>Автолесовозы </xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30500020">
+                <xs:annotation>
+                    <xs:documentation>Экскаваторы многоковшовые</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30500021">
+                <xs:annotation>
+                    <xs:documentation>Лесопосадочные машины</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30500022">
+                <xs:annotation>
+                    <xs:documentation>Многооперационные лесозаготовительные машины (харвестеры)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30500023">
+                <xs:annotation>
+                    <xs:documentation>Автопогрузчики</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30500024">
+                <xs:annotation>
+                    <xs:documentation>Прочее оборудование</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30500025">
+                <xs:annotation>
+                    <xs:documentation>Валочно-пакетирующие машины</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30500026">
+                <xs:annotation>
+                    <xs:documentation>Погрузчики фронтальные одноковшовые</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30500027">
+                <xs:annotation>
+                    <xs:documentation>Одноковшовые полноповоротные экскаваторы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30500028">
+                <xs:annotation>
+                    <xs:documentation>Сучкорезно-раскряжевочные машины (процессоры)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30500029">
+                <xs:annotation>
+                    <xs:documentation>Краны на гусеничном ходу</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30500030">
+                <xs:annotation>
+                    <xs:documentation>Гусеничные тракторы, не оснащенные отвалом</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30500031">
+                <xs:annotation>
+                    <xs:documentation>Средства транспортные для перевозки грузов с использованием прицепа-роспуска</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

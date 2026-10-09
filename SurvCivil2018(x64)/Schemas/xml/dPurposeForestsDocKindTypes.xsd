@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/purposeForestsDoc/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/purposeForestsDoc/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="PurposeForestsDocKindEType">
+        <xs:annotation>
+            <xs:documentation>Вид документа основания использования лесов</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="contractForFreeUse">
+                <xs:annotation>
+                    <xs:documentation>Договор безвозмездного пользования</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="decisionAuthorizedStateOrOMS">
+                <xs:annotation>
+                    <xs:documentation>Решение уполномоченного органа гос. власти или органа местного самоуправления (в соответствии со статьями 81-84 ЛК РФ)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="decisionEFIZ">
+                <xs:annotation>
+                    <xs:documentation>Решение федеральной службы по ветеринарному и фитосанитарному надзору</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="forestPlotLeaseAgreement">
+                <xs:annotation>
+                    <xs:documentation>Договор аренды лесного участка</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

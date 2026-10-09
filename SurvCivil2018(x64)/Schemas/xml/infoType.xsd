@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+           targetNamespace="http://rosleshoz.gov.ru/xmlns/infoType/5.0"
+           xmlns:tns="http://rosleshoz.gov.ru/xmlns/infoType/5.0"
+           xmlns:st="http://rosleshoz.gov.ru/fgis-lk/common/simple/types/2.0"
+           xmlns:comR="http://rosleshoz.gov.ru/fgis-lk/common/commonReport/types/2.1"
+           xmlns:disSpec="http://rosleshoz.gov.ru/xmlns/distributionSpecialPurposeType/5.0"
+           xmlns:cType="http://rosleshoz.gov.ru/xmlns/commonType/5.0"
+           xmlns:avTax="http://rosleshoz.gov.ru/xmlns/averageTaxationRatesType/5.0">
+
+    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/simple/types/2.0" schemaLocation="simpleTypes.xsd"/>
+    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/commonReport/types/2.1" schemaLocation="commonReport.xsd"/>
+    <xs:import namespace="http://rosleshoz.gov.ru/xmlns/commonType/5.0" schemaLocation="commonType.xsd"/>
+    <xs:import namespace="http://rosleshoz.gov.ru/xmlns/averageTaxationRatesType/5.0" schemaLocation="averageTaxationRatesType.xsd"/>
+    <xs:import namespace="http://rosleshoz.gov.ru/xmlns/distributionSpecialPurposeType/5.0"  schemaLocation="distributionSpecialPurposeType.xsd"/>
+
+    <xs:complexType name="listQuartersTaxationUnit">
+        <xs:annotation>
+            <xs:documentation>Тип описания раздела</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="content" type="cType:contentType" />
+            <xs:element name="table">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="row" type="tns:listQuartersTaxationUnitRow" minOccurs="0" maxOccurs="unbounded" />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="listQuartersTaxationUnitRow">
+        <xs:sequence>
+            <xs:element name="location" type="comR:Location2Type">
+                <xs:annotation>
+                    <xs:documentation />
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="area" type="st:PositiveDecimalFourSType">
+                <xs:annotation>
+                    <xs:documentation>Площадь</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="distributionSpecialPurpose">
+        <xs:annotation>
+            <xs:documentation>Тип описания раздела</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="content" type="cType:contentType" />
+            <xs:element name="table" type="disSpec:distributionSpecialPurposeType" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="averageTaxationRates">
+        <xs:annotation>
+            <xs:documentation>Тип описания раздела</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="content" type="cType:contentType" />
+            <xs:element name="table" type="avTax:averageTaxationRatesType" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="speciallyProtectedNaturalAreas">
+        <xs:annotation>
+            <xs:documentation>Тип описания раздела</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="content" type="cType:contentType" />
+            <xs:element name="table">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="row" type="tns:speciallyProtectedNaturalAreasRow" minOccurs="0" maxOccurs="unbounded" />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="speciallyProtectedNaturalAreasRow">
+        <xs:sequence>
+            <xs:element name="speciallyProtectedNaturalArea" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>Особо охраняемая природная территория</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="position" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>Расположение особо охраняемых природных территорий и объектов (квартал, выдел, урочище, границы)</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="securityMode" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>Режим охраны</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="event" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>Мероприятия по сохранениию объектов</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="contamination">
+        <xs:annotation>
+            <xs:documentation>Тип описания раздела</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="content" type="cType:contentType" />
+            <xs:element name="table">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="row" type="tns:contaminationRow" minOccurs="0" maxOccurs="unbounded" />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="contaminationRow">
+        <xs:sequence>
+            <xs:element name="location" type="comR:Location2Type">
+                <xs:annotation>
+                    <xs:documentation />
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="area" type="st:PositiveDecimalFourSType">
+                <xs:annotation>
+                    <xs:documentation>Площадь, га</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="typeContamination" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>Вид загрязнения</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="unitType" type="comR:UnitTypeType">
+                <xs:annotation>
+                    <xs:documentation>Единица измерения</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="volume" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>Количественные показатели загрязнения</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="rarePlantsAnimals">
+        <xs:annotation>
+            <xs:documentation>Тип описания раздела</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="content" type="cType:contentType" />
+            <xs:element name="table">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="row" type="tns:rarePlantsAnimalsRow" minOccurs="0" maxOccurs="unbounded" />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="rarePlantsAnimalsRow">
+        <xs:sequence>
+            <xs:element name="location" type="comR:Location2Type">
+                <xs:annotation>
+                    <xs:documentation>Расположение ООПТ</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="area" type="st:PositiveDecimalFourSType">
+                <xs:annotation>
+                    <xs:documentation>Площадь, га</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="species" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>Вид, порода</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="restrictions" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>Ограничения</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="basisProtection" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>Основание для охраны</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="surveys">
+        <xs:annotation>
+            <xs:documentation>Тип описания раздела</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="content" type="cType:contentType" />
+            <xs:element name="table">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="row" type="tns:surveysRow" minOccurs="0" maxOccurs="unbounded" />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="surveysRow">
+        <xs:sequence>
+            <xs:element name="surveyMaterials" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>Материалы изыскания или обследования</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="requisites" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>реквизиты</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="encumbrances">
+        <xs:annotation>
+            <xs:documentation>Тип описания раздела</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="content" type="cType:contentType" />
+            <xs:element name="table">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="row" type="tns:encumbrancesRow" minOccurs="0" maxOccurs="unbounded" />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="encumbrancesRow">
+        <xs:sequence>
+            <xs:element name="typeEncumbrance" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>Вид обременения</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="borderArea" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>реквизиты</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

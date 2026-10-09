@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/contaminationLands/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/contaminationLands/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="ContaminationLandsKindEType">
+        <xs:annotation>
+            <xs:documentation>Сведения о загрязнении радионуклидами земель, на которых расположены леса</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="4030001">
+                <xs:annotation>
+                    <xs:documentation>загрязнено радионуклидами с плотностью загрязнения почвы цезием-137 свыше 15 до 40 ки/кв.км или стронцием-90 свыше 10 до 25 ки/кв. км;</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4030002">
+                <xs:annotation>
+                    <xs:documentation>загрязнено радионуклидами с плотностью загрязнения почвы цезием-137 свыше 5 до 15 ки/кв. км или стронцием-90 свыше 3 до 10 ки/кв. км</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4030003">
+                <xs:annotation>
+                    <xs:documentation>загрязнено радионуклидами с плотностью загрязнения почвы цезием-137 свыше 40 ки/кв. км или стронцием-90 свыше 25 ки/кв. км</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4030004">
+                <xs:annotation>
+                    <xs:documentation>загрязнено радионуклидами с плотностью загрязнения почвы цезием-137 от 1 до 5 ки/кв. км или стронцием-90 от 0.15 до 3 ки/кв. км; от 1 до 5 ки/кв. км или стронцием-90 от 0.15 до 3 ки/кв. км</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

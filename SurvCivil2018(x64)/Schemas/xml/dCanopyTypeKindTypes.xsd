@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/canopyType/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/canopyType/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:simpleType name="CanopyTypeKindEType">
+		<xs:annotation>
+			<xs:documentation>Тип сомкнутости полога древостоя</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="gorizontalnyy">
+				<xs:annotation>
+					<xs:documentation>Горизонтальный</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="neOtsenivalsyaDrevostoyaNet">
+				<xs:annotation>
+					<xs:documentation>Не оценивался (древостоя нет)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="vertikalnoStupenchatyy">
+				<xs:annotation>
+					<xs:documentation>Вертикально-ступенчатый</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="vertikalnyy">
+				<xs:annotation>
+					<xs:documentation>Вертикальный</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

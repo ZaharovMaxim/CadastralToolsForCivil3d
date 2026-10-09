@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/agePeriod/types/2.0" elementFormDefault="qualified"
+           targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/agePeriod/types/2.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="AgePeriodKindEType">
+        <xs:annotation>
+            <xs:documentation>Возрастной период</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="byAllAgeClasses">
+                <xs:annotation>
+                    <xs:documentation>По всем классам возраста</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="eight">
+                <xs:annotation>
+                    <xs:documentation>VIII (71 - 80)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="eighteen">
+                <xs:annotation>
+                    <xs:documentation>XVIII (181-190)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="eleven">
+                <xs:annotation>
+                    <xs:documentation>XI (101 - 110)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="fifteen">
+                <xs:annotation>
+                    <xs:documentation>XV (161 и более)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="five">
+                <xs:annotation>
+                    <xs:documentation>V (41 - 50)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="four">
+                <xs:annotation>
+                    <xs:documentation>IV (31 - 40)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="fourteen">
+                <xs:annotation>
+                    <xs:documentation>XIV (141 - 160)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="fourteenOverOneHundredForty">
+                <xs:annotation>
+                    <xs:documentation>XIV (&gt;140)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="fromZeroToTen">
+                <xs:annotation>
+                    <xs:documentation>0 - 10</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="moreThanOneHundredAndTwenty">
+                <xs:annotation>
+                    <xs:documentation>свыше 120</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="nine">
+                <xs:annotation>
+                    <xs:documentation>IX (81 - 90)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="nineteen">
+                <xs:annotation>
+                    <xs:documentation>XIX (191-200)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="one">
+                <xs:annotation>
+                    <xs:documentation>I (1 - 10)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="seven">
+                <xs:annotation>
+                    <xs:documentation>VII (61 - 70)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="seventeen">
+                <xs:annotation>
+                    <xs:documentation>XVII (171-180)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="six">
+                <xs:annotation>
+                    <xs:documentation>VI (51 - 60)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sixteen">
+                <xs:annotation>
+                    <xs:documentation>XVI (161-170)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="ten">
+                <xs:annotation>
+                    <xs:documentation>X (91 - 100)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="thirteen">
+                <xs:annotation>
+                    <xs:documentation>XIII (121 - 140)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="three">
+                <xs:annotation>
+                    <xs:documentation>III (21 - 30)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="twelve">
+                <xs:annotation>
+                    <xs:documentation>XII (111 - 120)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="twenty">
+                <xs:annotation>
+                    <xs:documentation>XX (201-210)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="twentyOne">
+                <xs:annotation>
+                    <xs:documentation>XXI (211-220)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="twentyThree">
+                <xs:annotation>
+                    <xs:documentation>XXIII (231-240)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="twentyTwo">
+                <xs:annotation>
+                    <xs:documentation>XXII (221-230)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="two">
+                <xs:annotation>
+                    <xs:documentation>II (11 - 20)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/typeDamage/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/typeDamage/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="TypeDamageKindEType">
+        <xs:annotation>
+            <xs:documentation>Тип повреждения</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="derevyaPovrezhdEntomovreditel">
+                <xs:annotation>
+                    <xs:documentation>Деревья, поврежденные энтомовредителями</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="bolezni">
+                <xs:annotation>
+                    <xs:documentation>Болезни</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="snegoval">
+                <xs:annotation>
+                    <xs:documentation>Снеговал</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="chrezmernayaRekreacionNagruzka">
+                <xs:annotation>
+                    <xs:documentation>Чрезмерная рекреационная нагрузка</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="vymokaniye">
+                <xs:annotation>
+                    <xs:documentation>Вымокание</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="derevyaPovrezhdennyyeGryzunami">
+                <xs:annotation>
+                    <xs:documentation>Деревья, поврежденные грызунами</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="morozoboj">
+                <xs:annotation>
+                    <xs:documentation>Морозобой (нарост, трещина ствола)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="derevyaPovrezhdennyyePtitsami">
+                <xs:annotation>
+                    <xs:documentation>Деревья, поврежденные птицами</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="derevyaPodvergVerhovomuPozharu">
+                <xs:annotation>
+                    <xs:documentation>Деревья подверглись воздействию верхового пожара</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="derevyaPovrezhDomashnimiZhivot">
+                <xs:annotation>
+                    <xs:documentation>Деревья, поврежденные домашними животными</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="zasypaniyePeskom">
+                <xs:annotation>
+                    <xs:documentation>Засыпание песком</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="podsochka">
+                <xs:annotation>
+                    <xs:documentation>Подсочка</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="zasoleniyeGrunta">
+                <xs:annotation>
+                    <xs:documentation>Засоление грунта</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="promyshlennyyeVybrosy">
+                <xs:annotation>
+                    <xs:documentation>Промышленные выбросы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="molniya">
+                <xs:annotation>
+                    <xs:documentation>Молния (спиральный скол, раздробленная крона)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="abioticheskiyeFaktory">
+                <xs:annotation>
+                    <xs:documentation>Абиотические факторы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="derevyaPovrezhDikimiZhivotnymi">
+                <xs:annotation>
+                    <xs:documentation>Деревья, поврежденные дикими животными</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="mekhanicheskiyePovrezhdeniya">
+                <xs:annotation>
+                    <xs:documentation>Механические повреждения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="derevyaPodverglisNizPozharu">
+                <xs:annotation>
+                    <xs:documentation>Деревья подверглись воздействию низового пожара</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="vyshchelachivaniyeGrunta">
+                <xs:annotation>
+                    <xs:documentation>Выщелачивание грунта</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sdvigObsypaniyeGrunta">
+                <xs:annotation>
+                    <xs:documentation>Сдвиг, обсыпание грунта</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="vysykhaniye">
+                <xs:annotation>
+                    <xs:documentation>Высыхание</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="bioticheskiyeFaktory">
+                <xs:annotation>
+                    <xs:documentation>Биотические факторы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="vymyvaniye">
+                <xs:annotation>
+                    <xs:documentation>Вымывание</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="antropogennoyeFaktory">
+                <xs:annotation>
+                    <xs:documentation>Антропогенное факторы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="vyzhimaniyeKornevoySistemy">
+                <xs:annotation>
+                    <xs:documentation>Выжимание корневой системы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="vetroval">
+                <xs:annotation>
+                    <xs:documentation>Ветровал</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="snegolom">
+                <xs:annotation>
+                    <xs:documentation>Снеголом</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="derevyaBezPovrezhdeniy">
+                <xs:annotation>
+                    <xs:documentation>Деревья без повреждений</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="derevyaPodverglisPodzemPozharu">
+                <xs:annotation>
+                    <xs:documentation>Деревья подверглись воздействию подземного пожара</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="burelom">
+                <xs:annotation>
+                    <xs:documentation>Бурелом</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="derevyaPovrezhFitovreditelyami">
+                <xs:annotation>
+                    <xs:documentation>Деревья, поврежденные фитовредителями</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="vymerzaniye">
+                <xs:annotation>
+                    <xs:documentation>Вымерзание</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

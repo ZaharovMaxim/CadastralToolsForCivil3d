@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/taxationCategory/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/taxationCategory/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="TaxationCategoryKindEType">
+        <xs:annotation>
+            <xs:documentation>Таксационный разряд</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="three">
+                <xs:annotation>
+                    <xs:documentation>III</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="two">
+                <xs:annotation>
+                    <xs:documentation>II</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="one">
+                <xs:annotation>
+                    <xs:documentation>I</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

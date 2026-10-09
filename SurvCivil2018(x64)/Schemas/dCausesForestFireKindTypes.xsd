@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/causesForestFire/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/causesForestFire/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="CausesForestFireKindEType">
+        <xs:annotation>
+            <xs:documentation>Причины возникновения лесного пожара</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="fromBurningDryGrassyVegetation">
+                <xs:annotation>
+                    <xs:documentation>От выжиганий сухой травянистой растительности</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="fromCarryingOutPreventiveContr">
+                <xs:annotation>
+                    <xs:documentation>От проведения профилактического контролируемого выжигания лесных горючих материалов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="fromLinearObjectsPowerLines">
+                <xs:annotation>
+                    <xs:documentation>От линейных объектов (линий электропередач, железных и автомобильных дорог, трубопроводов и иных линейных объектов)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="fromThunderstorms">
+                <xs:annotation>
+                    <xs:documentation>От гроз</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="theForestFireCrossedTheBorderO">
+                <xs:annotation>
+                    <xs:documentation>Лесной пожар перешел через границу субъекта Российской Федерации или государственную границу Российской Федерации</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="theForestFireHasMovedFromLands">
+                <xs:annotation>
+                    <xs:documentation>Лесной пожар перешел с земель иных категорий</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="throughTheFaultOfExpeditionsCo">
+                <xs:annotation>
+                    <xs:documentation>По вине экспедиций, проводящих изыскательские работы в лесу</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="throughTheFaultOfPersonsUsingF">
+                <xs:annotation>
+                    <xs:documentation>По вине лиц, использующих леса</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="throughTheFaultOfThePopulation">
+                <xs:annotation>
+                    <xs:documentation>По вине населения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

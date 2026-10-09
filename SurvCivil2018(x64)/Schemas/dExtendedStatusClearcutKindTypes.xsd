@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/extendedStatusClearcut/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/extendedStatusClearcut/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="ExtendedStatusClearcutKindEType">
+        <xs:annotation>
+            <xs:documentation>Расширенные статусы лесосеки</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="clearcutWork">
+                <xs:annotation>
+                    <xs:documentation>Начаты работы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="closedWithWood">
+                <xs:annotation>
+                    <xs:documentation>Закрыта с заготовкой</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="closedWithoutWood">
+                <xs:annotation>
+                    <xs:documentation>Закрыта без заготовки</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="declared">
+                <xs:annotation>
+                    <xs:documentation>Задекларирована</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="declaredClosed">
+                <xs:annotation>
+                    <xs:documentation>Исключена из декларации</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="reserved">
+                <xs:annotation>
+                    <xs:documentation>Отведена</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="reservedWithView">
+                <xs:annotation>
+                    <xs:documentation>Отведена с осмотром</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

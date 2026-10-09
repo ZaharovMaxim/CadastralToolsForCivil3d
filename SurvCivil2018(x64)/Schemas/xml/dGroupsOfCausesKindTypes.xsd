@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/groupsOfCauses/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/groupsOfCauses/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="GroupsOfCausesKindEType">
+        <xs:annotation>
+            <xs:documentation>Группа причин на выделе</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="4100000">
+                <xs:annotation>
+                    <xs:documentation>Причина не установлена (по данным ДЗЗ)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4100001">
+                <xs:annotation>
+                    <xs:documentation>Пожары</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4100002">
+                <xs:annotation>
+                    <xs:documentation>Вредители</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4100003">
+                <xs:annotation>
+                    <xs:documentation>Погодно-климатичсекие факторы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4100004">
+                <xs:annotation>
+                    <xs:documentation>Болезни</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4100005">
+                <xs:annotation>
+                    <xs:documentation>Повреждение дикими животными</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4100006">
+                <xs:annotation>
+                    <xs:documentation>Антропогенные повреждения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4100007">
+                <xs:annotation>
+                    <xs:documentation>Биотические факторы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4100008">
+                <xs:annotation>
+                    <xs:documentation>Абиотические факторы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

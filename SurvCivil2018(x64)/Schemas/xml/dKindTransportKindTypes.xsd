@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/kindTransport/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/kindTransport/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="KindTransportKindEType">
+        <xs:annotation>
+            <xs:documentation>Вид транспорта</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="avtomobilnyyTransport">
+                <xs:annotation>
+                    <xs:documentation>автомобильный транспорт</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="inoyVidTransporta">
+                <xs:annotation>
+                    <xs:documentation>иной вид транспорта</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="vodnyyTransport">
+                <xs:annotation>
+                    <xs:documentation>водный транспорт</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="zheleznodorozhnyyTransport">
+                <xs:annotation>
+                    <xs:documentation>железнодорожный транспорт</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

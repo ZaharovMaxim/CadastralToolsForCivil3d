@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+           targetNamespace="http://rosleshoz.gov.ru/xmlns/areaForestCareType/5.0"
+           xmlns:tns="http://rosleshoz.gov.ru/xmlns/areaForestCareType/5.0"
+           xmlns:fa="http://rosleshoz.gov.ru/fgis-lk/common/enums/farms/types/2.1"
+           xmlns:st="http://rosleshoz.gov.ru/fgis-lk/common/simple/types/2.0"
+           xmlns:comR="http://rosleshoz.gov.ru/fgis-lk/common/commonReport/types/2.1">
+
+    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/farms/types/2.1" schemaLocation="dFarmsKindTypes.xsd"/>
+    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/simple/types/2.0" schemaLocation="simpleTypes.xsd"/>
+    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/commonReport/types/2.1" schemaLocation="commonReport.xsd"/>
+
+    <xs:complexType name="areaForestCareType">
+        <xs:sequence>
+            <xs:element name="resources" type="tns:resourcesType">
+                <xs:annotation>
+                    <xs:documentation>Всего</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="farmInfo">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="row" type="tns:farmRow" minOccurs="1" maxOccurs="unbounded" />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="farmRow">
+        <xs:annotation>
+            <xs:documentation>Строка целевого назначения</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="resources" type="tns:resourcesType">
+                <xs:annotation>
+                    <xs:documentation>Всего</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="farm" type="fa:FarmsKindEType">
+                <xs:annotation>
+                    <xs:documentation>Хозяйство</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="treeInfo">
+                <xs:annotation>
+                    <xs:documentation>Категория защитных лесов (только для защитных лесов)</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="row" type="tns:treeRow" minOccurs="0" maxOccurs="unbounded" />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="treeRow">
+        <xs:sequence>
+            <xs:element name="tree" type="comR:TreeType">
+                <xs:annotation>
+                    <xs:documentation>Порода</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="typeCare" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>Вид ухода</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="resources" type="tns:resourcesType" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="resourcesType">
+        <xs:sequence>
+            <xs:element name="area" type="st:PositiveDecimalFourSType">
+                <xs:annotation>
+                    <xs:documentation>Площадь лесов, нуждающихся в уходе за лесами га</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="annualArea" type="st:PositiveDecimalFourSType">
+                <xs:annotation>
+                    <xs:documentation>Ежегодная площадь ухода за лесами, га</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

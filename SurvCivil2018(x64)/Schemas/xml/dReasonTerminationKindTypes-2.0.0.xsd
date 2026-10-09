@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/reasonTermination/types/2.0.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/reasonTermination/types/2.0.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="ReasonTerminationKindEType">
+        <xs:annotation>
+            <xs:documentation>Причины прекращения действия положительного решения об использовании лесов на ЗСН</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="commissionDecision">
+                <xs:annotation>
+                    <xs:documentation>По решению межведовственной комиссии</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="developProject">
+                <xs:annotation>
+                    <xs:documentation>Непредоставление проекта освоения лесов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="endLimitDate">
+                <xs:annotation>
+                    <xs:documentation>Истечение срока использования лесов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="noticeTermination">
+                <xs:annotation>
+                    <xs:documentation>Уведомление о прекращении использовании лесов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

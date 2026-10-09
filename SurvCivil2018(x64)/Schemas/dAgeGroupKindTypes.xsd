@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/ageGroup/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/ageGroup/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="AgeGroupKindEType">
+        <xs:annotation>
+            <xs:documentation>Группы возраста лесного насаждения</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="40010001">
+                <xs:annotation>
+                    <xs:documentation>молодняки</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="40010002">
+                <xs:annotation>
+                    <xs:documentation>молодняки I класса возраста</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="40010003">
+                <xs:annotation>
+                    <xs:documentation>молодняки II класса возраста</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="40020004">
+                <xs:annotation>
+                    <xs:documentation>средневозрастные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="40030005">
+                <xs:annotation>
+                    <xs:documentation>приспевающие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="40050007">
+                <xs:annotation>
+                    <xs:documentation>спелые</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="40060008">
+                <xs:annotation>
+                    <xs:documentation>перестойные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="40070009">
+                <xs:annotation>
+                    <xs:documentation>спелые и перестойные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="40090010">
+                <xs:annotation>
+                    <xs:documentation>Не установлена (деревья с диаметром 6 см и более отсутствуют)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

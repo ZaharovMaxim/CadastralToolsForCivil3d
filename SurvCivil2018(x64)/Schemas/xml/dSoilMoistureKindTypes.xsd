@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/soilMoisture/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/soilMoisture/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:simpleType name="SoilMoistureKindEType">
+		<xs:annotation>
+			<xs:documentation>Влажность почв</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="mokraya">
+				<xs:annotation>
+					<xs:documentation>Мокрая</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="sukhaya">
+				<xs:annotation>
+					<xs:documentation>Сухая</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="svezhaya">
+				<xs:annotation>
+					<xs:documentation>Свежая</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="syraya">
+				<xs:annotation>
+					<xs:documentation>Сырая</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="vlazhnaya">
+				<xs:annotation>
+					<xs:documentation>Влажная</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/compositionSoils/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/compositionSoils/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:simpleType name="CompositionSoilsKindEType">
+		<xs:annotation>
+			<xs:documentation>Механический (гранулометический) состав почв</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="glinaLegkaya">
+				<xs:annotation>
+					<xs:documentation>Глина легкая</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="glinaSrednyaya">
+				<xs:annotation>
+					<xs:documentation>Глина средняя</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="glinaTyazhelaya">
+				<xs:annotation>
+					<xs:documentation>Глина тяжелая</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="pesok">
+				<xs:annotation>
+					<xs:documentation>Песок</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="pesokSvyazannyy">
+				<xs:annotation>
+					<xs:documentation>Песок связанный</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="suglinokLegkiy">
+				<xs:annotation>
+					<xs:documentation>Суглинок легкий</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="suglinokSredniy">
+				<xs:annotation>
+					<xs:documentation>Суглинок средний</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="suglinokTyazhelyy">
+				<xs:annotation>
+					<xs:documentation>Суглинок тяжелый</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="supesLegkaya">
+				<xs:annotation>
+					<xs:documentation>Супесь легкая</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="supesSvyazannaya">
+				<xs:annotation>
+					<xs:documentation>Супесь связанная</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

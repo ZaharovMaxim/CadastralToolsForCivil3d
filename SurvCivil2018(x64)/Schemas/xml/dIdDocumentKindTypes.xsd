@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    deprecated
+    использовать http://rosleshoz.gov.ru/fgis-lk/common/enums/typesIdentityDoc/types/2.0.0
+    из dTypesIdentityDocKindTypes-2.0.0.xsd
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+           targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/iddoc/types/2.0"
+           xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/iddoc/types/2.0">
+
+    <xs:simpleType name="IdDocumentKindEType">
+        <xs:annotation>
+            <xs:documentation>Тип Код документа, удостоверяющего личность (по справочнику СПДУЛ ФНС России)
+            </xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:length value="2"/>
+            <xs:pattern value="[0-9]{2}"/>
+            <xs:enumeration value="01">
+                <xs:annotation>
+                    <xs:documentation source="Паспорт гражданина СССР"/>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="02">
+                <xs:annotation>
+                    <xs:documentation source="Загранпаспорт гражданина СССР"/>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="03">
+                <xs:annotation>
+                    <xs:documentation source="Свидетельство о рождении"/>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="04">
+                <xs:annotation>
+                    <xs:documentation source="Удостоверение личности офицера"/>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="05">
+                <xs:annotation>
+                    <xs:documentation source="Справка об освобождении из места лишения свободы"/>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="06">
+                <xs:annotation>
+                    <xs:documentation source="Паспорт Минморфлота"/>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="07">
+                <xs:annotation>
+                    <xs:documentation source="Военный билет"/>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="08">
+                <xs:annotation>
+                    <xs:documentation source="Временное удостоверение, выданное взамен военного билета"/>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="09">
+                <xs:annotation>
+                    <xs:documentation source="Дипломатический паспорт"/>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="10">
+                <xs:annotation>
+                    <xs:documentation source="Паспорт иностранного гражданина"/>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="11">
+                <xs:annotation>
+                    <xs:documentation
+                        source="Свидетельство о рассмотрении ходатайства о признании лица беженцем на территории Российской Федерации по существу"/>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="12">
+                <xs:annotation>
+                    <xs:documentation source="Вид на жительство в Российской Федерации"/>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="13">
+                <xs:annotation>
+                    <xs:documentation source="Удостоверение беженца"/>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="14">
+                <xs:annotation>
+                    <xs:documentation source="Временное удостоверение личности гражданина Российской Федерации"/>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="15">
+                <xs:annotation>
+                    <xs:documentation source="Разрешение на временное проживание в Российской Федерации"/>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="18">
+                <xs:annotation>
+                    <xs:documentation
+                        source="Свидетельство о предоставлении временного убежища на территории Российской Федерации"/>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="21">
+                <xs:annotation>
+                    <xs:documentation source="Паспорт гражданина Российской Федерации"/>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="22">
+                <xs:annotation>
+                    <xs:documentation source="Загранпаспорт гражданина Российской Федерации"/>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="23">
+                <xs:annotation>
+                    <xs:documentation
+                        source="Свидетельство о рождении, выданное уполномоченным органом иностранного государства"/>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="24">
+                <xs:annotation>
+                    <xs:documentation source="Удостоверение личности военнослужащего Российской Федерации"/>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="26">
+                <xs:annotation>
+                    <xs:documentation source="Паспорт моряка"/>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="27">
+                <xs:annotation>
+                    <xs:documentation source="Военный билет офицера запаса"/>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="60">
+                <xs:annotation>
+                    <xs:documentation
+                        source="Документы, подтверждающие факт регистрации по месту жительства (пребывания)"/>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="61">
+                <xs:annotation>
+                    <xs:documentation source="Свидетельство о регистрации по месту жительства"/>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="62">
+                <xs:annotation>
+                    <xs:documentation source="Вид на жительство иностранного гражданина"/>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="63">
+                <xs:annotation>
+                    <xs:documentation source="Свидетельство о регистрации по месту пребывания"/>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="81">
+                <xs:annotation>
+                    <xs:documentation source="Свидетельство о смерти"/>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="91">
+                <xs:annotation>
+                    <xs:documentation source="Иные документы"/>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/groupsTreeSpecies/types/2.0"
+           elementFormDefault="qualified"
+           targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/groupsTreeSpecies/types/2.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="GroupsTreeSpeciesKindEType">
+        <xs:annotation>
+            <xs:documentation>Группы древесных пород</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="conifers">
+                <xs:annotation>
+                    <xs:documentation>Хвойные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="darkConiferous">
+                <xs:annotation>
+                    <xs:documentation>Темнохвойные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="forAllTreeSpeciesGroups">
+                <xs:annotation>
+                    <xs:documentation>По всем группам древесных пород</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="hardwood">
+                <xs:annotation>
+                    <xs:documentation>Твердолиственные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="lightConiferous">
+                <xs:annotation>
+                    <xs:documentation>Светлохвойные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="mainForestFormingSpecies">
+                <xs:annotation>
+                    <xs:documentation>Основные лесообразующие породы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="otherTreeAndShrubSpecies">
+                <xs:annotation>
+                    <xs:documentation>Прочие древесные породы и кустарники</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="otherTreeSpecies">
+                <xs:annotation>
+                    <xs:documentation>Прочие древесные породы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="shrubs">
+                <xs:annotation>
+                    <xs:documentation>Кустарники</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="smallLeaved">
+                <xs:annotation>
+                    <xs:documentation>Мелколиственные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="softLeaved">
+                <xs:annotation>
+                    <xs:documentation>Мягколиственные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="treesDiameterOf6cmOrMore">
+                <xs:annotation>
+                    <xs:documentation>Деревья с диаметром 6 см и более отсутствуют</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

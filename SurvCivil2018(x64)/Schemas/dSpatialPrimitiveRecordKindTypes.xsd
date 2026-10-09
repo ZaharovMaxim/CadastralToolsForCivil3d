@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+	xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/spatialPrimitiveRecord/types/1.0"
+	targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/spatialPrimitiveRecord/types/1.0">
+
+	<xs:simpleType name="SpatialPrimitiveRecordKindEType">
+		<xs:annotation>
+			<xs:documentation>Код вида пространственного примитива</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="2850325669571728651">
+				<xs:annotation>
+					<xs:documentation>1</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2850325669965993229">
+				<xs:annotation>
+					<xs:documentation>2</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2850325670158931214">
+				<xs:annotation>
+					<xs:documentation>3</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2850325669781443852">
+				<xs:annotation>
+					<xs:documentation>4</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

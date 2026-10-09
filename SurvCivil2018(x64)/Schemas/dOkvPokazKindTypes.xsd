@@ -1,0 +1,819 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/okvPokaz/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/okvPokaz/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="OkvPokazKindEType">
+        <xs:annotation>
+            <xs:documentation>ОКВ</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="008">
+                <xs:annotation>
+                    <xs:documentation>ЛЕК</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="012">
+                <xs:annotation>
+                    <xs:documentation>АЛЖИРСКИЙ ДИНАР</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="032">
+                <xs:annotation>
+                    <xs:documentation>АРГЕНТИНСКОЕ ПЕСО</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="036">
+                <xs:annotation>
+                    <xs:documentation>АВСТРАЛИЙСКИЙ ДОЛЛАР</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="044">
+                <xs:annotation>
+                    <xs:documentation>БАГАМСКИЙ ДОЛЛАР</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="048">
+                <xs:annotation>
+                    <xs:documentation>БАХРЕЙНСКИЙ ДИНАР</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="050">
+                <xs:annotation>
+                    <xs:documentation>ТАКА</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="051">
+                <xs:annotation>
+                    <xs:documentation>АРМЯНСКИЙ ДРАМ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="052">
+                <xs:annotation>
+                    <xs:documentation>БАРБАДОССКИЙ ДОЛЛАР</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="060">
+                <xs:annotation>
+                    <xs:documentation>БЕРМУДСКИЙ ДОЛЛАР</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="064">
+                <xs:annotation>
+                    <xs:documentation>НГУЛТРУМ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="068">
+                <xs:annotation>
+                    <xs:documentation>БОЛИВИАНО</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="072">
+                <xs:annotation>
+                    <xs:documentation>ПУЛА</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="084">
+                <xs:annotation>
+                    <xs:documentation>БЕЛИЗСКИЙ ДОЛЛАР</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="090">
+                <xs:annotation>
+                    <xs:documentation>ДОЛЛАР СОЛОМОНОВЫХ ОСТРОВОВ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="096">
+                <xs:annotation>
+                    <xs:documentation>БРУНЕЙСКИЙ ДОЛЛАР</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="104">
+                <xs:annotation>
+                    <xs:documentation>КЬЯТ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="108">
+                <xs:annotation>
+                    <xs:documentation>БУРУНДИЙСКИЙ ФРАНК</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="116">
+                <xs:annotation>
+                    <xs:documentation>РИЕЛЬ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="124">
+                <xs:annotation>
+                    <xs:documentation>КАНАДСКИЙ ДОЛЛАР</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="132">
+                <xs:annotation>
+                    <xs:documentation>ЭСКУДО КАБО-ВЕРДЕ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="136">
+                <xs:annotation>
+                    <xs:documentation>ДОЛЛАР ОСТРОВОВ КАЙМАН</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="144">
+                <xs:annotation>
+                    <xs:documentation>ШРИ-ЛАНКИЙСКАЯ РУПИЯ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="152">
+                <xs:annotation>
+                    <xs:documentation>ЧИЛИЙСКОЕ ПЕСО</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="156">
+                <xs:annotation>
+                    <xs:documentation>ЮАНЬ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="170">
+                <xs:annotation>
+                    <xs:documentation>КОЛУМБИЙСКОЕ ПЕСО</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="174">
+                <xs:annotation>
+                    <xs:documentation>КОМОРСКИЙ ФРАНК</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="188">
+                <xs:annotation>
+                    <xs:documentation>КОСТА-РИКАНСКИЙ КОЛОН</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="191">
+                <xs:annotation>
+                    <xs:documentation>КУНА</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="192">
+                <xs:annotation>
+                    <xs:documentation>КУБИНСКОЕ ПЕСО</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="203">
+                <xs:annotation>
+                    <xs:documentation>ЧЕШСКАЯ КРОНА</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="208">
+                <xs:annotation>
+                    <xs:documentation>ДАТСКАЯ КРОНА</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="214">
+                <xs:annotation>
+                    <xs:documentation>ДОМИНИКАНСКОЕ ПЕСО</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="222">
+                <xs:annotation>
+                    <xs:documentation>САЛЬВАДОРСКИЙ КОЛОН</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="230">
+                <xs:annotation>
+                    <xs:documentation>ЭФИОПСКИЙ БЫР</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="232">
+                <xs:annotation>
+                    <xs:documentation>НАКФА</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="238">
+                <xs:annotation>
+                    <xs:documentation>ФУНТ ФОЛКЛЕНДСКИХ ОСТРОВОВ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="242">
+                <xs:annotation>
+                    <xs:documentation>ДОЛЛАР ФИДЖИ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="262">
+                <xs:annotation>
+                    <xs:documentation>ФРАНК ДЖИБУТИ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="270">
+                <xs:annotation>
+                    <xs:documentation>ДАЛАСИ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="292">
+                <xs:annotation>
+                    <xs:documentation>ГИБРАЛТАРСКИЙ ФУНТ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="320">
+                <xs:annotation>
+                    <xs:documentation>КЕТСАЛЬ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="324">
+                <xs:annotation>
+                    <xs:documentation>ГВИНЕЙСКИЙ ФРАНК</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="328">
+                <xs:annotation>
+                    <xs:documentation>ГАЙАНСКИЙ ДОЛЛАР</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="332">
+                <xs:annotation>
+                    <xs:documentation>ГУРД</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="340">
+                <xs:annotation>
+                    <xs:documentation>ЛЕМПИРА</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="344">
+                <xs:annotation>
+                    <xs:documentation>ГОНКОНГСКИЙ ДОЛЛАР</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="348">
+                <xs:annotation>
+                    <xs:documentation>ФОРИНТ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="352">
+                <xs:annotation>
+                    <xs:documentation>ИСЛАНДСКАЯ КРОНА</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="356">
+                <xs:annotation>
+                    <xs:documentation>ИНДИЙСКАЯ РУПИЯ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="360">
+                <xs:annotation>
+                    <xs:documentation>РУПИЯ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="364">
+                <xs:annotation>
+                    <xs:documentation>ИРАНСКИЙ РИАЛ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="368">
+                <xs:annotation>
+                    <xs:documentation>ИРАКСКИЙ ДИНАР</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="376">
+                <xs:annotation>
+                    <xs:documentation>НОВЫЙ ИЗРАИЛЬСКИЙ ШЕКЕЛЬ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="388">
+                <xs:annotation>
+                    <xs:documentation>ЯМАЙСКИЙ ДОЛЛАР</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="392">
+                <xs:annotation>
+                    <xs:documentation>ИЕНА</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="398">
+                <xs:annotation>
+                    <xs:documentation>ТЕНГЕ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="400">
+                <xs:annotation>
+                    <xs:documentation>ИОРДАНСКИЙ ДИНАР</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="404">
+                <xs:annotation>
+                    <xs:documentation>КЕНИЙСКИЙ ШИЛЛИНГ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="408">
+                <xs:annotation>
+                    <xs:documentation>СЕВЕРОКОРЕЙСКАЯ ВОНА</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="410">
+                <xs:annotation>
+                    <xs:documentation>ВОНА</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="414">
+                <xs:annotation>
+                    <xs:documentation>КУВЕЙТСКИЙ ДИНАР</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="417">
+                <xs:annotation>
+                    <xs:documentation>СОМ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="418">
+                <xs:annotation>
+                    <xs:documentation>ЛАОССКИЙ КИП</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="422">
+                <xs:annotation>
+                    <xs:documentation>ЛИВАНСКИЙ ФУНТ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="426">
+                <xs:annotation>
+                    <xs:documentation>ЛОТИ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="430">
+                <xs:annotation>
+                    <xs:documentation>ЛИБЕРИЙСКИЙ ДОЛЛАР</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="434">
+                <xs:annotation>
+                    <xs:documentation>ЛИВИЙСКИЙ ДИНАР</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="446">
+                <xs:annotation>
+                    <xs:documentation>ПАТАКА</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="454">
+                <xs:annotation>
+                    <xs:documentation>МАЛАВИЙСКАЯ КВАЧА</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="458">
+                <xs:annotation>
+                    <xs:documentation>МАЛАЙЗИЙСКИЙ РИНГГИТ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="462">
+                <xs:annotation>
+                    <xs:documentation>РУФИЯ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="480">
+                <xs:annotation>
+                    <xs:documentation>МАВРИКИЙСКАЯ РУПИЯ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="484">
+                <xs:annotation>
+                    <xs:documentation>МЕКСИКАНСКОЕ ПЕСО</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="496">
+                <xs:annotation>
+                    <xs:documentation>ТУГРИК</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="498">
+                <xs:annotation>
+                    <xs:documentation>МОЛДАВСКИЙ ЛЕЙ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="504">
+                <xs:annotation>
+                    <xs:documentation>МАРОККАНСКИЙ ДИРХАМ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="512">
+                <xs:annotation>
+                    <xs:documentation>ОМАНСКИЙ РИАЛ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="516">
+                <xs:annotation>
+                    <xs:documentation>ДОЛЛАР НАМИБИИ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="524">
+                <xs:annotation>
+                    <xs:documentation>НЕПАЛЬСКАЯ РУПИЯ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="532">
+                <xs:annotation>
+                    <xs:documentation>НИДЕРЛАНДСКИЙ АНТИЛЬСКИЙ ГУЛЬДЕН</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="533">
+                <xs:annotation>
+                    <xs:documentation>АРУБАНСКИЙ ФЛОРИН</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="548">
+                <xs:annotation>
+                    <xs:documentation>ВАТУ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="554">
+                <xs:annotation>
+                    <xs:documentation>НОВОЗЕЛАНДСКИЙ ДОЛЛАР</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="558">
+                <xs:annotation>
+                    <xs:documentation>ЗОЛОТАЯ КОРДОБА</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="566">
+                <xs:annotation>
+                    <xs:documentation>НАЙРА</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="578">
+                <xs:annotation>
+                    <xs:documentation>НОРВЕЖСКАЯ КРОНА</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="586">
+                <xs:annotation>
+                    <xs:documentation>ПАКИСТАНСКАЯ РУПИЯ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="590">
+                <xs:annotation>
+                    <xs:documentation>БАЛЬБОА</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="598">
+                <xs:annotation>
+                    <xs:documentation>КИНА</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="600">
+                <xs:annotation>
+                    <xs:documentation>ГУАРАНИ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="604">
+                <xs:annotation>
+                    <xs:documentation>СОЛЬ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="608">
+                <xs:annotation>
+                    <xs:documentation>ФИЛИППИНСКОЕ ПЕСО</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="634">
+                <xs:annotation>
+                    <xs:documentation>КАТАРСКИЙ РИАЛ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="643">
+                <xs:annotation>
+                    <xs:documentation>РОССИЙСКИЙ РУБЛЬ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="646">
+                <xs:annotation>
+                    <xs:documentation>ФРАНК РУАНДЫ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="654">
+                <xs:annotation>
+                    <xs:documentation>ФУНТ СВЯТОЙ ЕЛЕНЫ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="682">
+                <xs:annotation>
+                    <xs:documentation>САУДОВСКИЙ РИЯЛ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="690">
+                <xs:annotation>
+                    <xs:documentation>СЕЙШЕЛЬСКАЯ РУПИЯ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="694">
+                <xs:annotation>
+                    <xs:documentation>ЛЕОНЕ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="702">
+                <xs:annotation>
+                    <xs:documentation>СИНГАПУРСКИЙ ДОЛЛАР</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="704">
+                <xs:annotation>
+                    <xs:documentation>ДОНГ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="706">
+                <xs:annotation>
+                    <xs:documentation>СОМАЛИЙСКИЙ ШИЛЛИНГ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="710">
+                <xs:annotation>
+                    <xs:documentation>РЭНД</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="728">
+                <xs:annotation>
+                    <xs:documentation>ЮЖНОСУДАНСКИЙ ФУНТ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="748">
+                <xs:annotation>
+                    <xs:documentation>ЛИЛАНГЕНИ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="752">
+                <xs:annotation>
+                    <xs:documentation>ШВЕДСКАЯ КРОНА</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="756">
+                <xs:annotation>
+                    <xs:documentation>ШВЕЙЦАРСКИЙ ФРАНК</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="760">
+                <xs:annotation>
+                    <xs:documentation>СИРИЙСКИЙ ФУНТ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="764">
+                <xs:annotation>
+                    <xs:documentation>БАТ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="776">
+                <xs:annotation>
+                    <xs:documentation>ПААНГА</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="780">
+                <xs:annotation>
+                    <xs:documentation>ДОЛЛАР ТРИНИДАДА И ТОБАГО</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="784">
+                <xs:annotation>
+                    <xs:documentation>ДИРХАМ ОАЭ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="788">
+                <xs:annotation>
+                    <xs:documentation>ТУНИССКИЙ ДИНАР</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="800">
+                <xs:annotation>
+                    <xs:documentation>УГАНДИЙСКИЙ ШИЛЛИНГ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="807">
+                <xs:annotation>
+                    <xs:documentation>ДЕНАР</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="818">
+                <xs:annotation>
+                    <xs:documentation>ЕГИПЕТСКИЙ ФУНТ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="826">
+                <xs:annotation>
+                    <xs:documentation>ФУНТ СТЕРЛИНГОВ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="834">
+                <xs:annotation>
+                    <xs:documentation>ТАНЗАНИЙСКИЙ ШИЛЛИНГ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="840">
+                <xs:annotation>
+                    <xs:documentation>ДОЛЛАР США</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="858">
+                <xs:annotation>
+                    <xs:documentation>УРУГВАЙСКОЕ ПЕСО</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="860">
+                <xs:annotation>
+                    <xs:documentation>УЗБЕКСКИЙ СУМ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="882">
+                <xs:annotation>
+                    <xs:documentation>ТАЛА</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="886">
+                <xs:annotation>
+                    <xs:documentation>ЙЕМЕНСКИЙ РИАЛ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="901">
+                <xs:annotation>
+                    <xs:documentation>НОВЫЙ ТАЙВАНЬСКИЙ ДОЛЛАР</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="925">
+                <xs:annotation>
+                    <xs:documentation>ЛЕОНЕ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="926">
+                <xs:annotation>
+                    <xs:documentation>БОЛИВАР СОБЕРАНО</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="928">
+                <xs:annotation>
+                    <xs:documentation>БОЛИВАР СОБЕРАНО</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="929">
+                <xs:annotation>
+                    <xs:documentation>УГИЯ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="930">
+                <xs:annotation>
+                    <xs:documentation>ДОБРА</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="931">
+                <xs:annotation>
+                    <xs:documentation>КОНВЕРТИРУЕМОЕ ПЕСО</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="932">
+                <xs:annotation>
+                    <xs:documentation>ДОЛЛАР ЗИМБАБВЕ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="933">
+                <xs:annotation>
+                    <xs:documentation>БЕЛОРУССКИЙ РУБЛЬ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="934">
+                <xs:annotation>
+                    <xs:documentation>НОВЫЙ ТУРКМЕНСКИЙ МАНАТ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="936">
+                <xs:annotation>
+                    <xs:documentation>ГАНСКИЙ СЕДИ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="938">
+                <xs:annotation>
+                    <xs:documentation>СУДАНСКИЙ ФУНТ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="940">
+                <xs:annotation>
+                    <xs:documentation>УРУГВАЙСКОЕ ПЕСО В ИНДЕКСИРОВАННЫХ ЕДИНИЦАХ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="941">
+                <xs:annotation>
+                    <xs:documentation>СЕРБСКИЙ ДИНАР</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="943">
+                <xs:annotation>
+                    <xs:documentation>МОЗАМБИКСКИЙ МЕТИКАЛ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="944">
+                <xs:annotation>
+                    <xs:documentation>АЗЕРБАЙДЖАНСКИЙ МАНАТ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="946">
+                <xs:annotation>
+                    <xs:documentation>РУМЫНСКИЙ ЛЕЙ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="949">
+                <xs:annotation>
+                    <xs:documentation>ТУРЕЦКАЯ ЛИРА</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="950">
+                <xs:annotation>
+                    <xs:documentation>ФРАНК КФА ВЕАС</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="951">
+                <xs:annotation>
+                    <xs:documentation>ВОСТОЧНО-КАРИБСКИЙ ДОЛЛАР</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="952">
+                <xs:annotation>
+                    <xs:documentation>ФРАНК КФА ВСЕАО</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="953">
+                <xs:annotation>
+                    <xs:documentation>ФРАНК КФП</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="960">
+                <xs:annotation>
+                    <xs:documentation>СДР (СПЕЦИАЛЬНЫЕ ПРАВА ЗАИМСТВОВАНИЯ)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="967">
+                <xs:annotation>
+                    <xs:documentation>ЗАМБИЙСКАЯ КВАЧА</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="968">
+                <xs:annotation>
+                    <xs:documentation>СУРИНАМСКИЙ ДОЛЛАР</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="969">
+                <xs:annotation>
+                    <xs:documentation>МАЛАГАСИЙСКИЙ АРИАРИ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="970">
+                <xs:annotation>
+                    <xs:documentation>ЕДИНИЦА РЕАЛЬНОЙ СТОИМОСТИ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="971">
+                <xs:annotation>
+                    <xs:documentation>АФГАНИ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="972">
+                <xs:annotation>
+                    <xs:documentation>СОМОНИ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="973">
+                <xs:annotation>
+                    <xs:documentation>КВАНЗА</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="975">
+                <xs:annotation>
+                    <xs:documentation>БОЛГАРСКИЙ ЛЕВ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="976">
+                <xs:annotation>
+                    <xs:documentation>КОНГОЛЕЗСКИЙ ФРАНК</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="977">
+                <xs:annotation>
+                    <xs:documentation>КОНВЕРТИРУЕМАЯ МАРКА</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="978">
+                <xs:annotation>
+                    <xs:documentation>ЕВРО</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="980">
+                <xs:annotation>
+                    <xs:documentation>ГРИВНА</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="981">
+                <xs:annotation>
+                    <xs:documentation>ЛАРИ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="985">
+                <xs:annotation>
+                    <xs:documentation>ЗЛОТЫЙ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="986">
+                <xs:annotation>
+                    <xs:documentation>БРАЗИЛЬСКИЙ РЕАЛ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

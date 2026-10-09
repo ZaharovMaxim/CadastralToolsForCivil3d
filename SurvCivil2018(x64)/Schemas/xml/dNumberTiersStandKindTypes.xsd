@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/numberTiersStand/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/numberTiersStand/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:simpleType name="NumberTiersStandKindEType">
+		<xs:annotation>
+			<xs:documentation>Количество ярусов древостоя</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="notRatedNoTreeStand">
+				<xs:annotation>
+					<xs:documentation>Не оценивалось (древостоя нет)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="one">
+				<xs:annotation>
+					<xs:documentation>1</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="threeOrMore">
+				<xs:annotation>
+					<xs:documentation>3 и более</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="two">
+				<xs:annotation>
+					<xs:documentation>2</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

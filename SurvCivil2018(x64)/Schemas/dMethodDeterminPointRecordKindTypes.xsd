@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+	targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/methodDeterminPointRecord/types/1.0"
+	xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/methodDeterminPointRecord/types/1.0">
+
+	<xs:simpleType name="MethodDeterminPointRecordKindEType">
+		<xs:annotation>
+			<xs:documentation>Метод определения точки</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="2888080901164504128">
+				<xs:annotation>
+					<xs:documentation>Фотограмметрия</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2888080901919478850">
+				<xs:annotation>
+					<xs:documentation>Иное описание</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2888080900820571199">
+				<xs:annotation>
+					<xs:documentation>Геодезический</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2888080901533602881">
+				<xs:annotation>
+					<xs:documentation>Картометрический</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2888080902263411779">
+				<xs:annotation>
+					<xs:documentation>Метод спутниковых геодезических измерений (определений)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="2888080902649287748">
+				<xs:annotation>
+					<xs:documentation>Аналитический метод</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>
+

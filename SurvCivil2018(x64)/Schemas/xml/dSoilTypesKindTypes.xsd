@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/soilTypes/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/soilTypes/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="SoilTypesKindEType">
+        <xs:annotation>
+            <xs:documentation>Типы почв</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="alluvial">
+                <xs:annotation>
+                    <xs:documentation>Аллювиальные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="borovyeSands">
+                <xs:annotation>
+                    <xs:documentation>Боровые пески</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="brownForest">
+                <xs:annotation>
+                    <xs:documentation>Бурая-лесная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="brownPodzolic">
+                <xs:annotation>
+                    <xs:documentation>Буро-подзолистая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="brownPodzolicgleyed">
+                <xs:annotation>
+                    <xs:documentation>Буро-подзолистая оглеенная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="brownPodzolized">
+                <xs:annotation>
+                    <xs:documentation>Бурая-оподзоленная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="brownTaiga">
+                <xs:annotation>
+                    <xs:documentation>Буро-таёжные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="brownTaigapermafrost">
+                <xs:annotation>
+                    <xs:documentation>Буро-таежная мерзлотная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="chernozemMeadow">
+                <xs:annotation>
+                    <xs:documentation>Чернозёмнолуговые</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="chernozemMeadow1">
+                <xs:annotation>
+                    <xs:documentation>Чернозёмно-луговые</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="chernozemPodzolized">
+                <xs:annotation>
+                    <xs:documentation>Черноземно-оподзоленные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="chernozemsAlluvially">
+                <xs:annotation>
+                    <xs:documentation>Темносерые суглинистые деградированные черноземы аллювиально отложенные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="chernozemsAreAlkaline">
+                <xs:annotation>
+                    <xs:documentation>Черноземы выщелочные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="darkGrayForest">
+                <xs:annotation>
+                    <xs:documentation>Темно- серые лесные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="darkGraySandy">
+                <xs:annotation>
+                    <xs:documentation>Темно-серые супесчаные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="darkGraySandyLoamGrayForestLo">
+                <xs:annotation>
+                    <xs:documentation>Темно-серые супесчаные серые лесные суглинки</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="darkGreLoamyAlluvial">
+                <xs:annotation>
+                    <xs:documentation>Глубокие песчаные с прослойкой ила</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="darkgreyLoamy">
+                <xs:annotation>
+                    <xs:documentation>Темносерые суглинистые аллювиального происхождения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="deepSandyWithLayer">
+                <xs:annotation>
+                    <xs:documentation>Иловато-супесчаные и иловвато-суглинистые</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="deformed">
+                <xs:annotation>
+                    <xs:documentation>Деформированные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="degradedDeep">
+                <xs:annotation>
+                    <xs:documentation>Деградированные глубокие гумусированные черноземы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="exposedSubsurface">
+                <xs:annotation>
+                    <xs:documentation>Обнаженный подпочвеный песок</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="gleepodzolic">
+                <xs:annotation>
+                    <xs:documentation>Глееподзолистые</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="gleezems">
+                <xs:annotation>
+                    <xs:documentation>Глеезёмы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="gley">
+                <xs:annotation>
+                    <xs:documentation>Глеевые</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="gleyMalts">
+                <xs:annotation>
+                    <xs:documentation>Солоди глеевые</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="grayAndLlightGray">
+                <xs:annotation>
+                    <xs:documentation>Серые и светлосерые суглинки</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="grayForest">
+                <xs:annotation>
+                    <xs:documentation>Серые лесные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="grayForestGley">
+                <xs:annotation>
+                    <xs:documentation>Серые лесные глеевые</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="grayPodzolized">
+                <xs:annotation>
+                    <xs:documentation>Серые оподзоленные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="graySolod">
+                <xs:annotation>
+                    <xs:documentation>Серые осолоделые</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="humusIlluvial">
+                <xs:annotation>
+                    <xs:documentation>Гумусо-иллювиальная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="humusIlluvialopozolistic">
+                <xs:annotation>
+                    <xs:documentation>Гумусо-иллювиальная опозолистая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="humusMarsh">
+                <xs:annotation>
+                    <xs:documentation>Перегнойно-болотные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="humusMarsh1">
+                <xs:annotation>
+                    <xs:documentation>Перегнойно-болотные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="illuvialHumus">
+                <xs:annotation>
+                    <xs:documentation>Иллювиально-гумусовая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="layeredAlluvial">
+                <xs:annotation>
+                    <xs:documentation>Слоисто-аллювиальная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="layeredAlluvialpeatyHumus">
+                <xs:annotation>
+                    <xs:documentation>Слоисто-аллювиальная торфянисто гумусовые</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="leemfrostTaiga">
+                <xs:annotation>
+                    <xs:documentation>Леемерзлотно-таёжные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="lightBrown">
+                <xs:annotation>
+                    <xs:documentation>Светло-бурая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="lightBrownpermafrost">
+                <xs:annotation>
+                    <xs:documentation>Светло-бурая мерзлотная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="lightGrayForest">
+                <xs:annotation>
+                    <xs:documentation>Светло-серые лесные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="lightGrayForest1">
+                <xs:annotation>
+                    <xs:documentation>Светло-серые лесные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="lightGreyCarbonate">
+                <xs:annotation>
+                    <xs:documentation>Светлосерые карбонатные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="lightlySodSandy">
+                <xs:annotation>
+                    <xs:documentation>Слабо дерновые супесчаные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="lowGrainMedium">
+                <xs:annotation>
+                    <xs:documentation>Слабодерновые средне и сильноподзолистые супесчаные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="meadowSwamp">
+                <xs:annotation>
+                    <xs:documentation>Лугово-болотные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="mediumPodzolic">
+                <xs:annotation>
+                    <xs:documentation>Среднеподзолистые</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="mountainBrownForestSourCoarseH">
+                <xs:annotation>
+                    <xs:documentation>Горные бурые лесные кислые грубогумусные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="mountainMeadowPeatyAlpine">
+                <xs:annotation>
+                    <xs:documentation>Горно-луговые торфянистые (альпийские)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="mountainMeadowTypicalSubalpine">
+                <xs:annotation>
+                    <xs:documentation>Горно-луговые типичные (субальпийские)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="mountainPermafrostTaiga">
+                <xs:annotation>
+                    <xs:documentation>Горные мерзлотно-таёжные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="mountainPodzolic">
+                <xs:annotation>
+                    <xs:documentation>Горные подзолистые</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="mountainSodPodzolic">
+                <xs:annotation>
+                    <xs:documentation>Горные дерново-подзолистые</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="mountainTundra">
+                <xs:annotation>
+                    <xs:documentation>Горно-тундровые</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="mountainTundraPodburs">
+                <xs:annotation>
+                    <xs:documentation>Горно-тундровые подбуры</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="ocherPodburs">
+                <xs:annotation>
+                    <xs:documentation>Охристые подбуры</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="oligotrophicPeat">
+                <xs:annotation>
+                    <xs:documentation>Олиготрофно-торфяные мокрые</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="ordinaryChernozems">
+                <xs:annotation>
+                    <xs:documentation>Обыкновенные чернозёмы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="peat">
+                <xs:annotation>
+                    <xs:documentation>Торфяные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="peatBogPeeled">
+                <xs:annotation>
+                    <xs:documentation>Торфяно-болотные оглеенные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="peatGley">
+                <xs:annotation>
+                    <xs:documentation>Торфяно-глеевая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="peatGleyWithExcessMoisture">
+                <xs:annotation>
+                    <xs:documentation>Торфяно-глеевые с избыточным увлажнением</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="peatMarshes">
+                <xs:annotation>
+                    <xs:documentation>Торфяные болотные низинные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="peatPodzolicgley">
+                <xs:annotation>
+                    <xs:documentation>Торфяно-подзолисто-глеевая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="peatSwampHorses">
+                <xs:annotation>
+                    <xs:documentation>Торфяные болотные верховые</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="peatyGley">
+                <xs:annotation>
+                    <xs:documentation>Торфянисто-глеевые</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="peatyHumusgley">
+                <xs:annotation>
+                    <xs:documentation>Торфянисто-перегнойно-глеевая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="peatyHumusmountain">
+                <xs:annotation>
+                    <xs:documentation>Торфянисто-перегнойная горная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="peatyHumusouspodzolic">
+                <xs:annotation>
+                    <xs:documentation>Торфянисто-перегнойно оподзолистая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="peatyPodzolic">
+                <xs:annotation>
+                    <xs:documentation>Торфянисто-подзолистая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="peatyPodzolicGley">
+                <xs:annotation>
+                    <xs:documentation>Торфянисто-подзолисто-глеевые</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="peatySwamp">
+                <xs:annotation>
+                    <xs:documentation>Торфянисто-болотные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="peatyTaigapermafrost">
+                <xs:annotation>
+                    <xs:documentation>Торфянистая таежно-мерзлотная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="permafrostSwamps">
+                <xs:annotation>
+                    <xs:documentation>Мерзлотные болотные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="permafrostTaiga">
+                <xs:annotation>
+                    <xs:documentation>Мерзлотно-таёжные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="podzolic">
+                <xs:annotation>
+                    <xs:documentation>Подзолистая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="podzolicAlluvial">
+                <xs:annotation>
+                    <xs:documentation>Подзолистые аллювиальные суглинки или супеси</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="podzolicLow">
+                <xs:annotation>
+                    <xs:documentation>Маломощные черноземы на карбонатных глинах</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="podzolicSands">
+                <xs:annotation>
+                    <xs:documentation>Подзолистые пески реже малопригодные супеси</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="podzolizedChernozems">
+                <xs:annotation>
+                    <xs:documentation>Оподзоленные чернозёмы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="podzols">
+                <xs:annotation>
+                    <xs:documentation>Подзолы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="ravineBeam">
+                <xs:annotation>
+                    <xs:documentation>Овражно-балочные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="salt">
+                <xs:annotation>
+                    <xs:documentation>Солонцы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="saltFlats">
+                <xs:annotation>
+                    <xs:documentation>Солонцы суглинистые каштановые засоленные почвы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sandDeposits">
+                <xs:annotation>
+                    <xs:documentation>Песчаные наносы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sandyLoam">
+                <xs:annotation>
+                    <xs:documentation>Супесчаные глеево-дерновооподзолистые</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sandyPeat">
+                <xs:annotation>
+                    <xs:documentation>Песчаные торфяно-глееватын подзолистые</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="siltMarsh">
+                <xs:annotation>
+                    <xs:documentation>Иловато-болотные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sodAlluvial">
+                <xs:annotation>
+                    <xs:documentation>Дерново-аллювиальная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sodAlluvialMountainRiverValley">
+                <xs:annotation>
+                    <xs:documentation>Дерново-аллювиальные горных речных долин</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sodAlluvialgleyed">
+                <xs:annotation>
+                    <xs:documentation>Дерново-аллювиальная оглеенная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sodCarbonate">
+                <xs:annotation>
+                    <xs:documentation>Дерново-карбонатные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sodGley">
+                <xs:annotation>
+                    <xs:documentation>Дерново-глеевые</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sodMediumPodzolic">
+                <xs:annotation>
+                    <xs:documentation>Дерново-среднеподзолистые</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sodPodzolic">
+                <xs:annotation>
+                    <xs:documentation>Дерново-подзолистые</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sodPodzolic1">
+                <xs:annotation>
+                    <xs:documentation>Дерново-подзолистая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sodPodzolicHumus">
+                <xs:annotation>
+                    <xs:documentation>Дерново-подзолистые -гумусные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sodPodzolicgley">
+                <xs:annotation>
+                    <xs:documentation>Дерново-подзолисто-глеевая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sodStronglyPodzolic">
+                <xs:annotation>
+                    <xs:documentation>Дерново-сильноподзолистые</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sodStronglyPodzolic1">
+                <xs:annotation>
+                    <xs:documentation>Дерново-сильноподзолистые</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sodWeaklyPodzolic">
+                <xs:annotation>
+                    <xs:documentation>Дерново-слабоподзолистые</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="soddyPodzolicWithASecondHumus">
+                <xs:annotation>
+                    <xs:documentation>Дерново-подзолистые со вторым гумусовым</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="stronglyPodzolic">
+                <xs:annotation>
+                    <xs:documentation>Сильноподзолистые</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="surfacePodzolic">
+                <xs:annotation>
+                    <xs:documentation>Поверхностно-подзолистые</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="swampPodzolic">
+                <xs:annotation>
+                    <xs:documentation>Болотно-подзолистые</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="taigaMalts">
+                <xs:annotation>
+                    <xs:documentation>Таёжные солоди</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="taigaPodburs">
+                <xs:annotation>
+                    <xs:documentation>Таёжные подбуры</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="tundraGley">
+                <xs:annotation>
+                    <xs:documentation>Тундровые глеевые</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="tundraPodburs">
+                <xs:annotation>
+                    <xs:documentation>Тундровые подбуры</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="tundraSwamps">
+                <xs:annotation>
+                    <xs:documentation>Тундровые болотные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="weaklyAndMedium">
+                <xs:annotation>
+                    <xs:documentation>Слабо и среднеоподзистые супесчаные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="weaklyAndModerately">
+                <xs:annotation>
+                    <xs:documentation>Слабо и среднеоподзоленные пески</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="weaklyGrained">
+                <xs:annotation>
+                    <xs:documentation>Слабодерновые подзолистые песчаные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="weaklyPodzolic">
+                <xs:annotation>
+                    <xs:documentation>Слабоподзолистые</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="wetMeadow">
+                <xs:annotation>
+                    <xs:documentation>Влажно-луговые</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="youngSilty">
+                <xs:annotation>
+                    <xs:documentation>Молодые илистые наносы, подстилаемые песками</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

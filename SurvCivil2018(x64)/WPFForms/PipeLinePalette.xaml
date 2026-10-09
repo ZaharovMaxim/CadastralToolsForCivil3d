@@ -1,0 +1,31 @@
+﻿<UserControl x:Class="PipeLinePalette"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SurvCivil2018_x64_"
+             mc:Ignorable="d" 
+             d:DesignHeight="500" d:DesignWidth="400">
+    <Grid >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="79*"/>
+            <ColumnDefinition Width="121*"/>
+        </Grid.ColumnDefinitions>
+        <GroupBox x:Name="groupBox" Header="Данные по элементу" HorizontalAlignment="Left" Height="420" Margin="0,57,0,0" VerticalAlignment="Top" Width="400" Foreground="{DynamicResource {x:Static SystemColors.ActiveCaptionTextBrushKey}}" BorderBrush="{x:Null}" Grid.ColumnSpan="2" Background="#FF3B4453">
+            <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Height="350" Margin="0,40,0,0" VerticalAlignment="Top" Width="395"/>
+        </GroupBox>
+        <Button x:Name="button2" Content="Указать объект" HorizontalAlignment="Left" Height="23" Margin="10,0,0,0" VerticalAlignment="Top" Width="125"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="20" Margin="15,83,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="256" Grid.ColumnSpan="2"/>
+        <Label x:Name="label" Content="Объект кадастра" HorizontalAlignment="Left" Height="28" Margin="113.29,81,0,0" VerticalAlignment="Top" Width="99" Grid.Column="1"/>
+        <Button x:Name="button1" Content="Выполнить" HorizontalAlignment="Left" Height="23" Margin="10,29,0,0" VerticalAlignment="Top" Width="125"/>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Height="23" Margin="140,29,0,0" VerticalAlignment="Top" Width="193" Grid.ColumnSpan="2"/>
+        <Label x:Name="label1" Content="Действие" HorizontalAlignment="Left" Height="23" Margin="175.29,29,-34,0" VerticalAlignment="Top" Width="101" Grid.Column="1"/>
+        <ComboBox x:Name="ComboBoxFilter" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="23" Margin="140,0,0,0" VerticalAlignment="Top" Width="193">
+            <ComboBox.ContextMenu>
+                <ContextMenu/>
+            </ComboBox.ContextMenu>
+        </ComboBox>
+        <Label x:Name="label1_Copy" Content="Исп. таблица" HorizontalAlignment="Left" Height="23" Margin="175,-1,-34,0" VerticalAlignment="Top" Width="101" Grid.Column="1"/>
+
+    </Grid>
+</UserControl>

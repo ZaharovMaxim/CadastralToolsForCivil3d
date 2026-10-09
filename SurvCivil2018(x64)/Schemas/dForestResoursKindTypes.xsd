@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/forestResours/types/2.0"
+           elementFormDefault="qualified"
+           targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/forestResours/types/2.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="ForestResoursKindEType">
+        <xs:annotation>
+            <xs:documentation>Лесные ресурсы и лекарственные растения</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="32600001">
+                <xs:annotation>
+                    <xs:documentation>выпас сельскохозяйственных животных</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32600002">
+                <xs:annotation>
+                    <xs:documentation>выращивание сельскохозяйственных культур</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32600003">
+                <xs:annotation>
+                    <xs:documentation>иная сельскохозяйственная деятельность</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32600004">
+                <xs:annotation>
+                    <xs:documentation>пантовое оленеводство</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32600005">
+                <xs:annotation>
+                    <xs:documentation>пчеловодство</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32600006">
+                <xs:annotation>
+                    <xs:documentation>северное оленеводство</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32600007">
+                <xs:annotation>
+                    <xs:documentation>сенокошение</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32600008">
+                <xs:annotation>
+                    <xs:documentation>товарная аквакультура (товарное рыбоводство)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="35601001">
+                <xs:annotation>
+                    <xs:documentation>Пни</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="35601002">
+                <xs:annotation>
+                    <xs:documentation>Кора деревьев и кустарников</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="35601004">
+                <xs:annotation>
+                    <xs:documentation>Береста</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="35601005">
+                <xs:annotation>
+                    <xs:documentation>Хворост</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="35601006">
+                <xs:annotation>
+                    <xs:documentation>Веточный корм</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="35601007">
+                <xs:annotation>
+                    <xs:documentation>Еловые лапы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="35601008">
+                <xs:annotation>
+                    <xs:documentation>Пихтовые лапы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="35601009">
+                <xs:annotation>
+                    <xs:documentation>Сосновые лапы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="35601010">
+                <xs:annotation>
+                    <xs:documentation>Ели и деревья других хвойных пород для новогодних праздников</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="35601011">
+                <xs:annotation>
+                    <xs:documentation>Мох, лесная подстилка, камыш, тростник и подобные лесные ресурсы
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="35601012">
+                <xs:annotation>
+                    <xs:documentation>Валежник</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="35601013">
+                <xs:annotation>
+                    <xs:documentation>Живица</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="35602001">
+                <xs:annotation>
+                    <xs:documentation>Дикорастущие плоды</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="35602002">
+                <xs:annotation>
+                    <xs:documentation>Ягоды</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="35602003">
+                <xs:annotation>
+                    <xs:documentation>Орехи</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="35602004">
+                <xs:annotation>
+                    <xs:documentation>Грибы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="35602005">
+                <xs:annotation>
+                    <xs:documentation>Семена</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="35602006">
+                <xs:annotation>
+                    <xs:documentation>Березовый сок</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="35602007">
+                <xs:annotation>
+                    <xs:documentation>Другие пищевые лесные ресурсы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="35602008">
+                <xs:annotation>
+                    <xs:documentation>Лекарственные растения и подобные лесные ресурсы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="35602010">
+                <xs:annotation>
+                    <xs:documentation>Kорневища</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="35602011">
+                <xs:annotation>
+                    <xs:documentation>Kорни</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="35602012">
+                <xs:annotation>
+                    <xs:documentation>Листья</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="35602013">
+                <xs:annotation>
+                    <xs:documentation>Плоды</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="35602014">
+                <xs:annotation>
+                    <xs:documentation>Стебли</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="35602015">
+                <xs:annotation>
+                    <xs:documentation>Цветы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="35602016">
+                <xs:annotation>
+                    <xs:documentation>Чага</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="35602017">
+                <xs:annotation>
+                    <xs:documentation>Почки</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="35602018">
+                <xs:annotation>
+                    <xs:documentation>Луб</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="35603001">
+                <xs:annotation>
+                    <xs:documentation>Декоративные растения (выращенные)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="35603002">
+                <xs:annotation>
+                    <xs:documentation>Лекарственные растения (выращенные)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="35603003">
+                <xs:annotation>
+                    <xs:documentation>Плоды (выращенные)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="35603004">
+                <xs:annotation>
+                    <xs:documentation>Ягоды (выращенные)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="35620001">
+                <xs:annotation>
+                    <xs:documentation>Саженцы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="35620002">
+                <xs:annotation>
+                    <xs:documentation>Сеянцы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="35620099">
+                <xs:annotation>
+                    <xs:documentation>древесина</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="shrubs">
+                <xs:annotation>
+                    <xs:documentation>кустарники</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

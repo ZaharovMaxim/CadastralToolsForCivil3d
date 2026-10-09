@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/evennessBreeds/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/evennessBreeds/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:simpleType name="EvennessBreedsKindEType">
+		<xs:annotation>
+			<xs:documentation>Равномерность участия пород</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="drevostoyaNet">
+				<xs:annotation>
+					<xs:documentation>Древостоя нет</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="nizkaya">
+				<xs:annotation>
+					<xs:documentation>Низкая</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="srednyaya">
+				<xs:annotation>
+					<xs:documentation>Средняя</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="tolkoOdnaPoroda">
+				<xs:annotation>
+					<xs:documentation>Только одна порода</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="vysokaya">
+				<xs:annotation>
+					<xs:documentation>Высокая</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

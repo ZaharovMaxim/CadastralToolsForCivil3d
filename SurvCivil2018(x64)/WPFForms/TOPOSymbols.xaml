@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="TOPOSymbols"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SurvCivil2018_x64_"
+             mc:Ignorable="d" 
+             d:DesignHeight="500" d:DesignWidth="300">
+    <Grid Margin="0,0,-25,-239" Background="#FF3B4453">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="162*"/>
+            <ColumnDefinition Width="163*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="479*"/>
+            <RowDefinition Height="260*"/>
+        </Grid.RowDefinitions>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Height="21" Margin="10,20,0,0" VerticalAlignment="Top" Width="130" BorderBrush="{DynamicResource {x:Static SystemColors.WindowBrushKey}}" Background="{DynamicResource {x:Static SystemColors.WindowBrushKey}}"/>
+        <TreeView Margin="10,60,0,0" Name="TreeView1" DataContext="{Binding}" BorderBrush="#FF492980" Foreground="Crimson" HorizontalAlignment="Left" Width="302" Grid.ColumnSpan="2" Background="{DynamicResource {x:Static SystemColors.InactiveBorderBrushKey}}"/>
+        <Button x:Name="Button1" Content="Выберите усл. знак" Margin="145,10,0,0" FontWeight="Bold" FontSize="14" Panel.ZIndex="-1" RenderTransformOrigin="0.395,0.52" Height="46" VerticalAlignment="Top" Background="{DynamicResource {x:Static SystemColors.ControlLightLightBrushKey}}" HorizontalAlignment="Left" Width="150" Grid.ColumnSpan="2"/>
+        <Label Content="Масштаб знака" Height="24" Margin="20,-4,0,0" VerticalAlignment="Top" Width="109" RenderTransformOrigin="0.492,0.348" Foreground="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" HorizontalAlignment="Left"/>
+        <DataGrid x:Name="DataGrid" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="1" Width="302" Height="245" VerticalAlignment="Top" SelectedIndex="0"/>
+    </Grid>
+</UserControl>
+

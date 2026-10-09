@@ -1,0 +1,1234 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/tipeCauseOfRuin/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/tipeCauseOfRuin/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="TipeCauseOfRuinKindEType">
+        <xs:annotation>
+            <xs:documentation>Причина повреждения и гибели лесов</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="37900000">
+                <xs:annotation>
+                    <xs:documentation>Причина не установлена (по даным ДЗЗ)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37901850">
+                <xs:annotation>
+                    <xs:documentation>Лесные пожары (необследованные)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37901851">
+                <xs:annotation>
+                    <xs:documentation>Подземный пожар 1-3 летней давности</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37901852">
+                <xs:annotation>
+                    <xs:documentation>Подземный пожар 4-10 летней давности</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37901853">
+                <xs:annotation>
+                    <xs:documentation>Подземный пожар более 10 летней давности</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37901854">
+                <xs:annotation>
+                    <xs:documentation>Беглый низовой пожар 1-3 летней давности</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37901855">
+                <xs:annotation>
+                    <xs:documentation>Беглый низовой пожар 4-10 летней давности</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37901856">
+                <xs:annotation>
+                    <xs:documentation>Верховой пожар 1-3 летней давности</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37901857">
+                <xs:annotation>
+                    <xs:documentation>Верховой пожар 4-10 летней давности</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37901858">
+                <xs:annotation>
+                    <xs:documentation>Верховой пожар более 10 летней давности</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37901863">
+                <xs:annotation>
+                    <xs:documentation>Устойчивый низовой пожар 1-3 летней давности низкой интенсивности</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37901864">
+                <xs:annotation>
+                    <xs:documentation>Устойчивый низовой пожар 1-3 летней давности средней интенсивности</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37901865">
+                <xs:annotation>
+                    <xs:documentation>Устойчивый низовой пожар 1-3 летней давности высокой интенсивности</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37901866">
+                <xs:annotation>
+                    <xs:documentation>Устойчивый низовой пожар 4-10 летней давности низкой интенсивности</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37901867">
+                <xs:annotation>
+                    <xs:documentation>Устойчивый низовой пожар 4-10 летней давности средней интенсивности</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37901868">
+                <xs:annotation>
+                    <xs:documentation>Устойчивый низовой пожар 4-10 летней давности высокой интенсивности</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37901869">
+                <xs:annotation>
+                    <xs:documentation>Устойчивый низовой пожар более 10 летней давности</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37901870">
+                <xs:annotation>
+                    <xs:documentation>Беглый низовой пожар текущего года</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37901871">
+                <xs:annotation>
+                    <xs:documentation>Устойчивый низовой пожар текущего года низкой интенсивности</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37901872">
+                <xs:annotation>
+                    <xs:documentation>Устойчивый низовой пожар текущего года средней интенсивности</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37901873">
+                <xs:annotation>
+                    <xs:documentation>Устойчивый низовой пожар текущего года высокой интенсивности</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37901874">
+                <xs:annotation>
+                    <xs:documentation>Верховой пожар текущего года</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37901875">
+                <xs:annotation>
+                    <xs:documentation>Подземный пожар текущего года</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37901876">
+                <xs:annotation>
+                    <xs:documentation>Устойчивый низовой пожар прошлого года менее 1 летней давности низкой интенсивности</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37901877">
+                <xs:annotation>
+                    <xs:documentation>Устойчивый низовой пожар прошлого года менее 1 летней давности средней интенсивности</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37901878">
+                <xs:annotation>
+                    <xs:documentation>Устойчивый низовой пожар прошлого года менее 1 летней давности высокой интенсивности</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37901879">
+                <xs:annotation>
+                    <xs:documentation>Верховой пожар прошлого года менее 1 летней давности</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37901880">
+                <xs:annotation>
+                    <xs:documentation>Подземный пожар прошлого года менее 1 летней давности</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902101">
+                <xs:annotation>
+                    <xs:documentation>Повреждение минёром Фризе</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902102">
+                <xs:annotation>
+                    <xs:documentation>Повреждение хвоегрызущими вредителями</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902103">
+                <xs:annotation>
+                    <xs:documentation>Повреждение листогрызущими вредителями</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902108">
+                <xs:annotation>
+                    <xs:documentation>Повреждение хермесами</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902109">
+                <xs:annotation>
+                    <xs:documentation>Повреждение листоедами</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902110">
+                <xs:annotation>
+                    <xs:documentation>Повреждение шелкопрядом сибирским</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902111">
+                <xs:annotation>
+                    <xs:documentation>Повреждение шелкопрядом сосновым</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902112">
+                <xs:annotation>
+                    <xs:documentation>Повреждение шелкопрядом-монашенкой</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902113">
+                <xs:annotation>
+                    <xs:documentation>Повреждение пяденицей сосновой</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902114">
+                <xs:annotation>
+                    <xs:documentation>Повреждение совкой сосновой</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902115">
+                <xs:annotation>
+                    <xs:documentation>Повреждение пяденицей пихтовой</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902116">
+                <xs:annotation>
+                    <xs:documentation>Повреждение пилильщиком сосновым обыкновенным</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902117">
+                <xs:annotation>
+                    <xs:documentation>Повреждение пилильщиком сосновым рыжим</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902118">
+                <xs:annotation>
+                    <xs:documentation>Повреждение пилильщиком-ткачом красноголовым</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902119">
+                <xs:annotation>
+                    <xs:documentation>Повреждение пилильщиком-ткачом звёздчатым</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902120">
+                <xs:annotation>
+                    <xs:documentation>Повреждение листовёрткой лиственничной серой</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902121">
+                <xs:annotation>
+                    <xs:documentation>Повреждение шелкопрядом непарным</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902122">
+                <xs:annotation>
+                    <xs:documentation>Повреждение златогузкой</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902123">
+                <xs:annotation>
+                    <xs:documentation>Повреждение шелкопрядом кольчатым</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902124">
+                <xs:annotation>
+                    <xs:documentation>Повреждение листовёрткой дубовой зеленой</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902125">
+                <xs:annotation>
+                    <xs:documentation>Повреждение пяденицей зимней</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902126">
+                <xs:annotation>
+                    <xs:documentation>Повреждение лункой серебристой</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902127">
+                <xs:annotation>
+                    <xs:documentation>Повреждение волнянкой ивовой</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902128">
+                <xs:annotation>
+                    <xs:documentation>Повреждение волнянкой хвойной</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902129">
+                <xs:annotation>
+                    <xs:documentation>Повреждение пяденицей-шелкопрядом берёзовой</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902130">
+                <xs:annotation>
+                    <xs:documentation>Повреждение пяденицей-обдирало</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902131">
+                <xs:annotation>
+                    <xs:documentation>Дополнительное питание хрущей</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902132">
+                <xs:annotation>
+                    <xs:documentation>Повреждение молью дубовой побеговой</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902133">
+                <xs:annotation>
+                    <xs:documentation>Повреждение блошаком дубовым</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902134">
+                <xs:annotation>
+                    <xs:documentation>Повреждение пилильщиком-ткачом желторотым</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902135">
+                <xs:annotation>
+                    <xs:documentation>Повреждение пилильщиком лиственничным большим</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902136">
+                <xs:annotation>
+                    <xs:documentation>Повреждение листовёрткой еловой паутинной</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902137">
+                <xs:annotation>
+                    <xs:documentation>Повреждение молью еловой почковой</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902138">
+                <xs:annotation>
+                    <xs:documentation>Повреждение листовёрткой боярышниковой</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902139">
+                <xs:annotation>
+                    <xs:documentation>Щитовка яблоневая запятовидная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902140">
+                <xs:annotation>
+                    <xs:documentation>Орехотворки</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902141">
+                <xs:annotation>
+                    <xs:documentation>Повреждение клопом-кружевницей дубовым</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902142">
+                <xs:annotation>
+                    <xs:documentation>Повреждение орехотворкой каштановой восточной</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902210">
+                <xs:annotation>
+                    <xs:documentation>Повреждение молью осиновой белой</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902236">
+                <xs:annotation>
+                    <xs:documentation>Повреждение побеговьюном зимним</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902237">
+                <xs:annotation>
+                    <xs:documentation>Повреждение побеговьюном летним</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902238">
+                <xs:annotation>
+                    <xs:documentation>Дополнительное питание лубоеда соснового большого</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902239">
+                <xs:annotation>
+                    <xs:documentation>Дополнительное питание смолёвки сосновой шишковой</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902240">
+                <xs:annotation>
+                    <xs:documentation>Дополнительное питание долгоносика соснового большого</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902241">
+                <xs:annotation>
+                    <xs:documentation>Дополнительное питание чёрных усачей</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902300">
+                <xs:annotation>
+                    <xs:documentation>Повреждение (заселено или отработано) стволовыми вредителями</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902306">
+                <xs:annotation>
+                    <xs:documentation>Повреждение (заселено или отработано) лубоедом еловым большим</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902307">
+                <xs:annotation>
+                    <xs:documentation>Повреждение (заселено или отработано) усачом глазчатым желтопятнистым</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902308">
+                <xs:annotation>
+                    <xs:documentation>Повреждение (заселено или отработано) короедом-двойником</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902309">
+                <xs:annotation>
+                    <xs:documentation>Повреждение (заселено или отработано) лубоедом (полиграфом) пушистым</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902310">
+                <xs:annotation>
+                    <xs:documentation>Повреждение (заселено или отработано) лубоедом пальцеходным</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902315">
+                <xs:annotation>
+                    <xs:documentation>Повреждение (заселено или отработано) короедом вершинным</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902316">
+                <xs:annotation>
+                    <xs:documentation>Повреждение (заселено или отработано) короедом многоходным (союзным)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902317">
+                <xs:annotation>
+                    <xs:documentation>Повреждение (заселено или отработано) гравёром обыкновенным</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902332">
+                <xs:annotation>
+                    <xs:documentation>Повреждение (заселено или отработано) златкой ясеневой изумрудной узкотелой</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902333">
+                <xs:annotation>
+                    <xs:documentation>Повреждение (заселено или отработано) златкой лиственничной</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902334">
+                <xs:annotation>
+                    <xs:documentation>Повреждение (заселено или отработано) короедом продолговатым</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902335">
+                <xs:annotation>
+                    <xs:documentation>Повреждение (заселено или отработано) златкой сосновой синей</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902336">
+                <xs:annotation>
+                    <xs:documentation>Повреждение (заселено или отработано) заболонником берёзовым</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902337">
+                <xs:annotation>
+                    <xs:documentation>Повреждение (заселено или отработано) короедом шестизубчатым</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902338">
+                <xs:annotation>
+                    <xs:documentation>Повреждение (заселено или отработано) лубоедом сосновым большим</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902339">
+                <xs:annotation>
+                    <xs:documentation>Повреждение (заселено или отработано) лубоедом сосновым малым</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902340">
+                <xs:annotation>
+                    <xs:documentation>Повреждение (заселено или отработано) долгоносиком сосновым большим</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902341">
+                <xs:annotation>
+                    <xs:documentation>Повреждение (заселено или отработано) усачом пихтовым чёрным большим</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902342">
+                <xs:annotation>
+                    <xs:documentation>Повреждение (заселено или отработано) клопом сосновым подкорным</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902343">
+                <xs:annotation>
+                    <xs:documentation>Повреждение (заселено или отработано) короедом- типографом</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902344">
+                <xs:annotation>
+                    <xs:documentation>Повреждение (заселено или отработано) усачом сосновым чёрным</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902347">
+                <xs:annotation>
+                    <xs:documentation>Повреждение (заселено или отработано) усачом еловым чёрным малым</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902430">
+                <xs:annotation>
+                    <xs:documentation>Повреждение корней насекомыми-вредителями</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902431">
+                <xs:annotation>
+                    <xs:documentation>Повреждение корней хрущами</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902500">
+                <xs:annotation>
+                    <xs:documentation>Повреждение почек, плодов и семян насекомыми</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37902531">
+                <xs:annotation>
+                    <xs:documentation>Повреждение полиграфом уссурийским</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37903705">
+                <xs:annotation>
+                    <xs:documentation>Механическое повреждение крон под воздействием почвенно- климатических факторов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37903756">
+                <xs:annotation>
+                    <xs:documentation>Резкое изменение светового режима под воздействием почвенно-климатических факторов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37903773">
+                <xs:annotation>
+                    <xs:documentation>Изменение уровня грунтовых вод под воздействием почвенно- климатических факторов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37903801">
+                <xs:annotation>
+                    <xs:documentation>Стихийные бедствия</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37903802">
+                <xs:annotation>
+                    <xs:documentation>Оползни</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37903803">
+                <xs:annotation>
+                    <xs:documentation>Лавины</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37903810">
+                <xs:annotation>
+                    <xs:documentation>Неблагоприятные условия произрастания</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37903811">
+                <xs:annotation>
+                    <xs:documentation>Бедные почвы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37903812">
+                <xs:annotation>
+                    <xs:documentation>Переувлажнение почвы под воздействием почвенно- климатических факторов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37903813">
+                <xs:annotation>
+                    <xs:documentation>Эрозия ветровая, водная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37903814">
+                <xs:annotation>
+                    <xs:documentation>Заиление почвы под воздействием почвенно-климатических факторов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37903815">
+                <xs:annotation>
+                    <xs:documentation>Засоление почвы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37903816">
+                <xs:annotation>
+                    <xs:documentation>Близкое залегание корненепроницаемых горизонтов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37903820">
+                <xs:annotation>
+                    <xs:documentation>Погодные условия</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37903821">
+                <xs:annotation>
+                    <xs:documentation>Воздействия сильных ветров прошлых лет, повлекшие наклон более 10°, изгиб или вывал деревьев</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37903822">
+                <xs:annotation>
+                    <xs:documentation>Воздействия шквалистых и ураганных ветров прошлых лет, повлекшие слом стволов деревьев</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37903823">
+                <xs:annotation>
+                    <xs:documentation>Воздействия тяжести снега, повлекшие сильный изгиб или слом стволов деревьев в прошлые годы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37903824">
+                <xs:annotation>
+                    <xs:documentation>Морозы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37903825">
+                <xs:annotation>
+                    <xs:documentation>Поздневесенние заморозки</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37903826">
+                <xs:annotation>
+                    <xs:documentation>Вымерзание</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37903827">
+                <xs:annotation>
+                    <xs:documentation>Град</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37903828">
+                <xs:annotation>
+                    <xs:documentation>Ожеледь</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37903829">
+                <xs:annotation>
+                    <xs:documentation>Выжимание корней</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37903830">
+                <xs:annotation>
+                    <xs:documentation>Засуха</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37903834">
+                <xs:annotation>
+                    <xs:documentation>Высокие температуры</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37903835">
+                <xs:annotation>
+                    <xs:documentation>Засекание песком</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37903837">
+                <xs:annotation>
+                    <xs:documentation>Смыв, наводнение под воздействием почвенно-климатических факторов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37903840">
+                <xs:annotation>
+                    <xs:documentation>Повреждения молниями</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37903841">
+                <xs:annotation>
+                    <xs:documentation>Затопление под воздействием почвенно-климатических факторов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37903844">
+                <xs:annotation>
+                    <xs:documentation>Заболачивание почвы под воздействием почвенно- климатических факторов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37903881">
+                <xs:annotation>
+                    <xs:documentation>Воздействия сильных ветров текущего года, повлекшие наклон более 10°, изгиб или вывал деревьев</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37903882">
+                <xs:annotation>
+                    <xs:documentation>Воздействия шквалистых и ураганных ветров текущего года, повлекшие слом стволов деревьев</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37903883">
+                <xs:annotation>
+                    <xs:documentation>Воздействия тяжести снега, повлекшие сильный изгиб или слом стволов деревьев в текущем году</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37904180">
+                <xs:annotation>
+                    <xs:documentation>Болезни хвои (листьев)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37904181">
+                <xs:annotation>
+                    <xs:documentation>Ржавчина хвои ели</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37904182">
+                <xs:annotation>
+                    <xs:documentation>Ржавчина хвои пихты</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37904183">
+                <xs:annotation>
+                    <xs:documentation>Ржавчина хвои сосны</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37904184">
+                <xs:annotation>
+                    <xs:documentation>Мучнистая роса дуба</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37904185">
+                <xs:annotation>
+                    <xs:documentation>Шютте снежное</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37904186">
+                <xs:annotation>
+                    <xs:documentation>Шютте обыкновенное сосны</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37904270">
+                <xs:annotation>
+                    <xs:documentation>Некрозно-раковые заболевания ветвей</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37904271">
+                <xs:annotation>
+                    <xs:documentation>Рак цитофомовый ясеня</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37904272">
+                <xs:annotation>
+                    <xs:documentation>Голландская болезнь ильмовых</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37904275">
+                <xs:annotation>
+                    <xs:documentation>Микоз сосудистый дуба</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37904277">
+                <xs:annotation>
+                    <xs:documentation>Тиростромоз</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37904281">
+                <xs:annotation>
+                    <xs:documentation>Ведьмины мётлы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37904288">
+                <xs:annotation>
+                    <xs:documentation>Вертун сосновый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37904289">
+                <xs:annotation>
+                    <xs:documentation>Омела</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37904350">
+                <xs:annotation>
+                    <xs:documentation>Гнили стволовые</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37904351">
+                <xs:annotation>
+                    <xs:documentation>Губка еловая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37904352">
+                <xs:annotation>
+                    <xs:documentation>Губка сосновая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37904353">
+                <xs:annotation>
+                    <xs:documentation>Губка лиственничная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37904354">
+                <xs:annotation>
+                    <xs:documentation>Губка дубовая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37904355">
+                <xs:annotation>
+                    <xs:documentation>Трутовик настоящий</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37904356">
+                <xs:annotation>
+                    <xs:documentation>Трутовик ложный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37904357">
+                <xs:annotation>
+                    <xs:documentation>Трутовик окаймленный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37904358">
+                <xs:annotation>
+                    <xs:documentation>Трутовик осиновый (трутовик ложный осиновый)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37904359">
+                <xs:annotation>
+                    <xs:documentation>Трутовик серно-желтый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37904360">
+                <xs:annotation>
+                    <xs:documentation>Трутовик ложный дубовый и дуболюбивый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37904361">
+                <xs:annotation>
+                    <xs:documentation>Губка берёзовая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37904362">
+                <xs:annotation>
+                    <xs:documentation>Трутовик Гартига</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37904363">
+                <xs:annotation>
+                    <xs:documentation>Чага, трутовик скошенный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37904370">
+                <xs:annotation>
+                    <xs:documentation>Некрозно-раковые заболевания стволов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37904371">
+                <xs:annotation>
+                    <xs:documentation>Рак смоляной</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37904372">
+                <xs:annotation>
+                    <xs:documentation>Рак каштана эндотиевый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37904373">
+                <xs:annotation>
+                    <xs:documentation>Рак дуба поперечный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37904374">
+                <xs:annotation>
+                    <xs:documentation>Рак пихты ржавчинный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37904375">
+                <xs:annotation>
+                    <xs:documentation>Микоз сосудистый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37904376">
+                <xs:annotation>
+                    <xs:documentation>Рак тополя и осины чёрный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37904377">
+                <xs:annotation>
+                    <xs:documentation>Рак ясеня бактериальный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37904378">
+                <xs:annotation>
+                    <xs:documentation>Рак биаторелловый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37904379">
+                <xs:annotation>
+                    <xs:documentation>Рак раневой (язвенный) ели</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37904380">
+                <xs:annotation>
+                    <xs:documentation>Сосудистые заболевания</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37904390">
+                <xs:annotation>
+                    <xs:documentation>Бактериальные заболевания</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37904391">
+                <xs:annotation>
+                    <xs:documentation>Бактериальные заболевания берёзы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37904392">
+                <xs:annotation>
+                    <xs:documentation>Бактериальная водянка</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37904465">
+                <xs:annotation>
+                    <xs:documentation>Гнили корневые</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37904466">
+                <xs:annotation>
+                    <xs:documentation>Губка корневая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37904467">
+                <xs:annotation>
+                    <xs:documentation>Опёнок</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37904468">
+                <xs:annotation>
+                    <xs:documentation>Трутовик плоский</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37904469">
+                <xs:annotation>
+                    <xs:documentation>Трутовик Швейнитца</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37904470">
+                <xs:annotation>
+                    <xs:documentation>Трутовик еловый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37904501">
+                <xs:annotation>
+                    <xs:documentation>Поражение почек, плодов и семян болезнями</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37905295">
+                <xs:annotation>
+                    <xs:documentation>Повреждение ветвей дикими животными</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37905296">
+                <xs:annotation>
+                    <xs:documentation>Повреждение ветвей лосем</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37905297">
+                <xs:annotation>
+                    <xs:documentation>Повреждение ветвей косулей</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37905394">
+                <xs:annotation>
+                    <xs:documentation>Повреждение стволов дикими животными</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37905396">
+                <xs:annotation>
+                    <xs:documentation>Повреждение стволов лосем</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37905397">
+                <xs:annotation>
+                    <xs:documentation>Повреждение стволов бобром</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37905398">
+                <xs:annotation>
+                    <xs:documentation>Повреждение стволов косулей</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37905495">
+                <xs:annotation>
+                    <xs:documentation>Повреждение корней дикими животными</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37905497">
+                <xs:annotation>
+                    <xs:documentation>Повреждение корней грызунами</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37905502">
+                <xs:annotation>
+                    <xs:documentation>Повреждение почек, плодов и семян дикими животными</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37905839">
+                <xs:annotation>
+                    <xs:documentation>Подтопление от строительства плотин бобрами</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37906395">
+                <xs:annotation>
+                    <xs:documentation>Повреждение стволов домашними животными</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37906494">
+                <xs:annotation>
+                    <xs:documentation>Повреждение корней домашними животными</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37906701">
+                <xs:annotation>
+                    <xs:documentation>Рекреационная нагрузка</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37906702">
+                <xs:annotation>
+                    <xs:documentation>Вытаптывание</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37906703">
+                <xs:annotation>
+                    <xs:documentation>Механические повреждения стволов (антропогенные)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37906704">
+                <xs:annotation>
+                    <xs:documentation>Механические повреждения крон в результате антропогенного воздействия</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37906710">
+                <xs:annotation>
+                    <xs:documentation>Самовольные рубки</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37906720">
+                <xs:annotation>
+                    <xs:documentation>Промышленность и транспорт</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37906721">
+                <xs:annotation>
+                    <xs:documentation>Загрязнение атмосферы промышленными выбросами</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37906722">
+                <xs:annotation>
+                    <xs:documentation>Загрязнение почвы промвыбросами, выбросами промышленного животноводства</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37906723">
+                <xs:annotation>
+                    <xs:documentation>Загрязнение грунтовых вод промвыбросами</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37906724">
+                <xs:annotation>
+                    <xs:documentation>Загрязнение атмосферы выбросами автотранспорта</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37906725">
+                <xs:annotation>
+                    <xs:documentation>Загрязнение леса бытовыми отходами</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37906740">
+                <xs:annotation>
+                    <xs:documentation>Лесохозяйственная и лесопромышленная деятельность</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37906742">
+                <xs:annotation>
+                    <xs:documentation>Превышение допустимой ширины карровых ремней</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37906743">
+                <xs:annotation>
+                    <xs:documentation>Нарушение сроков подсочки</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37906744">
+                <xs:annotation>
+                    <xs:documentation>Нарушение технологии подсочки</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37906745">
+                <xs:annotation>
+                    <xs:documentation>Неправильное проведение рубок ухода</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37906746">
+                <xs:annotation>
+                    <xs:documentation>Неправильная технология создания лесных культур</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37906747">
+                <xs:annotation>
+                    <xs:documentation>Несоответствие лесных культур условиям произрастания</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37906748">
+                <xs:annotation>
+                    <xs:documentation>Неправильный подбор пород для лесных культур</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37906749">
+                <xs:annotation>
+                    <xs:documentation>Некачественная посадка</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37906750">
+                <xs:annotation>
+                    <xs:documentation>Некачественный посадочный материал</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37906751">
+                <xs:annotation>
+                    <xs:documentation>Отсутствие уходов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37906752">
+                <xs:annotation>
+                    <xs:documentation>Нарушение правил агротехники подготовки почв под лесные культуры</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37906753">
+                <xs:annotation>
+                    <xs:documentation>Нарушение правил агротехники ухода</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37906754">
+                <xs:annotation>
+                    <xs:documentation>Несвоевременное проведение лесохозяйственных мероприятий</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37906755">
+                <xs:annotation>
+                    <xs:documentation>Резкое изменение светового режима в результате антропогенного воздействия</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37906770">
+                <xs:annotation>
+                    <xs:documentation>Мелиорация</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37906774">
+                <xs:annotation>
+                    <xs:documentation>Изменение уровня грунтовых вод в результате антропогенного воздействия</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37906780">
+                <xs:annotation>
+                    <xs:documentation>Сельскохозяйственная деятельность</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37906781">
+                <xs:annotation>
+                    <xs:documentation>Прогон и пастьба скота</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37906785">
+                <xs:annotation>
+                    <xs:documentation>Строительная деятельность</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37906788">
+                <xs:annotation>
+                    <xs:documentation>Добывающая промышленность</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37906789">
+                <xs:annotation>
+                    <xs:documentation>Разливы нефти</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37906790">
+                <xs:annotation>
+                    <xs:documentation>Прочие виды хозяйственной деятельности</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37906791">
+                <xs:annotation>
+                    <xs:documentation>Повреждение при сборе орехов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37906792">
+                <xs:annotation>
+                    <xs:documentation>Повреждение при сборе плодов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37906793">
+                <xs:annotation>
+                    <xs:documentation>Сгребание подстилки</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37906794">
+                <xs:annotation>
+                    <xs:documentation>Свалка твердых отходов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37906817">
+                <xs:annotation>
+                    <xs:documentation>Заиление почвы в результате антропогенного воздействия</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37906831">
+                <xs:annotation>
+                    <xs:documentation>Переувлажнение почвы в результате антропогенного воздействия</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37906838">
+                <xs:annotation>
+                    <xs:documentation>Смыв, наводнение в результате антропогенного воздействия</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37906842">
+                <xs:annotation>
+                    <xs:documentation>Затопление в результате антропогенного воздействия</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37906845">
+                <xs:annotation>
+                    <xs:documentation>Заболачивание почвы в результате антропогенного воздействия</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37907610">
+                <xs:annotation>
+                    <xs:documentation>Межвидовая конкуренция</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37907611">
+                <xs:annotation>
+                    <xs:documentation>Затенение</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37907612">
+                <xs:annotation>
+                    <xs:documentation>Охлест</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37907613">
+                <xs:annotation>
+                    <xs:documentation>Ошмыг</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37907630">
+                <xs:annotation>
+                    <xs:documentation>Внутривидовая конкуренция</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37907650">
+                <xs:annotation>
+                    <xs:documentation>Накопление естественного отпада в недоступных участках</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

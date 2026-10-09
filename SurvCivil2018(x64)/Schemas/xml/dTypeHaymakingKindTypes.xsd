@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/typeHaymaking/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/typeHaymaking/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="TypeHaymakingKindEType">
+        <xs:annotation>
+            <xs:documentation>Тип расположения, состояния и качества сенокоса</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="zakustarennyye">
+                <xs:annotation>
+                    <xs:documentation>закустаренные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="chistyye">
+                <xs:annotation>
+                    <xs:documentation>чистые</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="zakochkarennyye">
+                <xs:annotation>
+                    <xs:documentation>закочкаренные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="zalivnyye">
+                <xs:annotation>
+                    <xs:documentation>заливные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sukhodolnyye">
+                <xs:annotation>
+                    <xs:documentation>суходольные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="zalesennyye">
+                <xs:annotation>
+                    <xs:documentation>залесенные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="zabolochennyye">
+                <xs:annotation>
+                    <xs:documentation>заболоченные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

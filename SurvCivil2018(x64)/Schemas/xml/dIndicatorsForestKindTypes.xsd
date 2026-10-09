@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/indicatorsForest/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/indicatorsForest/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="IndicatorsForestKindEType">
+        <xs:annotation>
+            <xs:documentation>Показатели государственной инвентаризации лесов</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="annualCarbonAbsorptionForestsB">
+                <xs:annotation>
+                    <xs:documentation>Годовое углеродопоглощение лесов по группам пород</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="averageAgeTreesByGroupsTreeSpe">
+                <xs:annotation>
+                    <xs:documentation>Средний возраст деревьев по группам древесных пород, древесным породам</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="averageAmountUndergrowthPerHec">
+                <xs:annotation>
+                    <xs:documentation>Среднее количество подлеска на гектар по породному составу и классам высоты</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="averageCarbonStockByRockGroups">
+                <xs:annotation>
+                    <xs:documentation>Средний запас углерода по группам пород и группам возраста</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="averageCarbonStockCarbonDeposi">
+                <xs:annotation>
+                    <xs:documentation>Средний запас углерода (углерододепонирование) по группам пород и возрастным периодам</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="averageCarbonStockInForestCom1">
+                <xs:annotation>
+                    <xs:documentation>Средний запас углерода в компонентах леса</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="averageCarbonStockInForestCom2">
+                <xs:annotation>
+                    <xs:documentation>Средний запас углерода в компонентах леса</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="averageDiameterTreesByTreeSpec">
+                <xs:annotation>
+                    <xs:documentation>Средний диаметр деревьев по группам древесных пород, древесным породам и возрастным периодам</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="averageGrowthPlantingsByStockI">
+                <xs:annotation>
+                    <xs:documentation>Средний прирост насаждений по запасу в разрезе групп древесных пород, древесных пород и возрастных периодов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="averageHeightTreesByGroupsTree">
+                <xs:annotation>
+                    <xs:documentation>Средняя высота деревьев по группам древесных пород, древесным породам и возрастным периодам</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="averageNumberAdolescentTreesPe">
+                <xs:annotation>
+                    <xs:documentation>Среднее количество деревьев подростка на гектар по виду происхождения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="averageNumberStumpsPerHectareB">
+                <xs:annotation>
+                    <xs:documentation>Среднее количество пней на гектар по группам древесных пород</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="averageNumberTreesPerHectareIn">
+                <xs:annotation>
+                    <xs:documentation>Среднее количество деревьев на гектар по высоте по IUFRO</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="averageNumberUndergrowthAndYou">
+                <xs:annotation>
+                    <xs:documentation>Среднее количество деревьев подроста и молодняка на гектар по древесным породам</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="averageNumberUnderstoryTreesPe">
+                <xs:annotation>
+                    <xs:documentation>Среднее количество деревьев подлеска на гектар по породному составу, классам высоты и среднему возрасту</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="averageProductivityPlantingsBy">
+                <xs:annotation>
+                    <xs:documentation>Средняя производительность насаждений по группам древесных пород, древесным породам и возрастным периодам</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="averageStockByAgeClassesAndGro">
+                <xs:annotation>
+                    <xs:documentation>Средний запас по классам возраста и группам древесных пород</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="averageTrunkVolumeByGroupsTree">
+                <xs:annotation>
+                    <xs:documentation>Средний объем ствола по группам древесных пород, древесным породам и возрастным периодам</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="avgNumTreesPerHecByGroups">
+                <xs:annotation>
+                    <xs:documentation>Среднее количество деревьев на гектар по группам древесных пород</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="avgNumTreesPerHecByGrowthTrend">
+                <xs:annotation>
+                    <xs:documentation>Среднее количество деревьев на гектар по тенденции роста по IUFRO</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="avgNumTreesPerHecBySurvivabil">
+                <xs:annotation>
+                    <xs:documentation>Среднее количество деревьев на гектар по живучести по IUFRO</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="avgNumUndergrowthTreesByAvg">
+                <xs:annotation>
+                    <xs:documentation>Среднее количество деревьев подроста на гектар по среднему возрасту</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="avgNumUndergrowthTreesByAvgDi">
+                <xs:annotation>
+                    <xs:documentation>Среднее количество деревьев подроста на гектар по среднему диаметру</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="avgNumUndergrowthTreesByGroup">
+                <xs:annotation>
+                    <xs:documentation>Среднее количество деревьев подроста на гектар по группам древесных пород, древесным породам, классам высоты, среднему возрасту и среднему диаметру</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="avgStockDeadWoodPerHecByGroups">
+                <xs:annotation>
+                    <xs:documentation>Средний запас валежа на гектар по группам древесных пород</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="avgStockDeadWoodPerHecByTypes">
+                <xs:annotation>
+                    <xs:documentation>Средний запас сухостоя на гектар по видам сухостоя и группам древесных пород</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="changeInAgeCulturePlantings">
+                <xs:annotation>
+                    <xs:documentation>Изменение возрастной культуры насаждений</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="changeInStateForestEnvironment">
+                <xs:annotation>
+                    <xs:documentation>Изменение состояния лесной среды (по стадиям деградации лесной среды)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="changesInStatePlantingsByClass">
+                <xs:annotation>
+                    <xs:documentation>Изменение состояния насаждений (по классам биологической устойчивости)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="currentAnnualIncreaseInDiamete">
+                <xs:annotation>
+                    <xs:documentation>Текущий годовой прирост по диаметру по группам древесных пород, древесным породам и возрастным периодам</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="currentGrowthPlantingsByStockI">
+                <xs:annotation>
+                    <xs:documentation>Текущий прирост насаждений по запасу в разрезе групп древесных пород, древесных пород и возрастных периодов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="dataOnAverageSpeciesCompositio">
+                <xs:annotation>
+                    <xs:documentation>Данные о среднем породном составе насаждения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="degreeBrushwoodCoverageForestA">
+                <xs:annotation>
+                    <xs:documentation>Степень покрытия хворостом лесной площади, его общий и средний запас</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="diameterProjectionCrownTreesBy">
+                <xs:annotation>
+                    <xs:documentation>Диаметр проекции кроны деревьев по группам древесных пород</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distribAreaForestLandByReliab">
+                <xs:annotation>
+                    <xs:documentation>Распределение площади лесных земель с наличием подроста и молодняка по благонадёжности в разрезе древесных пород</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distribAreaForestLandByTreeSpe">
+                <xs:annotation>
+                    <xs:documentation>Распределение площади лесных земель с наличием подроста и молодняка по древесным породам</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distribDmgUndergrowthByDmg">
+                <xs:annotation>
+                    <xs:documentation>Распределение поврежденных деревьев подроста по интенсивности повреждения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distribDmgUndergrowthByType">
+                <xs:annotation>
+                    <xs:documentation>Распределение поврежденных деревьев подроста по типу повреждений</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distribForestAreaByAgeOfFormat">
+                <xs:annotation>
+                    <xs:documentation>Распределение лесной площади с наличием пней по давности их образования</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distribForestAreaByDegreeOfDec">
+                <xs:annotation>
+                    <xs:documentation>Распределение лесной площади с наличием валежа по степени его разложения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distribForestAreaByDegreeOfDiv">
+                <xs:annotation>
+                    <xs:documentation>Распределение лесной площади по степени разнообразия высот и диаметров насаждения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distribForestAreaByDistribut">
+                <xs:annotation>
+                    <xs:documentation>Распределение лесной площади с наличием валежа по распределению валежа на постоянной пробной площади</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distribForestAreaByPlacemOnPer">
+                <xs:annotation>
+                    <xs:documentation>Распределение лесной площади по размещению деревьев на постоянной пробной площади</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distribForestAreaByReliabilit">
+                <xs:annotation>
+                    <xs:documentation>Распределение лесной площади с наличием подроста по благонадежности в разрезе групп древесных пород и древесных пород</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distribForestAreaBySpecAndPer">
+                <xs:annotation>
+                    <xs:documentation>Распределение лесной площади по группам древесных пород, древесным породам и возрастным периодам</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distribForestAreaBySpecAndPro">
+                <xs:annotation>
+                    <xs:documentation>Распределение лесной площади по группам древесных пород, древесным породам и производительности</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distribForestAreaByTreeSpecies">
+                <xs:annotation>
+                    <xs:documentation>Распределение лесной площади с наличием подлеска по древесным породам</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distribForestAreaByTypeOfDead">
+                <xs:annotation>
+                    <xs:documentation>Распределение лесной площади с наличием валежа по типу гнили валежа</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distribForestAreaByTypeOfRot">
+                <xs:annotation>
+                    <xs:documentation>Распределение лесной площади с наличием пней по типу их гнили</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distribForestAreaWithCesium137">
+                <xs:annotation>
+                    <xs:documentation>Распределение лесной площади по уровню радиоактивного загрязнения цезием-137</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distribForestAreawithPresence">
+                <xs:annotation>
+                    <xs:documentation>Распределение лесной площади с наличием пней по степени их разложения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distribFrstAreaByDegreeOfSoil">
+                <xs:annotation>
+                    <xs:documentation>Распределение лесной площади по степени эрозии почв,</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distribFrstAreaWithStrontium90">
+                <xs:annotation>
+                    <xs:documentation>Распределение лесной площади по уровню радиоактивного загрязнения стронцием-90</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distribFrstLandAreaByTypOfSoil">
+                <xs:annotation>
+                    <xs:documentation>Распределение площади лесных земель по типам эрозии почв</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distribFrstLandAreaByTypeOfFor">
+                <xs:annotation>
+                    <xs:documentation>Распределение площади лесных земель по типу лесной подстилки</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distribTotalAndAvgStockOfDead">
+                <xs:annotation>
+                    <xs:documentation>Распределение общего и среднего запаса валежа по группам древесных пород</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distribTotalAndAvgStockOfWood">
+                <xs:annotation>
+                    <xs:documentation>Распределение общего и среднего запаса древесины по классам возраста</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distribTotalStockWdByGroupOfTr">
+                <xs:annotation>
+                    <xs:documentation>Распределение общего запаса древесины по группам древесных пород, древесным породам и категориям технической годности</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distribTotalStockWoodByGrpOfWd">
+                <xs:annotation>
+                    <xs:documentation>Распределение общего запаса древесины по группам древесных пород, древесным породам и производительности</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distribTtlAndAvgStockOfStumps">
+                <xs:annotation>
+                    <xs:documentation>Распределение общего и среднего запаса пней по группам древесных пород</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distributionAreaForestLandByCl">
+                <xs:annotation>
+                    <xs:documentation>Распределение площади лесных земель по классам устойчивости насаждения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distributionAreaForestLandsByA">
+                <xs:annotation>
+                    <xs:documentation>Распределение площади лесных земель по группам возраста</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distributionAreaForestLandsByB">
+                <xs:annotation>
+                    <xs:documentation>Распределение площади лесных земель по покрытию ягодниками (степень покрытия ягодниками)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distributionAreaForestLandsByM">
+                <xs:annotation>
+                    <xs:documentation>Распределение площади лесных земель по механическому составу почв</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distributionAreaForestLandsByP">
+                <xs:annotation>
+                    <xs:documentation>Распределение площади лесных земель по наличию валежа</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distributionAverageNumberDeadw">
+                <xs:annotation>
+                    <xs:documentation>Распределение среднего количества деревьев сухостоя на гектар по видам сухостоя и группам древесных пород</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distributionAverageStockWoodPe">
+                <xs:annotation>
+                    <xs:documentation>Распределение среднего запаса древесины на гектар по группам древесных пород, древесным породам и возрастным периодам</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distributionAverageWoodStockPe">
+                <xs:annotation>
+                    <xs:documentation>Распределение среднего запаса древесины на гектар по группам древесных пород, древесным породам и производительности</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distributionDeadwoodStockByTyp">
+                <xs:annotation>
+                    <xs:documentation>Распределение запаса древесины сухостоя по типам сухостоя в разрезе древесных пород</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distributionForestAreaByBerryC">
+                <xs:annotation>
+                    <xs:documentation>Распределение лесной площади по покрытию ягодниками</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distributionForestAreaByClasse">
+                <xs:annotation>
+                    <xs:documentation>Распределение лесной площади по классам биологической устойчивости насаждения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distributionForestAreaByCovera">
+                <xs:annotation>
+                    <xs:documentation>Распределение лесной площади по покрытию лекарственными растениями</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distributionForestAreaByCoveri">
+                <xs:annotation>
+                    <xs:documentation>Распределение лесной площади по покрытию видами растений, используемых в качестве пищевых ресурсов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distributionForestAreaByDegree">
+                <xs:annotation>
+                    <xs:documentation>Распределение лесной площади по степени разновозрастности насаждений</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distributionForestAreaByForest">
+                <xs:annotation>
+                    <xs:documentation>Распределение лесной площади по типам леса</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distributionForestAreaByLandCa">
+                <xs:annotation>
+                    <xs:documentation>Распределение лесной площади по категориям земель</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distributionForestAreaByLiving">
+                <xs:annotation>
+                    <xs:documentation>Распределение лесной площади по покрытию живым напочвенным покровом</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distributionForestAreaByMechan">
+                <xs:annotation>
+                    <xs:documentation>Распределение лесной площади по механическому составу почв</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distributionForestAreaByNumber">
+                <xs:annotation>
+                    <xs:documentation>Распределение лесной площади по количеству ярусов древостоя</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distributionForestAreaByOrigin">
+                <xs:annotation>
+                    <xs:documentation>Распределение лесной площади по происхождению насаждений</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distributionForestAreaByPlacem">
+                <xs:annotation>
+                    <xs:documentation>Распределение лесной площади по размещению древесных пород</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distributionForestAreaByPresen">
+                <xs:annotation>
+                    <xs:documentation>Распределение лесной площади по наличию коммунальных отходов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distributionForestAreaBySoilMo">
+                <xs:annotation>
+                    <xs:documentation>Распределение лесной площади по влажности почв</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distributionForestAreaBySoilTy">
+                <xs:annotation>
+                    <xs:documentation>Распределение лесной площади по типу почв</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distributionForestAreaBySpecie">
+                <xs:annotation>
+                    <xs:documentation>Распределение лесной площади по видовому богатству древесных пород</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distributionForestAreaByStages">
+                <xs:annotation>
+                    <xs:documentation>Распределение лесной площади по стадиям деградации лесной среды</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distributionForestAreaByThickn">
+                <xs:annotation>
+                    <xs:documentation>Распределение лесной площади по толщине лесной подстилки</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distributionForestAreaByTypeCa">
+                <xs:annotation>
+                    <xs:documentation>Распределение лесной площади по типу сомкнутости полога древостоя</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distributionForestAreaByTypeFo">
+                <xs:annotation>
+                    <xs:documentation>Распределение лесной площади по типу лесной подстилки</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distributionForestAreaByTypesF">
+                <xs:annotation>
+                    <xs:documentation>Распределение лесной площади по типам лесорастительных условий</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distributionForestAreaByTypesS">
+                <xs:annotation>
+                    <xs:documentation>Распределение лесной площади по типам эрозии почв</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distributionForestAreaByUnifor">
+                <xs:annotation>
+                    <xs:documentation>Распределение лесной площади по равномерности участия древесных пород</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distributionForestAreaLandByOr">
+                <xs:annotation>
+                    <xs:documentation>Распределение площади лесных земель по происхождению насаждений</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distributionForestAreaLandBySo">
+                <xs:annotation>
+                    <xs:documentation>Распределение площади лесных земель по типу почв</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distributionForestLandAreaByAg">
+                <xs:annotation>
+                    <xs:documentation>Распределение площади лесных земель по классам возраста</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distributionForestLandAreaByCo">
+                <xs:annotation>
+                    <xs:documentation>Распределение площади лесных земель по составляющим породам (удельный вес древесных пород в лесной площади)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distributionForestLandAreaByDe">
+                <xs:annotation>
+                    <xs:documentation>Распределение площади лесных земель по степени эрозии почв</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distributionForestLandAreaByPr">
+                <xs:annotation>
+                    <xs:documentation>Распределение площади лесных земель по производительности насаждений</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distributionForestLandAreaBySp">
+                <xs:annotation>
+                    <xs:documentation>Распределение площади лесных земель по видовому разнообразию древесных пород</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distributionNumberTreesAccordi">
+                <xs:annotation>
+                    <xs:documentation>Распределение количества деревьев по интенсивности повреждения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distributionNumberTreesAtPlace">
+                <xs:annotation>
+                    <xs:documentation>Распределение количества деревьев по месту повреждения дерева</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distributionNumberTreesByGroup">
+                <xs:annotation>
+                    <xs:documentation>Распределение количества деревьев по группам древесных пород и категориям технической годности в разрезе древесных пород</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distributionNumberTreesByTypes">
+                <xs:annotation>
+                    <xs:documentation>Распределение количества деревьев по типам повреждения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distributionTotalAndAverageWo1">
+                <xs:annotation>
+                    <xs:documentation>Распределение общего и среднего запаса древесины по ступеням толщины</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distributionTotalAndAverageWo2">
+                <xs:annotation>
+                    <xs:documentation>Распределение общего и среднего запаса древесины по ступеням толщины</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distributionTotalDeadwoodStock">
+                <xs:annotation>
+                    <xs:documentation>Распределение общего запаса валежа по группам древесных пород</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distributionTotalStockByWoodSp">
+                <xs:annotation>
+                    <xs:documentation>Распределение общего запаса по древесным породам (удельный вес запаса древесины древесных пород в общем запасе насаждений)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distributionTotalStockTreesByG">
+                <xs:annotation>
+                    <xs:documentation>Распределение общего запаса деревьев по группам древесных пород и категориям технической годности в разрезе древесных пород</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distributionTotalStockWoodByAg">
+                <xs:annotation>
+                    <xs:documentation>Распределение общего запаса древесины по группам возраста</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distributionTotalStockWoodByGr">
+                <xs:annotation>
+                    <xs:documentation>Распределение общего запаса древесины по группам древесных пород, древесным породам и возрастным периодам</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distributionTotalWoodStockByPr">
+                <xs:annotation>
+                    <xs:documentation>Распределение общего запаса древесины по производительности насаждений</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distributionTreesByDamageInten">
+                <xs:annotation>
+                    <xs:documentation>Распределение деревьев по интенсивности повреждения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distributionTreesByLengthEpiph">
+                <xs:annotation>
+                    <xs:documentation>Распределение деревьев по протяженности эпифитных лишайников по высоте ствола</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distributionTreesByPresenceTru">
+                <xs:annotation>
+                    <xs:documentation>Распределение деревьев по наличию слома ствола</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="distributionTreesByTypesDamage">
+                <xs:annotation>
+                    <xs:documentation>Распределение деревьев по типам повреждения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="totalCarbonStockCarbonDepositi">
+                <xs:annotation>
+                    <xs:documentation>Общий запас углерода (углерододепонирование) по группам пород и возрастным периодам</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="totalCarbonStockInForestCompo1">
+                <xs:annotation>
+                    <xs:documentation>Общий запас углерода в компонентах леса</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="totalCarbonStockInForestCompo2">
+                <xs:annotation>
+                    <xs:documentation>Общий запас углерода в компонентах леса</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

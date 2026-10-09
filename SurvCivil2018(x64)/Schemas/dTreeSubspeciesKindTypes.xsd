@@ -1,0 +1,2099 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/treeSubspecies/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/treeSubspecies/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="TreeSubspeciesKindEType">
+        <xs:annotation>
+            <xs:documentation>Подвиды деревьев (породы)</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="acacia">
+                <xs:annotation>
+                    <xs:documentation>Акация</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="acaciaWhiteRobinia">
+                <xs:annotation>
+                    <xs:documentation>Акация белая (Робиния)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="acaciaYellowCaragana">
+                <xs:annotation>
+                    <xs:documentation>Акация желтая (карагана)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="acanthopanax">
+                <xs:annotation>
+                    <xs:documentation>Акантопанакс</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="actinidia">
+                <xs:annotation>
+                    <xs:documentation>Актинидия</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="actionRough">
+                <xs:annotation>
+                    <xs:documentation>Дейция шершавая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="ailanthus">
+                <xs:annotation>
+                    <xs:documentation>Айлант</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="albiziaLankaran">
+                <xs:annotation>
+                    <xs:documentation>Альбиция ленкоранская</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="alder">
+                <xs:annotation>
+                    <xs:documentation>Ольха</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="alderBush">
+                <xs:annotation>
+                    <xs:documentation>Ольха кустарниковая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="alderGray">
+                <xs:annotation>
+                    <xs:documentation>Ольха серая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="alderWhite">
+                <xs:annotation>
+                    <xs:documentation>Ольха белая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="almond">
+                <xs:annotation>
+                    <xs:documentation>Миндаль</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="americanAsh">
+                <xs:annotation>
+                    <xs:documentation>Ясень американский</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="amorpha">
+                <xs:annotation>
+                    <xs:documentation>Аморфа</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="amurLilac">
+                <xs:annotation>
+                    <xs:documentation>Сирень амурская</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="amurLinden">
+                <xs:annotation>
+                    <xs:documentation>Липа амурская</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="amurVelvet">
+                <xs:annotation>
+                    <xs:documentation>Бархат амурский</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="appleTree">
+                <xs:annotation>
+                    <xs:documentation>Яблоня</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="apricot">
+                <xs:annotation>
+                    <xs:documentation>Абрикос</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="aralia">
+                <xs:annotation>
+                    <xs:documentation>Аралия</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="arizonaCypress">
+                <xs:annotation>
+                    <xs:documentation>Кипарис аризонский</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="aroniaChokeberry">
+                <xs:annotation>
+                    <xs:documentation>Арония черноплодная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="ash">
+                <xs:annotation>
+                    <xs:documentation>Ясень</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="ash-LeavedMaple">
+                <xs:annotation>
+                    <xs:documentation>Клен ясенелистный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="ashAngustifolia">
+                <xs:annotation>
+                    <xs:documentation>Ясень узколистный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="ashFluffy">
+                <xs:annotation>
+                    <xs:documentation>Ясень пушистый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="ashGreen">
+                <xs:annotation>
+                    <xs:documentation>Ясень зеленый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="ashTree">
+                <xs:annotation>
+                    <xs:documentation>Ясень носолистный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="asianBirdCherry">
+                <xs:annotation>
+                    <xs:documentation>Черемуха азиатская</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="aspen">
+                <xs:annotation>
+                    <xs:documentation>Осина</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="atlasCedar">
+                <xs:annotation>
+                    <xs:documentation>Кедр атласский</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="ayanSpruce">
+                <xs:annotation>
+                    <xs:documentation>Ель аянская</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="azalea">
+                <xs:annotation>
+                    <xs:documentation>Азалия</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="balsamFir">
+                <xs:annotation>
+                    <xs:documentation>Пихта бальзамическая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="balsamPoplar">
+                <xs:annotation>
+                    <xs:documentation>Тополь бальзамический</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="bambooKurilSaza">
+                <xs:annotation>
+                    <xs:documentation>Бамбук курильский (саза)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="banksPine">
+                <xs:annotation>
+                    <xs:documentation>Сосна Банкса</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="barberry">
+                <xs:annotation>
+                    <xs:documentation>Барбарис</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="barberryOrdinary">
+                <xs:annotation>
+                    <xs:documentation>Барбарис обыкновенный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="barberryThunberg">
+                <xs:annotation>
+                    <xs:documentation>Барбарис Тунберга</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="beech">
+                <xs:annotation>
+                    <xs:documentation>Бук</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="beechOriental">
+                <xs:annotation>
+                    <xs:documentation>Бук восточный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="berek">
+                <xs:annotation>
+                    <xs:documentation>Берека</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="berezaLitvinova">
+                <xs:annotation>
+                    <xs:documentation>Береза Литвинова</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="berezaMaksimovich">
+                <xs:annotation>
+                    <xs:documentation>Береза Максимовича</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="birch">
+                <xs:annotation>
+                    <xs:documentation>Береза</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="birchDwarf">
+                <xs:annotation>
+                    <xs:documentation>Береза карликовая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="birchFlatLeaved">
+                <xs:annotation>
+                    <xs:documentation>Береза плосколистная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="birchFluffy">
+                <xs:annotation>
+                    <xs:documentation>Береза пушистая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="birchRadde">
+                <xs:annotation>
+                    <xs:documentation>Береза Радде</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="birchSchmidt">
+                <xs:annotation>
+                    <xs:documentation>Береза Шмидта</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="birchStone">
+                <xs:annotation>
+                    <xs:documentation>Береза каменная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="birdCherry">
+                <xs:annotation>
+                    <xs:documentation>Черемуха</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="birdCherryFinelySerrated">
+                <xs:annotation>
+                    <xs:documentation>ЧЕРЕМУХА мелкопильчатая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="birdCherryLate">
+                <xs:annotation>
+                    <xs:documentation>Черемуха поздняя</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="birdCherryMaaka">
+                <xs:annotation>
+                    <xs:documentation>Черемуха Маака</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="blackAlder">
+                <xs:annotation>
+                    <xs:documentation>Ольха черная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="blackBirch">
+                <xs:annotation>
+                    <xs:documentation>Береза черная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="blackCurrant">
+                <xs:annotation>
+                    <xs:documentation>Смородина черная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="blackPine">
+                <xs:annotation>
+                    <xs:documentation>Сосна черная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="blackberry">
+                <xs:annotation>
+                    <xs:documentation>Ежевика</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="blackberryBristly">
+                <xs:annotation>
+                    <xs:documentation>ЕЖЕВИКА щетинистая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="blueberryCaucasian">
+                <xs:annotation>
+                    <xs:documentation>Черника кавказская</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="bobovnik">
+                <xs:annotation>
+                    <xs:documentation>Бобовник</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="bobovnikGoldenRain">
+                <xs:annotation>
+                    <xs:documentation>Бобовник (золотой дождь)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="boxwood">
+                <xs:annotation>
+                    <xs:documentation>Самшит</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="broom">
+                <xs:annotation>
+                    <xs:documentation>Ракитник</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="bubble">
+                <xs:annotation>
+                    <xs:documentation>Пузырник</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="bubbleCalifolia">
+                <xs:annotation>
+                    <xs:documentation>ПУЗЫРЕПЛОДНИК калинолистный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="buckthorn">
+                <xs:annotation>
+                    <xs:documentation>Крушина</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="buckthornBrittle">
+                <xs:annotation>
+                    <xs:documentation>Крушина ломкая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="buckthornLaxative">
+                <xs:annotation>
+                    <xs:documentation>Крушина слабительная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="butternut">
+                <xs:annotation>
+                    <xs:documentation>Орех серый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="cajanderLarch">
+                <xs:annotation>
+                    <xs:documentation>Лиственница Каяндера</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="calopaNaxSemiloPastyDimorph">
+                <xs:annotation>
+                    <xs:documentation>Калопа?накс семило?пастный (диморфант)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="canadianPoplar">
+                <xs:annotation>
+                    <xs:documentation>Тополь канадский</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="canadianSpruce">
+                <xs:annotation>
+                    <xs:documentation>Ель канадская</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="caraganaTreelike">
+                <xs:annotation>
+                    <xs:documentation>Карагана древовидная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="carpalBirdCherry">
+                <xs:annotation>
+                    <xs:documentation>Черемуха кистевая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="catalpa">
+                <xs:annotation>
+                    <xs:documentation>Катальпа</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="caucasianFir">
+                <xs:annotation>
+                    <xs:documentation>Пихта кавказская</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="caucasianHawthorn">
+                <xs:annotation>
+                    <xs:documentation>Боярышник кавказский</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="cedar">
+                <xs:annotation>
+                    <xs:documentation>Кедр</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="cedarAlpine">
+                <xs:annotation>
+                    <xs:documentation>Кедр высокогор</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="cedarElfin">
+                <xs:annotation>
+                    <xs:documentation>Кедровый стланик</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="cedarRaznovzr">
+                <xs:annotation>
+                    <xs:documentation>Кедр разновзр</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="cherry">
+                <xs:annotation>
+                    <xs:documentation>Вишня</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="cherryPlum">
+                <xs:annotation>
+                    <xs:documentation>Алыча</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="chestnut">
+                <xs:annotation>
+                    <xs:documentation>Каштан</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="chestnutOak">
+                <xs:annotation>
+                    <xs:documentation>Дуб каштанолистный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="chiliga">
+                <xs:annotation>
+                    <xs:documentation>Чилига</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="chosenia">
+                <xs:annotation>
+                    <xs:documentation>Чозения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="comber">
+                <xs:annotation>
+                    <xs:documentation>Гребенщик</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="commonAsh">
+                <xs:annotation>
+                    <xs:documentation>Ясень обыкновенный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="commonCherry">
+                <xs:annotation>
+                    <xs:documentation>Вишня обыкновенная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="commonHazel">
+                <xs:annotation>
+                    <xs:documentation>ЛЕЩИНА обыкновенная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="commonHornbeam">
+                <xs:annotation>
+                    <xs:documentation>Граб обыкновенный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="commonJuniper">
+                <xs:annotation>
+                    <xs:documentation>Можжевельник обыкновенный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="commonPear">
+                <xs:annotation>
+                    <xs:documentation>Груша обыкновенная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="corkOak">
+                <xs:annotation>
+                    <xs:documentation>Дуб пробковый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="cotoneaster">
+                <xs:annotation>
+                    <xs:documentation>Кизильник</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="cotoneasterChokeberry">
+                <xs:annotation>
+                    <xs:documentation>Кизильник черноплодный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="cretaceousPine">
+                <xs:annotation>
+                    <xs:documentation>Сосна меловая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="crimeanCotoneaster">
+                <xs:annotation>
+                    <xs:documentation>Кизильник крымский</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="crimeanHawthorn">
+                <xs:annotation>
+                    <xs:documentation>Боярышник крымский</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="crimeanIvy">
+                <xs:annotation>
+                    <xs:documentation>Плющ крымский</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="crimeanPine">
+                <xs:annotation>
+                    <xs:documentation>Сосна крымская</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="cryptomeriaJaponicaElegans">
+                <xs:annotation>
+                    <xs:documentation>Криптомерия японская (элеганс)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="curlyOak">
+                <xs:annotation>
+                    <xs:documentation>Дуб курчавый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="currant">
+                <xs:annotation>
+                    <xs:documentation>Смородина</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="currantGolden">
+                <xs:annotation>
+                    <xs:documentation>Смородина золотистая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="cypressEvergreen">
+                <xs:annotation>
+                    <xs:documentation>Кипарис вечнозеленый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="cypressMarsh">
+                <xs:annotation>
+                    <xs:documentation>Кипарис болотный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="cypressPea">
+                <xs:annotation>
+                    <xs:documentation>Кипарис горохоплодный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="dahurianBirch">
+                <xs:annotation>
+                    <xs:documentation>Береза даурская</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="dahurianLarch">
+                <xs:annotation>
+                    <xs:documentation>Лиственница даурская</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="dahurianRhododendron">
+                <xs:annotation>
+                    <xs:documentation>Рододендрон даурский</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="daziphoraShrubKurilTea">
+                <xs:annotation>
+                    <xs:documentation>Дазифора кустарниковая (Курильский чай)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="derainBloodRedSvidina">
+                <xs:annotation>
+                    <xs:documentation>Дерен кроваво-красный (свидина)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="deren">
+                <xs:annotation>
+                    <xs:documentation>Дерен</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="diervillaWeigela">
+                <xs:annotation>
+                    <xs:documentation>Диервилла (вейгела)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="dioscorea">
+                <xs:annotation>
+                    <xs:documentation>Диоскорея</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="dogwood">
+                <xs:annotation>
+                    <xs:documentation>Кизил</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="easternSpruce">
+                <xs:annotation>
+                    <xs:documentation>Ель восточная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="echinopanax">
+                <xs:annotation>
+                    <xs:documentation>Эхинопанакс</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="eldarPine">
+                <xs:annotation>
+                    <xs:documentation>Сосна эльдарская</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="elder">
+                <xs:annotation>
+                    <xs:documentation>Бузина</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="elderBlack">
+                <xs:annotation>
+                    <xs:documentation>БУЗИНА черная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="elderberryBroadleaf">
+                <xs:annotation>
+                    <xs:documentation>БУЗИНА широколисточковая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="elderberryBushy">
+                <xs:annotation>
+                    <xs:documentation>Бузина кустистая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="eleutherococcus">
+                <xs:annotation>
+                    <xs:documentation>Элеутерококк</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="elfinAlder">
+                <xs:annotation>
+                    <xs:documentation>Ольха стланиковая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="elmCulture">
+                <xs:annotation>
+                    <xs:documentation>Вяз культуры</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="elmElm">
+                <xs:annotation>
+                    <xs:documentation>Вяз (ильмовые)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="elmLeafy">
+                <xs:annotation>
+                    <xs:documentation>Вяз листоватый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="elmSmallBirchBark">
+                <xs:annotation>
+                    <xs:documentation>Вяз малый (Берест)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="elmSmooth">
+                <xs:annotation>
+                    <xs:documentation>Вяз гладкий</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="ernik">
+                <xs:annotation>
+                    <xs:documentation>Ерник</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="eucalyptus">
+                <xs:annotation>
+                    <xs:documentation>Эвкалипт</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="eucommia">
+                <xs:annotation>
+                    <xs:documentation>Эвкоммия</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="euonymus">
+                <xs:annotation>
+                    <xs:documentation>Бересклет</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="euonymusEuropean">
+                <xs:annotation>
+                    <xs:documentation>Бересклет европейский</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="europeanBeech">
+                <xs:annotation>
+                    <xs:documentation>Бук европейский</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="europeanCedar">
+                <xs:annotation>
+                    <xs:documentation>Кедр европейский</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="europeanLarch">
+                <xs:annotation>
+                    <xs:documentation>Лиственница европейская</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="europeanSpruce">
+                <xs:annotation>
+                    <xs:documentation>Ель европейская</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="feltCherry">
+                <xs:annotation>
+                    <xs:documentation>Вишня войлочная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="fieldMaple">
+                <xs:annotation>
+                    <xs:documentation>Клен полевой</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="fieldfareRowanberry">
+                <xs:annotation>
+                    <xs:documentation>Рябинник рябинолистный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="figs">
+                <xs:annotation>
+                    <xs:documentation>Инжир</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="fir">
+                <xs:annotation>
+                    <xs:documentation>Пихта</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="firElfin">
+                <xs:annotation>
+                    <xs:documentation>Пихтовый стланик</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="fluffyCurrant">
+                <xs:annotation>
+                    <xs:documentation>Смородина пушистая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="fluffyOak">
+                <xs:annotation>
+                    <xs:documentation>Дуб пушистый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="forestAppleTree">
+                <xs:annotation>
+                    <xs:documentation>Яблоня лесная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="forsythiaGreen">
+                <xs:annotation>
+                    <xs:documentation>Форсиция зеленая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="forsythiaHangingDown">
+                <xs:annotation>
+                    <xs:documentation>Форсиция свисающая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="fragrantPoplar">
+                <xs:annotation>
+                    <xs:documentation>Тополь душистый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="frame">
+                <xs:annotation>
+                    <xs:documentation>Каркас</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="georgianOak">
+                <xs:annotation>
+                    <xs:documentation>Дуб грузинский</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="gester">
+                <xs:annotation>
+                    <xs:documentation>Жестер</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="ginnalaMaple">
+                <xs:annotation>
+                    <xs:documentation>Клен Гиннала</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="gledichia">
+                <xs:annotation>
+                    <xs:documentation>Гледичия</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="gledichiaTrekolyuchkovskaya">
+                <xs:annotation>
+                    <xs:documentation>Гледичия трехколючковская</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="goatWillow">
+                <xs:annotation>
+                    <xs:documentation>Ива козья</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="goldenRhododendron">
+                <xs:annotation>
+                    <xs:documentation>Рододендрон золотистый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="goofSilver">
+                <xs:annotation>
+                    <xs:documentation>Лох серебристый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="gorse">
+                <xs:annotation>
+                    <xs:documentation>Дрок</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="grabinnik">
+                <xs:annotation>
+                    <xs:documentation>Грабинник</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="grape">
+                <xs:annotation>
+                    <xs:documentation>Виноград</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="greenMaple">
+                <xs:annotation>
+                    <xs:documentation>Клен зеленокорый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="hartvisOak">
+                <xs:annotation>
+                    <xs:documentation>Дуб Гартвиса</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="hawthorn">
+                <xs:annotation>
+                    <xs:documentation>Боярышник</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="hawthornBloodRed">
+                <xs:annotation>
+                    <xs:documentation>Боярышник кроваво-красный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="hawthornFivepetal">
+                <xs:annotation>
+                    <xs:documentation>Боярышник пятипестичный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="hazel">
+                <xs:annotation>
+                    <xs:documentation>Лещина</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="hazelFelt">
+                <xs:annotation>
+                    <xs:documentation>Кария войлочная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="hazelPecan">
+                <xs:annotation>
+                    <xs:documentation>Кария пекан</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="hazelTree">
+                <xs:annotation>
+                    <xs:documentation>Лещина древовидная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="highlandOak">
+                <xs:annotation>
+                    <xs:documentation>Дуб низкоствольный нагорный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="himalayanCedar">
+                <xs:annotation>
+                    <xs:documentation>Кедр гималайский</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="holdTheTree">
+                <xs:annotation>
+                    <xs:documentation>Держидерево</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="hollyGoblin">
+                <xs:annotation>
+                    <xs:documentation>Падуб городчатый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="hollyHolly">
+                <xs:annotation>
+                    <xs:documentation>Падуб остролистный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="hollySugeroki">
+                <xs:annotation>
+                    <xs:documentation>Падуб Сугероки</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="hollyWrinkled">
+                <xs:annotation>
+                    <xs:documentation>Падуб морщинистый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="holmOak">
+                <xs:annotation>
+                    <xs:documentation>Дуб каменный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="honeysuckle">
+                <xs:annotation>
+                    <xs:documentation>Жимолость</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="honeysuckleTatar">
+                <xs:annotation>
+                    <xs:documentation>ЖИМОЛОСТЬ татарская</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="honeysuckleTurchaninov">
+                <xs:annotation>
+                    <xs:documentation>Жимолость Турчанинова</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="honeysuckleUsual">
+                <xs:annotation>
+                    <xs:documentation>Жимолость обыкновенная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="hookPine">
+                <xs:annotation>
+                    <xs:documentation>Сосна крючковатая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="hopgrab">
+                <xs:annotation>
+                    <xs:documentation>Хмелеграб</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="hornbeam">
+                <xs:annotation>
+                    <xs:documentation>Граб</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="hornbeamHearty">
+                <xs:annotation>
+                    <xs:documentation>Граб сердцелистный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="horseChestnut">
+                <xs:annotation>
+                    <xs:documentation>Каштан конский</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="hydrangea">
+                <xs:annotation>
+                    <xs:documentation>Гортензия</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="hydrangeaPaniculata">
+                <xs:annotation>
+                    <xs:documentation>Гортензия метельчатая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="iberianOak">
+                <xs:annotation>
+                    <xs:documentation>Дуб иберийский</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="ilmRoughElm">
+                <xs:annotation>
+                    <xs:documentation>Ильм (вяз шершавый)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="ilmValley">
+                <xs:annotation>
+                    <xs:documentation>Ильм долинный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="irga">
+                <xs:annotation>
+                    <xs:documentation>Ирга</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="irgaRoundLeaved">
+                <xs:annotation>
+                    <xs:documentation>ИРГА круглолистная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="ironBirch">
+                <xs:annotation>
+                    <xs:documentation>Береза железная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="italianPine">
+                <xs:annotation>
+                    <xs:documentation>Сосна итальянская</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="iva">
+                <xs:annotation>
+                    <xs:documentation>Ива</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="ivaDrevVol">
+                <xs:annotation>
+                    <xs:documentation>Ива (древовидная) волчниковая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="ivy">
+                <xs:annotation>
+                    <xs:documentation>Плющ обыкновенный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="japaneseChestnutCrested">
+                <xs:annotation>
+                    <xs:documentation>Каштан японский (городчатый)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="japaneseLarch">
+                <xs:annotation>
+                    <xs:documentation>Лиственница японская</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="japaneseMaple">
+                <xs:annotation>
+                    <xs:documentation>Клен японский</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="juniper">
+                <xs:annotation>
+                    <xs:documentation>Можжевельник</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="juniperCossack">
+                <xs:annotation>
+                    <xs:documentation>Можжевельник казацкий</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="juniperPrickly">
+                <xs:annotation>
+                    <xs:documentation>Можжевельник колючий</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="juniperSmelly">
+                <xs:annotation>
+                    <xs:documentation>Можжевельник вонючий</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="juniperTreeArcha">
+                <xs:annotation>
+                    <xs:documentation>Можжевельник древовидный (Арча)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="juzgun">
+                <xs:annotation>
+                    <xs:documentation>Джузгун</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="karelianBirch">
+                <xs:annotation>
+                    <xs:documentation>Береза карельская</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="kariya">
+                <xs:annotation>
+                    <xs:documentation>Кария</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="klekachka">
+                <xs:annotation>
+                    <xs:documentation>Клекачка</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="koreanCedarKoreanPine">
+                <xs:annotation>
+                    <xs:documentation>Кедр корейский (Сосна корейская)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="koreanPoplar">
+                <xs:annotation>
+                    <xs:documentation>Тополь корейский</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="koreanSpruce">
+                <xs:annotation>
+                    <xs:documentation>Ель корейская</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="kurilLarch">
+                <xs:annotation>
+                    <xs:documentation>Лиственница курильская</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="lapin">
+                <xs:annotation>
+                    <xs:documentation>Лапина</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="larch">
+                <xs:annotation>
+                    <xs:documentation>Лиственница</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="larchOfLyubarsky">
+                <xs:annotation>
+                    <xs:documentation>Лиственница Любарского</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="largeLeavedLinden">
+                <xs:annotation>
+                    <xs:documentation>Липа крупнолистная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="lawsonCypress">
+                <xs:annotation>
+                    <xs:documentation>Кипарисовик Лаусона</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="lebaneseCedar">
+                <xs:annotation>
+                    <xs:documentation>Кедр ливанский</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="lemongrass">
+                <xs:annotation>
+                    <xs:documentation>Лимонник</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="lespedeza">
+                <xs:annotation>
+                    <xs:documentation>Леспедеца</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="lilac">
+                <xs:annotation>
+                    <xs:documentation>Сирень</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="linden">
+                <xs:annotation>
+                    <xs:documentation>Липа</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="lindenCaucasian">
+                <xs:annotation>
+                    <xs:documentation>Липа кавказская</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="lindenHoney">
+                <xs:annotation>
+                    <xs:documentation>Липа медоносная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="lindenManchurian">
+                <xs:annotation>
+                    <xs:documentation>Липа маньчжурская</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="lindenSiberian">
+                <xs:annotation>
+                    <xs:documentation>Липа сибирская</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="lindenSmallLeaved">
+                <xs:annotation>
+                    <xs:documentation>Липа мелколистная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="lipaMaksimovich">
+                <xs:annotation>
+                    <xs:documentation>Липа Максимовича</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="lipaTake">
+                <xs:annotation>
+                    <xs:documentation>Липа Таке</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="liquidambar">
+                <xs:annotation>
+                    <xs:documentation>Ликвидамбар</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="loch">
+                <xs:annotation>
+                    <xs:documentation>Лох</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="longFloweredOakFloodplain">
+                <xs:annotation>
+                    <xs:documentation>Дуб длинножкоцветный (пойменный)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="lowStemOak">
+                <xs:annotation>
+                    <xs:documentation>Дуб низкоствольный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="maakiaAmurActnik">
+                <xs:annotation>
+                    <xs:documentation>Маакия амурская (актник)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="maclura">
+                <xs:annotation>
+                    <xs:documentation>Маклюра</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="magalebkaCherryAntipka">
+                <xs:annotation>
+                    <xs:documentation>Вишня магалебка (Антипка)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="magnolia">
+                <xs:annotation>
+                    <xs:documentation>Магнолия</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="mahoniaHolly">
+                <xs:annotation>
+                    <xs:documentation>Магония падуболистная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="manchurianAsh">
+                <xs:annotation>
+                    <xs:documentation>Ясень маньчжурский</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="manchurianWalnut">
+                <xs:annotation>
+                    <xs:documentation>Орех маньчжурский</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="maple">
+                <xs:annotation>
+                    <xs:documentation>Клен</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="mapleBeautiful">
+                <xs:annotation>
+                    <xs:documentation>Клен красивый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="mapleCulture">
+                <xs:annotation>
+                    <xs:documentation>Клен культуры</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="mapleShrub">
+                <xs:annotation>
+                    <xs:documentation>Клен кустарниковый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="mapleYellow">
+                <xs:annotation>
+                    <xs:documentation>Клен желтый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="meadowsweet">
+                <xs:annotation>
+                    <xs:documentation>Таволга иволистная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="medlar">
+                <xs:annotation>
+                    <xs:documentation>Мушмула</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="mockOrangeJasmine">
+                <xs:annotation>
+                    <xs:documentation>Чубушник (жасмин)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="mongolianOak">
+                <xs:annotation>
+                    <xs:documentation>Дуб монгольский</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="mongolianOakLowStem">
+                <xs:annotation>
+                    <xs:documentation>Дуб монгольский низкоствольный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="mountainAsh">
+                <xs:annotation>
+                    <xs:documentation>Рябина обыкновенная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="mountainPine">
+                <xs:annotation>
+                    <xs:documentation>Сосна горная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="mulberry">
+                <xs:annotation>
+                    <xs:documentation>Шелковица</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="mulberryBlack">
+                <xs:annotation>
+                    <xs:documentation>Шелковица черная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="murrayPine">
+                <xs:annotation>
+                    <xs:documentation>Сосна Муррея</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="myraFir">
+                <xs:annotation>
+                    <xs:documentation>Пихта Майра</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="norwayMaple">
+                <xs:annotation>
+                    <xs:documentation>Клен остролистный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="nut">
+                <xs:annotation>
+                    <xs:documentation>Орех</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="oak">
+                <xs:annotation>
+                    <xs:documentation>Дуб</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="oakChangeable">
+                <xs:annotation>
+                    <xs:documentation>Дуб изменчивый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="oakLowStemmedFloodplain">
+                <xs:annotation>
+                    <xs:documentation>Дуб низкоствольный пойменный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="oakLowStemmedRavine">
+                <xs:annotation>
+                    <xs:documentation>Дуб низкоствольный байрачный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="oakRed">
+                <xs:annotation>
+                    <xs:documentation>Дуб красный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="oakScalloped">
+                <xs:annotation>
+                    <xs:documentation>Дуб зубчатый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="olginskayaLarch">
+                <xs:annotation>
+                    <xs:documentation>Лиственница ольгинская</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="orientalHawthorn">
+                <xs:annotation>
+                    <xs:documentation>Боярышник восточный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="orientalPlaneTree">
+                <xs:annotation>
+                    <xs:documentation>Платан восточный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="orientalToxicodendron">
+                <xs:annotation>
+                    <xs:documentation>Токсикодендрон восточный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="osokor">
+                <xs:annotation>
+                    <xs:documentation>Осокорь</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="pamirPoplar">
+                <xs:annotation>
+                    <xs:documentation>Тополь памирский</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="paulowniaAdamTree">
+                <xs:annotation>
+                    <xs:documentation>Павловния (Адамово дерево)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="peach">
+                <xs:annotation>
+                    <xs:documentation>Персик</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="pear">
+                <xs:annotation>
+                    <xs:documentation>Груша</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="pearLoholist">
+                <xs:annotation>
+                    <xs:documentation>Груша лохолистная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="pedunculateOak">
+                <xs:annotation>
+                    <xs:documentation>Дуб черешчатый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="persimmon">
+                <xs:annotation>
+                    <xs:documentation>Хурма</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="petiolateHydrangea">
+                <xs:annotation>
+                    <xs:documentation>Гортензия черешковая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="pine">
+                <xs:annotation>
+                    <xs:documentation>Сосна</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="pineEatsOrigin">
+                <xs:annotation>
+                    <xs:documentation>Сосна ест происх</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="pineFunerary">
+                <xs:annotation>
+                    <xs:documentation>Сосна погребальная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="pineTree">
+                <xs:annotation>
+                    <xs:documentation>Сосна скрученная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="pineYellow">
+                <xs:annotation>
+                    <xs:documentation>Сосна желтая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="pistachio">
+                <xs:annotation>
+                    <xs:documentation>Фисташка</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="pitsundaPine">
+                <xs:annotation>
+                    <xs:documentation>Сосна пицундская</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="plum">
+                <xs:annotation>
+                    <xs:documentation>Слива</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="plumPricklyThorn">
+                <xs:annotation>
+                    <xs:documentation>Слива колючая (тёрн)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="polishLarch">
+                <xs:annotation>
+                    <xs:documentation>Лиственница польская</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="pomegranate">
+                <xs:annotation>
+                    <xs:documentation>Гранат</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="poplar">
+                <xs:annotation>
+                    <xs:documentation>Тополь</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="poplarBlack">
+                <xs:annotation>
+                    <xs:documentation>Тополь черный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="poplarCulture">
+                <xs:annotation>
+                    <xs:documentation>Тополь культуры</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="poplarHybrid">
+                <xs:annotation>
+                    <xs:documentation>Тополь гибридный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="poplarPyramidal">
+                <xs:annotation>
+                    <xs:documentation>Тополь пирамидальный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="poplarSad">
+                <xs:annotation>
+                    <xs:documentation>Тополь печальный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="poplarWhite">
+                <xs:annotation>
+                    <xs:documentation>Тополь белый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="pricklySpruce">
+                <xs:annotation>
+                    <xs:documentation>Ель колючая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="privet">
+                <xs:annotation>
+                    <xs:documentation>Бирючина</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="prutnyak">
+                <xs:annotation>
+                    <xs:documentation>Прутняк</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="pseudotsugaMenzies">
+                <xs:annotation>
+                    <xs:documentation>Псевдотсуга Мензиса</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="pseudotsuzh">
+                <xs:annotation>
+                    <xs:documentation>Псевдотсуга</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="quince">
+                <xs:annotation>
+                    <xs:documentation>Айва</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="raspberry">
+                <xs:annotation>
+                    <xs:documentation>Малина</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="raspberryForest">
+                <xs:annotation>
+                    <xs:documentation>Малина лесная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="redCedar">
+                <xs:annotation>
+                    <xs:documentation>Можжевельник виргинский</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="redCurrants">
+                <xs:annotation>
+                    <xs:documentation>Смородина красная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="rhododendron">
+                <xs:annotation>
+                    <xs:documentation>Рододендрон</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="rockOak">
+                <xs:annotation>
+                    <xs:documentation>Дуб скальный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="roseHip">
+                <xs:annotation>
+                    <xs:documentation>Шиповник</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="roseRosehipDog">
+                <xs:annotation>
+                    <xs:documentation>Роза (шиповник) собачья</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="rowan">
+                <xs:annotation>
+                    <xs:documentation>Рябина</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="rowanCaucasian">
+                <xs:annotation>
+                    <xs:documentation>Рябина кавказская</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="rowanCrimean">
+                <xs:annotation>
+                    <xs:documentation>Рябина крымская</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="rowanElderberry">
+                <xs:annotation>
+                    <xs:documentation>Рябина бузинолистная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="rowanKamchatskaya">
+                <xs:annotation>
+                    <xs:documentation>Рябина Камчатская</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="rowanRotundifolia">
+                <xs:annotation>
+                    <xs:documentation>Рябина круглолистная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="rumelianPine">
+                <xs:annotation>
+                    <xs:documentation>Сосна румелийская</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="russianBroom">
+                <xs:annotation>
+                    <xs:documentation>Ракитник русский</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sakhalinFir">
+                <xs:annotation>
+                    <xs:documentation>Пихта сахалинская</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="saxaul">
+                <xs:annotation>
+                    <xs:documentation>Саксаул</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="scotchPine">
+                <xs:annotation>
+                    <xs:documentation>Сосна обыкновенная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sea??Buckthorn">
+                <xs:annotation>
+                    <xs:documentation>Облепиха</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="seaBuckthorn">
+                <xs:annotation>
+                    <xs:documentation>Облепиха крушинная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="seasideLarch">
+                <xs:annotation>
+                    <xs:documentation>Лиственница приморская</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="seasidePine">
+                <xs:annotation>
+                    <xs:documentation>Сосна приморская</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sequoia">
+                <xs:annotation>
+                    <xs:documentation>Секвойя</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="shelyuga">
+                <xs:annotation>
+                    <xs:documentation>Шелюга</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="shelyugaRedHollyWillow">
+                <xs:annotation>
+                    <xs:documentation>Шелюга красная (ива остролистная)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="shrubBirch">
+                <xs:annotation>
+                    <xs:documentation>Береза кустарниковая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="siberianCedarSiberianCedarPin">
+                <xs:annotation>
+                    <xs:documentation>Кедр сибирская (Сосна сибирская кедровая)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="siberianElderberry">
+                <xs:annotation>
+                    <xs:documentation>Бузина сибирская</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="siberianFir">
+                <xs:annotation>
+                    <xs:documentation>Пихта сибирская</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="siberianLarch">
+                <xs:annotation>
+                    <xs:documentation>Лиственница сибирская</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="siberianRowan">
+                <xs:annotation>
+                    <xs:documentation>Рябина сибирская</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="siberianSpruce">
+                <xs:annotation>
+                    <xs:documentation>Ель сибирская</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sieboldWalnut">
+                <xs:annotation>
+                    <xs:documentation>Орех Зибольда</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="silverMaple">
+                <xs:annotation>
+                    <xs:documentation>Клен серебристый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="skimmia">
+                <xs:annotation>
+                    <xs:documentation>Скиммия</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="skumpia">
+                <xs:annotation>
+                    <xs:documentation>Скумпия</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="smallFruited">
+                <xs:annotation>
+                    <xs:documentation>Мелкоплодник</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="smallLeavedElm">
+                <xs:annotation>
+                    <xs:documentation>Вяз мелколистный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="smallLeavedHawthorn">
+                <xs:annotation>
+                    <xs:documentation>Боярышник мелколистный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="smallLeavedMaple">
+                <xs:annotation>
+                    <xs:documentation>Клен мелколистный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="smallSeededSpruce">
+                <xs:annotation>
+                    <xs:documentation>Ель мелкосеменная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sophoraJaponica">
+                <xs:annotation>
+                    <xs:documentation>Софора японская</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="southFrame">
+                <xs:annotation>
+                    <xs:documentation>Каркас южный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sowingChestnut">
+                <xs:annotation>
+                    <xs:documentation>Каштан посевной</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="spanishGorseBlizzard">
+                <xs:annotation>
+                    <xs:documentation>Дрок испанский (метельник)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="spirea">
+                <xs:annotation>
+                    <xs:documentation>Спирея</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="spruce">
+                <xs:annotation>
+                    <xs:documentation>Ель</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="spruceGlen">
+                <xs:annotation>
+                    <xs:documentation>Ель Глена</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="stagSumac">
+                <xs:annotation>
+                    <xs:documentation>Сумах оленерогий</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="stephenMaple">
+                <xs:annotation>
+                    <xs:documentation>Клен Стевена</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="steppeCherry">
+                <xs:annotation>
+                    <xs:documentation>Вишня степная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sterculia">
+                <xs:annotation>
+                    <xs:documentation>Стеркулия</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="stevenSHawthorn">
+                <xs:annotation>
+                    <xs:documentation>Боярышник Стевена</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sugarMaple">
+                <xs:annotation>
+                    <xs:documentation>Клен сахарный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sukachevLarch">
+                <xs:annotation>
+                    <xs:documentation>Лиственница Сукачева</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="svidina">
+                <xs:annotation>
+                    <xs:documentation>Свидина</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sweetCherry">
+                <xs:annotation>
+                    <xs:documentation>Черешня</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sycamore">
+                <xs:annotation>
+                    <xs:documentation>Платан</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sycamoreMaple">
+                <xs:annotation>
+                    <xs:documentation>Клен явор</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="syrianAsh">
+                <xs:annotation>
+                    <xs:documentation>Ясень сирийский</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="tallOak">
+                <xs:annotation>
+                    <xs:documentation>Дуб высокоствольный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="talnik">
+                <xs:annotation>
+                    <xs:documentation>Тальник</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="tatarMaple">
+                <xs:annotation>
+                    <xs:documentation>Клен татарский</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="tea">
+                <xs:annotation>
+                    <xs:documentation>Чай</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="teresken">
+                <xs:annotation>
+                    <xs:documentation>Терескен</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="thornPlum">
+                <xs:annotation>
+                    <xs:documentation>Тернослива</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="thuja">
+                <xs:annotation>
+                    <xs:documentation>Туя</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="thujaGiantFolded">
+                <xs:annotation>
+                    <xs:documentation>Туя гигантская (складчатая)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="thujaOrientalisBiota">
+                <xs:annotation>
+                    <xs:documentation>Туя восточная (биота)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="thujaWestern">
+                <xs:annotation>
+                    <xs:documentation>Туя западная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="tiss">
+                <xs:annotation>
+                    <xs:documentation>Тисс</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="topolMaksimovich">
+                <xs:annotation>
+                    <xs:documentation>Тополь Максимовича</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="tulipTreeLiriodendron">
+                <xs:annotation>
+                    <xs:documentation>Тюльпанное дерево (лириодендрон)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="velvet">
+                <xs:annotation>
+                    <xs:documentation>Бархат</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="velvetSakhalin">
+                <xs:annotation>
+                    <xs:documentation>Бархат сахалинский</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="vesicle">
+                <xs:annotation>
+                    <xs:documentation>Пузыреплодник</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="viburnum">
+                <xs:annotation>
+                    <xs:documentation>Калина</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="viburnumOrdinary">
+                <xs:annotation>
+                    <xs:documentation>Калина обыкновенная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="walnut">
+                <xs:annotation>
+                    <xs:documentation>Орех грецкий</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="walnutBlack">
+                <xs:annotation>
+                    <xs:documentation>Орех черный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="wartyBirchDrooping">
+                <xs:annotation>
+                    <xs:documentation>Береза бородавчатая (повислая)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="wartyEuonymus">
+                <xs:annotation>
+                    <xs:documentation>Бересклет бородавчатый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="westernPlaneTree">
+                <xs:annotation>
+                    <xs:documentation>Платан западный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="weymouthPine">
+                <xs:annotation>
+                    <xs:documentation>Сосна веймутова</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="whiteFir">
+                <xs:annotation>
+                    <xs:documentation>Пихта белокорая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="whiteFirEuropean">
+                <xs:annotation>
+                    <xs:documentation>Пихта белая (европейская)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="whiteHazel">
+                <xs:annotation>
+                    <xs:documentation>Кария белая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="whiteMulberry">
+                <xs:annotation>
+                    <xs:documentation>Шелковица белая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="whiteWillow">
+                <xs:annotation>
+                    <xs:documentation>Ива белая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="wholeLeavedFir">
+                <xs:annotation>
+                    <xs:documentation>Пихта цельнолистная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="wildAppleTree">
+                <xs:annotation>
+                    <xs:documentation>Яблоня дикая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="willow">
+                <xs:annotation>
+                    <xs:documentation>Ива прутовидная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="willowBrittle">
+                <xs:annotation>
+                    <xs:documentation>Ива ломкая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="willowShrub">
+                <xs:annotation>
+                    <xs:documentation>Ива кустарниковая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="willowTree">
+                <xs:annotation>
+                    <xs:documentation>Ива (древовидная)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="willowWillows">
+                <xs:annotation>
+                    <xs:documentation>Ива (тальники)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="wolfSBast">
+                <xs:annotation>
+                    <xs:documentation>Волчье лыко</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="yellowBirchRibbed">
+                <xs:annotation>
+                    <xs:documentation>Береза желтая (ребристая)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="yewBerry">
+                <xs:annotation>
+                    <xs:documentation>Тисс ягодный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="yewPointed">
+                <xs:annotation>
+                    <xs:documentation>Тисс остроконечный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="zamaniha">
+                <xs:annotation>
+                    <xs:documentation>Заманиха</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="zelkva">
+                <xs:annotation>
+                    <xs:documentation>Дзельква</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="zharnovetsPanicled">
+                <xs:annotation>
+                    <xs:documentation>Жарновец метельчатый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

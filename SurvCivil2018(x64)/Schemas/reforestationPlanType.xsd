@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+           targetNamespace="http://rosleshoz.gov.ru/xmlns/reforestationPlanType/5.0"
+           xmlns:tns="http://rosleshoz.gov.ru/xmlns/reforestationPlanType/5.0"
+           xmlns:st="http://rosleshoz.gov.ru/fgis-lk/common/simple/types/2.0"
+           xmlns:cLand="http://rosleshoz.gov.ru/fgis-lk/common/enums/categoryLand/types/2.0">
+
+    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/simple/types/2.0" schemaLocation="simpleTypes.xsd"/>
+    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/categoryLand/types/2.0" schemaLocation="dCategoryLandKindTypes.xsd"/>
+
+    <xs:complexType name="reforestationPlanType">
+        <xs:sequence>
+            <xs:element name="landCategoryInfo">
+                <xs:annotation>
+                    <xs:documentation>Информация по категориям земель</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="row" type="tns:landCategoryRow"
+                                    minOccurs="0"
+                                    maxOccurs="unbounded" />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="volumes" type="tns:resourcesType">
+                <xs:annotation>
+                    <xs:documentation>Итого</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="averageAnnualVolumes" type="tns:resourcesType">
+                <xs:annotation>
+                    <xs:documentation>Средние ежегодные объемы лесовосстановления</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="landCategoryRow">
+        <xs:sequence>
+            <xs:element name="landCategory" type="cLand:CategoryLandKindEType">
+                <xs:annotation>
+                    <xs:documentation>Категория земель</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="resources" type="tns:resourcesType" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="resourcesType">
+        <xs:sequence>
+            <xs:element name="synthetic" type="st:PositiveDecimalFourSType">
+                <xs:annotation>
+                    <xs:documentation>Итого исскусственное</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="sowing" type="st:PositiveDecimalFourSType">
+                <xs:annotation>
+                    <xs:documentation>в т.ч. Посев</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="landing" type="st:PositiveDecimalFourSType">
+                <xs:annotation>
+                    <xs:documentation>в т.ч. Посадка</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="combined" type="st:PositiveDecimalFourSType">
+                <xs:annotation>
+                    <xs:documentation>Комбинированное лесовосстановление</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="natural" type="st:PositiveDecimalFourSType">
+                <xs:annotation>
+                    <xs:documentation>Естественное лесовосстановление</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="total" type="st:PositiveDecimalFourSType">
+                <xs:annotation>
+                    <xs:documentation>Всего</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

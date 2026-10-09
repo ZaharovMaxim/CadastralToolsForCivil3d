@@ -1,0 +1,1061 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/forestryActivities/types/2.1"
+           elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/forestryActivities/types/2.1"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">    <xs:simpleType name="ForestryActivitiesKindEType">
+        <xs:annotation>
+            <xs:documentation>Лесохозяйственные мероприятия</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="00992">
+                <xs:annotation>
+                    <xs:documentation>Заготовка технического сырья</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="00993">
+                <xs:annotation>
+                    <xs:documentation>Строительство детских площадок</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="00994">
+                <xs:annotation>
+                    <xs:documentation>Посадка без подготовки почвы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="00996">
+                <xs:annotation>
+                    <xs:documentation>Закладка лесного питомника</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="00997">
+                <xs:annotation>
+                    <xs:documentation>Разрубка просек</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="00998">
+                <xs:annotation>
+                    <xs:documentation>Рубка редин и единичных деревьев</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="00999">
+                <xs:annotation>
+                    <xs:documentation>Сплошная рубка</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="11001">
+                <xs:annotation>
+                    <xs:documentation>Сплошная рубка с последующим лесовосстановлением</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="11002">
+                <xs:annotation>
+                    <xs:documentation>Сплошная рубка с предварительным лесовосстановлением</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="11003.7">
+                <xs:annotation>
+                    <xs:documentation>Резерв</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="12008">
+                <xs:annotation>
+                    <xs:documentation>Постепенные рубки</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="12009">
+                <xs:annotation>
+                    <xs:documentation>Группово-постепенная рубка</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="12010">
+                <xs:annotation>
+                    <xs:documentation>Длительно-постепенная рубка</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="12011">
+                <xs:annotation>
+                    <xs:documentation>Равномерно-постепенная рубка</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="12012">
+                <xs:annotation>
+                    <xs:documentation>Чересполосная постепенная рубка</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="12013">
+                <xs:annotation>
+                    <xs:documentation>Завершающий прием постепенных рубок</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="12014.17">
+                <xs:annotation>
+                    <xs:documentation>Резерв</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="12018">
+                <xs:annotation>
+                    <xs:documentation>Группово-выборочная рубка</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="12019">
+                <xs:annotation>
+                    <xs:documentation>Добровольно-выборочная рубка</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="12020.24">
+                <xs:annotation>
+                    <xs:documentation>Резерв</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="1301">
+                <xs:annotation>
+                    <xs:documentation>Рубка единичных деревьев</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="21025">
+                <xs:annotation>
+                    <xs:documentation>Сплошные санитарные рубки</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="21026">
+                <xs:annotation>
+                    <xs:documentation>Выборочные санитарные рубки</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="22027">
+                <xs:annotation>
+                    <xs:documentation>Рубка аварийных деревьев</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="22028">
+                <xs:annotation>
+                    <xs:documentation>Уборка неликвидной древесины (сухостоя)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="22029.32">
+                <xs:annotation>
+                    <xs:documentation>Резерв</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="22033">
+                <xs:annotation>
+                    <xs:documentation>Лесопатологическое обследование</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="23034">
+                <xs:annotation>
+                    <xs:documentation>Проведение обследований очагов вредных организмов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="23035.38">
+                <xs:annotation>
+                    <xs:documentation>Резерв</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="23039">
+                <xs:annotation>
+                    <xs:documentation>Уничтожение или подавление численности вредных организмов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="23040">
+                <xs:annotation>
+                    <xs:documentation>Рубка лесных насаждений в целях регулирования породного и возрастного составов лесных насаждений, зараженных вредными организмами</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="23041.49">
+                <xs:annotation>
+                    <xs:documentation>Резерв</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="31060">
+                <xs:annotation>
+                    <xs:documentation>Рубки осветления</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="31061">
+                <xs:annotation>
+                    <xs:documentation>Рубки прочистки</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="31062">
+                <xs:annotation>
+                    <xs:documentation>Рубки прореживания</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="31063">
+                <xs:annotation>
+                    <xs:documentation>Проходные рубки</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="31064">
+                <xs:annotation>
+                    <xs:documentation>Рубки реконструкции</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="31065">
+                <xs:annotation>
+                    <xs:documentation>Рубка переформирования лесных насаждений</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="31066">
+                <xs:annotation>
+                    <xs:documentation>Рубка обновления лесных насаждений</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="31067">
+                <xs:annotation>
+                    <xs:documentation>Рубка сохранения лесных насаждений</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="31068">
+                <xs:annotation>
+                    <xs:documentation>Ландшафтная рубка</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="31069">
+                <xs:annotation>
+                    <xs:documentation>Ландшафтная рубка формирования породного состава</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="31070">
+                <xs:annotation>
+                    <xs:documentation>Ландшафтная рубка формирования оптимального пространственного размещения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="31071">
+                <xs:annotation>
+                    <xs:documentation>Ландшафтная рубка для улучшения декоративных качеств</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="31072">
+                <xs:annotation>
+                    <xs:documentation>Мероприятия по обновлению целевых ландшафтных насаждений</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="31073">
+                <xs:annotation>
+                    <xs:documentation>Опытные рубки</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="31074.78">
+                <xs:annotation>
+                    <xs:documentation>Резерв</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="31079">
+                <xs:annotation>
+                    <xs:documentation>Уход за опушками леса</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="31080">
+                <xs:annotation>
+                    <xs:documentation>Обрезка сучьев и ветвей</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="31081">
+                <xs:annotation>
+                    <xs:documentation>Рубка в подлеске</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="31082">
+                <xs:annotation>
+                    <xs:documentation>Рубка в подросте</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="31083">
+                <xs:annotation>
+                    <xs:documentation>Комбинированный уход</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="31084">
+                <xs:annotation>
+                    <xs:documentation>Комплексный уход</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="31085.88">
+                <xs:annotation>
+                    <xs:documentation>Резерв</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="31089">
+                <xs:annotation>
+                    <xs:documentation>Внесение удобрений</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32090">
+                <xs:annotation>
+                    <xs:documentation>Посев сидератов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32091">
+                <xs:annotation>
+                    <xs:documentation>Частичное снятие мохового покрова</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32092">
+                <xs:annotation>
+                    <xs:documentation>Рыхление верхних слоев почвы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32093.95">
+                <xs:annotation>
+                    <xs:documentation>Резерв</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="3290">
+                <xs:annotation>
+                    <xs:documentation>Содествие путем реконструкции</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="33049">
+                <xs:annotation>
+                    <xs:documentation>Лечение деревьев</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="33050">
+                <xs:annotation>
+                    <xs:documentation>Применение пестицидов и биологических средств защиты леса для предотвращения появления очагов вредных организмов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="33051.53">
+                <xs:annotation>
+                    <xs:documentation>Резерв</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="33054">
+                <xs:annotation>
+                    <xs:documentation>Улучшение условий обитания и размножения насекомоядных птиц и других насекомоядных животных</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="33055">
+                <xs:annotation>
+                    <xs:documentation>Охрана местообитаний, выпуск, расселение и интродукция насекомых-энтомофагов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="33056">
+                <xs:annotation>
+                    <xs:documentation>Посев травянистых нектароносных растений</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="33057">
+                <xs:annotation>
+                    <xs:documentation>Использование феромонов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="33057.59">
+                <xs:annotation>
+                    <xs:documentation>Резерв</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="410101">
+                <xs:annotation>
+                    <xs:documentation>Рубки для создания объектов, не связанных с лесной инфраструктурой</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="41096">
+                <xs:annotation>
+                    <xs:documentation>Рубка для создания лесной инфраструктуры</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="41097.1">
+                <xs:annotation>
+                    <xs:documentation>Резерв</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="41101.104">
+                <xs:annotation>
+                    <xs:documentation>Резерв</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="51105">
+                <xs:annotation>
+                    <xs:documentation>Естественное восстановление лесов вследствие природных процессов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="51106">
+                <xs:annotation>
+                    <xs:documentation>Сохранение подроста и молодняка</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="51107">
+                <xs:annotation>
+                    <xs:documentation>Минерализация почвы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="51108">
+                <xs:annotation>
+                    <xs:documentation>Уход за подростом (молодняком)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="51109">
+                <xs:annotation>
+                    <xs:documentation>Огораживание участка</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="51110">
+                <xs:annotation>
+                    <xs:documentation>Оставление семенных деревьев, куртин и групп</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="51111">
+                <xs:annotation>
+                    <xs:documentation>Подавление порослевой (корнеотпрысковой) способности деревьев (инъекции арборицидов или окольцовывание)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="51112">
+                <xs:annotation>
+                    <xs:documentation>Прочие меры содействия естественному возобновлению</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="51113.115">
+                <xs:annotation>
+                    <xs:documentation>Резерв</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="51116">
+                <xs:annotation>
+                    <xs:documentation>Создание лесных культур посевом</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="51117">
+                <xs:annotation>
+                    <xs:documentation>Создание лесных культур посадкой</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="51118">
+                <xs:annotation>
+                    <xs:documentation>Создание культур под пологом леса</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="51123">
+                <xs:annotation>
+                    <xs:documentation>Дополнение лесных культур</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="51124">
+                <xs:annotation>
+                    <xs:documentation>Комбинированное лесовосстановление</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="51132">
+                <xs:annotation>
+                    <xs:documentation>Маркировка (обозначение) линий или направления будущих рядов лесных культур или полос обработки почвы и обозначение мест, опасных для работы техники</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="51133">
+                <xs:annotation>
+                    <xs:documentation>Сплошная или полосная (частичная) расчистка площади</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="51134">
+                <xs:annotation>
+                    <xs:documentation>Корчёвка пней</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="51135">
+                <xs:annotation>
+                    <xs:documentation>Планировка поверхности</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="51136">
+                <xs:annotation>
+                    <xs:documentation>Предварительная борьба с вредными почвенными организмами</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="51137">
+                <xs:annotation>
+                    <xs:documentation>Проведение осушительных мероприятий</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="51138.142">
+                <xs:annotation>
+                    <xs:documentation>Резерв</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="51143">
+                <xs:annotation>
+                    <xs:documentation>Сплошная механическая обработка почвы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="51144">
+                <xs:annotation>
+                    <xs:documentation>Частичная механическая обработка почвы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="51147">
+                <xs:annotation>
+                    <xs:documentation>Вспашка полосами</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="51148">
+                <xs:annotation>
+                    <xs:documentation>Устройство гряд</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="51149">
+                <xs:annotation>
+                    <xs:documentation>Полосное рыхление, нарездка борозд</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="51150">
+                <xs:annotation>
+                    <xs:documentation>Нарезка выемочно-насыпных террас</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="51151">
+                <xs:annotation>
+                    <xs:documentation>Обработка площадками или прерывистыми полосами</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="51152.156">
+                <xs:annotation>
+                    <xs:documentation>Резерв</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="53119">
+                <xs:annotation>
+                    <xs:documentation>Создание ландшафтных культур</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="53120">
+                <xs:annotation>
+                    <xs:documentation>Создание культур декоративных</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="53121">
+                <xs:annotation>
+                    <xs:documentation>Создание лесных полос путем посадки крупномерного посадочного материала</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="53122">
+                <xs:annotation>
+                    <xs:documentation>Создание лесных культур при реконструкции насаждений</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="53125">
+                <xs:annotation>
+                    <xs:documentation>Агротехнический уход</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="53126">
+                <xs:annotation>
+                    <xs:documentation>Лесоводственный уход</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="53127.131">
+                <xs:annotation>
+                    <xs:documentation>Резерв</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="53145">
+                <xs:annotation>
+                    <xs:documentation>Химическая обработка почвы гербицидами</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="53146">
+                <xs:annotation>
+                    <xs:documentation>Обработка почвы огневым способом</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="61157">
+                <xs:annotation>
+                    <xs:documentation>Выделение плюсовых насаждений</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="61158">
+                <xs:annotation>
+                    <xs:documentation>Выделение плюсовых деревьев</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="61159">
+                <xs:annotation>
+                    <xs:documentation>Закладка лесосеменных плантаций</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="61160">
+                <xs:annotation>
+                    <xs:documentation>Закладка архивов клонов плюсовых деревьев</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="61161">
+                <xs:annotation>
+                    <xs:documentation>Закладка маточных плантаций</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="61162">
+                <xs:annotation>
+                    <xs:documentation>Закладка испытательных культур</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="61163">
+                <xs:annotation>
+                    <xs:documentation>Закладка постоянных лесосеменных участков</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="61164">
+                <xs:annotation>
+                    <xs:documentation>Закладка географических культур</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="61165">
+                <xs:annotation>
+                    <xs:documentation>Закладка популяционно-экологических культур</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="61166.17">
+                <xs:annotation>
+                    <xs:documentation>Резерв</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="62171">
+                <xs:annotation>
+                    <xs:documentation>Уход за плюсовыми деревьями</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="62172">
+                <xs:annotation>
+                    <xs:documentation>Уход за плюсовыми насаждениями</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="62173">
+                <xs:annotation>
+                    <xs:documentation>Уход за лесосеменными плантациями, маточными плантациями, архивами клонов плюсовых деревьев, постоянными лесосеменными участками</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="62174">
+                <xs:annotation>
+                    <xs:documentation>Уход за испытательными, географическими, популяционно-экологическими культурами как объектами лесного семеноводства</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="62175.179">
+                <xs:annotation>
+                    <xs:documentation>Резерв</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="71180">
+                <xs:annotation>
+                    <xs:documentation>Установка аншлагов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="71181">
+                <xs:annotation>
+                    <xs:documentation>Создание минерализованных полос</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="71182">
+                <xs:annotation>
+                    <xs:documentation>Уход за минерализованными полосами</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="71183">
+                <xs:annotation>
+                    <xs:documentation>Создание противопожарных разрывов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="71184">
+                <xs:annotation>
+                    <xs:documentation>Создание и содержание противопожарных заслонов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="71185">
+                <xs:annotation>
+                    <xs:documentation>Устройство пожарных водоемов и подъездов к источникам противопожарного водоснабжения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="71186">
+                <xs:annotation>
+                    <xs:documentation>Строительство лесных дорог</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="71187">
+                <xs:annotation>
+                    <xs:documentation>Ремонт лесных дорог</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="71188">
+                <xs:annotation>
+                    <xs:documentation>Строительство мостов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="71189">
+                <xs:annotation>
+                    <xs:documentation>Ремонт мостов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="71190">
+                <xs:annotation>
+                    <xs:documentation>Очистка мест рубок</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="71191">
+                <xs:annotation>
+                    <xs:documentation>Строительство и реконструкция посадочных площадок для самолетов и вертолетов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="71192">
+                <xs:annotation>
+                    <xs:documentation>Строительство и реконструкция пожарных наблюдательных пунктов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="71193">
+                <xs:annotation>
+                    <xs:documentation>Прокладка просек, противопожарных разрывов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="71195">
+                <xs:annotation>
+                    <xs:documentation>Проведение работ по гидромелиорации</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="71196">
+                <xs:annotation>
+                    <xs:documentation>Снижение природной пожарной опасности лесов путем регулирование породного состава лесных насаждений</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="71197">
+                <xs:annotation>
+                    <xs:documentation>Проведение профилактического контролируемого противопожарного выжигания хвороста</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="71198">
+                <xs:annotation>
+                    <xs:documentation>Строительство и реконструкция пунктов сосредоточения противопожарного инвентаря</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="71199">
+                <xs:annotation>
+                    <xs:documentation>Установка шлагбаумов, устройство преград, обеспечивающих ограничение пребывания граждан в лесах в целях обеспечения пожарной безопасности</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="71200">
+                <xs:annotation>
+                    <xs:documentation>Устройство мест отдыха</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="71201">
+                <xs:annotation>
+                    <xs:documentation>Устройство лиственных опушек</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="71202">
+                <xs:annotation>
+                    <xs:documentation>Установка и размещение стендов, и других знаков и указателей, содержащих информацию о мерах пожарной безопасности в лесах</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="71203.212">
+                <xs:annotation>
+                    <xs:documentation>Резерв</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="72194">
+                <xs:annotation>
+                    <xs:documentation>Прочистка квартальных просек и границ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="81213">
+                <xs:annotation>
+                    <xs:documentation>Обустройство мест источников питьевой воды</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="81214">
+                <xs:annotation>
+                    <xs:documentation>Устройство кострищ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="81215">
+                <xs:annotation>
+                    <xs:documentation>Строительство сети троп</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="81216">
+                <xs:annotation>
+                    <xs:documentation>Ремонт сети троп</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="81217">
+                <xs:annotation>
+                    <xs:documentation>Установка кабин переодевания</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="81218">
+                <xs:annotation>
+                    <xs:documentation>Расчистка полян</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="81219">
+                <xs:annotation>
+                    <xs:documentation>Прокашивание полян</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="81220">
+                <xs:annotation>
+                    <xs:documentation>Оформление видовой точки</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="81221">
+                <xs:annotation>
+                    <xs:documentation>Устройство укрытий от непогоды</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="81222">
+                <xs:annotation>
+                    <xs:documentation>Строительство беседок</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="81223">
+                <xs:annotation>
+                    <xs:documentation>Установка лесной мебели</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="81224">
+                <xs:annotation>
+                    <xs:documentation>Оборудование стоянок туристов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="81225">
+                <xs:annotation>
+                    <xs:documentation>Оборудование стоянок автотранспорта</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="81226">
+                <xs:annotation>
+                    <xs:documentation>Регулирование рекреационных нагрузки</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="81227">
+                <xs:annotation>
+                    <xs:documentation>Обустройство пляжей</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="81228">
+                <xs:annotation>
+                    <xs:documentation>Уборка мусора</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="81229">
+                <xs:annotation>
+                    <xs:documentation>Устройство переходов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="81230">
+                <xs:annotation>
+                    <xs:documentation>Расчистка водоема</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="81231">
+                <xs:annotation>
+                    <xs:documentation>Расчистка троп</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="81232">
+                <xs:annotation>
+                    <xs:documentation>Устройство площадки</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="81233">
+                <xs:annotation>
+                    <xs:documentation>Оформление входа</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="81234">
+                <xs:annotation>
+                    <xs:documentation>Благоустройство</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="81235">
+                <xs:annotation>
+                    <xs:documentation>Создание экологического маршрута</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="81236.246">
+                <xs:annotation>
+                    <xs:documentation>Резерв</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="81280.29">
+                <xs:annotation>
+                    <xs:documentation>Резерв</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="91226">
+                <xs:annotation>
+                    <xs:documentation>Рубка реконструкции сплошна¤</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="91227">
+                <xs:annotation>
+                    <xs:documentation>Рубка реконструкции частична¤</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="91228">
+                <xs:annotation>
+                    <xs:documentation>Создание лесных культур</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="91229">
+                <xs:annotation>
+                    <xs:documentation>Уход за лесными культурами ручной</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="91230">
+                <xs:annotation>
+                    <xs:documentation>Реконструкци¤ лесных культур</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="91231">
+                <xs:annotation>
+                    <xs:documentation>Реконструкция лесных культур частична¤</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="91247">
+                <xs:annotation>
+                    <xs:documentation>Назначить в подсочку</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="91248">
+                <xs:annotation>
+                    <xs:documentation>Краткосрочная подсочка</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="91249">
+                <xs:annotation>
+                    <xs:documentation>Заготовка пневого осмола</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="91250.252">
+                <xs:annotation>
+                    <xs:documentation>Резерв</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="91253">
+                <xs:annotation>
+                    <xs:documentation>Заготовка лекарственного сырья</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="91254">
+                <xs:annotation>
+                    <xs:documentation>Заготовка орехов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="91255">
+                <xs:annotation>
+                    <xs:documentation>Заготовка ягод</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="91256">
+                <xs:annotation>
+                    <xs:documentation>Заготовка пищевого сырья</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="91257.26">
+                <xs:annotation>
+                    <xs:documentation>Резерв</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="91261">
+                <xs:annotation>
+                    <xs:documentation>Уход за плодоносящими деревьями</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="91262">
+                <xs:annotation>
+                    <xs:documentation>Создание кормовых полей</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="91263">
+                <xs:annotation>
+                    <xs:documentation>Устройство подкормочных площадок</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="91264">
+                <xs:annotation>
+                    <xs:documentation>Рекультивация для целей рекреационного использования</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="91265">
+                <xs:annotation>
+                    <xs:documentation>Уход за плантациями</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="91266">
+                <xs:annotation>
+                    <xs:documentation>Мелиорация участков лесного фонда</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="91267">
+                <xs:annotation>
+                    <xs:documentation>Расчистка площадей</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="91268">
+                <xs:annotation>
+                    <xs:documentation>Отвод поверхностных застойных вод</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="91269">
+                <xs:annotation>
+                    <xs:documentation>Подсев трав</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="91270">
+                <xs:annotation>
+                    <xs:documentation>Срезка кочек</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="91271">
+                <xs:annotation>
+                    <xs:documentation>Срезка кустарников</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="91272">
+                <xs:annotation>
+                    <xs:documentation>Коренное улучшение сенокоса</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="91273">
+                <xs:annotation>
+                    <xs:documentation>Ремонт лесной мебели</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="91274">
+                <xs:annotation>
+                    <xs:documentation>Устройство мусоросборников</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="91275">
+                <xs:annotation>
+                    <xs:documentation>Расчистка родников</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="91276">
+                <xs:annotation>
+                    <xs:documentation>Поверхностное улучшение сенокоса</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="91277">
+                <xs:annotation>
+                    <xs:documentation>Осушение сенокоса</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="91278">
+                <xs:annotation>
+                    <xs:documentation>Ремонт мелиоративных каналов (канав)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="91279">
+                <xs:annotation>
+                    <xs:documentation>Биотехнические мероприятия</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="91280">
+                <xs:annotation>
+                    <xs:documentation>Строительсто карьера</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="91281">
+                <xs:annotation>
+                    <xs:documentation>Ремонт карьера</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

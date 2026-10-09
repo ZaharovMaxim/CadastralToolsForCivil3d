@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+           targetNamespace="http://rosleshoz.gov.ru/xmlns/distributionSpecialPurposeType/5.0"
+           xmlns:tns="http://rosleshoz.gov.ru/xmlns/distributionSpecialPurposeType/5.0"
+           xmlns:st="http://rosleshoz.gov.ru/fgis-lk/common/simple/types/2.0"
+           xmlns:purF="http://rosleshoz.gov.ru/fgis-lk/common/enums/purposeForests/types/2.1">
+
+    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/purposeForests/types/2.1" schemaLocation="dPurposeForestsKindTypes.xsd"/>
+    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/simple/types/2.0" schemaLocation="simpleTypes.xsd"/>
+
+    <xs:complexType name="distributionSpecialPurposeType">
+        <xs:sequence>
+            <xs:element name="specialPurposeInfo">
+                <xs:annotation>
+                    <xs:documentation>Защитные леса</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="row" type="tns:specialPurposeInfoRow" minOccurs="1" maxOccurs="3"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="resources" type="tns:resourcesType">
+                <xs:annotation>
+                    <xs:documentation>Всего</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="specialPurposeInfoRow">
+        <xs:annotation>
+            <xs:documentation>Строка целевого назначения</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="specialPurpose" type="purF:PurposeForestsKindEType">
+                <xs:annotation>
+                    <xs:documentation>Целевое назначение лесов</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="resources" type="tns:resourcesType"/>
+            <xs:element name="groupInfo">
+                <xs:annotation>
+                    <xs:documentation>Категория защитных лесов (только для защитных лесов)</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="row" type="tns:groupInfoRow" minOccurs="0" maxOccurs="5"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="groupInfoRow">
+        <xs:sequence>
+            <xs:element name="group" type="tns:groupType">
+                <xs:annotation>
+                    <xs:documentation>Целевое назначение лесов</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="protectionCategoryInfo">
+                <xs:annotation>
+                    <xs:documentation>Категория защитных лесов</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="row" type="tns:protectionCategoryInfoRow" minOccurs="0"
+                                    maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="resources" type="tns:resourcesType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="protectionCategoryInfoRow">
+        <xs:sequence>
+            <xs:element name="protectionCategory" type="purF:PurposeForestsKindEType">
+                <xs:annotation>
+                    <xs:documentation>Категория защитности</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="resources" type="tns:resourcesType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="resourcesType">
+        <xs:sequence>
+            <xs:element name="area" type="st:PositiveDecimalFourSType">
+                <xs:annotation>
+                    <xs:documentation>Площадь, га</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="percent" type="st:PositiveDecimalSType">
+                <xs:annotation>
+                    <xs:documentation>Процент</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:simpleType name="groupType">
+        <xs:annotation>
+            <xs:documentation>Группы категорий защитности</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="32311001">
+                <xs:annotation>
+                    <xs:documentation>Леса, расположенные на особо охраняемых природных территориях</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32312002">
+                <xs:annotation>
+                    <xs:documentation>Леса, расположенные в водоохранных зонах</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32313000">
+                <xs:annotation>
+                    <xs:documentation>Леса, выполняющие функции защиты природных и иных объектов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32314000">
+                <xs:annotation>
+                    <xs:documentation>Ценные леса</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="32315000">
+                <xs:annotation>
+                    <xs:documentation>Городские леса</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

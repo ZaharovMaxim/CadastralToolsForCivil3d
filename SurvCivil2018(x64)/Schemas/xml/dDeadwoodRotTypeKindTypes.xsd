@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/deadwoodRotType/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/deadwoodRotType/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:simpleType name="DeadwoodRotTypeKindEType">
+		<xs:annotation>
+			<xs:documentation>Тип гнили валежа и пня</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="gniliNet">
+				<xs:annotation>
+					<xs:documentation>Гнили нет</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="trukhlyavayaTsentralnayaGnil">
+				<xs:annotation>
+					<xs:documentation>Трухлявая центральная гниль</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="tverdayaTsentralnayaGnil">
+				<xs:annotation>
+					<xs:documentation>Твердая центральная гниль</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="zabolonnayaGnil">
+				<xs:annotation>
+					<xs:documentation>Заболонная гниль</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="zapadina">
+				<xs:annotation>
+					<xs:documentation>Западина</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

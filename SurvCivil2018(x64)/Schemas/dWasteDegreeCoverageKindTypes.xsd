@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/wasteDegreeCoverage/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/wasteDegreeCoverage/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:simpleType name="WasteDegreeCoverageKindEType">
+		<xs:annotation>
+			<xs:documentation>Наличие коммунальных отходов, степени покрытия</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="abundantCoverage">
+				<xs:annotation>
+					<xs:documentation>Обильное покрытие (&gt; 75%)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="mediumCoverage">
+				<xs:annotation>
+					<xs:documentation>Среднее покрытие (26 - 50%)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="moderateCoverage">
+				<xs:annotation>
+					<xs:documentation>Умеренное покрытие (6 - 25%)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="no">
+				<xs:annotation>
+					<xs:documentation>Нет</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="rareOccurrence">
+				<xs:annotation>
+					<xs:documentation>Редкая встречаемость (1 - 5%)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="singleOccurrence">
+				<xs:annotation>
+					<xs:documentation>Единичная встречаемость</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="sporadicOccurrence">
+				<xs:annotation>
+					<xs:documentation>Спорадическая встречаемость (до 1%)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="thickCoverage">
+				<xs:annotation>
+					<xs:documentation>Густое покрытие (51 - 75%)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/typesHits/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/typesHits/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:simpleType name="TypesHitsKindEType">
+		<xs:annotation>
+			<xs:documentation>Типы обращений</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="acceptAStateContractOrAssignme">
+				<xs:annotation>
+					<xs:documentation>Прием государственного контракта или задания</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="acceptActsAttributionLandsInte">
+				<xs:annotation>
+					<xs:documentation>Прием актов отнесения земель, предназначенных для лесовосстановления, к землям, на которых расположены леса</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="acceptAnExtractFromTheUnifiedS">
+				<xs:annotation>
+					<xs:documentation>Прием выписки из ЕГРН о земельном участке</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="acceptAnalyticalReviewsOnTheSt">
+				<xs:annotation>
+					<xs:documentation>Прием аналитических обзоров о состоянии лесов, их количественных и качественных характеристиках по субъекту РФ</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="acceptCopiesContractsOnTransac">
+				<xs:annotation>
+					<xs:documentation>Прием копий договоров о сделках с древесиной при их заключении в письменной форме</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="acceptDecisionsOnAssignCategor">
+				<xs:annotation>
+					<xs:documentation>Прием решений об отнесении лесов к категории защитных лесов</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="acceptDecisionsOnAssignProtect">
+				<xs:annotation>
+					<xs:documentation>Прием решений об отнесении лесов к защитным, эксплуатационным, резервным лесам</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="acceptDecisionsOnEstablishingO">
+				<xs:annotation>
+					<xs:documentation>Прием решений об установлении или изменении границ земель, на которых располагаются леса соответствующей категории защитных лесов</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="acceptDecisionsOnExclusionFore">
+				<xs:annotation>
+					<xs:documentation>Прием решений об исключении лесов из состава защитных, экспуатационных, резервных лесов</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="acceptDecisionsOnTheAbolitionS">
+				<xs:annotation>
+					<xs:documentation>Прием решений об упразднении особо защитных участков лесов</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="acceptDecisionsOnTheAllocation">
+				<xs:annotation>
+					<xs:documentation>Прием решений о выделении особо защитных участков лесов</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="acceptDecisionsTheOgvOnTheAbol">
+				<xs:annotation>
+					<xs:documentation>Прием решений ОГВ об упразднении лесничеств</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="acceptDecisionsTheOgvOrTheChiO">
+				<xs:annotation>
+					<xs:documentation>Прием решений ОГВ или ОМС о создании участковых лесничеств</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="acceptDecisionsTheOgvOrTheOmsO">
+				<xs:annotation>
+					<xs:documentation>Прием решений ОГВ или ОМС об установлении или изменении границ лесничеств</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="acceptDeclarationsOnTransactio">
+				<xs:annotation>
+					<xs:documentation>Прием деклараций о сделках с древесиной в случае их заключения в целях вывоза древесины и продукции ее переработки из РФ</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="acceptDecsiOGVOrOMSOnAbolition">
+				<xs:annotation>
+					<xs:documentation>Прием решений ОГВ или ОМС об упразднении участковых лесничеств</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="acceptDecsiOGVOrOMSOnCreation">
+				<xs:annotation>
+					<xs:documentation>Прием решений ОГВ или ОМС о создании лесничеств</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="acceptDecsiOGVOrOMSOnEstablish">
+				<xs:annotation>
+					<xs:documentation>Прием решений ОГВ или ОМС об установлении или изменении границы участкового лесничества</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="acceptElectronicAccompanyingdo">
+				<xs:annotation>
+					<xs:documentation>Прием электронных сопроводительных документов, в том числе сведений об их прекращении</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="acceptForestDeclarations">
+				<xs:annotation>
+					<xs:documentation>Прием лесных деклараций</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="acceptForestDevelopmentProject">
+				<xs:annotation>
+					<xs:documentation>Прием проектов освоения лесов</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="acceptForestInspectionCertific">
+				<xs:annotation>
+					<xs:documentation>Прием актов осмотра лесов</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="acceptForestManagementDocument">
+				<xs:annotation>
+					<xs:documentation>Прием лесоустроительной документации</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="acceptForestryRegulationsFores">
+				<xs:annotation>
+					<xs:documentation>Прием лесохозяйственного регламента лесничеств</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="acceptPermitsForConstructionRe">
+				<xs:annotation>
+					<xs:documentation>Прием разрешений на строительство, реконструкцию объектов капитального строительства в границах лесничеств</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="acceptProjectDocumentationAFor">
+				<xs:annotation>
+					<xs:documentation>Прием проектной документации лесного участка</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="acceptReportsOnForestReproduct">
+				<xs:annotation>
+					<xs:documentation>Прием отчетов о воспроизводстве лесов и лесоразведении</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="acceptReportsOnTheExercisePowe">
+				<xs:annotation>
+					<xs:documentation>Прием отчетности об осуществлении переданных в соответствии с частью 1 статьи 83 ЛК РФ полномочий</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="acceptReportsOnTheProtectionFo">
+				<xs:annotation>
+					<xs:documentation>Прием отчетов об охране лесов от загрязнения и иного негативного воздействия</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="acceptTheActForestPathologyExa">
+				<xs:annotation>
+					<xs:documentation>Прием акта лесопатологического обследования</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="acceptTheContractSale">
+				<xs:annotation>
+					<xs:documentation>Прием договора купли-продажи</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="acceptTheDecisionTheCommission">
+				<xs:annotation>
+					<xs:documentation>Прием решения комиссии по аттестации (списанию) объектов лесного семеноводства</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="acceptTheForestPlanTheSubjectT">
+				<xs:annotation>
+					<xs:documentation>Прием лесного плана субъекта РФ</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="acceptTheTaxDescriptionLogging">
+				<xs:annotation>
+					<xs:documentation>Прием таксационного описания лесосек</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="acceptdocgroundsForTheOwnersOb">
+				<xs:annotation>
+					<xs:documentation>Прием документов-оснований возникновения у владельцев объектов, не связанных с созданием лесной инфраструктуры, права собственности или иного законного основания владения объектами, не связанными с созданием лесной инфраструктуры</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="acceptdocthatAreBasisForCreati">
+				<xs:annotation>
+					<xs:documentation>Прием документов, являющихся основаниями для создания лесов</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="acceptdocthatAreBasisForUseFor">
+				<xs:annotation>
+					<xs:documentation>Прием документов, являющихся основанием использования лесов без предоставления лесного участка</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="acceptdocthatAreTheBasisForEnt">
+				<xs:annotation>
+					<xs:documentation>Прием документов, являющихся основанием для внесения сведений в ГЛР, направленных способами и в порядке, предусмотренными порядком межведомственного информационного взаимодействия при ведении ГЛР, в том числе запрошенных оператором ФГИС ЛК по межведомственным</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="acceptdocthatAreTheGroundsForT">
+				<xs:annotation>
+					<xs:documentation>Прием документов, являющихся основаниями для использования лесных участков</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="acceptdoctheGroundsForTheEmerg">
+				<xs:annotation>
+					<xs:documentation>Прием документов-оснований возникновения права собственности или иного законного основания владения складом древесины</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="acceptdoctheGroundsForTheOwner">
+				<xs:annotation>
+					<xs:documentation>Прием документов-оснований возникновения у владельцев объектов лесоперерабатывающей инфраструктуры права собственности или иного законного основания владения объектами лесоперерабатывающей инфраструктуры</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="extractOnTheProvisionForestPlo">
+				<xs:annotation>
+					<xs:documentation>Выписка о предоставлении лесных участков гражданам, юридическим лицам</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="makingDecisionsOnTheExclusionF">
+				<xs:annotation>
+					<xs:documentation>Прием решений об исключении лесов из состава категории защитных лесов</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="makingDecsOnEstablishWichPrtct">
+				<xs:annotation>
+					<xs:documentation>Прием решений об установлении или изменении границ земель, на которых располагаются защитные, эксплуатационные, резервные леса</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="makingDecsOnEstablishWichSpec">
+				<xs:annotation>
+					<xs:documentation>Прием решений об установлении или изменении границ земель, на которых располагаются особо защитные участки лесов</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="providingExtractsOnForestryThe">
+				<xs:annotation>
+					<xs:documentation>Предоставление выписки о лесничествах, их лесных кварталах и лесотаксационных выделах</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="provisionAnExtractOnProtective">
+				<xs:annotation>
+					<xs:documentation>Предоставление выписки о защитных лесах, об их категориях, об эксплуатационных лесах, о резервных лесах</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="provisionAnExtractOnTheComposi">
+				<xs:annotation>
+					<xs:documentation>Предоставление выписки о составе земель лесного фонда, составе земель иных категорий, на которых расположены леса</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="provisionExtractsOnForestPlots">
+				<xs:annotation>
+					<xs:documentation>Предоставление выписки о лесных участках</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="provisionExtractsOnQuantitativ">
+				<xs:annotation>
+					<xs:documentation>Предоставление выписки о количественных, качественных и экономических характеристиках лесов и лесных ресурсов</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="provisionExtractsOnSpeciallyPr">
+				<xs:annotation>
+					<xs:documentation>Предоставление выписки об особо защитных участках лесов, о зонах с особыми условиями использования территорий</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="provisionExtractsOnTheUseProte">
+				<xs:annotation>
+					<xs:documentation>Предоставление выписки об использовании, охране, защите, воспроизводстве лесов</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="rcptAReportOnTheUseForests">
+				<xs:annotation>
+					<xs:documentation>Прием отчета об использовании лесов</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="rcptAReportOnWoodThatArrivesAt">
+				<xs:annotation>
+					<xs:documentation>Прием отчета о древесине, которая поступает на объект лесоперерабатывающей инфраструктуры</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="rcptAppealsFromInterestedPerso">
+				<xs:annotation>
+					<xs:documentation>Прием обращений заинтересованных лиц об исправлении технической ошибки в сведениях ГЛР</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="rcptJudicialActsThatHaveEntere">
+				<xs:annotation>
+					<xs:documentation>Прием вступивших в законную силу судебных актов</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="rcptMotivatedNotificationsOnTh">
+				<xs:annotation>
+					<xs:documentation>Прием мотивированных уведомлений об отсутствии выявленных нарушений при внесении информации в ГЛР</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="rcptReportOnWoodImportedToTheW">
+				<xs:annotation>
+					<xs:documentation>Прием отчета о ввезенной на склад или вывезенной со склада древесине</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="rcptReportsOnForestProtection">
+				<xs:annotation>
+					<xs:documentation>Прием отчетов о защите лесов</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="rcptReportsOnForestProtectionF">
+				<xs:annotation>
+					<xs:documentation>Прием отчетов об охране лесов от пожаров</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="rcptWorkingProjectsForTheCreat">
+				<xs:annotation>
+					<xs:documentation>Прием рабочих проектов создания объектов лесного семеноводства</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="rcptdocwhichAreTheBasisForEnte">
+				<xs:annotation>
+					<xs:documentation>Прием документов, являющихся основанием для внесения сведений в ГЛР, направленных в порядке информационного взаимодействия ФГИС ЛК с иными ИС в рамках соглашений об информационном взаимодействии</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

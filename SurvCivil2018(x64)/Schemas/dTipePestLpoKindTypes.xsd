@@ -1,0 +1,3644 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/tipePestLpo/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/tipePestLpo/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="TipePestLpoKindEType">
+        <xs:annotation>
+            <xs:documentation>Вид вредителя для акта ЛПО</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="38110010">
+                <xs:annotation>
+                    <xs:documentation>Шелкопряд сибирский</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38110011">
+                <xs:annotation>
+                    <xs:documentation>Шелкопряд сосновый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38110012">
+                <xs:annotation>
+                    <xs:documentation>Шелкопряд-монашенка</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38110013">
+                <xs:annotation>
+                    <xs:documentation>Пяденица сосновая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38110014">
+                <xs:annotation>
+                    <xs:documentation>Совка сосновая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38110015">
+                <xs:annotation>
+                    <xs:documentation>Пяденица пихтовая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38110016">
+                <xs:annotation>
+                    <xs:documentation>Пилильщик сосновый обыкновенный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38110017">
+                <xs:annotation>
+                    <xs:documentation>Пилильщик сосновый рыжий</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38110018">
+                <xs:annotation>
+                    <xs:documentation>Пилильщик-ткач красноголовый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38110019">
+                <xs:annotation>
+                    <xs:documentation>Пилильщик-ткач звездчатый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38110020">
+                <xs:annotation>
+                    <xs:documentation>Листовертка лиственничная серая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38110029">
+                <xs:annotation>
+                    <xs:documentation>Листовертка пихтовая красноголовая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38110095">
+                <xs:annotation>
+                    <xs:documentation>Совка пожарищ (финская)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38110111">
+                <xs:annotation>
+                    <xs:documentation>Волнянка античная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38110115">
+                <xs:annotation>
+                    <xs:documentation>Волнянка лиственничная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38110118">
+                <xs:annotation>
+                    <xs:documentation>Волнянка пятнистая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38110122">
+                <xs:annotation>
+                    <xs:documentation>Волнянка хвойная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38110130">
+                <xs:annotation>
+                    <xs:documentation>Бражник лиственничный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38110131">
+                <xs:annotation>
+                    <xs:documentation>Бражник сосновый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38110155">
+                <xs:annotation>
+                    <xs:documentation>Лишайница четырехпятнистая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38110163">
+                <xs:annotation>
+                    <xs:documentation>Пяденица сосновая углокрылая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38110164">
+                <xs:annotation>
+                    <xs:documentation>Пяденица лиственничная углокрылая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38110166">
+                <xs:annotation>
+                    <xs:documentation>Пяденица еловая углокрылая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38110167">
+                <xs:annotation>
+                    <xs:documentation>Пяденица изменчивая (еловая)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38110168">
+                <xs:annotation>
+                    <xs:documentation>Пяденица изменчивая (хвойная)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38110169">
+                <xs:annotation>
+                    <xs:documentation>Пяденица дымчатая таежная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38110170">
+                <xs:annotation>
+                    <xs:documentation>Пяденица дымчатая еловая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38110171">
+                <xs:annotation>
+                    <xs:documentation>Пяденица дымчатая хвойная уссурийская</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38110177">
+                <xs:annotation>
+                    <xs:documentation>Пяденица лиственничная цветочная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38110181">
+                <xs:annotation>
+                    <xs:documentation>Пяденица Якобсона</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38110189">
+                <xs:annotation>
+                    <xs:documentation>Листовертка-толстушка сосновая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38110192">
+                <xs:annotation>
+                    <xs:documentation>Листовертка-иглоед пигмей</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38110193">
+                <xs:annotation>
+                    <xs:documentation>Листовертка Гартига</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38110203">
+                <xs:annotation>
+                    <xs:documentation>Листовертка-толстушка пихтовая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38110222">
+                <xs:annotation>
+                    <xs:documentation>Моль можжевеловая южная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38110223">
+                <xs:annotation>
+                    <xs:documentation>Чехлоноска лиственничная (чехликовая моль)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38110225">
+                <xs:annotation>
+                    <xs:documentation>Чехлоноска лиственничная сибирская</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38110226">
+                <xs:annotation>
+                    <xs:documentation>Чехлоноска лиственничная даурская</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38110227">
+                <xs:annotation>
+                    <xs:documentation>Моль можжевельниковая выемчатокрылая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38110228">
+                <xs:annotation>
+                    <xs:documentation>Листовертка еловая паутинная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38110232">
+                <xs:annotation>
+                    <xs:documentation>Листовертка лиственничная почковая (лиственничная вертунья)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38110240">
+                <xs:annotation>
+                    <xs:documentation>Пяденица дымчатая хвойная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38110243">
+                <xs:annotation>
+                    <xs:documentation>Пилильщик пихтовый черный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38110244">
+                <xs:annotation>
+                    <xs:documentation>Пилильщик лиственничный полосатый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38110246">
+                <xs:annotation>
+                    <xs:documentation>Пилильщик лиственничный большой</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38110247">
+                <xs:annotation>
+                    <xs:documentation>Пилильщик лиственничный обыкновенный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38110248">
+                <xs:annotation>
+                    <xs:documentation>Пилильщик лиственничный побеговый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38110250">
+                <xs:annotation>
+                    <xs:documentation>Пилильщик лиственничный пятнистый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38110258">
+                <xs:annotation>
+                    <xs:documentation>Пилильщик сосновый черно-желтый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38110259">
+                <xs:annotation>
+                    <xs:documentation>Пилильщик сосновый бледноногий</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38110260">
+                <xs:annotation>
+                    <xs:documentation>Пилильщик сосново-лиственничный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38110261">
+                <xs:annotation>
+                    <xs:documentation>Пилильщик еловый темнокрылый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38110262">
+                <xs:annotation>
+                    <xs:documentation>Пилильщик сосновый желтоватый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38110263">
+                <xs:annotation>
+                    <xs:documentation>Пилильщик сосновый зеленоватый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38110267">
+                <xs:annotation>
+                    <xs:documentation>Пилильщик еловый общественный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38110268">
+                <xs:annotation>
+                    <xs:documentation>Пилильщик-ткач альпийский лиственничный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38110269">
+                <xs:annotation>
+                    <xs:documentation>Пилильщик лиственничный чернопятнистый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38110274">
+                <xs:annotation>
+                    <xs:documentation>Пилильщик Саксезена</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38110285">
+                <xs:annotation>
+                    <xs:documentation>Пилильщик-ткач еловый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38110286">
+                <xs:annotation>
+                    <xs:documentation>Пилильщик-ткач одиночный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38110336">
+                <xs:annotation>
+                    <xs:documentation>Пилильщики настоящие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38110341">
+                <xs:annotation>
+                    <xs:documentation>Пилильщик еловый обыкновенный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38110461">
+                <xs:annotation>
+                    <xs:documentation>Шелкопряд сосновый походный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38110482">
+                <xs:annotation>
+                    <xs:documentation>Листовертка-иглоед еловая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38110483">
+                <xs:annotation>
+                    <xs:documentation>Листовертка-иглоед пихтовая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38110982">
+                <xs:annotation>
+                    <xs:documentation>Пилильщик-ткач желторотый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38110984">
+                <xs:annotation>
+                    <xs:documentation>Минер Фризе забайкальский</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38110998">
+                <xs:annotation>
+                    <xs:documentation>Шелкопряд белополосый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120004">
+                <xs:annotation>
+                    <xs:documentation>Пяденица сиреневая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120005">
+                <xs:annotation>
+                    <xs:documentation>Саранча итальянская, прус итальянский</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120021">
+                <xs:annotation>
+                    <xs:documentation>Шелкопряд непарный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120022">
+                <xs:annotation>
+                    <xs:documentation>Златогузка</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120023">
+                <xs:annotation>
+                    <xs:documentation>Шелкопряд (коконопряд) кольчатый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120024">
+                <xs:annotation>
+                    <xs:documentation>Листовертка дубовая зеленая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120025">
+                <xs:annotation>
+                    <xs:documentation>Пяденица зимняя</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120026">
+                <xs:annotation>
+                    <xs:documentation>Лунка серебристая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120027">
+                <xs:annotation>
+                    <xs:documentation>Волнянка ивовая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120028">
+                <xs:annotation>
+                    <xs:documentation>Совка зубчатокрылая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120044">
+                <xs:annotation>
+                    <xs:documentation>Долгоносик-прыгун буковый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120099">
+                <xs:annotation>
+                    <xs:documentation>Златка ивовая минирующая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120102">
+                <xs:annotation>
+                    <xs:documentation>Шелкопряд (коконопряд) кольчатый горный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120103">
+                <xs:annotation>
+                    <xs:documentation>Шелкопряд дуболистный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120104">
+                <xs:annotation>
+                    <xs:documentation>Шелкопряд (коконопряд) дубовый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120105">
+                <xs:annotation>
+                    <xs:documentation>Шелкопряд джузгуновый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120107">
+                <xs:annotation>
+                    <xs:documentation>Шелкопряд лунчатый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120108">
+                <xs:annotation>
+                    <xs:documentation>Шелкопряд пустынный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120109">
+                <xs:annotation>
+                    <xs:documentation>Шелкопряд (коконопряд) пушистый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120112">
+                <xs:annotation>
+                    <xs:documentation>Волнянка бурая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120113">
+                <xs:annotation>
+                    <xs:documentation>Волнянка-лишайница</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120114">
+                <xs:annotation>
+                    <xs:documentation>Желтогузка</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120116">
+                <xs:annotation>
+                    <xs:documentation>Краснохвост</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120117">
+                <xs:annotation>
+                    <xs:documentation>Кистехвост пятнистый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120119">
+                <xs:annotation>
+                    <xs:documentation>Шелкопряд розовый непарный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120120">
+                <xs:annotation>
+                    <xs:documentation>Волнянка ивовая восточносибирская</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120124">
+                <xs:annotation>
+                    <xs:documentation>Хохлатка дубовая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120125">
+                <xs:annotation>
+                    <xs:documentation>Хохлатка двуцветная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120126">
+                <xs:annotation>
+                    <xs:documentation>Хохлатка березовая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120127">
+                <xs:annotation>
+                    <xs:documentation>Кисточница ржаво-бурая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120128">
+                <xs:annotation>
+                    <xs:documentation>Стрельчатка кленовая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120129">
+                <xs:annotation>
+                    <xs:documentation>Бражник липовый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120132">
+                <xs:annotation>
+                    <xs:documentation>Бражник тополевый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120133">
+                <xs:annotation>
+                    <xs:documentation>Хохлатка остроголовая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120134">
+                <xs:annotation>
+                    <xs:documentation>Совка вязовая буро-серая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120136">
+                <xs:annotation>
+                    <xs:documentation>Совка вязовая желтоватая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120137">
+                <xs:annotation>
+                    <xs:documentation>Совка желто-бурая ранняя</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120138">
+                <xs:annotation>
+                    <xs:documentation>Совка фиолетово-серая ранняя</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120141">
+                <xs:annotation>
+                    <xs:documentation>Металловидка синевато-серая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120144">
+                <xs:annotation>
+                    <xs:documentation>Совка пирамидальная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120145">
+                <xs:annotation>
+                    <xs:documentation>Пухоножка серая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120147">
+                <xs:annotation>
+                    <xs:documentation>Совка ковровая светло-серая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120149">
+                <xs:annotation>
+                    <xs:documentation>Совка дубовая широкоспинная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120150">
+                <xs:annotation>
+                    <xs:documentation>Совка дубовая серо-бурая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120152">
+                <xs:annotation>
+                    <xs:documentation>Совка серая плоскотелая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120153">
+                <xs:annotation>
+                    <xs:documentation>Совка золотистая темная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120154">
+                <xs:annotation>
+                    <xs:documentation>Совка толстоногая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120156">
+                <xs:annotation>
+                    <xs:documentation>Пяденица круглокрылая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120157">
+                <xs:annotation>
+                    <xs:documentation>Пяденица-обдирало обыкновенная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120158">
+                <xs:annotation>
+                    <xs:documentation>Пяденица-шелкопряд плодовая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120159">
+                <xs:annotation>
+                    <xs:documentation>Пяденица-шелкопряд тополевая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120160">
+                <xs:annotation>
+                    <xs:documentation>Пяденица-шелкопряд светло-серая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120161">
+                <xs:annotation>
+                    <xs:documentation>Пяденица-шелкопряд желтоусая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120162">
+                <xs:annotation>
+                    <xs:documentation>Пяденица-шелкопряд бурополосая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120165">
+                <xs:annotation>
+                    <xs:documentation>Пяденица углокрылая серая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120172">
+                <xs:annotation>
+                    <xs:documentation>Пяденица дымчатая сумеречная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120173">
+                <xs:annotation>
+                    <xs:documentation>Пяденица дымчатая ольховая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120174">
+                <xs:annotation>
+                    <xs:documentation>Пяденица дымчатая родственная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120175">
+                <xs:annotation>
+                    <xs:documentation>Пяденица дымчатая большая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120176">
+                <xs:annotation>
+                    <xs:documentation>Пяденица дымчатая березовая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120178">
+                <xs:annotation>
+                    <xs:documentation>Пяденица зубцекрылая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120179">
+                <xs:annotation>
+                    <xs:documentation>Пяденица пушистая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120180">
+                <xs:annotation>
+                    <xs:documentation>Пяденица березолистная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120182">
+                <xs:annotation>
+                    <xs:documentation>Пяденица-обдирало оранжевая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120183">
+                <xs:annotation>
+                    <xs:documentation>Пяденица-обдирало каемчатая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120184">
+                <xs:annotation>
+                    <xs:documentation>Листовертка боярышниковая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120185">
+                <xs:annotation>
+                    <xs:documentation>Листовертка свинцовополосая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120186">
+                <xs:annotation>
+                    <xs:documentation>Листовертка сетчатая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120187">
+                <xs:annotation>
+                    <xs:documentation>Листовертка розанная, или золотистая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120188">
+                <xs:annotation>
+                    <xs:documentation>Листовертка пестро-золотистая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120190">
+                <xs:annotation>
+                    <xs:documentation>Листовертка-толстушка всеядная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120191">
+                <xs:annotation>
+                    <xs:documentation>Пяденица-обдирало светло-серая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120194">
+                <xs:annotation>
+                    <xs:documentation>Листовертка березовая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120195">
+                <xs:annotation>
+                    <xs:documentation>Пяденица неделимая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120196">
+                <xs:annotation>
+                    <xs:documentation>Листовертка розанная настоящая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120200">
+                <xs:annotation>
+                    <xs:documentation>Листовертка дубовая разноцветная (палевая)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120201">
+                <xs:annotation>
+                    <xs:documentation>Листовертка облепиховая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120202">
+                <xs:annotation>
+                    <xs:documentation>Листовертка изменчивая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120204">
+                <xs:annotation>
+                    <xs:documentation>Листовертка смородинная кривоусая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120205">
+                <xs:annotation>
+                    <xs:documentation>Листовертка гребнеусая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120206">
+                <xs:annotation>
+                    <xs:documentation>Мотылёк луговой</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120207">
+                <xs:annotation>
+                    <xs:documentation>Моль горностаевая яблоневая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120208">
+                <xs:annotation>
+                    <xs:documentation>Моль горностаевая бересклетовая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120209">
+                <xs:annotation>
+                    <xs:documentation>Моль ивовая паутинная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120210">
+                <xs:annotation>
+                    <xs:documentation>Моль осиновая белая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120211">
+                <xs:annotation>
+                    <xs:documentation>Моль дубовая одноцветная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120212">
+                <xs:annotation>
+                    <xs:documentation>Моль дубовая опадающая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120213">
+                <xs:annotation>
+                    <xs:documentation>Моль горностаевая черемуховая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120214">
+                <xs:annotation>
+                    <xs:documentation>Моль-малютка дубовая узкая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120215">
+                <xs:annotation>
+                    <xs:documentation>Моль-малютка дубовая широкая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120216">
+                <xs:annotation>
+                    <xs:documentation>Моль горностаевая плодовая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120217">
+                <xs:annotation>
+                    <xs:documentation>Моль дубовая широкоминирующая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120218">
+                <xs:annotation>
+                    <xs:documentation>Моль-пестрянка дубовая кармашковая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120220">
+                <xs:annotation>
+                    <xs:documentation>Моль облепиховая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120229">
+                <xs:annotation>
+                    <xs:documentation>Листовертка дубовая палевая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120230">
+                <xs:annotation>
+                    <xs:documentation>Листовертка разноядная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120231">
+                <xs:annotation>
+                    <xs:documentation>Павлиноглазка ореховая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120233">
+                <xs:annotation>
+                    <xs:documentation>Листовертка бледная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120234">
+                <xs:annotation>
+                    <xs:documentation>Павлиноглазка туркестанская</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120235">
+                <xs:annotation>
+                    <xs:documentation>Многоцветница, или углокрыльница, или ванесса грушевая, или садовая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120236">
+                <xs:annotation>
+                    <xs:documentation>Пяденица березовая осенняя</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120237">
+                <xs:annotation>
+                    <xs:documentation>Ванесса черно-желтая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120238">
+                <xs:annotation>
+                    <xs:documentation>Моль минирующая однопятнистая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120239">
+                <xs:annotation>
+                    <xs:documentation>Моль минирующая первичная волосатая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120241">
+                <xs:annotation>
+                    <xs:documentation>Листовертка рябиновая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120242">
+                <xs:annotation>
+                    <xs:documentation>Пилильщик осиновый черноголовый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120245">
+                <xs:annotation>
+                    <xs:documentation>Пилильщик березовый большой</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120249">
+                <xs:annotation>
+                    <xs:documentation>Пилильщик березовый общественный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120251">
+                <xs:annotation>
+                    <xs:documentation>Пилильщик березовый северный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120252">
+                <xs:annotation>
+                    <xs:documentation>Пилильщик березовый минирующий</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120253">
+                <xs:annotation>
+                    <xs:documentation>Пилильщик дубовый бородавчатый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120254">
+                <xs:annotation>
+                    <xs:documentation>Пилильщик ясеневый белоточечный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120255">
+                <xs:annotation>
+                    <xs:documentation>Пилильщик ясеневый черный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120256">
+                <xs:annotation>
+                    <xs:documentation>Пилильщик дубовый зеленый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120264">
+                <xs:annotation>
+                    <xs:documentation>Пилильщик ильмовый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120265">
+                <xs:annotation>
+                    <xs:documentation>Пилильщик березовый черный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120266">
+                <xs:annotation>
+                    <xs:documentation>Пилильщик березовый серый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120270">
+                <xs:annotation>
+                    <xs:documentation>Пилильщик березовый бородавчатый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120271">
+                <xs:annotation>
+                    <xs:documentation>Пилильщик ивовый бородавчатый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120273">
+                <xs:annotation>
+                    <xs:documentation>Пилильщик осиновый большой</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120276">
+                <xs:annotation>
+                    <xs:documentation>Тля фисташковая краевая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120277">
+                <xs:annotation>
+                    <xs:documentation>Тля бузгуновая (джузгуновая)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120287">
+                <xs:annotation>
+                    <xs:documentation>Пяденица дубовая углокрылая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120288">
+                <xs:annotation>
+                    <xs:documentation>Пяденица-шелкопряд волосистая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120289">
+                <xs:annotation>
+                    <xs:documentation>Листоед азиатский</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120293">
+                <xs:annotation>
+                    <xs:documentation>Листоед фисташковый (палевый)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120294">
+                <xs:annotation>
+                    <xs:documentation>Листоед осиновый минирующий</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120295">
+                <xs:annotation>
+                    <xs:documentation>Листоед ивовый желтый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120296">
+                <xs:annotation>
+                    <xs:documentation>Листоед четырехточечный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120297">
+                <xs:annotation>
+                    <xs:documentation>Листоед желтый ивовый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120298">
+                <xs:annotation>
+                    <xs:documentation>Листоед ивовый краснокрылый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120299">
+                <xs:annotation>
+                    <xs:documentation>Листоед ольховый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120300">
+                <xs:annotation>
+                    <xs:documentation>Листоед ивовый синий</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120301">
+                <xs:annotation>
+                    <xs:documentation>Листоед ильмовый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120302">
+                <xs:annotation>
+                    <xs:documentation>Листоед калиновый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120309">
+                <xs:annotation>
+                    <xs:documentation>Шпанка ясеневая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120311">
+                <xs:annotation>
+                    <xs:documentation>Гарпия большая (обыкновенная)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120313">
+                <xs:annotation>
+                    <xs:documentation>Ногохвост ильмовый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120314">
+                <xs:annotation>
+                    <xs:documentation>Огневка-акробат общественная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120315">
+                <xs:annotation>
+                    <xs:documentation>Моль-пестрянка дубовая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120316">
+                <xs:annotation>
+                    <xs:documentation>Огневка самшитовая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120317">
+                <xs:annotation>
+                    <xs:documentation>Моль переливчатая березовая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120319">
+                <xs:annotation>
+                    <xs:documentation>Пяденица хохлатая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120320">
+                <xs:annotation>
+                    <xs:documentation>Шелкопряд дубовый тёмнокрылый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120321">
+                <xs:annotation>
+                    <xs:documentation>Бабочка белая американская</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120324">
+                <xs:annotation>
+                    <xs:documentation>Хохлатка осиновая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120325">
+                <xs:annotation>
+                    <xs:documentation>Листоед тополевый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120326">
+                <xs:annotation>
+                    <xs:documentation>Листоед осиновый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120327">
+                <xs:annotation>
+                    <xs:documentation>Листоед восточный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120331">
+                <xs:annotation>
+                    <xs:documentation>Челночница зеленая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120332">
+                <xs:annotation>
+                    <xs:documentation>Пухоспинка настоящая бурая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120333">
+                <xs:annotation>
+                    <xs:documentation>Пяденица вязовая пестрая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120335">
+                <xs:annotation>
+                    <xs:documentation>Пухоножка темная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120350">
+                <xs:annotation>
+                    <xs:documentation>Пяденица березовая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120415">
+                <xs:annotation>
+                    <xs:documentation>Долгоносик ясеневый слизистый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120416">
+                <xs:annotation>
+                    <xs:documentation>Слоник-листогрыз шелковистый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120435">
+                <xs:annotation>
+                    <xs:documentation>Ленточник тополевый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120451">
+                <xs:annotation>
+                    <xs:documentation>Мушка минирующая березовая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120462">
+                <xs:annotation>
+                    <xs:documentation>Шелкопряд дубовый походный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120463">
+                <xs:annotation>
+                    <xs:documentation>Шелкопряд березовый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120466">
+                <xs:annotation>
+                    <xs:documentation>Листоблошка гребенщиковая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120471">
+                <xs:annotation>
+                    <xs:documentation>Пилильщик березовый кокончатый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120481">
+                <xs:annotation>
+                    <xs:documentation>Листовертка гигантская</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120486">
+                <xs:annotation>
+                    <xs:documentation>Пяденица каемчатая березовая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120901">
+                <xs:annotation>
+                    <xs:documentation>Блошак дубовый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120906">
+                <xs:annotation>
+                    <xs:documentation>Совка желто-серая весенняя</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120923">
+                <xs:annotation>
+                    <xs:documentation>Пилильщик ильмовый восточноазиатский (ильмовый пилильщик зигзаг)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120924">
+                <xs:annotation>
+                    <xs:documentation>Фратора кавказская</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120925">
+                <xs:annotation>
+                    <xs:documentation>Моль робиниевая верхнесторонняя минирующая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120926">
+                <xs:annotation>
+                    <xs:documentation>Моль робиниевая нижнесторонняя минирующая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120965">
+                <xs:annotation>
+                    <xs:documentation>Хохлатка перистоусая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38120993">
+                <xs:annotation>
+                    <xs:documentation>Пяденица ясеневая пестрая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130001">
+                <xs:annotation>
+                    <xs:documentation>Плодожорка сливовая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130003">
+                <xs:annotation>
+                    <xs:documentation>Саранча перелетная (азиатская)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130031">
+                <xs:annotation>
+                    <xs:documentation>Хрущ майский восточный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130032">
+                <xs:annotation>
+                    <xs:documentation>Хрущ майский западный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130033">
+                <xs:annotation>
+                    <xs:documentation>Хрущ июньский</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130034">
+                <xs:annotation>
+                    <xs:documentation>Хрущ июльский</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130035">
+                <xs:annotation>
+                    <xs:documentation>Медведка обыкновенная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130036">
+                <xs:annotation>
+                    <xs:documentation>Побеговьюн зимующий</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130037">
+                <xs:annotation>
+                    <xs:documentation>Побеговьюн летний</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130038">
+                <xs:annotation>
+                    <xs:documentation>Лубоед сосновый большой</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130039">
+                <xs:annotation>
+                    <xs:documentation>Лубоед сосновый малый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130040">
+                <xs:annotation>
+                    <xs:documentation>Долгоносик сосновый большой</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130041">
+                <xs:annotation>
+                    <xs:documentation>Усач черный еловый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130042">
+                <xs:annotation>
+                    <xs:documentation>Клоп сосновый подкорный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130043">
+                <xs:annotation>
+                    <xs:documentation>Короед типограф</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130045">
+                <xs:annotation>
+                    <xs:documentation>Хрущ серый волосатый (волосистый)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130047">
+                <xs:annotation>
+                    <xs:documentation>Корнегрыз обыкновенный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130048">
+                <xs:annotation>
+                    <xs:documentation>Медведка одношипная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130049">
+                <xs:annotation>
+                    <xs:documentation>Медведка восточная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130064">
+                <xs:annotation>
+                    <xs:documentation>Стволовые вредители</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130089">
+                <xs:annotation>
+                    <xs:documentation>Рагий ребристый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130142">
+                <xs:annotation>
+                    <xs:documentation>Совка восклицательная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130143">
+                <xs:annotation>
+                    <xs:documentation>Совка ипсилон</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130146">
+                <xs:annotation>
+                    <xs:documentation>Совка С-черное</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130148">
+                <xs:annotation>
+                    <xs:documentation>Совка озимая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130197">
+                <xs:annotation>
+                    <xs:documentation>Листовертка еловая шишковая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130198">
+                <xs:annotation>
+                    <xs:documentation>Листовертка лиственничная лубоедная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130199">
+                <xs:annotation>
+                    <xs:documentation>Листовертка сосновая черная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130221">
+                <xs:annotation>
+                    <xs:documentation>Моль дубовая побеговая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130257">
+                <xs:annotation>
+                    <xs:documentation>Пилильщик ивовый ягодный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130279">
+                <xs:annotation>
+                    <xs:documentation>Хермес зеленый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130280">
+                <xs:annotation>
+                    <xs:documentation>Хермес сибирский кедровый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130281">
+                <xs:annotation>
+                    <xs:documentation>Хермес еловый желтый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130282">
+                <xs:annotation>
+                    <xs:documentation>Хермес елово-пихтовый бурый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130283">
+                <xs:annotation>
+                    <xs:documentation>Хермес елово-лиственничный ранний</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130284">
+                <xs:annotation>
+                    <xs:documentation>Хермес дубовый черный (северный)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130290">
+                <xs:annotation>
+                    <xs:documentation>Хермес елово-лиственничный поздний</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130291">
+                <xs:annotation>
+                    <xs:documentation>Хермес пихтово-еловый кавказский</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130303">
+                <xs:annotation>
+                    <xs:documentation>Трубковерт многоядный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130304">
+                <xs:annotation>
+                    <xs:documentation>Трубковерт осиновый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130305">
+                <xs:annotation>
+                    <xs:documentation>Скрытнохоботник ольховый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130306">
+                <xs:annotation>
+                    <xs:documentation>Трубковерт дубовый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130307">
+                <xs:annotation>
+                    <xs:documentation>Трубковерт березовый черный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130308">
+                <xs:annotation>
+                    <xs:documentation>Хермес еловый ранний</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130310">
+                <xs:annotation>
+                    <xs:documentation>Хермес еловый поздний</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130312">
+                <xs:annotation>
+                    <xs:documentation>Хермес сосновый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130318">
+                <xs:annotation>
+                    <xs:documentation>Хермес лиственничный зеленый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130322">
+                <xs:annotation>
+                    <xs:documentation>Побеговьюн почковый (хвоевертка срединной почки)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130323">
+                <xs:annotation>
+                    <xs:documentation>Побеговьюн-смолевщик</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130328">
+                <xs:annotation>
+                    <xs:documentation>Щитовка яблоневая запятовидная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130329">
+                <xs:annotation>
+                    <xs:documentation>Щитовка ивовая европейская</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130330">
+                <xs:annotation>
+                    <xs:documentation>Цикадка-меткальфа (белая)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130334">
+                <xs:annotation>
+                    <xs:documentation>Ложнощитовка акациевая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130347">
+                <xs:annotation>
+                    <xs:documentation>Орехотворка яблоковидная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130348">
+                <xs:annotation>
+                    <xs:documentation>Орехотворка корневая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130349">
+                <xs:annotation>
+                    <xs:documentation>Орехотворка шаровидная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130351">
+                <xs:annotation>
+                    <xs:documentation>Орехотворка устрицевидная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130352">
+                <xs:annotation>
+                    <xs:documentation>Орехотворка шишковидная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130353">
+                <xs:annotation>
+                    <xs:documentation>Орехотворка нумизматическая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130354">
+                <xs:annotation>
+                    <xs:documentation>Орехотворка виноградообразная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130355">
+                <xs:annotation>
+                    <xs:documentation>Орехотворка Майра</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130365">
+                <xs:annotation>
+                    <xs:documentation>Галлица лиственничная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130366">
+                <xs:annotation>
+                    <xs:documentation>Галлица розовидная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130367">
+                <xs:annotation>
+                    <xs:documentation>Галлица осиновая двусторонняя</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130368">
+                <xs:annotation>
+                    <xs:documentation>Галлица осиновая тонкостенная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130369">
+                <xs:annotation>
+                    <xs:documentation>Галлица белоакациевая листовая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130375">
+                <xs:annotation>
+                    <xs:documentation>Пяденица шишковая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130379">
+                <xs:annotation>
+                    <xs:documentation>Плодожорка желудевая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130380">
+                <xs:annotation>
+                    <xs:documentation>Плодожорка орешниковая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130381">
+                <xs:annotation>
+                    <xs:documentation>Плодожорка буковая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130382">
+                <xs:annotation>
+                    <xs:documentation>Плодожорка яблонная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130384">
+                <xs:annotation>
+                    <xs:documentation>Побеговьюн шишковый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130392">
+                <xs:annotation>
+                    <xs:documentation>Семяед арчовый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130393">
+                <xs:annotation>
+                    <xs:documentation>Семяед фисташковый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130394">
+                <xs:annotation>
+                    <xs:documentation>Семяед лиственничный черный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130395">
+                <xs:annotation>
+                    <xs:documentation>Семяед еловый короткохвостый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130404">
+                <xs:annotation>
+                    <xs:documentation>Пестрокрылка арчовая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130406">
+                <xs:annotation>
+                    <xs:documentation>Муха лиственничная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130408">
+                <xs:annotation>
+                    <xs:documentation>Муха-лонхеида пихтовая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130409">
+                <xs:annotation>
+                    <xs:documentation>Журчалка черная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130413">
+                <xs:annotation>
+                    <xs:documentation>Долгоносик орешниковый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130414">
+                <xs:annotation>
+                    <xs:documentation>Смолевка сосновая шишковая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130442">
+                <xs:annotation>
+                    <xs:documentation>Огневка шишковая хвойная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130453">
+                <xs:annotation>
+                    <xs:documentation>Цикадка желтая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130472">
+                <xs:annotation>
+                    <xs:documentation>Муха облепиховая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130480">
+                <xs:annotation>
+                    <xs:documentation>Листовёртка можжевеловая заболонная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130491">
+                <xs:annotation>
+                    <xs:documentation>Кобылка египетская</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130495">
+                <xs:annotation>
+                    <xs:documentation>Корнегрыз Комарова</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130500">
+                <xs:annotation>
+                    <xs:documentation>Хрущик садовый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130501">
+                <xs:annotation>
+                    <xs:documentation>Хрущик рыжий ночной</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130502">
+                <xs:annotation>
+                    <xs:documentation>Щелкун посевной степной</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130503">
+                <xs:annotation>
+                    <xs:documentation>Щелкун посевной малый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130505">
+                <xs:annotation>
+                    <xs:documentation>Короед хвойный сахалинский</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130506">
+                <xs:annotation>
+                    <xs:documentation>Лесовик восточный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130507">
+                <xs:annotation>
+                    <xs:documentation>Полиграф еловый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130508">
+                <xs:annotation>
+                    <xs:documentation>Щелкун посевной полосатый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130509">
+                <xs:annotation>
+                    <xs:documentation>Щелкун широкий</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130510">
+                <xs:annotation>
+                    <xs:documentation>Гравер гольцовый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130511">
+                <xs:annotation>
+                    <xs:documentation>Щелкун серый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130512">
+                <xs:annotation>
+                    <xs:documentation>Гравер Спесивцева</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130513">
+                <xs:annotation>
+                    <xs:documentation>Лубоед еловый дальневосточный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130514">
+                <xs:annotation>
+                    <xs:documentation>Короед шестизубчатый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130515">
+                <xs:annotation>
+                    <xs:documentation>Короед вершинный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130516">
+                <xs:annotation>
+                    <xs:documentation>Гравер западный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130517">
+                <xs:annotation>
+                    <xs:documentation>Короед двузубый (короед двузубчатый)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130518">
+                <xs:annotation>
+                    <xs:documentation>Короед четырехзубчатый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130519">
+                <xs:annotation>
+                    <xs:documentation>Древесинник полосатый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130520">
+                <xs:annotation>
+                    <xs:documentation>Короед крючкозубый восточный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130521">
+                <xs:annotation>
+                    <xs:documentation>Древесинник дубовый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130522">
+                <xs:annotation>
+                    <xs:documentation>Микрограф обыкновенный (общественный)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130523">
+                <xs:annotation>
+                    <xs:documentation>Гравер сибирский</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130524">
+                <xs:annotation>
+                    <xs:documentation>Короед-двойник</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130525">
+                <xs:annotation>
+                    <xs:documentation>Короед продолговатый (лиственничный большой)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130526">
+                <xs:annotation>
+                    <xs:documentation>Лубоед фиолетовый (малый еловый)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130527">
+                <xs:annotation>
+                    <xs:documentation>Лубоед еловый большой</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130529">
+                <xs:annotation>
+                    <xs:documentation>Короед гравер (гравер обыкновенный)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130530">
+                <xs:annotation>
+                    <xs:documentation>Полиграф пушистый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130531">
+                <xs:annotation>
+                    <xs:documentation>Полиграф белопихтовый (уссурийский)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130532">
+                <xs:annotation>
+                    <xs:documentation>Лесовик еловый большой</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130533">
+                <xs:annotation>
+                    <xs:documentation>Микрограф сосновый уссурийский</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130535">
+                <xs:annotation>
+                    <xs:documentation>Короед непарный западный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130536">
+                <xs:annotation>
+                    <xs:documentation>Заболонник березовый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130537">
+                <xs:annotation>
+                    <xs:documentation>Заболонник дубовый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130538">
+                <xs:annotation>
+                    <xs:documentation>Лубоед ясеневый пестрый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130539">
+                <xs:annotation>
+                    <xs:documentation>Корнежил черный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130540">
+                <xs:annotation>
+                    <xs:documentation>Корнежил еловый малый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130541">
+                <xs:annotation>
+                    <xs:documentation>Короед-крошка сосновый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130542">
+                <xs:annotation>
+                    <xs:documentation>Древесинник многоядный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130543">
+                <xs:annotation>
+                    <xs:documentation>Крифал японский</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130545">
+                <xs:annotation>
+                    <xs:documentation>Короед непарный дубовый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130546">
+                <xs:annotation>
+                    <xs:documentation>Короед непарный многоядный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130547">
+                <xs:annotation>
+                    <xs:documentation>Лубоед пальцеходный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130548">
+                <xs:annotation>
+                    <xs:documentation>Короед пожарищ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130549">
+                <xs:annotation>
+                    <xs:documentation>Лесовик байкальский</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130550">
+                <xs:annotation>
+                    <xs:documentation>Корнежил еловый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130551">
+                <xs:annotation>
+                    <xs:documentation>Короед-крошка еловый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130552">
+                <xs:annotation>
+                    <xs:documentation>Крифал еловый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130553">
+                <xs:annotation>
+                    <xs:documentation>Крифал западный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130554">
+                <xs:annotation>
+                    <xs:documentation>Лубоед щетинистый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130555">
+                <xs:annotation>
+                    <xs:documentation>Крифал широкий (лиственничный)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130556">
+                <xs:annotation>
+                    <xs:documentation>Лесовик таежный, или короед-гектограф</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130557">
+                <xs:annotation>
+                    <xs:documentation>Короед многоходный (союзный)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130559">
+                <xs:annotation>
+                    <xs:documentation>Заболонник струйчатый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130560">
+                <xs:annotation>
+                    <xs:documentation>Заболонник-разрушитель</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130562">
+                <xs:annotation>
+                    <xs:documentation>Лубоед сосновый волосатый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130563">
+                <xs:annotation>
+                    <xs:documentation>Лубоед хвойный рыже-бурый (лубоед рыже-бурый, лубоед большой кедровый)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130564">
+                <xs:annotation>
+                    <xs:documentation>Лубоед арчовый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130566">
+                <xs:annotation>
+                    <xs:documentation>Заболонник морщинистый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130568">
+                <xs:annotation>
+                    <xs:documentation>Лубоед фисташковый большой</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130569">
+                <xs:annotation>
+                    <xs:documentation>Лубоед фисташковый малый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130572">
+                <xs:annotation>
+                    <xs:documentation>Полиграф изящный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130573">
+                <xs:annotation>
+                    <xs:documentation>Полиграф еловый большой</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130574">
+                <xs:annotation>
+                    <xs:documentation>Полиграф еловый малый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130575">
+                <xs:annotation>
+                    <xs:documentation>Короед-крошка хвойный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130576">
+                <xs:annotation>
+                    <xs:documentation>Крифал таежный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130577">
+                <xs:annotation>
+                    <xs:documentation>Лесовик пихтовый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130579">
+                <xs:annotation>
+                    <xs:documentation>Гравер байкальский</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130580">
+                <xs:annotation>
+                    <xs:documentation>Заболонник Моравица</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130582">
+                <xs:annotation>
+                    <xs:documentation>Заболонник струйчатый восточный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130583">
+                <xs:annotation>
+                    <xs:documentation>Заболонник ильмовый западный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130584">
+                <xs:annotation>
+                    <xs:documentation>Заболонник-пигмей</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130586">
+                <xs:annotation>
+                    <xs:documentation>Лубоед кедровый малый (уссурийский кедровый)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130587">
+                <xs:annotation>
+                    <xs:documentation>Лубоед хвойный уссурийский (лубоед чёрно-бурый уссурийский, лубоед средний кедровый)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130588">
+                <xs:annotation>
+                    <xs:documentation>Лубоед кедровый дальневосточный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130592">
+                <xs:annotation>
+                    <xs:documentation>Заболонник Кирша</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130594">
+                <xs:annotation>
+                    <xs:documentation>Лубоед вязовый (ильмовый)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130595">
+                <xs:annotation>
+                    <xs:documentation>Корнежил узкий (украинский)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130596">
+                <xs:annotation>
+                    <xs:documentation>Крифал среднеазиатский</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130599">
+                <xs:annotation>
+                    <xs:documentation>Заболонник фруктовый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130600">
+                <xs:annotation>
+                    <xs:documentation>Короед ивовый (крифал ивовый)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130602">
+                <xs:annotation>
+                    <xs:documentation>Усач лептура зеленая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130607">
+                <xs:annotation>
+                    <xs:documentation>Усач юдолия хвойная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130609">
+                <xs:annotation>
+                    <xs:documentation>Усач акмеопс большой зеленоволосистый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130611">
+                <xs:annotation>
+                    <xs:documentation>Усач черный сосновый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130612">
+                <xs:annotation>
+                    <xs:documentation>Усач серый длинноусый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130614">
+                <xs:annotation>
+                    <xs:documentation>Усач комлевой короткоусый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130615">
+                <xs:annotation>
+                    <xs:documentation>Усач комлевой бурый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130616">
+                <xs:annotation>
+                    <xs:documentation>Рагий чернопятнистый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130617">
+                <xs:annotation>
+                    <xs:documentation>Усач глазчатый желтопятнистый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130618">
+                <xs:annotation>
+                    <xs:documentation>Скрипун мраморный (узорчатый)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130619">
+                <xs:annotation>
+                    <xs:documentation>Усач дубовый малый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130620">
+                <xs:annotation>
+                    <xs:documentation>Клит многоядный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130621">
+                <xs:annotation>
+                    <xs:documentation>Усач дубовый поперечнополосатый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130622">
+                <xs:annotation>
+                    <xs:documentation>Усач ивовый комлевой (усач-толстяк) (ивовый толстяк, или ивовый корневой усач)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130624">
+                <xs:annotation>
+                    <xs:documentation>Усач глазчатый долгоносиковидный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130625">
+                <xs:annotation>
+                    <xs:documentation>Усач сосновых вершин</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130628">
+                <xs:annotation>
+                    <xs:documentation>Усач черный малый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130629">
+                <xs:annotation>
+                    <xs:documentation>Усач еловый блестящегрудый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130630">
+                <xs:annotation>
+                    <xs:documentation>Усач арчовый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130631">
+                <xs:annotation>
+                    <xs:documentation>Усач арчовый рыжий</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130632">
+                <xs:annotation>
+                    <xs:documentation>Усач лиственничный алтайский</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130633">
+                <xs:annotation>
+                    <xs:documentation>Усач еловый матовогрудый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130635">
+                <xs:annotation>
+                    <xs:documentation>Усач городской (узбекский)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130637">
+                <xs:annotation>
+                    <xs:documentation>Усач осиновый (Cерый осиновый клит)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130638">
+                <xs:annotation>
+                    <xs:documentation>Скрипун осиновый большой</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130640">
+                <xs:annotation>
+                    <xs:documentation>Усач черный ребристый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130641">
+                <xs:annotation>
+                    <xs:documentation>Усач тонкоусый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130642">
+                <xs:annotation>
+                    <xs:documentation>Усач Радде (дубовый восточноазиатский)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130643">
+                <xs:annotation>
+                    <xs:documentation>Усач еловый коротконадкрылый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130644">
+                <xs:annotation>
+                    <xs:documentation>Усач плоский фиолетовый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130645">
+                <xs:annotation>
+                    <xs:documentation>Усач черный крапчатый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130646">
+                <xs:annotation>
+                    <xs:documentation>Усач черный бархатнопятнистый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130647">
+                <xs:annotation>
+                    <xs:documentation>Усач серый длинноусый сибирский</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130648">
+                <xs:annotation>
+                    <xs:documentation>Усач серый длинноусый малый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130650">
+                <xs:annotation>
+                    <xs:documentation>Усач плоский бронзовый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130651">
+                <xs:annotation>
+                    <xs:documentation>Усачик кленовый серый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130652">
+                <xs:annotation>
+                    <xs:documentation>Усач дубовый большой</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130653">
+                <xs:annotation>
+                    <xs:documentation>Усач тополевый малый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130654">
+                <xs:annotation>
+                    <xs:documentation>Усач булавобедрый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130656">
+                <xs:annotation>
+                    <xs:documentation>Клит ариетоидный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130657">
+                <xs:annotation>
+                    <xs:documentation>Усачик соснового сухостоя</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130658">
+                <xs:annotation>
+                    <xs:documentation>Клит изменчивый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130660">
+                <xs:annotation>
+                    <xs:documentation>Усач мускусный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130661">
+                <xs:annotation>
+                    <xs:documentation>Усач альпийский</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130662">
+                <xs:annotation>
+                    <xs:documentation>Усач кленовый малый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130663">
+                <xs:annotation>
+                    <xs:documentation>Усач дубовый красный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130664">
+                <xs:annotation>
+                    <xs:documentation>Усач каштановый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130665">
+                <xs:annotation>
+                    <xs:documentation>Усач ивовый красногрудый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130666">
+                <xs:annotation>
+                    <xs:documentation>Скрипун глазчатый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130668">
+                <xs:annotation>
+                    <xs:documentation>Усач ивовый пестрый (клит пестрый)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130669">
+                <xs:annotation>
+                    <xs:documentation>Усач дубовый осовидный (дубовый перевязанный)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130671">
+                <xs:annotation>
+                    <xs:documentation>Златка златоямчатая амурская</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130672">
+                <xs:annotation>
+                    <xs:documentation>Златка узкотелая зеленая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130673">
+                <xs:annotation>
+                    <xs:documentation>Златка шеститочечная большая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130674">
+                <xs:annotation>
+                    <xs:documentation>Златка четырехточечная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130675">
+                <xs:annotation>
+                    <xs:documentation>Златка сосновая синяя</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130676">
+                <xs:annotation>
+                    <xs:documentation>Златка узкотелая двухпятнистая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130677">
+                <xs:annotation>
+                    <xs:documentation>Златка кипарисовая радужная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130680">
+                <xs:annotation>
+                    <xs:documentation>Златка бронзовая дубовая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130681">
+                <xs:annotation>
+                    <xs:documentation>Златка узкотелая дубовая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130682">
+                <xs:annotation>
+                    <xs:documentation>Златка узкотелая дубовая малая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130683">
+                <xs:annotation>
+                    <xs:documentation>Златка узкотелая удлиненная (златка удлиненная дубовая)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130684">
+                <xs:annotation>
+                    <xs:documentation>Златка узкотелая дубовая зубчатая (шелковистая)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130685">
+                <xs:annotation>
+                    <xs:documentation>Златка сосновая большая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130686">
+                <xs:annotation>
+                    <xs:documentation>Златка пожарищ</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130687">
+                <xs:annotation>
+                    <xs:documentation>Златка дымчатая (черная плодовая)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130688">
+                <xs:annotation>
+                    <xs:documentation>Златка миндальная малая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130689">
+                <xs:annotation>
+                    <xs:documentation>Златка арчовая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130691">
+                <xs:annotation>
+                    <xs:documentation>Златка ореховая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130693">
+                <xs:annotation>
+                    <xs:documentation>Златка лиственничная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130694">
+                <xs:annotation>
+                    <xs:documentation>Златка хвойная таежная (еловая бронзовая)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130698">
+                <xs:annotation>
+                    <xs:documentation>Златка бронзовая хвойная (сибирская хвойная)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130699">
+                <xs:annotation>
+                    <xs:documentation>Златка бронзовая ребристая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130700">
+                <xs:annotation>
+                    <xs:documentation>Златка сетчатая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130701">
+                <xs:annotation>
+                    <xs:documentation>Златка златоямчатая дальневосточная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130702">
+                <xs:annotation>
+                    <xs:documentation>Златка узкотелая темная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130703">
+                <xs:annotation>
+                    <xs:documentation>Златка хвойная обыкновенная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130704">
+                <xs:annotation>
+                    <xs:documentation>Златка березовая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130705">
+                <xs:annotation>
+                    <xs:documentation>Златка хвойная пятнистая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130706">
+                <xs:annotation>
+                    <xs:documentation>Златка тополевая большая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130707">
+                <xs:annotation>
+                    <xs:documentation>Златка осиновая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130708">
+                <xs:annotation>
+                    <xs:documentation>Златка тополевая пятнистая малая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130709">
+                <xs:annotation>
+                    <xs:documentation>Златка дубовая узкотелая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130712">
+                <xs:annotation>
+                    <xs:documentation>Златка ильмовая золотистая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130713">
+                <xs:annotation>
+                    <xs:documentation>Дицерка кавказская</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130715">
+                <xs:annotation>
+                    <xs:documentation>Златка узкотелая осиновая шестипятнистая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130717">
+                <xs:annotation>
+                    <xs:documentation>Златка ильмовая голубовато-зеленая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130718">
+                <xs:annotation>
+                    <xs:documentation>Златка черная (черно-плодовая)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130719">
+                <xs:annotation>
+                    <xs:documentation>Златка дубовая цельногрудая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130721">
+                <xs:annotation>
+                    <xs:documentation>Смолевка сосновая стволовая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130722">
+                <xs:annotation>
+                    <xs:documentation>Смолевка вершинная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130725">
+                <xs:annotation>
+                    <xs:documentation>Долгоносик сосновый малый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130727">
+                <xs:annotation>
+                    <xs:documentation>Долгоносик синий сосновый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130729">
+                <xs:annotation>
+                    <xs:documentation>Долгоносик прикорневой кедровый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130730">
+                <xs:annotation>
+                    <xs:documentation>Смолевка черная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130731">
+                <xs:annotation>
+                    <xs:documentation>Смолевка кедровая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130732">
+                <xs:annotation>
+                    <xs:documentation>Смолевка пихтовая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130734">
+                <xs:annotation>
+                    <xs:documentation>Смолевка еловая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130735">
+                <xs:annotation>
+                    <xs:documentation>Долгоносик пестрый большой (большой сосновый)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130736">
+                <xs:annotation>
+                    <xs:documentation>Смолевка хвойная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130737">
+                <xs:annotation>
+                    <xs:documentation>Долгоносик прикорневой еловый (белоточечный, большой лиственничный)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130738">
+                <xs:annotation>
+                    <xs:documentation>Точильщик-шишкоед еловый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130739">
+                <xs:annotation>
+                    <xs:documentation>Смолевка лиственничная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130740">
+                <xs:annotation>
+                    <xs:documentation>Долгоносик дубовый плосконосый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130741">
+                <xs:annotation>
+                    <xs:documentation>Коротконосик сосновый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130742">
+                <xs:annotation>
+                    <xs:documentation>Долгоносик дубовый (желудевый)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130743">
+                <xs:annotation>
+                    <xs:documentation>Долгоносик ильмовый (вязовый)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130744">
+                <xs:annotation>
+                    <xs:documentation>Зерновка гледичиевая малая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130745">
+                <xs:annotation>
+                    <xs:documentation>Сверлило хвойное</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130752">
+                <xs:annotation>
+                    <xs:documentation>Рогохвост-гигант</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130753">
+                <xs:annotation>
+                    <xs:documentation>Рогохвост кедровый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130754">
+                <xs:annotation>
+                    <xs:documentation>Рогохвост синий</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130755">
+                <xs:annotation>
+                    <xs:documentation>Рогохвост березовый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130757">
+                <xs:annotation>
+                    <xs:documentation>Рогохвост длинношеий</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130758">
+                <xs:annotation>
+                    <xs:documentation>Рогохвост черный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130759">
+                <xs:annotation>
+                    <xs:documentation>Рогохвост ольховый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130760">
+                <xs:annotation>
+                    <xs:documentation>Рогохвост фиолетовый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130765">
+                <xs:annotation>
+                    <xs:documentation>Огневка сосновая стволовая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130771">
+                <xs:annotation>
+                    <xs:documentation>Стеклянница тополевая большая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130772">
+                <xs:annotation>
+                    <xs:documentation>Стеклянница темнокрылая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130773">
+                <xs:annotation>
+                    <xs:documentation>Стеклянница дубовая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130775">
+                <xs:annotation>
+                    <xs:documentation>Стеклянница осовидная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130777">
+                <xs:annotation>
+                    <xs:documentation>Древесница въедливая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130778">
+                <xs:annotation>
+                    <xs:documentation>Древоточец пахучий ивовый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130779">
+                <xs:annotation>
+                    <xs:documentation>Древоточец осиновый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130927">
+                <xs:annotation>
+                    <xs:documentation>Галлица гледичиевая листовая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130928">
+                <xs:annotation>
+                    <xs:documentation>Златка ясеневая изумрудная узкотелая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130929">
+                <xs:annotation>
+                    <xs:documentation>Орехотворка каштановая восточная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130930">
+                <xs:annotation>
+                    <xs:documentation>Сосновый семенной клоп</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130933">
+                <xs:annotation>
+                    <xs:documentation>Моль минирующая каштановая (Минер охридский)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130936">
+                <xs:annotation>
+                    <xs:documentation>Клоп-кружевница дубовая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130937">
+                <xs:annotation>
+                    <xs:documentation>Клоп платановая коритуха</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130952">
+                <xs:annotation>
+                    <xs:documentation>Клещик галловый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130953">
+                <xs:annotation>
+                    <xs:documentation>Клещик березовый войлочный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130954">
+                <xs:annotation>
+                    <xs:documentation>Клещик ивовый галловый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130955">
+                <xs:annotation>
+                    <xs:documentation>Клещик березовый мешетчатый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130957">
+                <xs:annotation>
+                    <xs:documentation>Клещик ольховый войлочный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130973">
+                <xs:annotation>
+                    <xs:documentation>Скосарь черный малый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38130999">
+                <xs:annotation>
+                    <xs:documentation>Долгоносик яйцевидный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140051">
+                <xs:annotation>
+                    <xs:documentation>Губка еловая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140052">
+                <xs:annotation>
+                    <xs:documentation>Губка сосновая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140053">
+                <xs:annotation>
+                    <xs:documentation>Губка лиственничная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140054">
+                <xs:annotation>
+                    <xs:documentation>Губка дубовая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140055">
+                <xs:annotation>
+                    <xs:documentation>Трутовик настоящий</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140056">
+                <xs:annotation>
+                    <xs:documentation>Трутовик ложный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140057">
+                <xs:annotation>
+                    <xs:documentation>Трутовик окаймленный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140058">
+                <xs:annotation>
+                    <xs:documentation>Трутовик ложный осиновый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140059">
+                <xs:annotation>
+                    <xs:documentation>Трутовик серно-желтый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140060">
+                <xs:annotation>
+                    <xs:documentation>Трутовик ложный дубовый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140061">
+                <xs:annotation>
+                    <xs:documentation>Трутовик шафрановый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140062">
+                <xs:annotation>
+                    <xs:documentation>Трутовик Гартига</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140063">
+                <xs:annotation>
+                    <xs:documentation>Трутовик неровный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140065">
+                <xs:annotation>
+                    <xs:documentation>Рицина волнистая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140066">
+                <xs:annotation>
+                    <xs:documentation>Губка корневая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140067">
+                <xs:annotation>
+                    <xs:documentation>Опенок осенний</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140068">
+                <xs:annotation>
+                    <xs:documentation>Трутовик плоский</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140069">
+                <xs:annotation>
+                    <xs:documentation>Трутовик Швейнитца</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140070">
+                <xs:annotation>
+                    <xs:documentation>Офиостомоз пихтовый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140071">
+                <xs:annotation>
+                    <xs:documentation>Рак смоляной (серянка)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140072">
+                <xs:annotation>
+                    <xs:documentation>Голландская болезнь ильмовых</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140073">
+                <xs:annotation>
+                    <xs:documentation>Рак поперечный дуба</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140074">
+                <xs:annotation>
+                    <xs:documentation>Рак ржавчинный, ведьмины метлы на пихте</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140075">
+                <xs:annotation>
+                    <xs:documentation>Микоз сосудов (трахеомикоз) дуба</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140076">
+                <xs:annotation>
+                    <xs:documentation>Рак черный осины и тополя</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140077">
+                <xs:annotation>
+                    <xs:documentation>Тиростромоз липы и вяза</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140080">
+                <xs:annotation>
+                    <xs:documentation>Рак опухолевидный сосны</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140081">
+                <xs:annotation>
+                    <xs:documentation>Ржавчина хвои ели</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140082">
+                <xs:annotation>
+                    <xs:documentation>Ржавчина хвои пихты</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140083">
+                <xs:annotation>
+                    <xs:documentation>Ржавчина хвои сосны</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140084">
+                <xs:annotation>
+                    <xs:documentation>Мучнистая роса дуба</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140085">
+                <xs:annotation>
+                    <xs:documentation>Шютте снежное сосны</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140086">
+                <xs:annotation>
+                    <xs:documentation>Стволовые гнили</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140087">
+                <xs:annotation>
+                    <xs:documentation>Некрозно-раковые заболевания</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140088">
+                <xs:annotation>
+                    <xs:documentation>Сосновый вертун</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140090">
+                <xs:annotation>
+                    <xs:documentation>Бактериальные заболевания</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140091">
+                <xs:annotation>
+                    <xs:documentation>Бактериальная водянка березы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140092">
+                <xs:annotation>
+                    <xs:documentation>Шютте обыкновенное ели</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140093">
+                <xs:annotation>
+                    <xs:documentation>Микосферелла лиственницы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140094">
+                <xs:annotation>
+                    <xs:documentation>Шютте обыкновенное сосны</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140096">
+                <xs:annotation>
+                    <xs:documentation>Корневые гнили</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140097">
+                <xs:annotation>
+                    <xs:documentation>Бактериальная водянка пихты, бука</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140101">
+                <xs:annotation>
+                    <xs:documentation>Трутовик дуболюбивый (дубовый)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140110">
+                <xs:annotation>
+                    <xs:documentation>Трутовик дубравный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140790">
+                <xs:annotation>
+                    <xs:documentation>Пятнистость бурая вяза</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140791">
+                <xs:annotation>
+                    <xs:documentation>Пятнистость пепельная листьев клена</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140793">
+                <xs:annotation>
+                    <xs:documentation>Пятнистость (септориоз) коричневая березы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140794">
+                <xs:annotation>
+                    <xs:documentation>Пятнистость черная березы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140795">
+                <xs:annotation>
+                    <xs:documentation>Пятнистость серая вяза</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140796">
+                <xs:annotation>
+                    <xs:documentation>Пятнистость черная вяза</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140799">
+                <xs:annotation>
+                    <xs:documentation>Пятнистость черная ивы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140801">
+                <xs:annotation>
+                    <xs:documentation>Губка березовая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140802">
+                <xs:annotation>
+                    <xs:documentation>Трутовик арчовый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140803">
+                <xs:annotation>
+                    <xs:documentation>Пятнистость (септориоз) белая тополя</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140804">
+                <xs:annotation>
+                    <xs:documentation>Вешенка обыкновенная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140805">
+                <xs:annotation>
+                    <xs:documentation>Трутовик еловый комлевой</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140806">
+                <xs:annotation>
+                    <xs:documentation>Шютте лиственницы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140807">
+                <xs:annotation>
+                    <xs:documentation>Трутовик кленовый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140808">
+                <xs:annotation>
+                    <xs:documentation>Трутовик Литшауэра</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140809">
+                <xs:annotation>
+                    <xs:documentation>Пятнистость бурая березы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140810">
+                <xs:annotation>
+                    <xs:documentation>Трутовик ложный ольховый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140811">
+                <xs:annotation>
+                    <xs:documentation>Губка тонкокожистая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140812">
+                <xs:annotation>
+                    <xs:documentation>Трутовик лучистый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140813">
+                <xs:annotation>
+                    <xs:documentation>Трутовик северный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140814">
+                <xs:annotation>
+                    <xs:documentation>Церрена одноцветная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140815">
+                <xs:annotation>
+                    <xs:documentation>Трутовик чешуйчатый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140816">
+                <xs:annotation>
+                    <xs:documentation>Трутовик щетинистоволосый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140817">
+                <xs:annotation>
+                    <xs:documentation>Стереум еловый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140818">
+                <xs:annotation>
+                    <xs:documentation>Стереум жестковолосистый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140819">
+                <xs:annotation>
+                    <xs:documentation>Стереум дубовый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140820">
+                <xs:annotation>
+                    <xs:documentation>Чага, трутовик скошенный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140821">
+                <xs:annotation>
+                    <xs:documentation>Чешуйчатка жирная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140822">
+                <xs:annotation>
+                    <xs:documentation>Трутовик сливовый (косточковых)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140823">
+                <xs:annotation>
+                    <xs:documentation>Сердцевинная гниль стволов фисташки</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140824">
+                <xs:annotation>
+                    <xs:documentation>Пятнистость фиолетовая липы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140825">
+                <xs:annotation>
+                    <xs:documentation>Пятнистость бурая дуба</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140826">
+                <xs:annotation>
+                    <xs:documentation>Трутовик душистый (пахучий)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140827">
+                <xs:annotation>
+                    <xs:documentation>Трутовик смолистый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140828">
+                <xs:annotation>
+                    <xs:documentation>Губка кожистая шерстистая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140829">
+                <xs:annotation>
+                    <xs:documentation>Губка зональная кожистая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140830">
+                <xs:annotation>
+                    <xs:documentation>Пятнистость бурая листьев дуба</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140831">
+                <xs:annotation>
+                    <xs:documentation>Дальдиния черная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140832">
+                <xs:annotation>
+                    <xs:documentation>Некроз черый цитоспоровый тополя</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140833">
+                <xs:annotation>
+                    <xs:documentation>Трутовик розовый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140834">
+                <xs:annotation>
+                    <xs:documentation>Столбовой гриб</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140835">
+                <xs:annotation>
+                    <xs:documentation>Губка еловая кожистая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140836">
+                <xs:annotation>
+                    <xs:documentation>Шпальный гриб</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140837">
+                <xs:annotation>
+                    <xs:documentation>Стереум кровяно-красный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140838">
+                <xs:annotation>
+                    <xs:documentation>Трутовик темно-поровый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140839">
+                <xs:annotation>
+                    <xs:documentation>Кориолелл грязный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140840">
+                <xs:annotation>
+                    <xs:documentation>Отмирание, почернение почек ели (мегалосепториоз)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140841">
+                <xs:annotation>
+                    <xs:documentation>Некроз вальзелловый дуба</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140842">
+                <xs:annotation>
+                    <xs:documentation>Некроз виллеминиевый дуба</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140843">
+                <xs:annotation>
+                    <xs:documentation>Некроз гистерографиевый ясеня</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140844">
+                <xs:annotation>
+                    <xs:documentation>Некроз клитрисовый дуба</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140845">
+                <xs:annotation>
+                    <xs:documentation>Некроз нектриевый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140846">
+                <xs:annotation>
+                    <xs:documentation>Некроз нуммуляровый дуба</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140847">
+                <xs:annotation>
+                    <xs:documentation>Некроз массариевый клена остролистного</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140848">
+                <xs:annotation>
+                    <xs:documentation>Некроз бурый цитоспоровый тополя</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140849">
+                <xs:annotation>
+                    <xs:documentation>Некроз ценангиевый сосны</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140850">
+                <xs:annotation>
+                    <xs:documentation>Устулина обыкновенная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140851">
+                <xs:annotation>
+                    <xs:documentation>Некроз березы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140852">
+                <xs:annotation>
+                    <xs:documentation>Засыхание ветвей и побегов дуба</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140853">
+                <xs:annotation>
+                    <xs:documentation>Некроз коры ветвей сосны</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140854">
+                <xs:annotation>
+                    <xs:documentation>Рак биаторелловый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140855">
+                <xs:annotation>
+                    <xs:documentation>Ржавчина  рожковидная  буковых</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140856">
+                <xs:annotation>
+                    <xs:documentation>Рак ветвей (перетяжки побегов) пихты</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140857">
+                <xs:annotation>
+                    <xs:documentation>Рак ступенчатый лиственницы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140858">
+                <xs:annotation>
+                    <xs:documentation>Цилиндроспориум хвойный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140859">
+                <xs:annotation>
+                    <xs:documentation>Рак ступенчатый лиственных пород</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140860">
+                <xs:annotation>
+                    <xs:documentation>Побурение хвои ели</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140861">
+                <xs:annotation>
+                    <xs:documentation>Рак эндоксилиновый ясеня</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140862">
+                <xs:annotation>
+                    <xs:documentation>Рак эндотиевый каштана</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140863">
+                <xs:annotation>
+                    <xs:documentation>Рак ржавчинный (пузырчатая ржавчина) кедра</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140864">
+                <xs:annotation>
+                    <xs:documentation>Чернь пихты</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140865">
+                <xs:annotation>
+                    <xs:documentation>Пятнистость темно-бурая липы (церкоспороз)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140866">
+                <xs:annotation>
+                    <xs:documentation>Пятнистость кремовая липы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140867">
+                <xs:annotation>
+                    <xs:documentation>Некроз коры березы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140868">
+                <xs:annotation>
+                    <xs:documentation>Ведьмины метлы на сосне</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140869">
+                <xs:annotation>
+                    <xs:documentation>Ржавчина побегов и хвои, ведьмины метлы ели</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140870">
+                <xs:annotation>
+                    <xs:documentation>Мучнистая роса березы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140871">
+                <xs:annotation>
+                    <xs:documentation>Краснуха листьев миндаля</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140872">
+                <xs:annotation>
+                    <xs:documentation>Марсониоз, бурая пятнистость ореха грецкого</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140873">
+                <xs:annotation>
+                    <xs:documentation>Мучнистая роса бука</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140874">
+                <xs:annotation>
+                    <xs:documentation>Мучнистая роса ивы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140875">
+                <xs:annotation>
+                    <xs:documentation>Мучнистая роса клена</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140876">
+                <xs:annotation>
+                    <xs:documentation>Волютелла самшитовая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140877">
+                <xs:annotation>
+                    <xs:documentation>Кластероспориоз косточковых</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140878">
+                <xs:annotation>
+                    <xs:documentation>Пятнистость листьев березы (парша)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140879">
+                <xs:annotation>
+                    <xs:documentation>Парша тополя и осины</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140880">
+                <xs:annotation>
+                    <xs:documentation>Парша яблони</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140881">
+                <xs:annotation>
+                    <xs:documentation>Пятнистость бурая тополя (марссониоз)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140882">
+                <xs:annotation>
+                    <xs:documentation>Пятнистость серая осины (глеоспориоз)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140883">
+                <xs:annotation>
+                    <xs:documentation>Пятнистость бурая липы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140884">
+                <xs:annotation>
+                    <xs:documentation>Пятнистость черная клена</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140885">
+                <xs:annotation>
+                    <xs:documentation>Ржавчина лиственницы и березы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140886">
+                <xs:annotation>
+                    <xs:documentation>Пятнистость бурая жимолости</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140887">
+                <xs:annotation>
+                    <xs:documentation>Пятнистость бурая ивы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140888">
+                <xs:annotation>
+                    <xs:documentation>Ржавчина золотистая (северная) хвои ели</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140889">
+                <xs:annotation>
+                    <xs:documentation>Ведьмины метлы на березе</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140890">
+                <xs:annotation>
+                    <xs:documentation>Пятнистость кольцевая сирени</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140891">
+                <xs:annotation>
+                    <xs:documentation>Шютте низинное ели</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140892">
+                <xs:annotation>
+                    <xs:documentation>Пятнистость бурая, церкоспороз шиповника</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140893">
+                <xs:annotation>
+                    <xs:documentation>Шютте пихты</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140894">
+                <xs:annotation>
+                    <xs:documentation>Побурение хвои пихты</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140895">
+                <xs:annotation>
+                    <xs:documentation>Шютте сосны серое</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140896">
+                <xs:annotation>
+                    <xs:documentation>Вертициллезное усыхание (вилт) клена</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140897">
+                <xs:annotation>
+                    <xs:documentation>Омела белая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140898">
+                <xs:annotation>
+                    <xs:documentation>Деформация плодов (кармашки) косточковых пород</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140899">
+                <xs:annotation>
+                    <xs:documentation>Склерофомоз сосны</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140900">
+                <xs:annotation>
+                    <xs:documentation>Печеночница обыкновенная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140902">
+                <xs:annotation>
+                    <xs:documentation>Парша и засыхание побегов ивы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140903">
+                <xs:annotation>
+                    <xs:documentation>Омела можжевеловая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140904">
+                <xs:annotation>
+                    <xs:documentation>Бактериальный рак ясеня</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140909">
+                <xs:annotation>
+                    <xs:documentation>Полегание инфекционное сеянцев, фузариоз</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140911">
+                <xs:annotation>
+                    <xs:documentation>Рак цитофомовый ясеня</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140912">
+                <xs:annotation>
+                    <xs:documentation>Эндомикоз плодов облепихи</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140913">
+                <xs:annotation>
+                    <xs:documentation>Рак побеговый пихты</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140914">
+                <xs:annotation>
+                    <xs:documentation>Рак побеговый сосны (склеродерриоз)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140915">
+                <xs:annotation>
+                    <xs:documentation>Рак мокрый язвенно-сосудистый тополя</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140916">
+                <xs:annotation>
+                    <xs:documentation>Трутовик лакированный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140917">
+                <xs:annotation>
+                    <xs:documentation>Ржавчина самшита</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140918">
+                <xs:annotation>
+                    <xs:documentation>Опенок зимний, зимний гриб</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140919">
+                <xs:annotation>
+                    <xs:documentation>Климакодон северный (ежовик северный)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140920">
+                <xs:annotation>
+                    <xs:documentation>Некроз дискоспориевый (дотхициевый) тополя</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140921">
+                <xs:annotation>
+                    <xs:documentation>Рак бугорчатый сосны</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140922">
+                <xs:annotation>
+                    <xs:documentation>Рак язвенный сосны</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140931">
+                <xs:annotation>
+                    <xs:documentation>Сферопсисовый некроз (диплодиоз) хвойных пород</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140932">
+                <xs:annotation>
+                    <xs:documentation>Дотистрома (заболевание хвойных пород)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140934">
+                <xs:annotation>
+                    <xs:documentation>Ржавчина миндаля</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140935">
+                <xs:annotation>
+                    <xs:documentation>Цилиндроспориоз фисташки</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140986">
+                <xs:annotation>
+                    <xs:documentation>Ржавчина пузырчатая можжевельника обыкновенного</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140987">
+                <xs:annotation>
+                    <xs:documentation>Чернильная болезнь</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140988">
+                <xs:annotation>
+                    <xs:documentation>Шютте можжевельника</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140989">
+                <xs:annotation>
+                    <xs:documentation>Рак раневой (язвенный) ели</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140990">
+                <xs:annotation>
+                    <xs:documentation>Пожелтение хвои сосны</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140991">
+                <xs:annotation>
+                    <xs:documentation>Вирусное заболевание ясеня</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="38140995">
+                <xs:annotation>
+                    <xs:documentation>Ржавчина листьев тополя</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

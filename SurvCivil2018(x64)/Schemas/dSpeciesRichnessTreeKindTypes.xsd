@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/speciesRichnessTree/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/speciesRichnessTree/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:simpleType name="SpeciesRichnessTreeKindEType">
+		<xs:annotation>
+			<xs:documentation>Видовое богатство древесных пород</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="fourToFiveBreeds">
+				<xs:annotation>
+					<xs:documentation>4 - 5 пород</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="moreThanFiveBreeds">
+				<xs:annotation>
+					<xs:documentation>Более 5 пород</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="noTreeStand">
+				<xs:annotation>
+					<xs:documentation>Древостоя нет</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="oneBreed">
+				<xs:annotation>
+					<xs:documentation>Одна порода</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="treeDiameterMoreTwelveCmAbsent">
+				<xs:annotation>
+					<xs:documentation>Деревья с диаметром &gt;12 см отсутствуют</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="twoToThreeBreeds">
+				<xs:annotation>
+					<xs:documentation>2 - 3 породы</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/locationTreeDamage/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/locationTreeDamage/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:simpleType name="LocationTreeDamageKindEType">
+		<xs:annotation>
+			<xs:documentation>Место повреждения дерева</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="kornevayaSheyka">
+				<xs:annotation>
+					<xs:documentation>Корневая шейка</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="korni">
+				<xs:annotation>
+					<xs:documentation>Корни</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="kronaVetvi">
+				<xs:annotation>
+					<xs:documentation>Крона (ветви)</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="nizhnyayaChastStvola">
+				<xs:annotation>
+					<xs:documentation>Нижняя часть ствола</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="srednyayaChastStvola">
+				<xs:annotation>
+					<xs:documentation>Средняя часть ствола</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="vershina">
+				<xs:annotation>
+					<xs:documentation>Вершина</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

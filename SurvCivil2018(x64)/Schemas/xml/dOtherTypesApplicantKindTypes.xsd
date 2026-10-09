@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+           targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/otherTypesApplicant/types/2.0.0"
+           xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/otherTypesApplicant/types/2.0.0">
+
+    <xs:simpleType name="OtherTypesApplicantKindEType">
+        <xs:annotation>
+            <xs:documentation>Иные типы заявителей при запросе сведений из ГЛР</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="temporaryAdministrationOfAFina">
+                <xs:annotation>
+                    <xs:documentation>Временная администрация финансовой организации в отношении имущества, принадлежащего (принадлежавшего) соответствующему должнику</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="aPersonWhoHasReceivedAPowerOfA">
+                <xs:annotation>
+                    <xs:documentation>Лицо, получившее доверенность от арбитражного управляющего, конкурсного управляющего в деле о банкротстве в отношении имущества, принадлежащего (принадлежавшего) соответствующему должнику</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="deputyChairmanOfTheControlAndA">
+                <xs:annotation>
+                    <xs:documentation>Заместитель председателя контрольно-счетных органов субъектов Российской Федерации</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="chairmanOfTheControlAndAccount">
+                <xs:annotation>
+                    <xs:documentation>Председатель контрольно-счетных органов субъектов Российской Федерации</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="commissionerUnderThePresidentO">
+                <xs:annotation>
+                    <xs:documentation>Уполномоченный при Президенте Российской Федерации по защите прав предпринимателей</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="federalGovernmentOfficial">
+                <xs:annotation>
+                    <xs:documentation>Должностное лицо федерального государственного органа</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="theHeadOrOtherAuthorizedPerson">
+                <xs:annotation>
+                    <xs:documentation>Руководитель или иной уполномоченный в соответствии с законодательством Российской Федерации территориального органа и подведомственной организации федерального органа исполнительной власти</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="headOrOtherAuthorizedRF">
+                <xs:annotation>
+                    <xs:documentation>Руководитель или иной уполномоченный в соответствии  с законодательством Российской Федерации органа государственной власти субъектов Российской Федерации</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="lawEnforcementOfficer">
+                <xs:annotation>
+                    <xs:documentation>Должностное лицо правоохранительного органа</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="headOrOtherAuthorizedGoverAgen">
+                <xs:annotation>
+                    <xs:documentation>Руководитель или иной уполномоченный в соответствии  с законодательством Российской Федерации федерального государственного органа</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="aPersonWhoIsAMemberOfTheDebtor">
+                <xs:annotation>
+                    <xs:documentation>Лицо, входящее в состав органов управления должника</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="theHeadOrOtherBodyAuthorizedIn">
+                <xs:annotation>
+                    <xs:documentation>Руководитель или иной уполномоченный в соответствии с законодательством Российской Федерации органа, осуществляющего в установленном федеральным законом порядке оперативно-розыскную деятельность по основаниям, установленным статьей 7 Федерального закона от 12 августа 1995 года № 144-ФЗ «Об оперативно-розыскной деятельности»</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="commissionerForTheProtectionOf">
+                <xs:annotation>
+                    <xs:documentation>Уполномоченный по защите прав предпринимателей в субъектах Российской Федерации</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="commissionerForHumanRightsInRF">
+                <xs:annotation>
+                    <xs:documentation>Уполномоченный по правам человека в Российской Федерации</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="chairmanOfTheCourtOrJudgeInCha">
+                <xs:annotation>
+                    <xs:documentation>Председатель суда или судья, в производстве которого находится уголовное, гражданское или административное дело</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="deputyChairmanOfTheAccountsCha">
+                <xs:annotation>
+                    <xs:documentation>Заместитель председателя Счетной палаты Российской Федерации</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="theHeadOrOtherBodyOfTheProsecu">
+                <xs:annotation>
+                    <xs:documentation>Руководитель или иной уполномоченный в соответствии с законодательством Российской Федерации органа прокуратуры Российской Федерации в целях осуществления надзора за исполнением законодательства Российской Федерации</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="headOrOtherAuthorizedPersonInA">
+                <xs:annotation>
+                    <xs:documentation>Руководитель или иной уполномоченный в соответствии с законодательством Российской Федерации федерального органа исполнительной власти</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="theBailiffWhoIsInChargeOfTheEn">
+                <xs:annotation>
+                    <xs:documentation>Судебный пристав-исполнитель, в производстве которого находится исполнительное производство по соответствующему уголовному, гражданскому или административному делу</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="officialOfTheTerritorialBodyAn">
+                <xs:annotation>
+                    <xs:documentation>Должностное лицо территориального органа и подведомственной организации федерального органа исполнительной власти</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="anOfficial,TheListOfWhichIsDet">
+                <xs:annotation>
+                    <xs:documentation>Должностное лицо, перечень которых определяется указом Президента Российской Федерации, в целях исполнения ими обязанностей по противодействию коррупции</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="officialOfTheFederalExecutiveB">
+                <xs:annotation>
+                    <xs:documentation>Должностное лицо федерального органа исполнительной власти</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="notaryInConnectionWithPerforme">
+                <xs:annotation>
+                    <xs:documentation>Нотариус в связи с совершаемыми нотариальными действиями</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="insolvencyPractitionerInABankr">
+                <xs:annotation>
+                    <xs:documentation>Арбитражный управляющий в деле о банкротстве в отношении имущества, принадлежащего (принадлежавшего) соответствующему должнику</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="localGovernmentOfficial">
+                <xs:annotation>
+                    <xs:documentation>Должностное лицо органа местного самоуправления</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="bankruptcyManagerInABankruptcy">
+                <xs:annotation>
+                    <xs:documentation>Конкурсный управляющий в деле о банкротстве в отношении имущества, принадлежащего (принадлежавшего) соответствующему должнику</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="officialOfAPublicAuthorityOfTh">
+                <xs:annotation>
+                    <xs:documentation>Должностное лицо органа государственной власти субъектов Российской Федерации</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="personControllingTheDebtor">
+                <xs:annotation>
+                    <xs:documentation>Контролирующее должника лицо</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="headOrOtherAuthorizedBodyOfLoc">
+                <xs:annotation>
+                    <xs:documentation>Руководитель или иной уполномоченный в соответствии с законодательством Российской Федерации органа местного самоуправления</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="headOrOtherAuthorizedInAccorda">
+                <xs:annotation>
+                    <xs:documentation>Руководитель или иной уполномоченный в соответствии с законодательством Российской Федерации правоохранительного органа</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="chairmanOfTheAccountsChamberOf">
+                <xs:annotation>
+                    <xs:documentation>Председатель Счетной палаты Российской Федерации</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="auditorOfTheAccountsChamberOfT">
+                <xs:annotation>
+                    <xs:documentation>Аудитор Счетной палаты Российской Федерации</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="anOfficialOfTheProsecutor'SOff">
+                <xs:annotation>
+                    <xs:documentation>Должностное лицо органа прокуратуры Российской Федерации в целях осуществления надзора за исполнением законодательства Российской Федерации</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="commissionerForHumanRightsInTh">
+                <xs:annotation>
+                    <xs:documentation>Уполномоченный по правам человека в субъектах Российской Федерации</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="anOfficialOfABodyCarryingOutOp">
+                <xs:annotation>
+                    <xs:documentation>Должностное лицо органа, осуществляющего в установленном федеральным законом порядке оперативно-розыскную деятельность по основаниям, установленным статьей 7 Федерального закона от 12 августа 1995 года № 144-ФЗ «Об оперативно-розыскной деятельности»</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

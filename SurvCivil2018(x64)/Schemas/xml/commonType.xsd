@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+           targetNamespace="http://rosleshoz.gov.ru/xmlns/commonType/5.0"
+           xmlns:tns="http://rosleshoz.gov.ru/xmlns/commonType/5.0"
+           xmlns:st="http://rosleshoz.gov.ru/fgis-lk/common/simple/types/2.0"
+           xmlns:comR="http://rosleshoz.gov.ru/fgis-lk/common/commonReport/types/2.1"
+           xmlns:purF="http://rosleshoz.gov.ru/fgis-lk/common/enums/purposeForests/types/2.1"
+           xmlns:attach="http://rosleshoz.gov.ru/fgis-lk/common/attachment/types/2.0">
+
+    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/simple/types/2.0" schemaLocation="simpleTypes.xsd"/>
+    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/commonReport/types/2.1" schemaLocation="commonReport.xsd"/>
+    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/attachment/types/2.0" schemaLocation="attachmentTypes.xsd"/>
+    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/purposeForests/types/2.1" schemaLocation="dPurposeForestsKindTypes.xsd"/>
+
+    <xs:complexType name="descriptionPartner">
+        <xs:annotation>
+            <xs:documentation>Организация (физ. лицо, ИП)</xs:documentation>
+        </xs:annotation>
+        <xs:choice>
+            <xs:sequence>
+                <xs:element name="partner" type="comR:ForestUserType">
+                    <xs:annotation>
+                        <xs:documentation>Сведения о контрагенте</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="signerData" type="comR:SignerDataType">
+                    <xs:annotation>
+                        <xs:documentation>Представитель организации</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+            <xs:element name="partnerList">
+                <xs:annotation>
+                    <xs:documentation>Перечень лесопользователей (Постановление Правительства РФ от 13 января 2017 г. N
+                        5)
+                    </xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="row" type="tns:partnerListRow" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:choice>
+    </xs:complexType>
+    <xs:complexType name="partnerListRow">
+        <xs:annotation>
+            <xs:documentation>Организация (физ. лицо, ИП)</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="partner" type="comR:ForestUserType">
+                <xs:annotation>
+                    <xs:documentation>Сведения о контрагенте</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="usageType" type="st:String1000SType">
+                <xs:annotation>
+                    <xs:documentation>Описание видов использования лесов</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="contract" type="comR:ContractType">
+                <xs:annotation>
+                    <xs:documentation>Описание правоустанавливающего документа</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="cadastralNumber" type="st:String255SType">
+                <xs:annotation>
+                    <xs:documentation>Кадастровый номер лесного участка, номер учетной записи в государственном лесном
+                        реестре
+                    </xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="position" type="st:String1000SType">
+                <xs:annotation>
+                    <xs:documentation>Перечень предоставленных кварталов и лесотаксационных выделов</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="usePeriodType">
+        <xs:annotation>
+            <xs:documentation>Описание периода действия проекта</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="perpetual" type="st:BooleanSType">
+                <xs:annotation>
+                    <xs:documentation>Бессрочный</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="amountYears" type="st:PositiveSType">
+                <xs:annotation>
+                    <xs:documentation>Срок использования, лет</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="amountMonths" type="st:PositiveSType">
+                <xs:annotation>
+                    <xs:documentation>Срок использования, месяцев</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="amountDays" type="st:PositiveSType">
+                <xs:annotation>
+                    <xs:documentation>Срок использования, дней</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="contentType">
+        <xs:annotation>
+            <xs:documentation>Текстовое и графическое содержимое раздела</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="description" type="tns:descriptionType"/>
+            <xs:element name="contentBeforeTable">
+                <xs:annotation>
+                    <xs:documentation>Содержимое перед таблицей</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="row" type="tns:contentRow" minOccurs="0" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="contentAfterTable">
+                <xs:annotation>
+                    <xs:documentation>Содержимое после таблицы</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="row" type="tns:contentRow" minOccurs="0" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="descriptionType">
+        <xs:annotation>
+            <xs:documentation>Описание раздела</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="number" type="st:String12SType">
+                <xs:annotation>
+                    <xs:documentation>Номер раздела</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="name" type="st:String1000SType">
+                <xs:annotation>
+                    <xs:documentation>Название раздела</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="contentRow">
+        <xs:annotation>
+            <xs:documentation>Строка контента</xs:documentation>
+        </xs:annotation>
+        <xs:choice>
+            <xs:element name="text" type="st:String4000SType">
+                <xs:annotation>
+                    <xs:documentation>Текстовое содержимое</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="image" type="attach:AttachmentListType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Ссылка на файл</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:choice>
+    </xs:complexType>
+    <xs:complexType name="descriptionSpecialPurposeRow">
+        <xs:sequence>
+            <xs:element name="location" type="comR:Location2Type">
+                <xs:annotation>
+                    <xs:documentation />
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="specialPurpose" type="purF:PurposeForestsKindEType">
+                <xs:annotation>
+                    <xs:documentation>Справочник "Целевое назначение лесов"</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="protectionCategory" type="purF:PurposeForestsKindEType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Справочник "Категории зацитности"</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="totalArea" type="st:PositiveDecimalFourSType">
+                <xs:annotation>
+                    <xs:documentation>Площадь проектируемого лесного участка, га</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

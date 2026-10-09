@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/seasonUse/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/seasonUse/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="SeasonUseKindEType">
+        <xs:annotation>
+            <xs:documentation>Сезонность использования</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="49600001">
+                <xs:annotation>
+                    <xs:documentation>проезжая весной</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="49600002">
+                <xs:annotation>
+                    <xs:documentation>проезжая летом</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="49600003">
+                <xs:annotation>
+                    <xs:documentation>проезжая осенью</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="49600004">
+                <xs:annotation>
+                    <xs:documentation>проезжая зимой</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="49600005">
+                <xs:annotation>
+                    <xs:documentation>круглогодичного действия</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="49600006">
+                <xs:annotation>
+                    <xs:documentation>сезонного действия</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

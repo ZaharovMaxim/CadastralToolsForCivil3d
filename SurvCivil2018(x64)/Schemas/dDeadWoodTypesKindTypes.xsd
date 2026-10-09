@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/deadWoodTypes/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/deadWoodTypes/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:simpleType name="DeadWoodTypesKindEType">
+		<xs:annotation>
+			<xs:documentation>Виды сухостоя</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="staryySukhostoy">
+				<xs:annotation>
+					<xs:documentation>Старый сухостой</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="svezhiySukhostoy">
+				<xs:annotation>
+					<xs:documentation>Свежий сухостой</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="zhivyyeRastushchiyeDerevya">
+				<xs:annotation>
+					<xs:documentation>Живые растущие деревья</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

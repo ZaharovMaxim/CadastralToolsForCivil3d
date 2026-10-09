@@ -1,0 +1,1129 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/typeDamageWeakening/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/typeDamageWeakening/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="TypeDamageWeakeningKindEType">
+        <xs:annotation>
+            <xs:documentation>Причины ослабления, повреждения</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="washoutFloodingUnderTheInflue">
+                <xs:annotation>
+                    <xs:documentation>Смыв, наводнение под воздействием почвенно-климатических факторов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="bacterialDiseases">
+                <xs:annotation>
+                    <xs:documentation>Бактериальные заболевания</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="pineMothDamage">
+                <xs:annotation>
+                    <xs:documentation>Повреждение пяденицей сосновой</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="starSawflyDamage">
+                <xs:annotation>
+                    <xs:documentation>Повреждение пилильщиком-ткачом звёздчатым</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="beddingRaking">
+                <xs:annotation>
+                    <xs:documentation>Сгребание подстилки</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="willowFungusDamage">
+                <xs:annotation>
+                    <xs:documentation>Повреждение волнянкой ивовой</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="agriculturalActivity">
+                <xs:annotation>
+                    <xs:documentation>Сельскохозяйственная деятельность</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="mechanicalDamageToTrunksAnthr">
+                <xs:annotation>
+                    <xs:documentation>Механические повреждения стволов (антропогенные)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="nunSilkwormDamage">
+                <xs:annotation>
+                    <xs:documentation>Повреждение шелкопрядом-монашенкой</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="polyporeFlat">
+                <xs:annotation>
+                    <xs:documentation>Трутовик плоский</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="rootDamage">
+                <xs:annotation>
+                    <xs:documentation>Повреждение корней хрущами</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="damageToTrunksByWildAnimals">
+                <xs:annotation>
+                    <xs:documentation>Повреждение стволов дикими животными</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="drivingAndGrazingLivestock">
+                <xs:annotation>
+                    <xs:documentation>Прогон и пастьба скота</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="beaverDamageToTrunks">
+                <xs:annotation>
+                    <xs:documentation>Повреждение стволов бобром</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="siberianSilkwormDamage">
+                <xs:annotation>
+                    <xs:documentation>Повреждение шелкопрядом сибирским</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="oilSpills">
+                <xs:annotation>
+                    <xs:documentation>Розливы нефти</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="pollutionOfGroundwaterWithIndu">
+                <xs:annotation>
+                    <xs:documentation>Загрязнение грунтовых вод промвыбросами</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="additionalNutritionOfResinousP">
+                <xs:annotation>
+                    <xs:documentation>Дополнительное питание смолевки сосновой шишковой</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="violationOfTheRulesOfAgricultu">
+                <xs:annotation>
+                    <xs:documentation>Нарушение правил агротехники подготовки почв под лесные культуры</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="damageByLuboedPineLarge">
+                <xs:annotation>
+                    <xs:documentation>Повреждение (заселено или отработано) лубоедом сосновым большим</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="ridingFireOver10YearsAgo">
+                <xs:annotation>
+                    <xs:documentation>Верховой пожар более 10 летней давности</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="hawthornLeafwormDamage">
+                <xs:annotation>
+                    <xs:documentation>Повреждение листовёрткой боярышниковой</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="avalanches">
+                <xs:annotation>
+                    <xs:documentation>Лавины</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="spruceNeedleRust">
+                <xs:annotation>
+                    <xs:documentation>Ржавчина хвои ели</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="undergroundFireOfTheCurrentYea">
+                <xs:annotation>
+                    <xs:documentation>Подземный пожар текущего года</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="witchSBrooms">
+                <xs:annotation>
+                    <xs:documentation>Ведьмины мётлы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="aSharpChangeInTheLightRegimeUn">
+                <xs:annotation>
+                    <xs:documentation>Резкое изменение светового режима под воздействием почвенно-климатических факторов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="solidWasteDump">
+                <xs:annotation>
+                    <xs:documentation>Свалка твердых отходов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="damageInhabitedOrWorkedOffBy">
+                <xs:annotation>
+                    <xs:documentation>Повреждение (заселено или отработано) короедом-двойником</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="damageByBigSpruceLuboed">
+                <xs:annotation>
+                    <xs:documentation>Повреждение (заселено или отработано) лубоедом еловым большим</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sustainedHighIntensityGroundF">
+                <xs:annotation>
+                    <xs:documentation>Устойчивый низовой пожар текущего года высокой интенсивности</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="untimelyImplementationOfForest">
+                <xs:annotation>
+                    <xs:documentation>Несвоевременное проведение лесохозяйственных мероприятий</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="additionalFoodForBlackBarbs">
+                <xs:annotation>
+                    <xs:documentation>Дополнительное питание черных усачей</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="violationRulesAgriculturalCare">
+                <xs:annotation>
+                    <xs:documentation>Нарушение правил агротехники ухода</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="gypsyMothDamage">
+                <xs:annotation>
+                    <xs:documentation>Повреждение шелкопрядом непарным</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="pineSawflyDamage">
+                <xs:annotation>
+                    <xs:documentation>Повреждение пилильщиком сосновым обыкновенным</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="ashCancerBacterial">
+                <xs:annotation>
+                    <xs:documentation>Рак ясеня бактериальный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sustainedGroundFire410YAHight">
+                <xs:annotation>
+                    <xs:documentation>Устойчивый низовой пожар 4-10 летней давности высокой интенсивности</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="damageToBranchesByElk">
+                <xs:annotation>
+                    <xs:documentation>Повреждение ветвей лосем</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="larchSponge">
+                <xs:annotation>
+                    <xs:documentation>Губка лиственничная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="mountedFire410YearsAgo">
+                <xs:annotation>
+                    <xs:documentation>Верховой пожар 4-10 летней давности</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="damageFromOakGreenLeafworm">
+                <xs:annotation>
+                    <xs:documentation>Повреждение листовёрткой дубовой зеленой</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="waterloggingOfTheSoilUnderAnth">
+                <xs:annotation>
+                    <xs:documentation>Заболачивание почвы под антропогенным воздействием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="atmosphericPollutionFromVehicl">
+                <xs:annotation>
+                    <xs:documentation>Загрязнение атмосферы выбросами автотранспорта</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="birchSponge">
+                <xs:annotation>
+                    <xs:documentation>Губка березовая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="changesInTheGroundwaterLevelUn">
+                <xs:annotation>
+                    <xs:documentation>Изменение уровня грунтовых вод под воздействием почвенно-климатических факторов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="squeezingTheRoots">
+                <xs:annotation>
+                    <xs:documentation>Выжимание корней</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="impactsOfStrongWindsOfPastYear">
+                <xs:annotation>
+                    <xs:documentation>Воздействия сильных ветров прошлых лет, повлекшие наклон более 10°, изгиб или вывал деревьев</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="impactOfSquallyAndHurricaneWin">
+                <xs:annotation>
+                    <xs:documentation>Воздействия шквалистых и ураганных ветров текущего года, повлекшие слом стволов деревьев</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="damageInhabitedOrWorkedOutBy">
+                <xs:annotation>
+                    <xs:documentation>Повреждение (заселено или отработано) усачом еловым чёрным малым</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="powderyMildewOak">
+                <xs:annotation>
+                    <xs:documentation>Мучнистая роса дуба</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="spruceBudMothDamage">
+                <xs:annotation>
+                    <xs:documentation>Повреждение молью еловой почковой</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="damagePopulatedOrWorkedOffBy">
+                <xs:annotation>
+                    <xs:documentation>Повреждение (заселено или отработано) златкой лиственничной</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="harvestDamage">
+                <xs:annotation>
+                    <xs:documentation>Повреждение при сборе плодов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="damageByBlackPineBardelBeextle">
+                <xs:annotation>
+                    <xs:documentation>Повреждение (заселено или отработано) усачом сосновым черным</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="floodingFromDamConstructionByB">
+                <xs:annotation>
+                    <xs:documentation>Подтопление от строительства плотин бобрами</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="pineRedSawflyDamage">
+                <xs:annotation>
+                    <xs:documentation>Повреждение пилильщиком сосновым рыжим</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sprucePolypore">
+                <xs:annotation>
+                    <xs:documentation>Трутовик еловый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="inconsistencyOfForestCropsWith">
+                <xs:annotation>
+                    <xs:documentation>Несоответствие лесных культур условиям произрастания</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="damageByYellowmouthWeaverSawfl">
+                <xs:annotation>
+                    <xs:documentation>Повреждение пилильщиком-ткачом желторотым</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="mountedFire13YearsAgo">
+                <xs:annotation>
+                    <xs:documentation>Верховой пожар 1-3 летней давности</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="soilSalinization">
+                <xs:annotation>
+                    <xs:documentation>Засоление почвы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="damageByPinePodkornyBug">
+                <xs:annotation>
+                    <xs:documentation>Повреждение (заселено или отработано) клопом сосновым подкорным</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="damageByBarkBeetleTypigrapher">
+                <xs:annotation>
+                    <xs:documentation>Повреждение (заселено или отработано) короедом-типографом</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="damageByLuboedPineSmall">
+                <xs:annotation>
+                    <xs:documentation>Повреждение (заселено или отработано) лубоедом сосновым малым</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="atmosphericPollutionByIndustri">
+                <xs:annotation>
+                    <xs:documentation>Загрязнение атмосферы промышленными выбросами</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="trutovikFalse">
+                <xs:annotation>
+                    <xs:documentation>Трутовик ложный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="goldentailDamage">
+                <xs:annotation>
+                    <xs:documentation>Повреждение златогузкой</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="pineSilkwormDamage">
+                <xs:annotation>
+                    <xs:documentation>Повреждение шелкопрядом сосновым</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="erosionWindWater">
+                <xs:annotation>
+                    <xs:documentation>Эрозия ветровая, водная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="damageToTrunksByPets">
+                <xs:annotation>
+                    <xs:documentation>Повреждение стволов домашними животными</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="spruceCobwebDamage">
+                <xs:annotation>
+                    <xs:documentation>Повреждение листовёрткой еловой паутинной</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="hermesDamage">
+                <xs:annotation>
+                    <xs:documentation>Повреждение хермесами</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="birchMothDamage">
+                <xs:annotation>
+                    <xs:documentation>Повреждение пяденицей-шелкопрядом березовой</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="frosts">
+                <xs:annotation>
+                    <xs:documentation>Морозы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="soilPollutionByIndustrialEmiss">
+                <xs:annotation>
+                    <xs:documentation>Загрязнение почвы промвыбросами, выбросами промышленного животноводства</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="unfavorableGrowingConditions">
+                <xs:annotation>
+                    <xs:documentation>Неблагоприятные условия произрастания</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="rootDamageByWildAnimals">
+                <xs:annotation>
+                    <xs:documentation>Повреждение корней дикими животными</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="runawayGroundFire410YearsAgo">
+                <xs:annotation>
+                    <xs:documentation>Беглый низовой пожар 4-10 летней давности</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="damageByStemPest">
+                <xs:annotation>
+                    <xs:documentation>Повреждение (заселено или отработано) стволовыми вредителями</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="firMothDamage">
+                <xs:annotation>
+                    <xs:documentation>Повреждение пяденицей пихтовой</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="bacterialDiseasesOfBirch">
+                <xs:annotation>
+                    <xs:documentation>Бактериальные заболевания берёзы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="damageByFingerWalkingLiboed">
+                <xs:annotation>
+                    <xs:documentation>Повреждение (заселено или отработано) лубоедом пальцеходным</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="aSharpChangeInTheLightRegimeAs">
+                <xs:annotation>
+                    <xs:documentation>Резкое изменение светового режима в результате антропогенного воздействия</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="ussuriPolygraphDamage">
+                <xs:annotation>
+                    <xs:documentation>Повреждение полиграфом уссурийским</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="honeyAgaric">
+                <xs:annotation>
+                    <xs:documentation>Опенок</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="incorrectThinning">
+                <xs:annotation>
+                    <xs:documentation>Неправильное проведение рубок ухода</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="pineFungusDamage">
+                <xs:annotation>
+                    <xs:documentation>Повреждение волнянкой хвойной</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="soilSiltingUnderTheInfluenceOf">
+                <xs:annotation>
+                    <xs:documentation>Заиление почвы под воздействием почвенно-климатических факторов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="waterloggingOfTheSoilUnderTheI">
+                <xs:annotation>
+                    <xs:documentation>Переувлажнение почвы под воздействием почвенно-климатических факторов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="damageByLeafEatingPests">
+                <xs:annotation>
+                    <xs:documentation>Повреждение листогрызущими вредителями</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="addlNutritOfTheLargePineWeevil">
+                <xs:annotation>
+                    <xs:documentation>Дополнительное питание долгоносика соснового большого</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="theImpactOfSquallyAndHurricane">
+                <xs:annotation>
+                    <xs:documentation>Воздействия шквалистых и ураганных ветров прошлых лет, повлекшие слом стволов деревьев</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="otherTypesOfEconomicActivity">
+                <xs:annotation>
+                    <xs:documentation>Прочие виды хозяйственной деятельности</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="silkwormDamage">
+                <xs:annotation>
+                    <xs:documentation>Повреждение шелкопрядом кольчатым</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="damageByGreeNarrowBodied">
+                <xs:annotation>
+                    <xs:documentation>Повреждение (заселено или отработано) зеленой узкотелой златкой</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="extractiveIndustry">
+                <xs:annotation>
+                    <xs:documentation>Добывающая промышленность</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="mothDamageOakShoot">
+                <xs:annotation>
+                    <xs:documentation>Повреждение молью дубовой побеговой</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="soilSiltingUnderAnthropogenicI">
+                <xs:annotation>
+                    <xs:documentation>Заиление почвы под антропогенным воздействием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="damageByBarkBeetleOblong">
+                <xs:annotation>
+                    <xs:documentation>Повреждение (заселено или отработано) короедом продолговатым</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="ridingFireOfTheCurrentYear">
+                <xs:annotation>
+                    <xs:documentation>Верховой пожар текущего года</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="drought">
+                <xs:annotation>
+                    <xs:documentation>Засуха</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="rootDamageByPets">
+                <xs:annotation>
+                    <xs:documentation>Повреждение корней домашними животными</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="lateSpringFrosts">
+                <xs:annotation>
+                    <xs:documentation>Поздневесенние заморозки</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="poorFit">
+                <xs:annotation>
+                    <xs:documentation>Некачественная посадка</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="spruceSponge">
+                <xs:annotation>
+                    <xs:documentation>Губка еловая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="mycosisVascular">
+                <xs:annotation>
+                    <xs:documentation>Микоз сосудистый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="polyporeHartig">
+                <xs:annotation>
+                    <xs:documentation>Трутовик Гартига</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="cytophomaCancer">
+                <xs:annotation>
+                    <xs:documentation>Рак цитофомовый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="winterMothDamage">
+                <xs:annotation>
+                    <xs:documentation>Повреждение пяденицей зимней</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sustainedGroundFire410YearsAg">
+                <xs:annotation>
+                    <xs:documentation>Устойчивый низовой пожар 4-10 летней давности низкой интенсивности</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="pestDamage">
+                <xs:annotation>
+                    <xs:documentation>Повреждение хвоегрызущими вредителями</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="nutPickingDamage">
+                <xs:annotation>
+                    <xs:documentation>Повреждение при сборе орехов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="industryAndTransport">
+                <xs:annotation>
+                    <xs:documentation>Промышленность и транспорт</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="mechanicalDamageToCrownsAsARes">
+                <xs:annotation>
+                    <xs:documentation>Механические повреждения крон в результате антропогенного воздействия</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="resinCancer">
+                <xs:annotation>
+                    <xs:documentation>Рак смоляной</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="runawayGroundFire13YearsAgo">
+                <xs:annotation>
+                    <xs:documentation>Беглый низовой пожар 1-3 летней давности</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="silverHoleDamage">
+                <xs:annotation>
+                    <xs:documentation>Повреждение лункой серебристой</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="weather">
+                <xs:annotation>
+                    <xs:documentation>Погодные условия</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sustainedGroundFire13YAHight">
+                <xs:annotation>
+                    <xs:documentation>Устойчивый низовой пожар 1-3 летней давности высокой интенсивности</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="additionalNutritionOfTheLargeP">
+                <xs:annotation>
+                    <xs:documentation>Дополнительное питание лубоеда соснового большого</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="runawayGroundFireOfTheCurrentY">
+                <xs:annotation>
+                    <xs:documentation>Беглый низовой пожар текущего года</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="trutovikFalseAspen">
+                <xs:annotation>
+                    <xs:documentation>Трутовик ложный осиновый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="effectsOfSnowGravityThatCaused">
+                <xs:annotation>
+                    <xs:documentation>Воздействия тяжести снега, повлекшие сильный изгиб или слом стволов деревьев в текущем году</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="bacterialDropsy">
+                <xs:annotation>
+                    <xs:documentation>Бактериальная водянка</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="closeOccurrenceOfRootImpermea">
+                <xs:annotation>
+                    <xs:documentation>Близкое залегание корненепроницаемых горизонтов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="spongeRoot">
+                <xs:annotation>
+                    <xs:documentation>Губка корневая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="pineCutwormDamage">
+                <xs:annotation>
+                    <xs:documentation>Повреждение совкой сосновой</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sustainableGroundFireOfTheCurr">
+                <xs:annotation>
+                    <xs:documentation>Устойчивый низовой пожар текущего года средней интенсивности</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="undergroundFireOver10YearsAgo">
+                <xs:annotation>
+                    <xs:documentation>Подземный пожар более 10 летней давности</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="damageByBlackFirBardelBeextle">
+                <xs:annotation>
+                    <xs:documentation>Повреждение (заселено или отработано) усачом пихтовым чёрным большим</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sustainableGroundFire410Years">
+                <xs:annotation>
+                    <xs:documentation>Устойчивый низовой пожар 4-10 летней давности средней интенсивности</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="effectsOfSnowGravityResultingI">
+                <xs:annotation>
+                    <xs:documentation>Воздействия тяжести снега, повлекшие сильный изгиб или слом стволов деревьев в прошлые годы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="leafBeetleDamage">
+                <xs:annotation>
+                    <xs:documentation>Повреждение листоедами</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="spongeOak">
+                <xs:annotation>
+                    <xs:documentation>Губка дубовая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="oakCancerTransverse">
+                <xs:annotation>
+                    <xs:documentation>Рак дуба поперечный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="impactOfStrongWindsOfTheCurren">
+                <xs:annotation>
+                    <xs:documentation>Воздействия сильных ветров текущего года, повлекшие наклон более 10°, изгиб или вывал деревьев</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="blackPoplarAndAspenCancer">
+                <xs:annotation>
+                    <xs:documentation>Рак тополя и осины черный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="washoutFloodingUnderAnthropog">
+                <xs:annotation>
+                    <xs:documentation>Смыв, наводнение под антропогенным воздействием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="damageByZlatkraPineBlue">
+                <xs:annotation>
+                    <xs:documentation>Повреждение (заселено или отработано) златкой сосновой синей</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="undergroundFire13YearsAgo">
+                <xs:annotation>
+                    <xs:documentation>Подземный пожар 1-3 летней давности</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sustainedLowIntensityGroundFi">
+                <xs:annotation>
+                    <xs:documentation>Устойчивый низовой пожар текущего года низкой интенсивности</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="damageByLuboedFluffy">
+                <xs:annotation>
+                    <xs:documentation>Повреждение (заселено или отработано) лубоедом (полиграфом) пушистым</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="poorQualityPlantingMaterial">
+                <xs:annotation>
+                    <xs:documentation>Некачественный посадочный материал</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="unauthorizedFelling">
+                <xs:annotation>
+                    <xs:documentation>Самовольные рубки</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="mooseTrunkDamage">
+                <xs:annotation>
+                    <xs:documentation>Повреждение стволов лосем</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="damageByBrichSapwood">
+                <xs:annotation>
+                    <xs:documentation>Повреждение (заселено или отработано) заболонником берёзовым</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="oshmyg">
+                <xs:annotation>
+                    <xs:documentation>Ошмыг</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="incorrectSelectionOfSpeciesFor">
+                <xs:annotation>
+                    <xs:documentation>Неправильный подбор пород для лесных культур</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="forestryAndTimberIndustryActiv">
+                <xs:annotation>
+                    <xs:documentation>Лесохозяйственная и лесопромышленная деятельность</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="damageByYellowSpotBarbelBeetle">
+                <xs:annotation>
+                    <xs:documentation>Повреждение (заселено или отработано) усачом глазчатым желтопятнистым</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="damageToTheKidneysFruitsAndSe">
+                <xs:annotation>
+                    <xs:documentation>Поражение почек, плодов и семян болезнями</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="necroticCancerOfTheBranches">
+                <xs:annotation>
+                    <xs:documentation>Некрозно-раковые заболевания ветвей</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="poorSoils">
+                <xs:annotation>
+                    <xs:documentation>Бедные почвы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="wrongTechnologyForCreatingFore">
+                <xs:annotation>
+                    <xs:documentation>Неправильная технология создания лесных культур</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="stemRot">
+                <xs:annotation>
+                    <xs:documentation>Гнили стволовые</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sustainedGroundFire13YearsAgo">
+                <xs:annotation>
+                    <xs:documentation>Устойчивый низовой пожар 1-3 летней давности низкой интенсивности</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="landslides">
+                <xs:annotation>
+                    <xs:documentation>Оползни</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="polyporeSulfurYellow">
+                <xs:annotation>
+                    <xs:documentation>Трутовик серно-желтый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="lightningDamage">
+                <xs:annotation>
+                    <xs:documentation>Повреждения молниями</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="interspecificCompetition">
+                <xs:annotation>
+                    <xs:documentation>Межвидовая конкуренция</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="naturalDisasters">
+                <xs:annotation>
+                    <xs:documentation>Стихийные бедствия</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="chestnutCancerEndotium">
+                <xs:annotation>
+                    <xs:documentation>Рак каштана эндотиевый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="noCare">
+                <xs:annotation>
+                    <xs:documentation>Отсутствие уходов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="mothDamageSkinned">
+                <xs:annotation>
+                    <xs:documentation>Повреждение пяденицей-обдирало</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="damageByLeafwormLarchSulfur">
+                <xs:annotation>
+                    <xs:documentation>Повреждение листовёрткой лиственничной серой</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="diseasesOfNeedlesLeaves">
+                <xs:annotation>
+                    <xs:documentation>Болезни хвои (листьев)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="firNeedleRust">
+                <xs:annotation>
+                    <xs:documentation>Ржавчина хвои пихты</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="damageByBarkBeetleSixToothed">
+                <xs:annotation>
+                    <xs:documentation>Повреждение (заселено или отработано) короедом шестизубчатым</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="damageToBudsFruitsAndSeedsByI">
+                <xs:annotation>
+                    <xs:documentation>Повреждение почек, плодов и семян насекомыми</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="rustyFirCancer">
+                <xs:annotation>
+                    <xs:documentation>Рак пихты ржавчинный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="minerDamageFrize">
+                <xs:annotation>
+                    <xs:documentation>Повреждение минером Фризе</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="trampling">
+                <xs:annotation>
+                    <xs:documentation>Вытаптывание</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="trutovikBordered">
+                <xs:annotation>
+                    <xs:documentation>Трутовик окаймленный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="violationOfTheTechnologyOfTapp">
+                <xs:annotation>
+                    <xs:documentation>Нарушение технологии подсочки</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="steadyGroundFire13YearsOldOfM">
+                <xs:annotation>
+                    <xs:documentation>Устойчивый низовой пожар 1-3 летней давности средней интенсивности</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="pineSponge">
+                <xs:annotation>
+                    <xs:documentation>Губка сосновая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="pineSpinner">
+                <xs:annotation>
+                    <xs:documentation>Вертун сосновый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="necroticCancerOfTheTrunks">
+                <xs:annotation>
+                    <xs:documentation>Некрозно-раковые заболевания стволов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="recreationalLoad">
+                <xs:annotation>
+                    <xs:documentation>Рекреационная нагрузка</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sustainedGroundFireOver10Years">
+                <xs:annotation>
+                    <xs:documentation>Устойчивый низовой пожар более 10 летней давности</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="pollutionOfTheForestWithHouseh">
+                <xs:annotation>
+                    <xs:documentation>Загрязнение леса бытовыми отходами</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="mistletoe">
+                <xs:annotation>
+                    <xs:documentation>Омела</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="highTemperatures">
+                <xs:annotation>
+                    <xs:documentation>Высокие температуры</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="violationOfTheTimingOfTapping">
+                <xs:annotation>
+                    <xs:documentation>Нарушение сроков подсочки</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="trutovikSchweinitz">
+                <xs:annotation>
+                    <xs:documentation>Трутовик Швейнитца</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="mycosisVascularOak">
+                <xs:annotation>
+                    <xs:documentation>Микоз сосудистый дуба</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="biotorellaCancer">
+                <xs:annotation>
+                    <xs:documentation>Рак биаторелловый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="undergroundFire410YearsAgo">
+                <xs:annotation>
+                    <xs:documentation>Подземный пожар 4-10 летней давности</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="intraspecificCompetition">
+                <xs:annotation>
+                    <xs:documentation>Внутривидовая конкуренция</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="schütteSnowy">
+                <xs:annotation>
+                    <xs:documentation>Шютте снежное</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="shading">
+                <xs:annotation>
+                    <xs:documentation>Затенение</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="changeGroundWaterLvAnthrop">
+                <xs:annotation>
+                    <xs:documentation>Изменение уровня грунтовых вод под антропогенным воздействием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="soilWaterloggingUnderAnthropog">
+                <xs:annotation>
+                    <xs:documentation>Переувлажнение почвы под антропогенным воздействием</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="trutovikReal">
+                <xs:annotation>
+                    <xs:documentation>Трутовик настоящий</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="dutchElmDisease">
+                <xs:annotation>
+                    <xs:documentation>Голландская болезнь ильмовых</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="redHeadedSawflyDamage">
+                <xs:annotation>
+                    <xs:documentation>Повреждение пилильщиком-ткачом красноголовым</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="mechanicalDamageToCrownsUnderT">
+                <xs:annotation>
+                    <xs:documentation>Механическое Повреждение крон под воздействием почвенно-климатических факторов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="rootDamageByRodents">
+                <xs:annotation>
+                    <xs:documentation>Повреждение корней грызунами</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="waterloggingOfClimaticFactors">
+                <xs:annotation>
+                    <xs:documentation>Заболачивание почвы под воздействием почвенно-климатических факторов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="damageToBranchesByWildAnimals">
+                <xs:annotation>
+                    <xs:documentation>Повреждение ветвей дикими животными</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="rootRot">
+                <xs:annotation>
+                    <xs:documentation>Гнили корневые</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="roeDeerTrunkDamage">
+                <xs:annotation>
+                    <xs:documentation>Повреждение стволов косулей</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="exceedingThePermissibleWidthOf">
+                <xs:annotation>
+                    <xs:documentation>Превышение допустимой ширины карровых ремней</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="accumulationOfNaturalWasteInIn">
+                <xs:annotation>
+                    <xs:documentation>Накопление естественного отпада в недоступных участках</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="largeLarchSawflyDamage">
+                <xs:annotation>
+                    <xs:documentation>Повреждение пилильщиком лиственничным большим</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="winterShootDamage">
+                <xs:annotation>
+                    <xs:documentation>Повреждение побеговьюном зимним</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="damageByLargePineWeevil">
+                <xs:annotation>
+                    <xs:documentation>Повреждение (заселено или отработано) долгоносиком сосновым большим</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sandSpotting">
+                <xs:annotation>
+                    <xs:documentation>Засекание песком</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="necklace">
+                <xs:annotation>
+                    <xs:documentation>Ожеледь</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="tyrostromosis">
+                <xs:annotation>
+                    <xs:documentation>Тиростромоз</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="hail">
+                <xs:annotation>
+                    <xs:documentation>Град</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="damageToBudsFruitsAndSeedsByW">
+                <xs:annotation>
+                    <xs:documentation>Повреждение почек, плодов и семян дикими животными</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="summerShootDamage">
+                <xs:annotation>
+                    <xs:documentation>Повреждение побеговьюном летним</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="rustOfPineNeedles">
+                <xs:annotation>
+                    <xs:documentation>Ржавчина хвои сосны</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="okhlest">
+                <xs:annotation>
+                    <xs:documentation>Охлест</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="damageToRoeDeerBranches">
+                <xs:annotation>
+                    <xs:documentation>Повреждение ветвей косулей</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="freezing">
+                <xs:annotation>
+                    <xs:documentation>Вымерзание</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="aspenMothDamage">
+                <xs:annotation>
+                    <xs:documentation>Повреждение молью осиновой белой</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="additionalNutritionForCarnivor">
+                <xs:annotation>
+                    <xs:documentation>Дополнительное питание хрущей</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="oakFleaDamage">
+                <xs:annotation>
+                    <xs:documentation>Повреждение блошаком дубовым</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="reclamation">
+                <xs:annotation>
+                    <xs:documentation>Мелиорация</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="constructionActivity">
+                <xs:annotation>
+                    <xs:documentation>Строительная деятельность</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="trutovikFalseOakAndOakLoving">
+                <xs:annotation>
+                    <xs:documentation>Трутовик ложный дубовый и дуболюбивый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

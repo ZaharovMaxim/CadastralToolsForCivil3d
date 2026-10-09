@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/carbonStock/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/carbonStock/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="CarbonStockKindEType">
+        <xs:annotation>
+            <xs:documentation>Запас углерода</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="averageCarbonStockInTreeBiomas">
+                <xs:annotation>
+                    <xs:documentation>Cредний запас углерода в биомассе деревьев, валеже и пнях и хворосте</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="carbonStockInBiomassBrushwood">
+                <xs:annotation>
+                    <xs:documentation>Запас углерода в биомассе хвороста</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="carbonStockInBiomassLifeTrees">
+                <xs:annotation>
+                    <xs:documentation>Запас углерода в биомассе живых деревьев (диаметр менее 6 см.)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="carbonStockInBiomassOfLivingD">
+                <xs:annotation>
+                    <xs:documentation>Запас углерода в биомассе живых стоящих деревьев (Д1,3 6 см и более)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="carbonStockInBiomassOfLivingSt">
+                <xs:annotation>
+                    <xs:documentation>Запас углерода в биомассе живых стоящих деревьев</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="carbonStockInDeadWoodBiomass">
+                <xs:annotation>
+                    <xs:documentation>Запас углерода в биомассе сухостоя</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="carbonStockInDeadWoodBiomassD">
+                <xs:annotation>
+                    <xs:documentation>Запас углерода в биомассе сухостоя (Д1,3 6 см и более)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="carbonStockInStumpBiomass">
+                <xs:annotation>
+                    <xs:documentation>Запас углерода в биомассе пней</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="carbonStockInValegBiomass">
+                <xs:annotation>
+                    <xs:documentation>Запас углерода в биомассе валежа</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="carbonStockTreeBiomassDeadwood">
+                <xs:annotation>
+                    <xs:documentation>Запас углерода в биомассе деревьев, валеже и пнях</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

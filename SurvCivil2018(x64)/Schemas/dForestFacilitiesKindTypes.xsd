@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/forestFacilities/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/forestFacilities/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="ForestFacilitiesKindEType">
+        <xs:annotation>
+            <xs:documentation>Объекты лесной инфраструктуры</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="30101001">
+                <xs:annotation>
+                    <xs:documentation>бревноспуск</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101002">
+                <xs:annotation>
+                    <xs:documentation>водопроводная сеть</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101003">
+                <xs:annotation>
+                    <xs:documentation>водохранилище с плотинами из грунтовых материалов с железобетонными водопропускными сооружениями</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101004">
+                <xs:annotation>
+                    <xs:documentation>Временное сооружение для бытовых нужд</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101005">
+                <xs:annotation>
+                    <xs:documentation>Временное сооружение, необходимое для заготовки пищевых лесных ресурсов, сбора лекарственных растений (в том числе сушилка, грибоварня, склад)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101006">
+                <xs:annotation>
+                    <xs:documentation>вышка-ретранслятор для обеспечения ведомственной радио- и телефонной связи</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101007">
+                <xs:annotation>
+                    <xs:documentation>гараж для лесохозяйственных и лесозаготовительных машин</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101008">
+                <xs:annotation>
+                    <xs:documentation>гараж для патрульной и лесопожарной техники</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101009">
+                <xs:annotation>
+                    <xs:documentation>дамба обвалованная земляная или каменной наброски</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101010">
+                <xs:annotation>
+                    <xs:documentation>Демонстрационный вальерный комплекс</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101011">
+                <xs:annotation>
+                    <xs:documentation>дорога железная узкой колеи</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101012">
+                <xs:annotation>
+                    <xs:documentation>здание пожарно-химической станции</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101013">
+                <xs:annotation>
+                    <xs:documentation>здание производственно-административное лесного хозяйства (лесных питомников)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101014">
+                <xs:annotation>
+                    <xs:documentation>здание, сооружение, площадка для размещения оборудования и проведения научно-исследовательских работ, в том числе объекты капитального строительства, предусмотренные законодательством об особо охраняемых природных территориях</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101015">
+                <xs:annotation>
+                    <xs:documentation>здание, сооружение, площадка для размещения оборудования и проведения научно-исследовательских работ, кроме объектов капитального строительства (лабораторное здание, метеоплощадка, устройство для изучения гидрологического режима, природы леса)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101016">
+                <xs:annotation>
+                    <xs:documentation>изгородь</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101017">
+                <xs:annotation>
+                    <xs:documentation>иные объекты обеспечения рекреационного использования, осуществляемого в соответствии с законодательством Российской Федерации об особо охраняемых природных территориях</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101018">
+                <xs:annotation>
+                    <xs:documentation>канал магистральный оросительных систем</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101019">
+                <xs:annotation>
+                    <xs:documentation>квартальная просека</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101020">
+                <xs:annotation>
+                    <xs:documentation>коллектор, селевое русло, другие каналы, включая сооружения на трассах, мосты, переходы, перепады, быстротоки</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101021">
+                <xs:annotation>
+                    <xs:documentation>колодец</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101022">
+                <xs:annotation>
+                    <xs:documentation>колодец шахтный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101023">
+                <xs:annotation>
+                    <xs:documentation>комплекс селекционный с теплицами</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101024">
+                <xs:annotation>
+                    <xs:documentation>комплекс электроснабжения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101025">
+                <xs:annotation>
+                    <xs:documentation>котельная отопительная и отопительно-производственная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101026">
+                <xs:annotation>
+                    <xs:documentation>лагерь для крупного рогатого скота летний</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101027">
+                <xs:annotation>
+                    <xs:documentation>лесопогрузочный пункт</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101028">
+                <xs:annotation>
+                    <xs:documentation>лесная дорога</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101029">
+                <xs:annotation>
+                    <xs:documentation>лесной проезд</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101030">
+                <xs:annotation>
+                    <xs:documentation>лесной склад</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101031">
+                <xs:annotation>
+                    <xs:documentation>лесохозяйственный, лесоустроительный знак, информационный щит, аншлаг</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101032">
+                <xs:annotation>
+                    <xs:documentation>мастерская ремонтно-механическая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101033">
+                <xs:annotation>
+                    <xs:documentation>минерализованная полоса</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101034">
+                <xs:annotation>
+                    <xs:documentation>мост автодорожный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101035">
+                <xs:annotation>
+                    <xs:documentation>мост железнодорожный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101036">
+                <xs:annotation>
+                    <xs:documentation>мост комбинированный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101037">
+                <xs:annotation>
+                    <xs:documentation>мост пешеходный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101038">
+                <xs:annotation>
+                    <xs:documentation>Оборудованный солонец, подкормочная площадка для диких животных</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101039">
+                <xs:annotation>
+                    <xs:documentation>обустроенное место для разведения костра и отдыха</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101040">
+                <xs:annotation>
+                    <xs:documentation>обустроенные туристские стоянки, места для разведения костра и отдыха</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101041">
+                <xs:annotation>
+                    <xs:documentation>опорный пункт службы охраны со вспомогательными сооружениями</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101042">
+                <xs:annotation>
+                    <xs:documentation>пирс для служебного водного транспорта</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101043">
+                <xs:annotation>
+                    <xs:documentation>площадка для забора воды</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101044">
+                <xs:annotation>
+                    <xs:documentation>площадка для разворота пожарной техники</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101045">
+                <xs:annotation>
+                    <xs:documentation>площадка откормочная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101046">
+                <xs:annotation>
+                    <xs:documentation>площадка производственная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101047">
+                <xs:annotation>
+                    <xs:documentation>пожарная скважина</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101048">
+                <xs:annotation>
+                    <xs:documentation>пожарный водоем (в том числе подземный резервуар и водохранилище)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101049">
+                <xs:annotation>
+                    <xs:documentation>пожарный наблюдательный пункт (вышка, мачта, павильон)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101050">
+                <xs:annotation>
+                    <xs:documentation>посадочная площадка для самолетов, вертолетов, используемых в целях проведения авиационных работ по охране и защите лесов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101051">
+                <xs:annotation>
+                    <xs:documentation>предприятие лесозаготовительное без переработки древесины</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101052">
+                <xs:annotation>
+                    <xs:documentation>предприятие лесоперевалочное</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101053">
+                <xs:annotation>
+                    <xs:documentation>предприятие лесосплавное</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101054">
+                <xs:annotation>
+                    <xs:documentation>просека</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101055">
+                <xs:annotation>
+                    <xs:documentation>противопожарный разрыв</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101056">
+                <xs:annotation>
+                    <xs:documentation>пункт электрический распределительный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101057">
+                <xs:annotation>
+                    <xs:documentation>рейд сортировочно-сплоточный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101058">
+                <xs:annotation>
+                    <xs:documentation>система группового водоснабжения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101059">
+                <xs:annotation>
+                    <xs:documentation>система для осушения лесных площадей (дамбы, перепускные сооружения, шлюзы, устройства регулирования уровня вод)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101060">
+                <xs:annotation>
+                    <xs:documentation>система лиманного орошения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101061">
+                <xs:annotation>
+                    <xs:documentation>система локального водоснабжения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101062">
+                <xs:annotation>
+                    <xs:documentation>система обводнительная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101063">
+                <xs:annotation>
+                    <xs:documentation>система оросительная и отдельно орошаемые массивы</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101064">
+                <xs:annotation>
+                    <xs:documentation>система оросительно-осушительная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101065">
+                <xs:annotation>
+                    <xs:documentation>система теплоснабжения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101066">
+                <xs:annotation>
+                    <xs:documentation>скважина водозаборная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101067">
+                <xs:annotation>
+                    <xs:documentation>склад горюче-смазочных материалов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101068">
+                <xs:annotation>
+                    <xs:documentation>склад лесных семян</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101069">
+                <xs:annotation>
+                    <xs:documentation>служебный кордон со вспомогательными сооружениями (временные жилые и хозяйственные строения для должностных лиц особо охраняемых природных территорий)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101070">
+                <xs:annotation>
+                    <xs:documentation>смотровые площадки и вышки</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101071">
+                <xs:annotation>
+                    <xs:documentation>сооружение для животноводства</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101072">
+                <xs:annotation>
+                    <xs:documentation>сооружение ирригационной и мелиоративной систем</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101073">
+                <xs:annotation>
+                    <xs:documentation>сооружение противооползневое</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101074">
+                <xs:annotation>
+                    <xs:documentation>сооружение противоэрозионное, гидротехническое и противоселевое</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101075">
+                <xs:annotation>
+                    <xs:documentation>Специализированный питомник по разведению редких и находящихся под угрозой исчезнования видов животных и растений со вспомогательными сооружениями</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101076">
+                <xs:annotation>
+                    <xs:documentation>стационар для полевых научных исследований со вспомогательными сооружениями</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101077">
+                <xs:annotation>
+                    <xs:documentation>теплица</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101078">
+                <xs:annotation>
+                    <xs:documentation>тропа</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101079">
+                <xs:annotation>
+                    <xs:documentation>трубопровод технологический для обеспечения охраны, защиты и воспроизводства лесов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101080">
+                <xs:annotation>
+                    <xs:documentation>улей</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101081">
+                <xs:annotation>
+                    <xs:documentation>устройство для отбора воды на пожарные нужды</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101082">
+                <xs:annotation>
+                    <xs:documentation>участок автоматизированного полива</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101083">
+                <xs:annotation>
+                    <xs:documentation>цистерна (бак), резервуар, другие емкости наземные и подземные</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101084">
+                <xs:annotation>
+                    <xs:documentation>шлагбаум</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101085">
+                <xs:annotation>
+                    <xs:documentation>щит и навес для размещения противопожарного инвентаря</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101086">
+                <xs:annotation>
+                    <xs:documentation>экскурсионные экологические тропы с элементами благоустройства</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101091">
+                <xs:annotation>
+                    <xs:documentation>гараж для лесохозяйственных машин</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101092">
+                <xs:annotation>
+                    <xs:documentation>навес</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101093">
+                <xs:annotation>
+                    <xs:documentation>некапитальное строение, сооружение для бытовых нужд</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101094">
+                <xs:annotation>
+                    <xs:documentation>некапитальное строение, сооружение для первичной обработки продукции</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101095">
+                <xs:annotation>
+                    <xs:documentation>некапитальное строение, сооружение, необходимое для заготовки пищевых лесных ресурсов, сбора лекарственных растений (в том числе сушилка, грибоварня, склад)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101096">
+                <xs:annotation>
+                    <xs:documentation>система осушительная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101097">
+                <xs:annotation>
+                    <xs:documentation>склад для размещения кормов и хозяйственного инвентаря (некапитальное строение, сооружение)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101098">
+                <xs:annotation>
+                    <xs:documentation>лесохозяйственный знак</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101099">
+                <xs:annotation>
+                    <xs:documentation>лесоустроительный знак</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101100">
+                <xs:annotation>
+                    <xs:documentation>информационный щит</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30101101">
+                <xs:annotation>
+                    <xs:documentation>аншлаг</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30102001">
+                <xs:annotation>
+                    <xs:documentation>Постоянные лесосеменные участки</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30102002">
+                <xs:annotation>
+                    <xs:documentation>Лесосеменные плантации</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30102003">
+                <xs:annotation>
+                    <xs:documentation>Маточные плантации</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30102004">
+                <xs:annotation>
+                    <xs:documentation>Архивы клонов плюсовых деревьев</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30102005">
+                <xs:annotation>
+                    <xs:documentation>Испытательные культуры</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30102006">
+                <xs:annotation>
+                    <xs:documentation>Популяционно-экологические культуры</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30102007">
+                <xs:annotation>
+                    <xs:documentation>Генетические резерваты</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30102008">
+                <xs:annotation>
+                    <xs:documentation>Географические культуры</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30102009">
+                <xs:annotation>
+                    <xs:documentation>Плюсовые насаждения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30102010">
+                <xs:annotation>
+                    <xs:documentation>Плюсовые деревья</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

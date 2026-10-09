@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/slopeSteepness/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/slopeSteepness/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="SlopeSteepnessKindEType">
+        <xs:annotation>
+            <xs:documentation>Норматив для определения группы крутизны</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="pokatyy">
+                <xs:annotation>
+                    <xs:documentation>покатый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="krutoy">
+                <xs:annotation>
+                    <xs:documentation>крутой</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="pologiy">
+                <xs:annotation>
+                    <xs:documentation>пологий</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="ochenKrutoy">
+                <xs:annotation>
+                    <xs:documentation>очень крутой</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

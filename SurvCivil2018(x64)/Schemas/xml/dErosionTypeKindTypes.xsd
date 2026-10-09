@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/erosionType/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/erosionType/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="ErosionTypeKindEType">
+        <xs:annotation>
+            <xs:documentation>Тип эрозии</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="eroziiNet">
+                <xs:annotation>
+                    <xs:documentation>Эрозии нет</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="vetrovaya">
+                <xs:annotation>
+                    <xs:documentation>Ветровая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="vodnaya">
+                <xs:annotation>
+                    <xs:documentation>Водная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

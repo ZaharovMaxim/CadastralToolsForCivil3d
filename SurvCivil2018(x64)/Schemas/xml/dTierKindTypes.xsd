@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/tier/types/2.1" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/tier/types/2.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="TierKindEType">
+        <xs:annotation>
+            <xs:documentation>Ярус</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="13">
+                <xs:annotation>
+                    <xs:documentation>Погибшая часть древостоя</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="17">
+                <xs:annotation>
+                    <xs:documentation>Подрост</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="19">
+                <xs:annotation>
+                    <xs:documentation>Подлесок</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37800001">
+                <xs:annotation>
+                    <xs:documentation>Ярус 1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37800002">
+                <xs:annotation>
+                    <xs:documentation>Ярус 2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37800003">
+                <xs:annotation>
+                    <xs:documentation>Ярус 3</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37800004">
+                <xs:annotation>
+                    <xs:documentation>Естественное возобновление в лесных культурах</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37800005">
+                <xs:annotation>
+                    <xs:documentation>Несомкнувшиеся лесные культуры под пологом леса</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37800006">
+                <xs:annotation>
+                    <xs:documentation>Сомкнувшиеся лесные культуры под пологом леса</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37800007">
+                <xs:annotation>
+                    <xs:documentation>Несомкнушиеся лесные культуры, созданные реконструкцией</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37800008">
+                <xs:annotation>
+                    <xs:documentation>Единичные деревья</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37800009">
+                <xs:annotation>
+                    <xs:documentation>Старый сухостой</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37800010">
+                <xs:annotation>
+                    <xs:documentation>Старый валеж</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37800011">
+                <xs:annotation>
+                    <xs:documentation>Свежий сухостой</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37800012">
+                <xs:annotation>
+                    <xs:documentation>Свежий валеж</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37800021">
+                <xs:annotation>
+                    <xs:documentation>Виноградники</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37800022">
+                <xs:annotation>
+                    <xs:documentation>Естественные редины</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37800023">
+                <xs:annotation>
+                    <xs:documentation>Несомкнувшиеся лесные культуры на непокрытых лесной растительностью</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37800024">
+                <xs:annotation>
+                    <xs:documentation>Плантации</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37800025">
+                <xs:annotation>
+                    <xs:documentation>Погибшие насаждения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="37800026">
+                <xs:annotation>
+                    <xs:documentation>Сады</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4">
+                <xs:annotation>
+                    <xs:documentation>Несомкнувшиеся к непокрытым площадям</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="5">
+                <xs:annotation>
+                    <xs:documentation>Естественное возобновление</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

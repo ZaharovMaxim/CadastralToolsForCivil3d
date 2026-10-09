@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/placementTreesPPP/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/placementTreesPPP/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:simpleType name="PlacementTreesPPPKindEType">
+		<xs:annotation>
+			<xs:documentation>Размещение деревьев на  постоянных пробных площадях</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="drevostoyaNet">
+				<xs:annotation>
+					<xs:documentation>Древостоя нет</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="gruppovoye">
+				<xs:annotation>
+					<xs:documentation>Групповое</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="individualnoye">
+				<xs:annotation>
+					<xs:documentation>Индивидуальное</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

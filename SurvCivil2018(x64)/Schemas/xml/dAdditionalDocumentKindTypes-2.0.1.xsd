@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/idatt/types/2.0.1"
+           elementFormDefault="qualified"
+           targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/idatt/types/2.0.1">
+
+    <xs:simpleType name="AdditionalDocumentKindEType">
+        <xs:annotation>
+            <xs:documentation>Виды вложений</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="000">
+                <xs:annotation>
+                    <xs:documentation source="Иное"/>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="01">
+                <xs:annotation>
+                    <xs:documentation source="Документ-основание для внесения сведений в ГЛР (приказ, заключение экспертизы, решения ОГВ)"/>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="02">
+                <xs:annotation>
+                    <xs:documentation source="Таксационное описание"/>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="03">
+                <xs:annotation>
+                    <xs:documentation source="Ведомость поквартальных итогов площадей и запасов лесных насаждений на территорию лесничества и лесных участков"/>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="04">
+                <xs:annotation>
+                    <xs:documentation source="Планшеты на территорию лесничества и лесных участков"/>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="05">
+                <xs:annotation>
+                    <xs:documentation source="Планы лесонасаждений на территорию объекта работ - окрашенные по преобладающим древесным породам"/>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="06">
+                <xs:annotation>
+                    <xs:documentation source="Планы лесонасаждений на территорию объекта работ - неокрашенные"/>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="07">
+                <xs:annotation>
+                    <xs:documentation source="Карты-схемы территории лесничества (участкового лесничества)"/>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="08">
+                <xs:annotation>
+                    <xs:documentation source="Ведомость проектирования лесничеств и лесопарков"/>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="09">
+                <xs:annotation>
+                    <xs:documentation source="Карты-схемы проектируемого деления лесов на лесничества и лесопарки"/>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="10">
+                <xs:annotation>
+                    <xs:documentation source="Карта-схема лесничества, лесопарка, с указанием границ лесничеств, лесопарков, участковых лесничеств и лесных кварталов"/>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="11">
+                <xs:annotation>
+                    <xs:documentation source="Пояснительная записка в произвольной форме"/>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="12">
+                <xs:annotation>
+                    <xs:documentation source="Ведомость деления лесов по целевому назначению и категориям защитных лесов"/>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="13">
+                <xs:annotation>
+                    <xs:documentation source="Карта-схема проектируемого деления лесов на эксплуатационные леса, защитные леса и резервные леса в пределах лесничеств и лесопарков с указанием границ участковых лесничеств и номеров лесных кварталов"/>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="14">
+                <xs:annotation>
+                    <xs:documentation source="Ведомость проектируемых особо защитных участков лесов"/>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="15">
+                <xs:annotation>
+                    <xs:documentation source="Тематическая лесная карта"/>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="16">
+                <xs:annotation>
+                    <xs:documentation source="Акты о внесении документированной информации в государственный лесной реестр или ее изменении"/>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="17">
+                <xs:annotation>
+                    <xs:documentation source="Ведомость проектируемых мероприятий"/>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="18">
+                <xs:annotation>
+                    <xs:documentation source="Карта-схема проектируемых мероприятий по охране, защите, воспроизводству лесов"/>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="19">
+                <xs:annotation>
+                    <xs:documentation source="Документы государственного учета лесов по состоянию на год проведения лесоустройства"/>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="20">
+                <xs:annotation>
+                    <xs:documentation source="Ведомость с таксационной характеристикой лесных участков, не учтенных в государственном лесном реестре"/>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="21">
+                <xs:annotation>
+                    <xs:documentation source="Схема объекта/лесосеки"/>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="22">
+                <xs:annotation>
+                    <xs:documentation source="Генеральная доверенность"/>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="23">
+                <xs:annotation>
+                    <xs:documentation source="Документ-основание полномочий"/>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="24">
+                <xs:annotation>
+                    <xs:documentation source="Паспорт гражданина РФ"/>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="25">
+                <xs:annotation>
+                    <xs:documentation source="Доверенность от имени юридического лица"/>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="26">
+                <xs:annotation>
+                    <xs:documentation source="Нормативный документ организации"/>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="27">
+                <xs:annotation>
+                    <xs:documentation source="Удостоверение нотариуса"/>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="28">
+                <xs:annotation>
+                    <xs:documentation source="Проект освоения лесов"/>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="29">
+                <xs:annotation>
+                    <xs:documentation source="Общая схема размещения лесосек или объектов"/>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30">
+                <xs:annotation>
+                    <xs:documentation source="Документ, удостоверяющий личность"/>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="31">
+                <xs:annotation>
+                    <xs:documentation source="Доверенность от имени физического лица"/>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

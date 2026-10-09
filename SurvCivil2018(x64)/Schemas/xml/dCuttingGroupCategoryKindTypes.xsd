@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/cuttingGroupCategory/types/2.1" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/cuttingGroupCategory/types/2.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="CuttingGroupCategoryKindEType">
+        <xs:annotation>
+            <xs:documentation>Виды рубки</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="10000">
+                <xs:annotation>
+                    <xs:documentation>Рубка спелых и перестойных лесных насаждений</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="11001">
+                <xs:annotation>
+                    <xs:documentation>Сплошная рубка с последующим лесовосстановлением</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="11002">
+                <xs:annotation>
+                    <xs:documentation>Сплошная рубка с предварительным лесовосстановлением</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="11301">
+                <xs:annotation>
+                    <xs:documentation>Сплошная рубка с естественным лесовосстановлением в следствие природных процессов" в справочнике</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="12008">
+                <xs:annotation>
+                    <xs:documentation>Постепенные рубки</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="12009">
+                <xs:annotation>
+                    <xs:documentation>Группово-постепенная (котловинная) рубка</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="12010">
+                <xs:annotation>
+                    <xs:documentation>Длительно-постепенная рубка</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="12011">
+                <xs:annotation>
+                    <xs:documentation>Равномерно-постепенная рубка</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="12012">
+                <xs:annotation>
+                    <xs:documentation>Чересполосная постепенная рубка</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="12013">
+                <xs:annotation>
+                    <xs:documentation>Завершающий прием постепенных рубок</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="12018">
+                <xs:annotation>
+                    <xs:documentation>Группово-выборочная рубка</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="12019">
+                <xs:annotation>
+                    <xs:documentation>Добровольно-выборочная рубка</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="20000">
+                <xs:annotation>
+                    <xs:documentation>Вырубка погибших и поврежденных лесных насаждений</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="20302">
+                <xs:annotation>
+                    <xs:documentation>Рубка в рамках проведения санитарно-оздоровительных мероприятий</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="20303">
+                <xs:annotation>
+                    <xs:documentation>Рубка проведенная в насаждениях, погибших в текущем году</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="20304">
+                <xs:annotation>
+                    <xs:documentation>Санитарная рубка</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="21025">
+                <xs:annotation>
+                    <xs:documentation>Сплошные санитарные рубки</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="21026">
+                <xs:annotation>
+                    <xs:documentation>Выборочные санитарные рубки</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="22027">
+                <xs:annotation>
+                    <xs:documentation>Рубка аварийных деревьев</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="22028">
+                <xs:annotation>
+                    <xs:documentation>Уборка неликвидной древесины</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="23040">
+                <xs:annotation>
+                    <xs:documentation>Рубка лесных насаждений в целях регулирования породного и возрастного составов лесных насаждений, зараженных вредными организмами</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30000">
+                <xs:annotation>
+                    <xs:documentation>Рубка при уходе за лесом</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30305">
+                <xs:annotation>
+                    <xs:documentation>Рубка единичных деревьев</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30306">
+                <xs:annotation>
+                    <xs:documentation>Рубка реконструкции молодняков</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30307">
+                <xs:annotation>
+                    <xs:documentation>Рубка реконструкции в средневозрастных, приспевающих, спелых и перестойных малоценных лесных насаждениях</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="30308">
+                <xs:annotation>
+                    <xs:documentation>Рубка формирования ландшафта</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="31060">
+                <xs:annotation>
+                    <xs:documentation>Осветление</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="31061">
+                <xs:annotation>
+                    <xs:documentation>Прочистка</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="31062">
+                <xs:annotation>
+                    <xs:documentation>Прореживание</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="31063">
+                <xs:annotation>
+                    <xs:documentation>Проходная рубка</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="31064">
+                <xs:annotation>
+                    <xs:documentation>Рубки реконструкции</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="31065">
+                <xs:annotation>
+                    <xs:documentation>Рубка переформирования</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="31066">
+                <xs:annotation>
+                    <xs:documentation>Рубка обновления</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="31067">
+                <xs:annotation>
+                    <xs:documentation>Рубка сохранения лесных насаждений</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="31068">
+                <xs:annotation>
+                    <xs:documentation>Ландшафтная рубка</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="31069">
+                <xs:annotation>
+                    <xs:documentation>Ландшафтная рубка формирования породного состава</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="31070">
+                <xs:annotation>
+                    <xs:documentation>Ландшафтная рубка формирования оптимального пространственного размещения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="31071">
+                <xs:annotation>
+                    <xs:documentation>Ландшафтная рубка для улучшения декоративных качеств</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="31072">
+                <xs:annotation>
+                    <xs:documentation>Мероприятия по обновлению целевых ландшафтных насаждений</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="31073">
+                <xs:annotation>
+                    <xs:documentation>Опытные рубки</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="31079">
+                <xs:annotation>
+                    <xs:documentation>Уход за опушками леса</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="31080">
+                <xs:annotation>
+                    <xs:documentation>Обрезка сучьев и ветвей</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="31081">
+                <xs:annotation>
+                    <xs:documentation>Рубка в подлеске</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="31082">
+                <xs:annotation>
+                    <xs:documentation>Рубка в подросте</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="50000">
+                <xs:annotation>
+                    <xs:documentation>Прочие рубки</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="50310">
+                <xs:annotation>
+                    <xs:documentation>Рубка в ходе проведения работ по подготовке лесосеки</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="50311">
+                <xs:annotation>
+                    <xs:documentation>Рубки лесных насаждений (с целью снижения природной пожарной опасности лесов путем регулирования породного состава лесных насаждений)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="50312">
+                <xs:annotation>
+                    <xs:documentation>Рубка лесных насаждений в границах созданных охранных зон, предназначенных для обеспечения безопасности граждан и создания необходимых условий для эксплуатации линейных объектов и объектов, связанных с осуществлением геологического изучения недр, разведкой и добычей полезных ископаемых</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="50313">
+                <xs:annotation>
+                    <xs:documentation>Рубка лесных насаждений в зонах радиоактивного загрязнения лесов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="50314">
+                <xs:annotation>
+                    <xs:documentation>Рубка отдельных сухостойных, ветровальных и буреломных деревьев для собственных нужд граждан в целях отопления (не в рамках проведения санитарно-оздоровительных мероприятий)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="50315">
+                <xs:annotation>
+                    <xs:documentation>Второй вид при использовании лесов в соответствии со статьями 43–46 Лесного Кодекса Российской Федерации</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="50316">
+                <xs:annotation>
+                    <xs:documentation>Рубки лесных насаждений, предназначенные для строительства, реконструкции и эксплуатации объектов лесной инфраструктуры</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="50317">
+                <xs:annotation>
+                    <xs:documentation>Рубка лесных насаждений любого возраста на лесных участках, предназначенных для строительства, реконструкции и эксплуатации объектов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="50318">
+                <xs:annotation>
+                    <xs:documentation>Рубка средневозрастных, приспевающих, спелых, перестойных лесных насаждений при осуществлении мероприятий по сохранению лесов</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="50319">
+                <xs:annotation>
+                    <xs:documentation>Рубка лесных насаждений на лесных участках, предназначенных для строительства, реконструкции и эксплуатации объектов лесной, лесоперерабатывающей инфраструктуры и объектов, не связанных с созданием лесной инфраструктуры</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="51096">
+                <xs:annotation>
+                    <xs:documentation>Рубка для создания лесной инфраструктуры</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="51101">
+                <xs:annotation>
+                    <xs:documentation>Рубки для создания объектов, не связанных с лесной инфраструктурой</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

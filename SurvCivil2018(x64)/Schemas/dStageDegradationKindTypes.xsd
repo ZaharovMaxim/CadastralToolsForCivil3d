@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/stageDegradation/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/stageDegradation/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:simpleType name="StageDegradationKindEType">
+		<xs:annotation>
+			<xs:documentation>Стадия деградации лесной среды</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="stadiya1">
+				<xs:annotation>
+					<xs:documentation>1 стадия</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="stadiya2">
+				<xs:annotation>
+					<xs:documentation>2 стадия</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="stadiya3">
+				<xs:annotation>
+					<xs:documentation>3 стадия</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="stadiya4">
+				<xs:annotation>
+					<xs:documentation>4 стадия</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="stadiya5">
+				<xs:annotation>
+					<xs:documentation>5 стадия</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

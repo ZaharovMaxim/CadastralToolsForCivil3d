@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+	targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/geodataExternalFormat/types/2.0"
+	xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/geodataExternalFormat/types/2.0">
+
+	<xs:simpleType name="GeodataExternalFormatKindETyp">
+		<xs:annotation>
+			<xs:documentation>Формат файла геоданных</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="mif">
+				<xs:annotation>
+					<xs:documentation>mif</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="shape">
+				<xs:annotation>
+					<xs:documentation>shape</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="geojson">
+				<xs:annotation>
+					<xs:documentation>geojson</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

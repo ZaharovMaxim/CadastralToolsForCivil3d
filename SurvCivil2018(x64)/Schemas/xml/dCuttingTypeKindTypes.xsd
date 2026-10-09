@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/cuttingType/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/cuttingType/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="CuttingTypeKindEType">
+        <xs:annotation>
+            <xs:documentation>Тип вырубки</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="dolgomoshnyy">
+                <xs:annotation>
+                    <xs:documentation>Долгомошный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="kipreynoPalovyy">
+                <xs:annotation>
+                    <xs:documentation>Кипрейно-паловый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="kipreynyy">
+                <xs:annotation>
+                    <xs:documentation>Кипрейный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="krupnotravnyy">
+                <xs:annotation>
+                    <xs:documentation>Крупнотравный</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="kurtinnoBorovaya">
+                <xs:annotation>
+                    <xs:documentation>Куртинно-боровая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="lishaynikovyy">
+                <xs:annotation>
+                    <xs:documentation>Лишайниковый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="lugovikovyy">
+                <xs:annotation>
+                    <xs:documentation>Луговиковый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="malinnikovoPalovyy">
+                <xs:annotation>
+                    <xs:documentation>Малинниково-паловый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="malinnikovyy">
+                <xs:annotation>
+                    <xs:documentation>Малинниковый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="osokovoDolgomoshnaya">
+                <xs:annotation>
+                    <xs:documentation>Осоково-долгомошная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="osokovoSfagnovaya">
+                <xs:annotation>
+                    <xs:documentation>Осоково-сфагновая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="prochieZnacheniya">
+                <xs:annotation>
+                    <xs:documentation>Прочие значения</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="ryabinovyy">
+                <xs:annotation>
+                    <xs:documentation>Рябиновый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="sfagnovyy">
+                <xs:annotation>
+                    <xs:documentation>Сфагновый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="shchuchkovyy">
+                <xs:annotation>
+                    <xs:documentation>Щучковый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="tavolgovyy">
+                <xs:annotation>
+                    <xs:documentation>Таволговый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="travyanoBolotnaya">
+                <xs:annotation>
+                    <xs:documentation>Травяно-болотная</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="vereskovyy">
+                <xs:annotation>
+                    <xs:documentation>Вересковый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="veynikovoPalovyy">
+                <xs:annotation>
+                    <xs:documentation>Вейниково-паловый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="veynikovyy">
+                <xs:annotation>
+                    <xs:documentation>Вейниковый</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="zlakovaya">
+                <xs:annotation>
+                    <xs:documentation>Злаковая</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

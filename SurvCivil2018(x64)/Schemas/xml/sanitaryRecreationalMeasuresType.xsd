@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+           targetNamespace="http://rosleshoz.gov.ru/xmlns/sanitaryRecreationalMeasuresType/5.0"
+           xmlns:tns="http://rosleshoz.gov.ru/xmlns/sanitaryRecreationalMeasuresType/5.0"
+           xmlns:st="http://rosleshoz.gov.ru/fgis-lk/common/simple/types/2.0"
+           xmlns:comR="http://rosleshoz.gov.ru/fgis-lk/common/commonReport/types/2.1"
+           xmlns:measures="http://rosleshoz.gov.ru/fgis-lk/common/enums/measuresOZVL/types/2.0"
+           xmlns:purF="http://rosleshoz.gov.ru/fgis-lk/common/enums/purposeForests/types/2.1">
+
+    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/simple/types/2.0" schemaLocation="simpleTypes.xsd"/>
+    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/commonReport/types/2.1" schemaLocation="commonReport.xsd"/>
+    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/purposeForests/types/2.1" schemaLocation="dPurposeForestsKindTypes.xsd"/>
+    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/measuresOZVL/types/2.0" schemaLocation="dMeasuresOZVLKindTypes.xsd"/>
+
+    <xs:complexType name="sanitaryRecreationalMeasuresType">
+        <xs:sequence>
+            <xs:element name="resources" type="tns:resourcesType">
+                <xs:annotation>
+                    <xs:documentation>Всего</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="specialPurposeInfo">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="row" type="tns:specialPurposeRow" minOccurs="1" maxOccurs="unbounded" />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="specialPurposeRow">
+        <xs:annotation>
+            <xs:documentation>Строка целевого назначения</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="resources" type="tns:resourcesType">
+                <xs:annotation>
+                    <xs:documentation>Всего</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="specialPurpose" type="purF:PurposeForestsKindEType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Целевое назначение лесов</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="sanritaryRecreationalMeasureInfo">
+                <xs:annotation>
+                    <xs:documentation>Категория защитных лесов (только для защитных лесов)</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="row" type="tns:sanritaryRecreationalMeasureRow" minOccurs="0" maxOccurs="unbounded" />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="sanritaryRecreationalMeasureRow">
+        <xs:sequence>
+            <xs:element name="sanritaryRecreationalMeasure" type="measures:MeasuresOZVLKindEType">
+                <xs:annotation>
+                    <xs:documentation>Вид санитарно-оздоровительного мероприятия</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="location" type="comR:Location2Type">
+                <xs:annotation>
+                    <xs:documentation>Место расположения</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="resources" type="tns:resourcesType" />
+            <xs:element name="year" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>Год проведения</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="rationale" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation>Обоснование</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="resourcesType">
+        <xs:sequence>
+            <xs:element name="area" type="st:PositiveDecimalFourSType">
+                <xs:annotation>
+                    <xs:documentation>Площадь, га</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="volume" type="st:PositiveDecimalTwoSType">
+                <xs:annotation>
+                    <xs:documentation>Вырубаемый запас (общий), м3</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="liquidVolume" type="st:PositiveDecimalTwoSType">
+                <xs:annotation>
+                    <xs:documentation>Вырубаемый запас (ликвидный), м3</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="businessVolume" type="st:PositiveDecimalTwoSType">
+                <xs:annotation>
+                    <xs:documentation>Вырубаемый запас (деловой), м3</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

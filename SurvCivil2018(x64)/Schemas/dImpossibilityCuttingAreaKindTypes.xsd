@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/impossibilityCuttingArea/types/2.1" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/impossibilityCuttingArea/types/2.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="ImpossibilityCuttingAreaKindEType">
+        <xs:annotation>
+            <xs:documentation>Нарушения при отводе и таксации лесосеки</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="4330000">
+                <xs:annotation>
+                    <xs:documentation>Прочие</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4330001">
+                <xs:annotation>
+                    <xs:documentation>неверно произведен отбор деревьев в рубку (неправильно назначенных и неправильно оставленных) более чем в 10% случаев от общего числа подлежащих рубке деревьев</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4330002">
+                <xs:annotation>
+                    <xs:documentation>не соблюдены правила заготовки древесины</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4330003">
+                <xs:annotation>
+                    <xs:documentation>не соблюден порядок отвода и таксации лесосек</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4330004">
+                <xs:annotation>
+                    <xs:documentation>выявлено расхождение данных таксационного описания лесосеки с данными проверки по общему запасу и запасу деловой древесины на лесосеке более чем на 10% по запасу и видовому (породному) составу</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4330005">
+                <xs:annotation>
+                    <xs:documentation>не соблюдены правила пожарной безопасности в лесах</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4330006">
+                <xs:annotation>
+                    <xs:documentation>выявлено расхождение запасов вырубаемой древесины более чем на 10%</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4330007">
+                <xs:annotation>
+                    <xs:documentation>выявлено неудовлетворительное отведение лесосек в натуре (неясность границ, отсутствие столбов или надписей на столбах на углах лесосек, к которым произведена инструментальная привязка к постоянным ориентирам, нарушение точности съемки границ и привязки лесосек)</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4330008">
+                <xs:annotation>
+                    <xs:documentation>не соблюдены правила ухода за лесами</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4330009">
+                <xs:annotation>
+                    <xs:documentation>выявлена ошибка в эксплуатационной площади лесосеки более чем на 3%</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="4330010">
+                <xs:annotation>
+                    <xs:documentation>не соблюдены правила санитарной безопасности в лесах</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

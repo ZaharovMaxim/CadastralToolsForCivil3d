@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/stumpCuttingAge/types/2.0" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/stumpCuttingAge/types/2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:simpleType name="StumpCuttingAgeKindEType">
+		<xs:annotation>
+			<xs:documentation>Давность рубки</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="boleyeDvukhLet">
+				<xs:annotation>
+					<xs:documentation>Более двух лет</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="doOdnogoGoda">
+				<xs:annotation>
+					<xs:documentation>До одного года</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="otOdnogoDoDvukhLet">
+				<xs:annotation>
+					<xs:documentation>От одного до двух лет</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

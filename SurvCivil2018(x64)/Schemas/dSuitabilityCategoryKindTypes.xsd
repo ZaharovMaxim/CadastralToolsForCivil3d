@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/suitabilityCategory/types/2.1" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/suitabilityCategory/types/2.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="SuitabilityCategoryKindEType">
+        <xs:annotation>
+            <xs:documentation>Пригодность участка для работы техники</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="48500001">
+                <xs:annotation>
+                    <xs:documentation>Пригоден без предварительных мероприятий</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="48500002">
+                <xs:annotation>
+                    <xs:documentation>Требуется проведение специальных мероприятий - террасирование</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="48500003">
+                <xs:annotation>
+                    <xs:documentation>Требуется проведение специальных мероприятий - мелиорация</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="48500004">
+                <xs:annotation>
+                    <xs:documentation>Требуется проведение специальных мероприятий - рекультивация</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+           targetNamespace="http://rosleshoz.gov.ru/xmlns/volumeCuttingsWoodType/5.0"
+           xmlns:tns="http://rosleshoz.gov.ru/xmlns/volumeCuttingsWoodType/5.0"
+           xmlns:st="http://rosleshoz.gov.ru/fgis-lk/common/simple/types/2.0"
+           xmlns:purF="http://rosleshoz.gov.ru/fgis-lk/common/enums/purposeForests/types/2.1"
+           xmlns:fcut="http://rosleshoz.gov.ru/fgis-lk/common/enums/fellingForest/types/2.1"
+           xmlns:tcut="http://rosleshoz.gov.ru/fgis-lk/common/enums/cuttingGroupCategory/types/2.1"
+           xmlns:fa="http://rosleshoz.gov.ru/fgis-lk/common/enums/farms/types/2.1">
+
+    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/simple/types/2.0" schemaLocation="simpleTypes.xsd"/>
+    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/purposeForests/types/2.1" schemaLocation="dPurposeForestsKindTypes.xsd"/>
+    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/fellingForest/types/2.1" schemaLocation="dFellingForestKindTypes.xsd"/>
+    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/cuttingGroupCategory/types/2.1" schemaLocation="dCuttingGroupCategoryKindTypes.xsd"/>
+    <xs:import namespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/farms/types/2.1" schemaLocation="dFarmsKindTypes.xsd"/>
+
+    <xs:complexType name="volumeCuttingsWoodType">
+        <xs:annotation>
+            <xs:documentation>Установленный объем заготовки древесины на лесном участке</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="resources" type="tns:resourcesType">
+                <xs:annotation>
+                    <xs:documentation>Всего на лесном участке</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="specialPurposeInfo">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="row" type="tns:specialPurposeInfoRow" minOccurs="1" maxOccurs="2"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="typeCuttingInfo">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="row" type="tns:typeCuttingInfoRow" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="specialPurposeInfoRow">
+        <xs:annotation>
+            <xs:documentation>Средняя характеристика по целевому назначению лесов</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="specialPurpose" type="purF:PurposeForestsKindEType">
+                <xs:annotation>
+                    <xs:documentation>Целевое назначение лесов</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="resources" type="tns:resourcesType"/>
+            <xs:element name="typeCuttingInfo">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="row" type="tns:typeCuttingInfoRow" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="typeCuttingInfoRow">
+        <xs:annotation>
+            <xs:documentation>Средняя характеристика по хозяйству</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="typeCutting" type="tcut:CuttingGroupCategoryKindEType">
+                <xs:annotation>
+                    <xs:documentation>Указывается элемент справочника "Виды рубок"</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="formCutting" type="fcut:FellingForestKindEType" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Форма рубки</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="descriptionCutting" type="xs:string" minOccurs="0">
+                <xs:annotation>
+                    <xs:documentation>Указывается элемент справочника "Виды рубок"</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="resources" type="tns:resourcesType"/>
+            <xs:element name="farmInfo">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="row" type="tns:farmInfoRow" maxOccurs="3"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="farmInfoRow">
+        <xs:annotation>
+            <xs:documentation>Средняя характеристика по преобладающим породам</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+            <xs:element name="farm" type="fa:FarmsKindEType">
+                <xs:annotation>
+                    <xs:documentation>Хозяйство</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="resources" type="tns:resourcesType"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="resourcesType">
+        <xs:sequence>
+            <xs:element name="area" type="st:PositiveDecimalFourSType">
+                <xs:annotation>
+                    <xs:documentation>Площадь, га</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="rootVolume" type="xs:float">
+                <xs:annotation>
+                    <xs:documentation>запас (корневой), тыс. м3</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="liquidVolume" type="xs:float">
+                <xs:annotation>
+                    <xs:documentation>Текстовый комментарий к проекту для вывода.</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

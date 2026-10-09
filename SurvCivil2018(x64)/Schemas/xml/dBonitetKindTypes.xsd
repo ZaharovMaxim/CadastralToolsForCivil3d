@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:tns="http://rosleshoz.gov.ru/fgis-lk/common/enums/bonitet/types/2.1" elementFormDefault="qualified" targetNamespace="http://rosleshoz.gov.ru/fgis-lk/common/enums/bonitet/types/2.1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="BonitetKindEType">
+        <xs:annotation>
+            <xs:documentation>Класс бонитета</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="42700010">
+                <xs:annotation>
+                    <xs:documentation>1</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="42700011">
+                <xs:annotation>
+                    <xs:documentation>1а</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="42700012">
+                <xs:annotation>
+                    <xs:documentation>1б</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="42700020">
+                <xs:annotation>
+                    <xs:documentation>2</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="42700030">
+                <xs:annotation>
+                    <xs:documentation>3</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="42700040">
+                <xs:annotation>
+                    <xs:documentation>4</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="42700050">
+                <xs:annotation>
+                    <xs:documentation>5</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="42700051">
+                <xs:annotation>
+                    <xs:documentation>5а</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="42700052">
+                <xs:annotation>
+                    <xs:documentation>5б</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>
