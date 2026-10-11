@@ -1,0 +1,2163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5015F01D-B6F0-4418-9AE7-5931BDACC8E5}</ProjectGuid>
+    <VBRuntime>Default</VBRuntime>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SurvCivil2018_x64_</RootNamespace>
+    <AssemblyName>SurvCivil2020%28x64%29</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\..\..\NET\</OutputPath>
+    <DocumentationFile>SurvCivil2020%28x64%29.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SurvCivil2020%28x64%29.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Text</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DocumentationFile>SurvCivil2020%28x64%29.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DocumentationFile>SurvCivil2020%28x64%29.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="accoremgd">
+      <HintPath>..\..\..\Autodesk\AutoCAD 2020\accoremgd.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="acdbmgd">
+      <HintPath>..\..\..\Autodesk\AutoCAD 2020\acdbmgd.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="acdbmgdbrep">
+      <HintPath>..\..\..\Autodesk\AutoCAD 2020\acdbmgdbrep.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="acmgd">
+      <HintPath>..\..\..\Autodesk\AutoCAD 2020\acmgd.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="AcMPolygonMGD">
+      <HintPath>..\..\..\Autodesk\AutoCAD 2020\AcMPolygonMGD.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="AecBaseMgd">
+      <HintPath>..\..\..\Autodesk\AutoCAD 2020\AecBaseMgd.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="AeccDbMgd">
+      <HintPath>..\..\..\Autodesk\AutoCAD 2020\C3D\AeccDbMgd.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="AecCoreMgd">
+      <HintPath>..\..\..\Autodesk\AutoCAD 2020\ACA\AecCoreMgd.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="AecPropDataMgd">
+      <HintPath>..\..\..\Autodesk\AutoCAD 2020\ACA\AecPropDataMgd.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Alpinechough.Srtm">
+      <HintPath>bin\Debug\Alpinechough.Srtm.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Autodesk.AEC.Interop.Base">
+      <HintPath>..\..\..\Autodesk\AutoCAD 2020\ACA\Autodesk.AEC.Interop.Base.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Autodesk.AEC.Interop.Details">
+      <HintPath>..\..\..\Autodesk\AutoCAD 2020\ACA\Autodesk.AEC.Interop.Details.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Autodesk.AEC.Interop.UIBase">
+      <HintPath>..\..\..\Autodesk\AutoCAD 2020\ACA\Autodesk.AEC.Interop.UIBase.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Autodesk.AECC.Interop.Land">
+      <HintPath>..\..\..\Autodesk\AutoCAD 2020\C3D\Autodesk.AECC.Interop.Land.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Autodesk.AECC.Interop.Survey">
+      <HintPath>..\..\..\Autodesk\AutoCAD 2020\C3D\Autodesk.AECC.Interop.Survey.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Autodesk.AECC.Interop.UiLand">
+      <HintPath>..\..\..\Autodesk\AutoCAD 2020\C3D\Autodesk.AECC.Interop.UiLand.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Autodesk.AutoCAD.Interop">
+      <HintPath>..\..\..\Autodesk\AutoCAD 2020\Autodesk.AutoCAD.Interop.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Autodesk.AutoCAD.Interop.Common">
+      <HintPath>..\..\..\Autodesk\AutoCAD 2020\Autodesk.AutoCAD.Interop.Common.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CadastralTools">
+      <HintPath>K:\Civil3DToolsUtility\NET\CadastralTools.dll</HintPath>
+    </Reference>
+    <Reference Include="ManagedMapApi">
+      <HintPath>..\..\..\Autodesk\AutoCAD 2020\Map\ManagedMapApi.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=9.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.9.0.0\lib\netstandard2.0\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NetTopologySuite, Version=2.0.0.0, Culture=neutral, PublicKeyToken=f580a05016ebada1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\NET\Topomatic Robur Road 16.0\NetTopologySuite.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="OSGeo.MapGuide.Foundation">
+      <HintPath>..\..\..\Autodesk\AutoCAD 2020\Map\bin\GisPlatform\OSGeo.MapGuide.Foundation.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="OSGeo.MapGuide.Geometry">
+      <HintPath>..\..\..\Autodesk\AutoCAD 2020\Map\bin\GisPlatform\OSGeo.MapGuide.Geometry.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="OSGeo.MapGuide.PlatformBase">
+      <HintPath>..\..\..\Autodesk\AutoCAD 2020\Map\bin\GisPlatform\OSGeo.MapGuide.PlatformBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.4.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.6.0\lib\net462\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Drawing.Primitives.4.3.0\lib\net45\System.Drawing.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Pipelines, Version=9.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Pipelines.9.0.0\lib\netstandard2.0\System.IO.Pipelines.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.6.0\lib\net462\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.6.0\lib\net462\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.1.0\lib\net462\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=9.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.9.0.0\lib\netstandard2.0\System.Text.Encodings.Web.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.9.0.0\lib\netstandard2.0\System.Text.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AcadFunction\AcadFunction.vb" />
+    <Compile Include="AcadFunction\SubZoom.vb" />
+    <Compile Include="AlignmentFunction\FuncAlignment.vb" />
+    <Compile Include="BridgeProject\FormCreateBridge.Designer.vb">
+      <DependentUpon>FormCreateBridge.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BridgeProject\FormCreateBridge.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BufferZones\BufferZones.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\ForestProjectParcelsvb.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Characteristics\BerriesModel.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Characteristics\BerryModel.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Characteristics\CharacteristicsForestQuarterModel.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Characteristics\CharacteristicsNaturalReforestationModel.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Characteristics\CharacteristicsTaxationPieceModel.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Characteristics\ContainForestQuarterModel.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Characteristics\CurrentAndPreviousNumbersModel.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Characteristics\DeforestationModel.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Characteristics\EventInfoModel.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Characteristics\EventsModel.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Characteristics\ForestCropsModel.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Characteristics\ForestPlantingModel.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Characteristics\ForestPlantingsModel.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Characteristics\ForestQuarterModel.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Characteristics\ForestQuartersModel.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Characteristics\ForestUndergrowthModel.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Characteristics\GardensVineyardsPlantsModel.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Characteristics\HaymakingModel.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Characteristics\LandsLineModel.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Characteristics\LandsNotOccupiedForestPlantationsModel.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Characteristics\LostForestPlantationsModel.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Characteristics\NonClosedForestCropsModel.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Characteristics\NonWoodModel.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Characteristics\PositionForestTaxingAllocationModel.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Characteristics\RelationsModel.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Characteristics\SingleTreesModel.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Characteristics\SoilCharacteristicsModel.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Characteristics\SpeciesInfoModel.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Characteristics\SpeciesModel.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Characteristics\StockModel.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Characteristics\SwampsModel.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Characteristics\TaxationPieceModel.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Characteristics\TreeUndergrowthModel.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Characteristics\WoodStockForestPlantingsModel.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Common\CommonTypes.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Common\KindEModel.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Geometry\ContourModel.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Geometry\ContoursModel.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Geometry\EntitySpatialModel.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Geometry\OrdinateModel.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Geometry\OrdinatesModel.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Geometry\PopdContoursLocationModel.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Geometry\SpatialsElementModel.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Geometry\SpatialsElementsModel.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Geometry\SpecialFileModel.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Geometry\SpecialFilesModel.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Header\EmployeeModel.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Header\ExpertModel.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Header\ForestryModel.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Header\HeaderModel.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Header\IndividualEntrepreneurModel.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Header\InfoBasicModel.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Header\InfoCounterpartyModel.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Header\InfoDocumentModel.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Header\InfoOrganizationModel.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Header\InfoPerformerModel.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Header\InstituteModel.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Header\LocationModel.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Header\LuObjectModel.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Header\SignerDataModel.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Header\SteadForestryModel.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\InitialData\AfsKSModel.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\InitialData\DeviceModel.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\InitialData\GeoNetworkPointInfStatusModel.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\InitialData\InfoBaseModel.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\InitialData\InfoGeodeticBaseModel.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\InitialData\InfoMeasuringModel.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\InitialData\InitialDataModel.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Model\TaxationDescriptionModel.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Services\TaxationDescriptionSerializer.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\Services\XsdValidator.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\UI\Forms\TaxationDescriptionForm.Designer.vb">
+      <DependentUpon>TaxationDescriptionForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CivilLandProject\ForestProjectDocument\UI\Forms\TaxationDescriptionForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CivilLandProject\NumbersPolygons\CadastralPoint.vb" />
+    <Compile Include="CreateDWGObject\CreateDWGObject.vb" />
+    <Compile Include="FuncBridge\FuncBredge.vb" />
+    <Compile Include="FuncCadastr\FuncCadastr.vb" />
+    <Compile Include="FuncFeatureLine\FuncFeatureLine.vb" />
+    <Compile Include="FuncFiles\FuncFiles.vb" />
+    <Compile Include="FuncFormatZN\FuncFormatZN.vb" />
+    <Compile Include="FuncGeoGSON\FuncReadGSONLandCadaster.vb" />
+    <Compile Include="FuncGeoGSON\RosReestr.vb" />
+    <Compile Include="FuncGeoGSON\RosReestr_Parcels.vb" />
+    <Compile Include="FuncNetTopologySuite\FuncNetTopologySuite.vb" />
+    <Compile Include="FuncOD\FuncOD.vb" />
+    <Compile Include="FuncProfile\FuncFrofile.vb" />
+    <Compile Include="FuncPropertySet\FuncPropertySet.vb" />
+    <Compile Include="FuncSelectObject\SelectCadastralObject.vb" />
+    <Compile Include="FuncStyles\StyleObject.vb" />
+    <Compile Include="FuncSurvey\FuncSurvey.vb" />
+    <Compile Include="FuncXRecords\FuncXRecords.vb" />
+    <Compile Include="Geology\ImportDataGeology.vb" />
+    <Compile Include="IFC\CreateRoadLayers.vb" />
+    <Compile Include="IFC\FormCreateRoadLayers.Designer.vb">
+      <DependentUpon>FormCreateRoadLayers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IFC\FormCreateRoadLayers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IFC\GIS\ExportObject.vb" />
+    <Compile Include="IFC\IFC.vb" />
+    <Compile Include="IFC\Triangulate.vb" />
+    <Compile Include="LandCadastre\CadastralUtility.vb" />
+    <Compile Include="LandCadastre\FormOverDrawPlan.Designer.vb">
+      <DependentUpon>FormOverDrawPlan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LandCadastre\FormOverDrawPlan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LandCadastre\LandReports.vb" />
+    <Compile Include="LandReclamation\EditTaxationForm.Designer.vb">
+      <DependentUpon>EditTaxationForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LandReclamation\EditTaxationForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LandReclamation\EditTaxationXmlBuilder.vb" />
+    <Compile Include="LandReclamation\ExtractRequestBuilder.vb" />
+    <Compile Include="LandReclamation\ForestRequest.vb" />
+    <Compile Include="LandReclamation\ForestRequestForm.Designer.vb">
+      <DependentUpon>ForestRequestForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LandReclamation\ForestRequestForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LandReclamation\EditTaxationModel.vb" />
+    <Compile Include="LandReclamation\XmlHelper.vb" />
+    <Compile Include="LandReclamation\XmlNamespaces.vb" />
+    <Compile Include="LandReclamation\LandReclamation.vb" />
+    <Compile Include="LandReclamation\XmlValidator.vb" />
+    <Compile Include="PipeLine\DrawingPipeNetwork.vb" />
+    <Compile Include="PipeLine\FormCreateSolidNetworks.Designer.vb">
+      <DependentUpon>FormCreateSolidNetworks.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PipeLine\FormCreateSolidNetworks.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PipeLine\FormDrawPipeNetwork.Designer.vb">
+      <DependentUpon>FormDrawPipeNetwork.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PipeLine\FormDrawPipeNetwork.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PipeLine\FormInsertBlkToStructure.Designer.vb">
+      <DependentUpon>FormInsertBlkToStructure.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PipeLine\FormInsertBlkToStructure.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PipeLine\FormInsertPortalWall.Designer.vb">
+      <DependentUpon>FormInsertPortalWall.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PipeLine\FormInsertPortalWall.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Profile\ProfileWorkMark.Designer.vb">
+      <DependentUpon>ProfileWorkMark.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Profile\ProfileWorkMark.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Profile\ProfileWorkMarkOldVariant.vb" />
+    <Compile Include="Roads\FormCreateLabel.Designer.vb">
+      <DependentUpon>FormCreateLabel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Roads\FormCreateLabel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Roads\FormInsertSlab.Designer.vb">
+      <DependentUpon>FormInsertSlab.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Roads\FormInsertSlab.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Roads\FormRoadSignEditor.Designer.vb">
+      <DependentUpon>FormRoadSignEditor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Roads\FormRoadSignEditor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Roads\RoadSignEditor.vb" />
+    <Compile Include="Survey\EditlineVertexToTINSurface.vb" />
+    <Compile Include="Survey\FomEditlineVertexToTINSurface.Designer.vb">
+      <DependentUpon>FomEditlineVertexToTINSurface.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Survey\FomEditlineVertexToTINSurface.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LandCadastre\CadastrData.xaml.vb">
+      <DependentUpon>CadastrData.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LandCadastre\ExportGeoGSONRosreestr.vb" />
+    <Compile Include="LandCadastre\FormRosreestrKPTImport.Designer.vb">
+      <DependentUpon>FormRosreestrKPTImport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LandCadastre\FormRosreestrKPTImport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LandCadastre\LandCadastrPalette.vb" />
+    <Compile Include="CivilLandProject\ImportData\RosreestrDataImport.vb" />
+    <Compile Include="MathFunction\MathFunction.vb" />
+    <Compile Include="PipeLine\FormListAllStructure.Designer.vb">
+      <DependentUpon>FormListAllStructure.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PipeLine\FormListAllStructure.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Profile\CreatingProfileLineFromExcel.vb" />
+    <Compile Include="Profile\CreatingProfileLineFromPolyline.vb" />
+    <Compile Include="Profile\SchemeOfRouteInPlan.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Profile\ProjectProfileWorkingMark.vb" />
+    <Compile Include="Profile\ProjProfileWorkingMark.Designer.vb">
+      <DependentUpon>ProjProfileWorkingMark.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Profile\ProjProfileWorkingMark.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Profile\PropertiesProfileElementsToExcel.vb" />
+    <Compile Include="Profile\ReadPropertiesSectionToExcel.vb" />
+    <Compile Include="Profile\SimplifyProfileLine.vb" />
+    <Compile Include="Profile\SimplProfileLine.Designer.vb">
+      <DependentUpon>SimplProfileLine.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Profile\SimplProfileLine.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Profile\SitProfil.Designer.vb">
+      <DependentUpon>SitProfil.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Profile\SitProfil.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Roads\AssemblyByGroupsSection.Designer.vb">
+      <DependentUpon>AssemblyByGroupsSection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Roads\AssemblyByGroupsSection.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Roads\InsertAssemblyByGroupsSection.vb" />
+    <Compile Include="Roads\ListMarksOnTopCoating.vb" />
+    <Compile Include="Roads\MarksOnTopCoating.Designer.vb">
+      <DependentUpon>MarksOnTopCoating.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Roads\MarksOnTopCoating.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Roads\ListPlanningStatement.vb" />
+    <Compile Include="Roads\ListUPLinesAndCurves.vb" />
+    <Compile Include="Roads\PlanStatement.Designer.vb">
+      <DependentUpon>PlanStatement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Roads\PlanStatement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Profile\ProjectProfilePropertiesXYZD.vb" />
+    <Compile Include="Profile\ProjProfilePropXYZD.Designer.vb">
+      <DependentUpon>ProjProfilePropXYZD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Profile\ProjProfilePropXYZD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Roads\RoadPlane.Designer.vb">
+      <DependentUpon>RoadPlane.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Roads\RoadPlane.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Roads\SetBlocksAlignments.vb" />
+    <Compile Include="Roads\SplitFigure.Designer.vb">
+      <DependentUpon>SplitFigure.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Roads\SplitFigure.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Roads\SplitFigureBySection.vb" />
+    <Compile Include="Roads\WritePropertyDataFigureByExcel.vb" />
+    <Compile Include="Roads\СalcMarksAndSlopesOnCuvettes.vb" />
+    <Compile Include="Roads\СalcMarksSlopesCuvets.Designer.vb">
+      <DependentUpon>СalcMarksSlopesCuvets.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Roads\СalcMarksSlopesCuvets.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SurveyReport\FormReportSurvey.Designer.vb">
+      <DependentUpon>FormReportSurvey.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SurveyReport\FormReportSurvey.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SurveyReport\SurveyReport.vb" />
+    <Compile Include="Survey\EditlineVertexToCoGoPoint.vb" />
+    <Compile Include="Survey\EditVertexFeatureLineToCoGoPoint.vb" />
+    <Compile Include="Survey\FormWireSagAirLine.Designer.vb">
+      <DependentUpon>FormWireSagAirLine.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Survey\FormWireSagAirLine.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Survey\ImageLinkedGPS.Designer.vb">
+      <DependentUpon>ImageLinkedGPS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Survey\ImageLinkedGPS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Survey\ImportSRTMDEMSurface.vb" />
+    <Compile Include="Survey\LoadsImageLinkedGPS.vb" />
+    <Compile Include="Survey\ObjectCopyProperties.vb" />
+    <Compile Include="Survey\ReplaseObj2DToCoGoPoint.Designer.vb">
+      <DependentUpon>ReplaseObj2DToCoGoPoint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Survey\ReplaseObj2DToCoGoPoint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Survey\ReplaseObj3DToCoGoPoint.Designer.vb">
+      <DependentUpon>ReplaseObj3DToCoGoPoint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Survey\ReplaseObj3DToCoGoPoint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Survey\ReplaseObject2DToCoGoPoint.vb" />
+    <Compile Include="Survey\ReplaseObject3DToCoGoPoint.vb" />
+    <Compile Include="Survey\TransformationCoordinates.vb" />
+    <Compile Include="Survey\TransformCoordinates.Designer.vb">
+      <DependentUpon>TransformCoordinates.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Survey\TransformCoordinates.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Survey\TransformDwgToMap3d.vb" />
+    <Compile Include="Survey\WireSagAirLine.vb" />
+    <Compile Include="Territory_planning_project\CatalogExportCoordinates.vb" />
+    <Compile Include="CivilLandProject\CreateObject\CreateCadastralObject.vb" />
+    <Compile Include="Territory_planning_project\CreateProject.vb" />
+    <Compile Include="Territory_planning_project\Dismantling_construction.vb" />
+    <Compile Include="Territory_planning_project\ExportCadastralObject.vb" />
+    <Compile Include="Territory_planning_project\FormAutomaticCreateParcels.Designer.vb">
+      <DependentUpon>FormAutomaticCreateParcels.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Territory_planning_project\FormAutomaticCreateParcels.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Territory_planning_project\FormCreateOKS.Designer.vb">
+      <DependentUpon>FormCreateOKS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Territory_planning_project\FormCreateOKS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Territory_planning_project\FormCreateParcels.Designer.vb">
+      <DependentUpon>FormCreateParcels.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Territory_planning_project\FormCreateParcels.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Territory_planning_project\FormCreatePoint.Designer.vb">
+      <DependentUpon>FormCreatePoint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Territory_planning_project\FormCreatePoint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Territory_planning_project\FormCreateProject.Designer.vb">
+      <DependentUpon>FormCreateProject.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Territory_planning_project\FormCreateProject.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Territory_planning_project\FormListProjectParcels.Designer.vb">
+      <DependentUpon>FormListProjectParcels.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Territory_planning_project\FormListProjectParcels.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Territory_planning_project\FormReportCatalogCoordinates.Designer.vb">
+      <DependentUpon>FormReportCatalogCoordinates.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Territory_planning_project\FormReportCatalogCoordinates.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Territory_planning_project\FormRestoreLabel.Designer.vb">
+      <DependentUpon>FormRestoreLabel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Territory_planning_project\FormRestoreLabel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Territory_planning_project\FormSelectPropertyPSTable.Designer.vb">
+      <DependentUpon>FormSelectPropertyPSTable.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Territory_planning_project\FormSelectPropertyPSTable.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Territory_planning_project\FormSemiAutoCreateParcels.Designer.vb">
+      <DependentUpon>FormSemiAutoCreateParcels.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Territory_planning_project\FormSemiAutoCreateParcels.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Territory_planning_project\FormGeoDat.Designer.vb">
+      <DependentUpon>FormGeoDat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Territory_planning_project\FormGeoDat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Territory_planning_project\FormStatusPoint.Designer.vb">
+      <DependentUpon>FormStatusPoint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Territory_planning_project\FormStatusPoint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Territory_planning_project\FormUserReports.Designer.vb">
+      <DependentUpon>FormUserReports.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Territory_planning_project\FormUserReports.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Territory_planning_project\FormVerticalPlaningPoint.Designer.vb">
+      <DependentUpon>FormVerticalPlaningPoint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Territory_planning_project\FormVerticalPlaningPoint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Territory_planning_project\FormVerticalPlaningSlopeDist.Designer.vb">
+      <DependentUpon>FormVerticalPlaningSlopeDist.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Territory_planning_project\FormVerticalPlaningSlopeDist.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Territory_planning_project\GeoDat.vb" />
+    <Compile Include="Territory_planning_project\ListProjectParcels.vb" />
+    <Compile Include="Territory_planning_project\ProjectManagement.vb" />
+    <Compile Include="Territory_planning_project\RestoreObject.vb" />
+    <Compile Include="Territory_planning_project\Vertical_planing.vb" />
+    <Compile Include="Utils\Class1.vb" />
+    <Compile Include="Utils\Photogrammetry.vb" />
+    <Compile Include="Utils\RasterCadastral.vb" />
+    <Compile Include="WPFForms\PipeLinePalette.xaml.vb">
+      <DependentUpon>PipeLinePalette.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WPFForms\TerritoryPlanProject.xaml.vb">
+      <DependentUpon>TerritoryPlanProject.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WPFForms\TOPOSymbols.xaml.vb">
+      <DependentUpon>TOPOSymbols.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WPFForms\UserPropertiesTopoSymbols.xaml.vb">
+      <DependentUpon>UserPropertiesTopoSymbols.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Topography\AirPowerLine.Designer.vb">
+      <DependentUpon>AirPowerLine.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Topography\AirPowerLine.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Topography\AirPowerLines.vb" />
+    <Compile Include="Topography\CoordinateGrid.vb" />
+    <Compile Include="Topography\CreateTopAndBottomBK.vb" />
+    <Compile Include="Topography\CreateTopographicSymbols.vb" />
+    <Compile Include="Topography\DeleteSlopes.vb" />
+    <Compile Include="Topography\DrawSlopes.vb" />
+    <Compile Include="Topography\DrawUserSlopes.Designer.vb">
+      <DependentUpon>DrawUserSlopes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Topography\DrawUserSlopes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Topography\FormTopAndBottomBK.Designer.vb">
+      <DependentUpon>FormTopAndBottomBK.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Topography\FormTopAndBottomBK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Topography\HatchContour.Designer.vb">
+      <DependentUpon>HatchContour.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Topography\HatchContour.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Topography\HatchingContour.vb" />
+    <Compile Include="Topography\InsertBlocksVertexPolyline.vb" />
+    <Compile Include="Topography\RotatePointCoGo.vb" />
+    <Compile Include="Topography\RotPointCoGo.Designer.vb">
+      <DependentUpon>RotPointCoGo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Topography\RotPointCoGo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Topography\SelectTemplateFiles.Designer.vb">
+      <DependentUpon>SelectTemplateFiles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Topography\SelectTemplateFiles.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Topography\TopAndBottomBK.Designer.vb">
+      <DependentUpon>TopAndBottomBK.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Topography\TopAndBottomBK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utils\ConvertFeatureLineToPolyline.vb" />
+    <Compile Include="Utils\ConvertPlane.vb" />
+    <Compile Include="Utils\ExplodeObjectDWGFiles.vb" />
+    <Compile Include="Utils\GPS.vb" />
+    <Compile Include="BridgeProject\ProjectBridge.vb" />
+    <Compile Include="Utils\IntersectFigure.vb" />
+    <Compile Include="Utils\IntersectFigure1.vb" />
+    <Compile Include="Utils\IntersectFigure2.vb" />
+    <Compile Include="Utils\Plane3d.vb" />
+    <Compile Include="Utils\ReadCoordinatesParcelByExcel.vb" />
+    <Compile Include="Utils\SmetaCalk.vb" />
+    <Compile Include="Utils\Utils.vb" />
+    <Compile Include="Utils\WriteObjectDataOD.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BridgeProject\FormCreateBridge.resx">
+      <DependentUpon>FormCreateBridge.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CivilLandProject\ForestProjectDocument\UI\Forms\TaxationDescriptionForm.resx">
+      <DependentUpon>TaxationDescriptionForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IFC\FormCreateRoadLayers.resx">
+      <DependentUpon>FormCreateRoadLayers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LandCadastre\FormRosreestrKPTImport.resx">
+      <DependentUpon>FormRosreestrKPTImport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LandCadastre\FormOverDrawPlan.resx">
+      <DependentUpon>FormOverDrawPlan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LandReclamation\EditTaxationForm.resx">
+      <DependentUpon>EditTaxationForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LandReclamation\ForestRequestForm.resx">
+      <DependentUpon>ForestRequestForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PipeLine\FormCreateSolidNetworks.resx">
+      <DependentUpon>FormCreateSolidNetworks.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PipeLine\FormDrawPipeNetwork.resx">
+      <DependentUpon>FormDrawPipeNetwork.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PipeLine\FormInsertBlkToStructure.resx">
+      <DependentUpon>FormInsertBlkToStructure.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PipeLine\FormInsertPortalWall.resx">
+      <DependentUpon>FormInsertPortalWall.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PipeLine\FormListAllStructure.resx">
+      <DependentUpon>FormListAllStructure.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profile\ProfileWorkMark.resx">
+      <DependentUpon>ProfileWorkMark.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profile\ProjProfileWorkingMark.resx">
+      <DependentUpon>ProjProfileWorkingMark.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profile\SimplProfileLine.resx">
+      <DependentUpon>SimplProfileLine.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profile\SitProfil.resx">
+      <DependentUpon>SitProfil.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Roads\AssemblyByGroupsSection.resx">
+      <DependentUpon>AssemblyByGroupsSection.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Roads\FormCreateLabel.resx">
+      <DependentUpon>FormCreateLabel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Roads\FormInsertSlab.resx">
+      <DependentUpon>FormInsertSlab.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Roads\FormRoadSignEditor.resx">
+      <DependentUpon>FormRoadSignEditor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Roads\MarksOnTopCoating.resx">
+      <DependentUpon>MarksOnTopCoating.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Roads\PlanStatement.resx">
+      <DependentUpon>PlanStatement.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profile\ProjProfilePropXYZD.resx">
+      <DependentUpon>ProjProfilePropXYZD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Roads\RoadPlane.resx">
+      <DependentUpon>RoadPlane.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Roads\SplitFigure.resx">
+      <DependentUpon>SplitFigure.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Roads\СalcMarksSlopesCuvets.resx">
+      <DependentUpon>СalcMarksSlopesCuvets.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SurveyReport\FormReportSurvey.resx">
+      <DependentUpon>FormReportSurvey.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Survey\FomEditlineVertexToTINSurface.resx">
+      <DependentUpon>FomEditlineVertexToTINSurface.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Survey\FormWireSagAirLine.resx">
+      <DependentUpon>FormWireSagAirLine.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Survey\ImageLinkedGPS.resx">
+      <DependentUpon>ImageLinkedGPS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Survey\ReplaseObj2DToCoGoPoint.resx">
+      <DependentUpon>ReplaseObj2DToCoGoPoint.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Survey\ReplaseObj3DToCoGoPoint.resx">
+      <DependentUpon>ReplaseObj3DToCoGoPoint.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Survey\TransformCoordinates.resx">
+      <DependentUpon>TransformCoordinates.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Territory_planning_project\FormAutomaticCreateParcels.resx">
+      <DependentUpon>FormAutomaticCreateParcels.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Territory_planning_project\FormCreateOKS.resx">
+      <DependentUpon>FormCreateOKS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Territory_planning_project\FormCreateParcels.resx">
+      <DependentUpon>FormCreateParcels.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Territory_planning_project\FormCreatePoint.resx">
+      <DependentUpon>FormCreatePoint.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Territory_planning_project\FormCreateProject.resx">
+      <DependentUpon>FormCreateProject.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Territory_planning_project\FormListProjectParcels.resx">
+      <DependentUpon>FormListProjectParcels.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Territory_planning_project\FormReportCatalogCoordinates.resx">
+      <DependentUpon>FormReportCatalogCoordinates.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Territory_planning_project\FormRestoreLabel.resx">
+      <DependentUpon>FormRestoreLabel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Territory_planning_project\FormSelectPropertyPSTable.resx">
+      <DependentUpon>FormSelectPropertyPSTable.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Territory_planning_project\FormSemiAutoCreateParcels.resx">
+      <DependentUpon>FormSemiAutoCreateParcels.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Territory_planning_project\FormGeoDat.resx">
+      <DependentUpon>FormGeoDat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Territory_planning_project\FormStatusPoint.resx">
+      <DependentUpon>FormStatusPoint.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Territory_planning_project\FormUserReports.resx">
+      <DependentUpon>FormUserReports.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Territory_planning_project\FormVerticalPlaningPoint.resx">
+      <DependentUpon>FormVerticalPlaningPoint.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Territory_planning_project\FormVerticalPlaningSlopeDist.resx">
+      <DependentUpon>FormVerticalPlaningSlopeDist.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Topography\AirPowerLine.resx">
+      <DependentUpon>AirPowerLine.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Topography\DrawUserSlopes.resx">
+      <DependentUpon>DrawUserSlopes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Topography\FormTopAndBottomBK.resx">
+      <DependentUpon>FormTopAndBottomBK.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Topography\HatchContour.resx">
+      <DependentUpon>HatchContour.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Topography\RotPointCoGo.resx">
+      <DependentUpon>RotPointCoGo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Topography\SelectTemplateFiles.resx">
+      <DependentUpon>SelectTemplateFiles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Topography\TopAndBottomBK.resx">
+      <DependentUpon>TopAndBottomBK.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="Schemas\addressTypes-2.0.0-smev.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\addressTypes-2.0.0.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\addressTypes-2.1.0.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\addressTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\areaForestCareType.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\attachmentTypes-2.0.0.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\attachmentTypes-2.1.0.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\attachmentTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\averageTaxationRatesType.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\characteristicFireClassesType.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\commonReport.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\commonType.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\complexTypes-2.0.0.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\complexTypes-2.1.0.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\complexTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dAdditionalDocumentKindTypes-2.0.0-smev.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dAdditionalDocumentKindTypes-2.0.0.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dAdditionalDocumentKindTypes-2.0.1.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dAdditionalDocumentKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dAfforestationCategoryKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dAgeClassKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dAgeGroupKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dAgePeriodKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dArrangementTreeKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dAttachmentTypeKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dAvailabilityCategoryKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dBasisForChangeKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dBonitetKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dBrokenTrunkKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dCalculationMethodKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dCanopyTypeKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dCarbonStockKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dCategoryLandForestryKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dCategoryLandKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dCategorySuitabilityKindTypes-2.0.0.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dCategorySuitabilityKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dCausesDamageLossForKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dCausesForestFireKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dClimateTypeKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dCompletenesSlayerKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dCompositionSoilsKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dConditionHaymakingKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dConditionsProjectedMethodKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dConformityKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dConstituentEntityKindTypes-2.0.0.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dConstituentEntityKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dContaminationLandsKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dCoordinateSystemKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dCoordinateSystemRecordKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dCountryKindTypes-2.0.0.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dCountryKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dCuttingGroupCategoryKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dCuttingTypeKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dCuttingUsageKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dDamageGroupingKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dDamageIntensityKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dDeadwoodRotTypeKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dDeadWoodTypesKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dDecompositionDegreeKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dDegreeBrushwoodKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dDegreeCleaningKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dDegreeCoverageKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dDegreeCoverGroundKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dDegreeSoddingKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dDegreeUnevenAgeKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dDensityUndergrowthKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dDiscrepancyKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dDistributionDeadwoodKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dDistrictForestriesKindTypes-2.0.0.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dDistrictForestriesKindTypes-2024.04.12.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dDistrictForestriesKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dDivisionExaminationKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dDocumentKindKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dDocumentTypeKindTypes-2.1.0-smev.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dDocumentTypeKindTypes-2.1.0.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dDocumentTypeKindTypes-2.1.1.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dDocumentTypeKindTypes-2.1.2.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dDocumentTypeKindTypes-2.1.3.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dDocumentTypeKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dEasementReasonKindTypes-2.0.0.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dEasementReasonKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dErosionDegreeKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dErosionTypeKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dEvennessBreedsKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dEventEvaluationKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dExtendedStatusClearcutKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dExtentLichensTrunkKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dExtractBorderLocationIntoKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dFarmsKindTypes-2.1.0.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dFarmsKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dFederalDistricsKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dFellingForestKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dFireHazardClassEType.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dForestAreasKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dForestFacilitiesKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dForestFloorThicknessKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dForestMachineryEquipKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dForestNonInfrastructKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dForestOwnNeedsReasonKindTypes-2.0.0.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dForestOwnNeedsReasonKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dForestResoursKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dForestryActivitiesKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dForestryKindTypes-2.0.0-smev.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dForestryKindTypes-2.0.0.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dForestryKindTypes-2.1.0.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dForestryKindTypes-2024.04.12.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dForestryKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dFormsOwnershipForestKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dGardenTypeKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dGeodataExternalFormatKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dGeodataStorageKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dGeodataUnitMeasurementMnemonicKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dGroupsOfCausesKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dGroupsTreeSpeciesKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dHarmfulOrganismsKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dHeightClassKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dHeightUndergrowthKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dHotbedTipeKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dIdDocumentKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dImpossibilityCuttingAreaKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dIndicatorsForestKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dIntensityForestFireKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\distributionSpecialPurposeType.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dKindTransportKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dLandTypeKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dLocationForestAreaKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dLocationTreeDamageKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dLocationTypeKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dMachEquipMeasuresKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dMarketabilityClassKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dMeasuresOZVLKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dMethodDeterminPointKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dMethodDeterminPointRecordKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dMonthKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dMunicipalAreasKindTypes-2.0.0.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dMunicipalAreasKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dNameObjectSeedProdKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dNameProtectedForestsKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dNumberTiersStandKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\documentPackageTypes-2.1.0-smev.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\documentPackageTypes-2.1.0.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\documentPackageTypes-2.2.0.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\documentPackageTypes-2.2.1.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\documentPackageTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\documentTypes-2.1.0-smev.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\documentTypes-2.1.0.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\documentTypes-2.2.0.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\documentTypes-2.2.1.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\documentTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dOkpd2KindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dOkvPokazKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dOriginOfInformationKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dOtherTypesApplicantKindTypes-2.0.0.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dOtherTypesApplicantKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dPerformanceKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dPestStagesKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dPhotoModeKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dPlacementKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dPlacementTreesPPPKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dProtectionMeasuresKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dProviderKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dPublicEasementReasonKindTypes-2.0.0.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dPublicEasementReasonKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dPurposeCreatedRoadKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dPurposeForestsDocKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dPurposeForestsKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dQualityHaymakingKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dReasonTerminationKindTypes-2.0.0.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dReliefKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dRoadTypeKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dRumbDirectionKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dSeasonUseKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dSectionGlrKindTypes-2.0.0-smev.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dSectionGlrKindTypes-2.0.0.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dSectionGlrKindTypes-2.0.1.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dSectionGlrKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dSeedQualityClassKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dSelectionCategoryKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dSellDocTypeKindTypes-2.1.0.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dSellDocTypeKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dSettlementKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dSlopeExposureKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dSlopeSteepnessKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dSoilMoistureKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dSoilTypesKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dSpatialPrimitiveKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dSpatialPrimitiveRecordKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dSpecialCustomsKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dSpecialObjectsClearcutKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dSpeciesRichnessTreeKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dStabilityClassesKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dStageDegradationKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dStageHotbatKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dStateAuthorityKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dStateForestPlantKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dStateServiceOptionNumberKindTypes-2.0.0.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dStateServiceOptionNumberKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dStatusIufroKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dStepsThicknessKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dStumpCuttingAgeKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dSubjectsRFNameKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dSubordinateAuthorityKindTypes-2.1.0.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dSubordinateAuthorityKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dSuitabilityCategoryKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dSwampTypeKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dTaxationCategoryKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dTerzoneKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dTierKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dTimberDealKindKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dTipeCauseOfRuinKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dTipeGarbageKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dTipePestLpoKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dTnVedKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dTnVedWoodKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dToForestDeclarationKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dTreeHeightRange.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dTreeNewKindTypes-2.1.0.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dTreeNewKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dTreePlacementKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dTreeSubspeciesKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dTrustworthinessKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dTypeDamageKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dTypeDamageWeakeningKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dTypeForestConditionsKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dTypeForestFireKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dTypeForestFloorKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dTypeForestKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dTypeGardenPlantsKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dTypeHaymakingKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dTypeNurseryKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dTypeOriginKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dTypeReforestationKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dTypeRegisterObjectKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dTypeRightEncumbranceKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dTypeRightForestPlotKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dTypesAgricultureKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dTypesForestViolationKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dTypesHitsKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dTypesIdentityDocKindTypes-2.0.0.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dTypesIdentityDocKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dTypeVegetationKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dTypeZOUITKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dUnitChargeRateKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dUnitMeasurementKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dUnitMeasurementRecordKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dUsageReasonKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dUsageTypeKindTypes-2.0.0.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dUsageTypeKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dVarietyHeightsDiametKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dViolationMonitoringKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\dWasteDegreeCoverageKindTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\forestUseType-5.0.1.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\forestUseType.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\infoType.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\locationCuttingsWoodType.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\measuresType.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\objectSourceTypes-0.2.2.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\objectSourceTypes-0.3.0.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\objectSourceTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\objectsType.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\popdContoursLocation_v0.2.0.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\popdContoursLocation_v0.3.0.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\preventionType.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\reforestationPlanType.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\sanitaryRecreationalMeasuresType.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\serviceInfo.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\simpleTypes-2.0.0-smev.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\simpleTypes-2.0.0.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\simpleTypes-2.1.0.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\simpleTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\smev-supplementary-commons-1.2.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\stateForestRegisterExtractTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\subjectTypes-2.1.0.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\subjectTypes-2.1.1.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\subjectTypes-2.1.2.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\subjectTypes-2.2.0.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\subjectTypes-2.2.1.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\subjectTypes.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Schemas\volumeCuttingsWoodType.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>False</Private>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>False</Private>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4CBD-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\Создание слоев дорожной одежды.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="LandCadastre\CadastrData.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WPFForms\PipeLinePalette.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WPFForms\TerritoryPlanProject.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WPFForms\TOPOSymbols.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WPFForms\UserPropertiesTopoSymbols.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Инфрастрада_ЛОГО.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Сохранить.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Найти.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Дор_знак.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CivilLandProject\ForestProjectDocument\UI\Controls\" />
+    <Folder Include="CivilLandProject\ForestProjectDocument\xsdTemplates\Taxation\" />
+    <Folder Include="Schemas\xml\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

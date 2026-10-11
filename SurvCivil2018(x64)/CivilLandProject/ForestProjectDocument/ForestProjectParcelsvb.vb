@@ -11,9 +11,5 @@ Imports Autodesk.AutoCAD.Windows
 Imports CadastralTools
 Imports NetTopologySuite
 Public Class ForestProjectParcelsvb
-    <CommandMethod("TD_CREATE")>
-    Public Sub CreateTaxationDescription()
-        Dim form As New TaxationDescriptionForm()
-        Application.ShowModalDialog(form)
-    End Sub
+
 End Class

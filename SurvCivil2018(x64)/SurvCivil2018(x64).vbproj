@@ -20,7 +20,7 @@
     <DebugType>full</DebugType>
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\..\..\NET\</OutputPath>
     <DocumentationFile>SurvCivil2020%28x64%29.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
@@ -66,39 +66,39 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="accoremgd">
-      <HintPath>..\..\..\Autodesk\AutoCAD 2020\accoremgd.dll</HintPath>
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2024\accoremgd.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="acdbmgd">
-      <HintPath>..\..\..\Autodesk\AutoCAD 2020\acdbmgd.dll</HintPath>
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2024\acdbmgd.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="acdbmgdbrep">
-      <HintPath>..\..\..\Autodesk\AutoCAD 2020\acdbmgdbrep.dll</HintPath>
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2024\acdbmgdbrep.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="acmgd">
-      <HintPath>..\..\..\Autodesk\AutoCAD 2020\acmgd.dll</HintPath>
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2024\acmgd.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="AcMPolygonMGD">
-      <HintPath>..\..\..\Autodesk\AutoCAD 2020\AcMPolygonMGD.dll</HintPath>
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2024\AcMPolygonMGD.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="AecBaseMgd">
-      <HintPath>..\..\..\Autodesk\AutoCAD 2020\AecBaseMgd.dll</HintPath>
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2024\AecBaseMgd.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="AeccDbMgd">
-      <HintPath>..\..\..\Autodesk\AutoCAD 2020\C3D\AeccDbMgd.dll</HintPath>
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2024\C3D\AeccDbMgd.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="AecCoreMgd">
-      <HintPath>..\..\..\Autodesk\AutoCAD 2020\ACA\AecCoreMgd.dll</HintPath>
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2024\ACA\AecCoreMgd.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="AecPropDataMgd">
-      <HintPath>..\..\..\Autodesk\AutoCAD 2020\ACA\AecPropDataMgd.dll</HintPath>
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2024\ACA\AecPropDataMgd.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Alpinechough.Srtm">
@@ -106,42 +106,42 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="Autodesk.AEC.Interop.Base">
-      <HintPath>..\..\..\Autodesk\AutoCAD 2020\ACA\Autodesk.AEC.Interop.Base.dll</HintPath>
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2024\ACA\Autodesk.AEC.Interop.Base.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="Autodesk.AEC.Interop.Details">
-      <HintPath>..\..\..\Autodesk\AutoCAD 2020\ACA\Autodesk.AEC.Interop.Details.dll</HintPath>
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2024\ACA\Autodesk.AEC.Interop.Details.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="Autodesk.AEC.Interop.UIBase">
-      <HintPath>..\..\..\Autodesk\AutoCAD 2020\ACA\Autodesk.AEC.Interop.UIBase.dll</HintPath>
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2024\ACA\Autodesk.AEC.Interop.UIBase.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="Autodesk.AECC.Interop.Land">
-      <HintPath>..\..\..\Autodesk\AutoCAD 2020\C3D\Autodesk.AECC.Interop.Land.dll</HintPath>
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2024\C3D\Autodesk.AECC.Interop.Land.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="Autodesk.AECC.Interop.Survey">
-      <HintPath>..\..\..\Autodesk\AutoCAD 2020\C3D\Autodesk.AECC.Interop.Survey.dll</HintPath>
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2024\C3D\Autodesk.AECC.Interop.Survey.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="Autodesk.AECC.Interop.UiLand">
-      <HintPath>..\..\..\Autodesk\AutoCAD 2020\C3D\Autodesk.AECC.Interop.UiLand.dll</HintPath>
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2024\C3D\Autodesk.AECC.Interop.UiLand.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="Autodesk.AutoCAD.Interop">
-      <HintPath>..\..\..\Autodesk\AutoCAD 2020\Autodesk.AutoCAD.Interop.dll</HintPath>
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2024\Autodesk.AutoCAD.Interop.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="Autodesk.AutoCAD.Interop.Common">
-      <HintPath>..\..\..\Autodesk\AutoCAD 2020\Autodesk.AutoCAD.Interop.Common.dll</HintPath>
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2024\Autodesk.AutoCAD.Interop.Common.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="CadastralTools">
       <HintPath>K:\Civil3DToolsUtility\NET\CadastralTools.dll</HintPath>
     </Reference>
     <Reference Include="ManagedMapApi">
-      <HintPath>..\..\..\Autodesk\AutoCAD 2020\Map\ManagedMapApi.dll</HintPath>
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2024\Map\ManagedMapApi.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=9.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
@@ -158,15 +158,15 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="OSGeo.MapGuide.Foundation">
-      <HintPath>..\..\..\Autodesk\AutoCAD 2020\Map\bin\GisPlatform\OSGeo.MapGuide.Foundation.dll</HintPath>
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2024\Map\bin\GisPlatform\OSGeo.MapGuide.Foundation.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="OSGeo.MapGuide.Geometry">
-      <HintPath>..\..\..\Autodesk\AutoCAD 2020\Map\bin\GisPlatform\OSGeo.MapGuide.Geometry.dll</HintPath>
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2024\Map\bin\GisPlatform\OSGeo.MapGuide.Geometry.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="OSGeo.MapGuide.PlatformBase">
-      <HintPath>..\..\..\Autodesk\AutoCAD 2020\Map\bin\GisPlatform\OSGeo.MapGuide.PlatformBase.dll</HintPath>
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2024\Map\bin\GisPlatform\OSGeo.MapGuide.PlatformBase.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="PresentationCore" />
@@ -242,83 +242,11 @@
     </Compile>
     <Compile Include="BufferZones\BufferZones.vb" />
     <Compile Include="CivilLandProject\ForestProjectDocument\ForestProjectParcelsvb.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Characteristics\BerriesModel.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Characteristics\BerryModel.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Characteristics\CharacteristicsForestQuarterModel.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Characteristics\CharacteristicsNaturalReforestationModel.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Characteristics\CharacteristicsTaxationPieceModel.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Characteristics\ContainForestQuarterModel.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Characteristics\CurrentAndPreviousNumbersModel.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Characteristics\DeforestationModel.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Characteristics\EventInfoModel.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Characteristics\EventsModel.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Characteristics\ForestCropsModel.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Characteristics\ForestPlantingModel.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Characteristics\ForestPlantingsModel.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Characteristics\ForestQuarterModel.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Characteristics\ForestQuartersModel.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Characteristics\ForestUndergrowthModel.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Characteristics\GardensVineyardsPlantsModel.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Characteristics\HaymakingModel.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Characteristics\LandsLineModel.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Characteristics\LandsNotOccupiedForestPlantationsModel.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Characteristics\LostForestPlantationsModel.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Characteristics\NonClosedForestCropsModel.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Characteristics\NonWoodModel.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Characteristics\PositionForestTaxingAllocationModel.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Characteristics\RelationsModel.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Characteristics\SingleTreesModel.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Characteristics\SoilCharacteristicsModel.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Characteristics\SpeciesInfoModel.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Characteristics\SpeciesModel.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Characteristics\StockModel.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Characteristics\SwampsModel.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Characteristics\TaxationPieceModel.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Characteristics\TreeUndergrowthModel.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Characteristics\WoodStockForestPlantingsModel.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Common\CommonTypes.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Common\KindEModel.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Geometry\ContourModel.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Geometry\ContoursModel.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Geometry\EntitySpatialModel.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Geometry\OrdinateModel.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Geometry\OrdinatesModel.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Geometry\PopdContoursLocationModel.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Geometry\SpatialsElementModel.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Geometry\SpatialsElementsModel.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Geometry\SpecialFileModel.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Geometry\SpecialFilesModel.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Header\EmployeeModel.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Header\ExpertModel.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Header\ForestryModel.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Header\HeaderModel.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Header\IndividualEntrepreneurModel.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Header\InfoBasicModel.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Header\InfoCounterpartyModel.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Header\InfoDocumentModel.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Header\InfoOrganizationModel.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Header\InfoPerformerModel.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Header\InstituteModel.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Header\LocationModel.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Header\LuObjectModel.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Header\SignerDataModel.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\Header\SteadForestryModel.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\InitialData\AfsKSModel.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\InitialData\DeviceModel.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\InitialData\GeoNetworkPointInfStatusModel.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\InitialData\InfoBaseModel.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\InitialData\InfoGeodeticBaseModel.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\InitialData\InfoMeasuringModel.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Helpers\InitialData\InitialDataModel.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Model\TaxationDescriptionModel.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Services\TaxationDescriptionSerializer.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\Services\XsdValidator.vb" />
-    <Compile Include="CivilLandProject\ForestProjectDocument\UI\Forms\TaxationDescriptionForm.Designer.vb">
-      <DependentUpon>TaxationDescriptionForm.vb</DependentUpon>
-    </Compile>
-    <Compile Include="CivilLandProject\ForestProjectDocument\UI\Forms\TaxationDescriptionForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
+
+    <Compile Include="CivilLandProject\ForestProjectDocument\CmdForestProjectDocumentation.vb" />
+
+    <Compile Include="CivilLandProject\ForestProjectDocument\MdPickContour.vb" />
+    <Compile Include="CivilLandProject\ForestProjectDocument\CmdProjectForestry.vb" />
     <Compile Include="CivilLandProject\NumbersPolygons\CadastralPoint.vb" />
     <Compile Include="CreateDWGObject\CreateDWGObject.vb" />
     <Compile Include="FuncBridge\FuncBredge.vb" />
@@ -775,9 +703,6 @@
   <ItemGroup>
     <EmbeddedResource Include="BridgeProject\FormCreateBridge.resx">
       <DependentUpon>FormCreateBridge.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CivilLandProject\ForestProjectDocument\UI\Forms\TaxationDescriptionForm.resx">
-      <DependentUpon>TaxationDescriptionForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="IFC\FormCreateRoadLayers.resx">
       <DependentUpon>FormCreateRoadLayers.vb</DependentUpon>
@@ -2155,8 +2080,6 @@
     <None Include="Resources\Дор_знак.PNG" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="CivilLandProject\ForestProjectDocument\UI\Controls\" />
-    <Folder Include="CivilLandProject\ForestProjectDocument\xsdTemplates\Taxation\" />
     <Folder Include="Schemas\xml\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
