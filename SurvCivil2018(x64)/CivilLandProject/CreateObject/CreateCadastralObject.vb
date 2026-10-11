@@ -736,7 +736,15 @@ Public Class CreateCadastralObject
                                     Dim newDataCounter As StructureElement = New StructureElement
                                     newDataCounter = dataParentParcel
                                     Dim keyParamCounter As String = newDataCounter.KeyParameter
-                                    keyParamCounter = CadastralTools.JsonValidator.SetJsonFieldValue(keyParamCounter, "ConditionalNumber", numberParentParcel & "(" & numberParentCounterParcel & ")")
+                                    If dictionaryDataParent.ContainsKey("ConditionalNumber") = True Then
+                                        keyParamCounter = CadastralTools.JsonValidator.SetJsonFieldValue(keyParamCounter, "ConditionalNumber", numberParentParcel & "(" & numberParentCounterParcel & ")")
+                                    End If
+                                    If dictionaryDataParent.ContainsKey("Area") = True Then
+                                        keyParamCounter = CadastralTools.JsonValidator.SetJsonFieldValue(keyParamCounter, "Area", Math.Round(polylineCounter.Area, 0))
+                                    End If
+                                    If dictionaryDataParent.ContainsKey("Lenght") = True Then
+                                        keyParamCounter = CadastralTools.JsonValidator.SetJsonFieldValue(keyParamCounter, "Lenght", Math.Round(polylineCounter.Area, 0))
+                                    End If
                                     newDataCounter.KeyParameter = keyParamCounter
                                     newDataCounter.IdElement = Guid.NewGuid.ToString
                                     newDataCounter.IdStructure = idStructure
@@ -750,13 +758,9 @@ Public Class CreateCadastralObject
                                             End If
                                         End If
                                     End If
-
-
-                                    Dim boolwritePS As Boolean = FuncPropertySet.FuncWriteDataSetByStructureElement(polylineCounter, newDataCounter)
                                     numberParentCounterParcel += 1
                                 End If
                             Next
-
                         End If
                     End If
                 End If
