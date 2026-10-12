@@ -25,3 +25,6 @@ _ReSharper*/
 # Logs / temp
 *.log
 *.tmp
+.vs/
+*.vsidx
+*.suo
