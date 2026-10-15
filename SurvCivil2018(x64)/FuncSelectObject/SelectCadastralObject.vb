@@ -1,4 +1,4 @@
-﻿Imports System.IO
+Imports System.IO
 Imports Autodesk.AutoCAD.ApplicationServices
 Imports Autodesk.AutoCAD.DatabaseServices
 Imports Autodesk.AutoCAD.EditorInput
@@ -200,72 +200,143 @@ Public Class SelectCadastralObject
         Return result
     End Function
     '==========================================================================================================================================================
-    'фильтрация объектов по дескриптору объектов (deskription, geometry) 2 вырианта или основной объект или внутренний островок
-    Public Shared Function selectCadastralObjectByDesk(ByRef Db As Database, ByVal DescriptorObject As String) As Dictionary(Of String, List(Of Geometries.Geometry))
-        Dim result As Dictionary(Of String, List(Of Geometries.Geometry)) = New Dictionary(Of String, List(Of Geometries.Geometry))
-        If IsNothing(Db) = True Then Return result
-        Dim acadTopoNet As FuncNetTopologySuite = New FuncNetTopologySuite
-        Using acTrans As Transaction = Db.TransactionManager.StartTransaction()
-            Dim acBlkTbl As BlockTable = acTrans.GetObject(Db.BlockTableId, OpenMode.ForRead)
-            Dim btr As BlockTableRecord = acTrans.GetObject(acBlkTbl(BlockTableRecord.ModelSpace), OpenMode.ForRead)
-            For Each id As ObjectId In btr
-                If id.IsNull = False And id.IsErased = False Then
-                    Dim selectEntity As Autodesk.AutoCAD.DatabaseServices.Entity = acTrans.GetObject(id, OpenMode.ForRead, False) 'открываем объект на чтение
-                    Dim dataStructuresObject As StructureElement = Nothing
-                    Dim boolRecData As Boolean = FuncXRecords.getXRecords(selectEntity, dataStructuresObject)
-                    If boolRecData = True Then
-                        Dim deskFindObject As String = dataStructuresObject.Description
-                        Dim tablePSData As String = dataStructuresObject.TablePS
-                        Dim boolFindRingObject As Boolean = False
-                        If tablePSData Like "CADASTRAL_OSTROV" Then
-                            boolFindRingObject = True
-                        End If
+    'быстрая фильтрация объектов по описанию
+    Public Shared Function getCadastralObjectByDesk(ByRef db As Database, ByVal deskCadastralObject As String, ByVal typeGeometry As CadastralTools.StructureElement.typeGeometryObject) As Dictionary(Of String, Geometries.Geometry)
+        ' словарь с участками
+        Dim result As New Dictionary(Of String, Geometries.Geometry)
+        If IsNothing(db) = True Then Return result
+        If IsNothing(deskCadastralObject) = True Then Return result
 
-                        If TypeOf selectEntity Is Polyline Then
-                            Dim polyline As Polyline = selectEntity
-                            If polyline.Area > 0 And dataStructuresObject.TypeGeometry = StructureElement.typeGeometryObject.polygon Then
-                                Dim polygon As NetTopologySuite.Geometries.Polygon = acadTopoNet.CreatePolygon(polyline)
-                                If IsNothing(polygon) = False Then
-                                    polygon.UserData = dataStructuresObject
-                                    If result.ContainsKey(tablePSData) = False Then
-                                        result.Add(tablePSData, New List(Of Geometries.Geometry) From {polygon})
-                                    Else
-                                        Dim listObject As List(Of Geometries.Geometry) = result.Item(tablePSData)
-                                        listObject.Add(polygon)
-                                        result.Item(tablePSData) = listObject
-                                    End If
-                                End If
-                            ElseIf dataStructuresObject.TypeGeometry = StructureElement.typeGeometryObject.polyline Then
-                                If TypeOf selectEntity Is Polyline Then
-                                    If polyline.Length > 0 Then
-                                        Dim line As NetTopologySuite.Geometries.LineString = acadTopoNet.CreateLineString(polyline)
-                                        If IsNothing(line) = False Then
-                                            line.UserData = dataStructuresObject
-                                            If result.ContainsKey(tablePSData) = False Then
-                                                result.Add(tablePSData, New List(Of Geometries.Geometry) From {line})
-                                            Else
-                                                Dim listObject As List(Of Geometries.Geometry) = result.Item(tablePSData)
-                                                listObject.Add(line)
-                                                result.Item(tablePSData) = listObject
-                                            End If
-                                        End If
-                                    End If
-                                End If
-                            End If
-                        End If
+        ' список островков
+        Dim listOstrov As New List(Of Geometries.Polygon)
 
+        If db Is Nothing Then Return result
+
+        Dim classTopology As New FuncNetTopologySuite
+        Dim filter As String = If(deskCadastralObject, "").Trim()
+
+        Try
+            Dim tr As Transaction = db.TransactionManager.StartTransaction()
+            Using tr
+                Dim btr As BlockTableRecord = TryCast(tr.GetObject(db.CurrentSpaceId, OpenMode.ForRead, False), BlockTableRecord)
+                If btr Is Nothing Then Return result
+
+                For Each id As ObjectId In btr
+                    If id.IsNull OrElse id.IsErased Then Continue For
+
+                    Dim acEnt As Entity = TryCast(tr.GetObject(id, OpenMode.ForRead), Entity)
+                    If acEnt Is Nothing Then Continue For
+
+                    ' читаем пользовательские свойства
+                    Dim dataCadastralObject As StructureElement = Nothing
+                    If Not FuncXRecords.getXRecords(acEnt, dataCadastralObject) Then Continue For
+                    If dataCadastralObject Is Nothing Then Continue For
+
+                    ' объект не площадной — пропускаем
+                    If dataCadastralObject.TypeGeometry <> typeGeometry Then
+                        Continue For
                     End If
-                End If
-            Next
-            acTrans.Commit()
-        End Using
+
+                    Dim deskObject As String = If(dataCadastralObject.Description, "").Trim()
+
+                    ' островки пропускаем
+                    If deskObject Like "Внутренний островок*" Then
+                        Continue For
+                    End If
+
+                    ' фильтр по типу
+                    If filter.Length > 0 Then
+                        If Not (deskObject Like filter) Then Continue For
+                    End If
+
+                    If typeGeometry = StructureElement.typeGeometryObject.polygon Then
+                        Dim poly As Polyline = TryCast(acEnt, Polyline)
+                        If poly Is Nothing Then Continue For
+                        If poly.Area <= 0 Then Continue For
+                        Dim polygon As NetTopologySuite.Geometries.Polygon = classTopology.CreatePolygon(poly)
+                        polygon.UserData = dataCadastralObject
+                        result.Add(acEnt.Handle.ToString, polygon)
+                    ElseIf typeGeometry = StructureElement.typeGeometryObject.polyline Then
+                        Dim poly As Polyline = TryCast(acEnt, Polyline)
+                        If poly Is Nothing Then Continue For
+                        If poly.Area <= 0 Then Continue For
+                        Dim lineString As NetTopologySuite.Geometries.LineString = classTopology.CreateLineString(poly)
+                        lineString.UserData = dataCadastralObject
+                        result.Add(acEnt.Handle.ToString, lineString)
+                    End If
+                Next
+            End Using
+        Catch ex As System.Exception
+            System.Diagnostics.Trace.WriteLine("[getCadastralPolygon] " & ex.ToString())
+        End Try
         Return result
     End Function
 
+    'фильтрация объектов выбором (тип объекта, данные)
+    Public Shared Function getCadastralObjectBySelectionSet(ByRef db As Database, ByVal selectionObject As SelectionSet) As Dictionary(Of String, List(Of Geometries.Geometry))
+        ' словарь с участками
+        Dim result As New Dictionary(Of String, List(Of Geometries.Geometry))
+        If IsNothing(db) = True Then Return result
+        If IsNothing(selectionObject) = True Then Return result
+        Dim classTopology As New FuncNetTopologySuite
+        If db Is Nothing Then Return result
+        Try
+            Dim tr As Transaction = db.TransactionManager.StartTransaction()
+            Using tr
+                Dim btr As BlockTableRecord = TryCast(tr.GetObject(db.CurrentSpaceId, OpenMode.ForRead, False), BlockTableRecord)
+                If btr Is Nothing Then Return result
+                For Each acSSObj As SelectedObject In selectionObject
+                    If Not IsDBNull(acSSObj) Then
+                        Dim acEnt As Entity = TryCast(tr.GetObject(acSSObj.ObjectId, OpenMode.ForRead), Entity)
+                        If acEnt Is Nothing Then Continue For
+                        ' читаем пользовательские свойства
+                        Dim dataCadastralObject As StructureElement = Nothing
+                        If Not FuncXRecords.getXRecords(acEnt, dataCadastralObject) Then Continue For
+                        If dataCadastralObject Is Nothing Then Continue For
+                        'описание объекта
+                        Dim deskObject As String = If(dataCadastralObject.Description, "").Trim()
+                        'заполняем словарь
+                        If dataCadastralObject.TypeGeometry = StructureElement.typeGeometryObject.polygon Then
+                            Dim poly As Polyline = TryCast(acEnt, Polyline)
+                            If poly Is Nothing Then Continue For
+                            If poly.Area <= 0 Then Continue For
+                            Dim polygon As NetTopologySuite.Geometries.Polygon = classTopology.CreatePolygon(poly)
+                            polygon.UserData = dataCadastralObject
+                            If result.ContainsKey(deskObject) = True Then
+                                Dim listObject As List(Of Geometries.Geometry) = result.Item(deskObject)
+                                listObject.Add(polygon)
+                                result.Item(deskObject) = listObject
+                            Else
+                                result.Add(deskObject, New List(Of Geometries.Geometry) From {polygon})
+                            End If
+                        ElseIf dataCadastralObject.TypeGeometry = StructureElement.typeGeometryObject.polyline Then
+                            Dim poly As Polyline = TryCast(acEnt, Polyline)
+                            If poly Is Nothing Then Continue For
+                            If poly.Length <= 0 Then Continue For
+                            Dim lineString As NetTopologySuite.Geometries.LineString = classTopology.CreateLineString(poly)
+                            lineString.UserData = dataCadastralObject
+                            If result.ContainsKey(deskObject) = True Then
+                                Dim listObject As List(Of Geometries.Geometry) = result.Item(deskObject)
+                                listObject.Add(lineString)
+                                result.Item(deskObject) = listObject
+                            Else
+                                result.Add(deskObject, New List(Of Geometries.Geometry) From {lineString})
+                            End If
+                        End If
+                    End If
+
+
+                Next
+            End Using
+        Catch ex As System.Exception
+            System.Diagnostics.Trace.WriteLine("[getCadastralPolygon] " & ex.ToString())
+        End Try
+        Return result
+    End Function
     '\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     'площадные объекты
     '\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-    'фильтрация площадных объектов (новый вариант)
+    'фильтрация площадных объектов (новый вариант) с учетом внутренних островков
     Public Shared Function getCadastralPolygon(ByRef Db As Database, Optional deskCadastralObject As String = "") As Dictionary(Of String, List(Of Geometries.Geometry))
         ' словарь с участками
         Dim result As New Dictionary(Of String, List(Of Geometries.Geometry))
@@ -556,22 +627,78 @@ Public Class SelectCadastralObject
 
         Return result
     End Function
+    'функция возвращает блоки из чертежа по имени и видимости слоя
+    Public Shared Function GetMLeaderOnVisibleLayers() As Dictionary(Of String, StructureElement)
+        Dim result As New Dictionary(Of String, StructureElement)
+
+        Dim doc As Document = Application.DocumentManager.MdiActiveDocument
+        If doc Is Nothing Then Return result
+
+        Dim ed As Editor = doc.Editor
+        Dim db As Database = doc.Database
+
+        ' Фильтр по типу объекта — MLeader
+        Dim filter As New SelectionFilter(New TypedValue() {
+        New TypedValue(CInt(DxfCode.Start), "MULTILEADER")
+    })
+
+        Dim selRes As PromptSelectionResult = ed.SelectAll(filter)
+        If selRes.Status <> PromptStatus.OK Then Return result
+
+        Using tr As Transaction = db.TransactionManager.StartTransaction()
+            ' Кэш состояний слоёв, чтобы не открывать один и тот же слой многократно
+            Dim layerVisible As New Dictionary(Of ObjectId, Boolean)()
+
+            For Each id As ObjectId In selRes.Value.GetObjectIds()
+                Dim ml As MLeader = TryCast(tr.GetObject(id, OpenMode.ForRead), MLeader)
+                If ml Is Nothing Then Continue For
+
+                Dim layerId As ObjectId = ml.LayerId
+                Dim isVisible As Boolean
+
+                If Not layerVisible.TryGetValue(layerId, isVisible) Then
+                    Dim ltr As LayerTableRecord =
+                    TryCast(tr.GetObject(layerId, OpenMode.ForRead), LayerTableRecord)
+                    isVisible = (ltr IsNot Nothing) AndAlso (Not ltr.IsOff) AndAlso (Not ltr.IsFrozen)
+                    layerVisible(layerId) = isVisible
+                End If
+
+                If isVisible Then
+                    Dim dataStructures As StructureElement = Nothing
+                    Dim boolFindData As Boolean = FuncXRecords.getXRecords(ml, dataStructures)
+                    If IsNothing(dataStructures) = False Then
+                        result.Add(ml.Handle.ToString, dataStructures)
+                    End If
+                End If
+            Next
+
+            tr.Commit()
+        End Using
+
+        Return result
+    End Function
     '===================================================================================================================
-    'работа с точками
-    Public Shared Function getPointByListBlockReference(ByRef db As Database, ByVal blockName As String) As Dictionary(Of String, NetTopologySuite.Geometries.Point)
+    'работа с точками фильтрация точек чертежа
+    Public Shared Function getPointByListBlockReference(ByRef db As Database, Optional ByVal blockName As String = "") As Dictionary(Of String, NetTopologySuite.Geometries.Point)
         Dim result As New Dictionary(Of String, NetTopologySuite.Geometries.Point)
         Dim doc As Document = Application.DocumentManager.GetDocument(db)
         If doc Is Nothing Then Return result
         Dim ed As Editor = doc.Editor
         ' Фильтр по типу объекта и имени блока (имя слоя в фильтр не заложить — проверяем вручную)
-        Dim filter As New SelectionFilter(New TypedValue() {
-            New TypedValue(CInt(DxfCode.Start), "INSERT"),
-            New TypedValue(CInt(DxfCode.BlockName), blockName)
-        })
+        Dim filter As SelectionFilter = Nothing
+        If blockName.Trim.Length > 0 Then
+            filter = New SelectionFilter(New TypedValue() {
+                        New TypedValue(CInt(DxfCode.Start), "INSERT"),
+                        New TypedValue(CInt(DxfCode.BlockName), blockName)
+                    })
+        Else
+            filter = New SelectionFilter(New TypedValue() {
+                        New TypedValue(CInt(DxfCode.Start), "INSERT")
+                    })
+        End If
 
         Dim selRes As PromptSelectionResult = ed.SelectAll(filter)
         If selRes.Status <> PromptStatus.OK Then Return result
-
         Using tr As Transaction = db.TransactionManager.StartTransaction()
             ' Кэш состояний слоёв, чтобы не открывать один и тот же слой многократно
             Dim layerVisible As New Dictionary(Of ObjectId, Boolean)()
@@ -594,7 +721,7 @@ Public Class SelectCadastralObject
                     Dim dataPoint As StructureElement = Nothing
                     Dim boolReadData As Boolean = FuncXRecords.getXRecords(br, dataPoint)
                     If IsNothing(dataPoint) = False Then
-                        Dim userPoint As NetTopologySuite.Geometries.Point = New Geometries.Point(br.Position.X, br.Position.Y, br.Position.Z)
+                        Dim userPoint As NetTopologySuite.Geometries.Point = New Geometries.Point(br.Position.X, br.Position.Y)
                         Dim dictAttrib As Dictionary(Of String, String) = AttributeCadastralBlock.readArrtibutes(db, br)
                         dictAttrib.Add("IDRNG", dataPoint.IdStructure)
                         userPoint.UserData = dictAttrib

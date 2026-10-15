@@ -1,4 +1,5 @@
-﻿Imports System.Reflection
+﻿Imports System.IO
+Imports System.Reflection
 Imports Application = Autodesk.AutoCAD.ApplicationServices.Application
 Public Class FuncFiles
     '\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
@@ -27,6 +28,58 @@ Public Class FuncFiles
         objFolder = Nothing
         objShell = Nothing
     End Function
+    '\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    'вывод всех каталогов для поска файлов поддержки
+    Public Shared Function getSupportFolderPath(ByVal nameDirectoryPrograms As String) As String
+        getSupportFolderPath = ""
+
+        If String.IsNullOrEmpty(nameDirectoryPrograms) Then Return ""
+
+        Try
+            Dim AcadApp As Object = Application.AcadApplication
+            Dim preferences As Object = AcadApp.GetType().InvokeMember("Preferences", BindingFlags.GetProperty, Nothing, AcadApp, Nothing)
+            Dim files As Object = preferences.GetType().InvokeMember("Files", BindingFlags.GetProperty, Nothing, preferences, Nothing)
+            Dim supportPath As String = files.GetType().InvokeMember("SupportPath", BindingFlags.GetProperty, Nothing, files, Nothing)
+
+            If supportPath Is Nothing Then Return ""
+            If supportPath.Trim().Length = 0 Then Return ""
+
+            Dim filesSupport As String() = supportPath.Split(";"c)
+
+            If filesSupport.Length > 0 Then
+                For i As Integer = 0 To filesSupport.Length - 1
+                    Dim tempFile As String = filesSupport(i)   ' ← было fileShpUser — исправлено
+                    If String.IsNullOrEmpty(tempFile) Then Continue For
+
+                    ' Нормализуем разделители в конце
+                    Dim normalized As String = tempFile.TrimEnd("\"c, "/"c)
+                    If normalized.Length = 0 Then Continue For
+
+                    ' Ищем папку как отдельный сегмент пути
+                    Dim marker As String = "\" & nameDirectoryPrograms
+                    Dim pos As Integer = normalized.IndexOf(marker, StringComparison.OrdinalIgnoreCase)
+
+                    If pos > -1 Then
+                        ' Обрезаем всё, что идёт ПОСЛЕ вхождения папки,
+                        ' чтобы nameDirectoryPrograms был последним сегментом.
+                        Dim result As String = normalized.Substring(0, pos + marker.Length)
+
+                        ' Гарантируем единственное вхождение — заменяем повторные на пусто
+                        ' (на практике не нужно, т.к. мы уже обрезали, но на всякий случай)
+                        Return result
+                    End If
+                Next i
+            End If
+        Catch ex As System.Exception
+            ' Логирование при необходимости
+        End Try
+
+        Return ""
+    End Function
+
+
+
+
     '\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     'вывод всех каталогов для поска файлов поддержки
     Public Shared Function FuncGetSupportFolderPath(ByRef strPathFolders As String()) As Boolean

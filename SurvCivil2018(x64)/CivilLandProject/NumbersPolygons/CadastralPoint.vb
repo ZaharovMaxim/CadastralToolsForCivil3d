@@ -39,7 +39,7 @@ Public Class CadastralPoint
         '\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
         'читаем масштаб аннотаций (текущий)
         Dim MAnno As Integer = AcadFunction.FuncReadCurrentAnnotativeScaleDWG
-        Dim formNumbersPoint As CadastralTools.FormCreatePoint = New CadastralTools.FormCreatePoint(MAnno)
+        Dim formNumbersPoint As CadastralTools.FormCreatePointCadastral = New CadastralTools.FormCreatePointCadastral(MAnno)
         'вызываем диалоговое окно УСТАНОВКИ
         formNumbersPoint.ShowDialog()
         If formNumbersPoint.boolShow = False Then
@@ -428,7 +428,7 @@ Public Class CadastralPoint
         '\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
         'делаем настройки для диалогового окна УСТАНОВКИ — то же окно, что и в автонумерации
         Dim MAnno As Integer = AcadFunction.FuncReadCurrentAnnotativeScaleDWG
-        Dim formNumbersPoint As CadastralTools.FormCreatePoint = New CadastralTools.FormCreatePoint(MAnno)
+        Dim formNumbersPoint As CadastralTools.FormCreatePointCadastral = New CadastralTools.FormCreatePointCadastral(MAnno)
         formNumbersPoint.ShowDialog()
         If formNumbersPoint.boolShow = False Then
             Exit Sub
@@ -745,9 +745,9 @@ Public Class CadastralPoint
         Return New Point3d(pt.X, pt.Y, 0) 'Z=0: атрибут номера CreateBlock ставит в эту же плоскость
     End Function
     '===================================================================================================================
-    'перенумерация полигонов
+    'перенумерация полигонов (команда переименована: имя ReNumberCadastralObject дублировало RenumberCadastralObject из UpdateCadastralObject.vb и вызывала eDuplicateKey при загрузке)
     '===================================================================================================================
-    <CommandMethod("ReNumberCadastralObject")>
+    <CommandMethod("ReNumberCadastralPolygon")>
     Public Sub ReNumberCadastralObject()
         Dim acDoc As Document = Autodesk.AutoCAD.ApplicationServices.Application.DocumentManager.MdiActiveDocument
         Dim ed As Editor = acDoc.Editor
@@ -770,7 +770,7 @@ Public Class CadastralPoint
         '\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
         'читаем масштаб аннотаций (текущий)
         Dim MAnno As Integer = AcadFunction.FuncReadCurrentAnnotativeScaleDWG
-        Dim formNumbersPoint As CadastralTools.FormCreatePoint = New CadastralTools.FormCreatePoint(MAnno)
+        Dim formNumbersPoint As CadastralTools.FormCreatePointCadastral = New CadastralTools.FormCreatePointCadastral(MAnno)
         'вызываем диалоговое окно УСТАНОВКИ
         formNumbersPoint.ShowDialog()
         If formNumbersPoint.boolShow = False Then

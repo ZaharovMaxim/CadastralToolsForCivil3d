@@ -585,15 +585,6 @@ Public Class CreateCadastralObject
                 End If
             Next
         End If
-        'шаблон оформления
-        'Dim dictionaryTemplate As Dictionary(Of String, String) = CadastralTools.TemplateXML.readTemplatesXML(generalDir)
-        'If dictionaryTemplate.Count > 0 Then
-        'templateXML = dictionaryTemplate.ElementAt(0).Value
-        'End If
-        'If IsNothing(templateXML) = True Or templateXML.Trim.Length = 0 Then
-        'MsgBox("Файл с шаблонами =Стандарт_ADSK.xml= не найден. Пожалуйста, добавьте его в пути доступа к вспомогательным файлам!!!")
-        'Exit Sub
-        'End If
         'сброс выделения
         Dim dictionaryCadastralObject As Dictionary(Of StructureElement.nameObject, List(Of NetTopologySuite.Geometries.Geometry)) = SelectCadastralObject.selectAllObject(db)
         Dim cadastralNetTopoSuite As CadastralTools.FuncNetTopologySuite = New CadastralTools.FuncNetTopologySuite
@@ -648,7 +639,7 @@ Public Class CreateCadastralObject
                             If tempConditionalParentParcel.Trim.Length > 0 Then
                                 conditionalParentParcel = tempConditionalParentParcel
                             End If
-                            If tempConditionalParentParcel > 0 Then
+                            If tempNumberParentParcel > 0 Then
                                 numberParentParcel = tempNumberParentParcel
                             End If
                             If tempNumberParentCounterParcel > 0 Then
@@ -748,7 +739,7 @@ Public Class CreateCadastralObject
                                     newDataCounter.KeyParameter = keyParamCounter
                                     newDataCounter.IdElement = Guid.NewGuid.ToString
                                     newDataCounter.IdStructure = idStructure
-                                    Dim boolWriteDataOstriv As Boolean = FuncXRecords.writeXRecords(polylineCounter, newDataCounter, StructureElement.tableXRecords.PROJECT_STRUCTURES)
+                                    Dim boolWriteDataCounter As Boolean = FuncXRecords.writeXRecords(polylineCounter, newDataCounter, StructureElement.tableXRecords.PROJECT_STRUCTURES)
                                     lineStyle.setStyle(polylineCounter)
                                     If IsNothing(IDLabelPSTable) = False Then
                                         If IDLabelPSTable.IsNull = False Then
@@ -1018,13 +1009,15 @@ Public Class CreateCadastralObject
                                                 Dim conditionatOuterBound As String = CadastralTools.JsonValidator.GetValueFromJson(dataOuterBoundary.KeyParameter, "ConditionalNumber")
                                                 If IsNothing(conditionatOuterBound) = False Then
                                                     If conditionatOuterBound.Trim.Length > 0 Then
-                                                        Dim listParcels As List(Of NetTopologySuite.Geometries.Geometry) = dictSelectObject.Item(deskObjectOuterObject)
-                                                        Dim a = 1
+                                                        Dim listCounter As List(Of Geometry) = dictSelectObject.Item(deskObjectOuterObject)
+                                                        outerPolygon = CadastralTools.CadastralPolygon.getCounterByNumber(conditionatOuterBound, listCounter)
                                                     End If
                                                 End If
                                             End If
                                         End If
-                                        outerPolygon = acadTopologySuite.CreatePolygon(startPoly)
+                                        If IsNothing(outerPolygon) = True Then
+                                            outerPolygon = acadTopologySuite.CreatePolygon(startPoly)
+                                        End If
                                     End Using
                                 End If
                             Next
@@ -1037,10 +1030,8 @@ Public Class CreateCadastralObject
                         '\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
                         'выбираем полигоны которые необходимо загрузить
                         'выбираем один объект, остальные будут аналогами
-                        Dim listPolygon As List(Of Polygon) = New List(Of Polygon)
-                        Dim putchNameKPT As String = ""
-                        Dim nameLayer As String = "0"
-                        Dim selectInnerBoundary As PromptNestedEntityResult = ed.GetNestedEntity(vbLf & "Выберите кадастровый план: ")
+                        Dim listCadastralParcels As New List(Of Geometry)
+                        Dim selectInnerBoundary As PromptNestedEntityResult = ed.GetNestedEntity(vbLf & "Выберите объект для образца на основе которого будут созданы новые участки: ")
                         If selectInnerBoundary.Status = PromptStatus.OK Then
                             Dim ids As List(Of ObjectId) = New List(Of ObjectId)(selectInnerBoundary.GetContainers())
                             ids.Reverse()
@@ -1050,14 +1041,315 @@ Public Class CreateCadastralObject
                                 If idStr Like "AcDbPolyline" Then
                                     Dim nameFileKPT As String = id.Database.Filename
                                     Using selectObject As Autodesk.AutoCAD.DatabaseServices.Entity = TryCast(id.Open(OpenMode.ForRead), Autodesk.AutoCAD.DatabaseServices.Entity)
-                                        nameLayer = selectObject.Layer
-                                        Dim strLayerArr As String() = nameLayer.Split("|")
-                                        If strLayerArr.Length > 1 Then
-                                            nameLayer = strLayerArr(1)
+                                        Dim dataInnerBoundary As StructureElement = Nothing
+                                        Dim boolReadData As Boolean = FuncXRecords.getXRecords(selectObject, dataInnerBoundary, StructureElement.tableXRecords.PROJECT_STRUCTURES, selectObject.Database)
+                                        If IsNothing(dataInnerBoundary) = False Then
+                                            Dim deskObjectOuterObject As String = dataInnerBoundary.Description
+                                            Dim dictSelectObject As Dictionary(Of String, List(Of Geometry)) = SelectCadastralObject.getCadastralPolygon(selectObject.Database, deskObjectOuterObject)
+                                            If dictSelectObject.Count > 0 Then
+                                                listCadastralParcels = dictSelectObject.Item(deskObjectOuterObject)
+                                            End If
                                         End If
-                                        If IO.File.Exists(nameFileKPT) = True Then
-                                            putchNameKPT = nameFileKPT
-                                            Exit For
+                                    End Using
+                                End If
+                                If listCadastralParcels.Count > 0 Then Continue For
+                            Next
+                        Else
+                            MsgBox("Прервано пользователем.")
+                            tr.Abort()
+                            locker.Dispose()
+                            Exit Sub
+                        End If
+                        If IsNothing(outerPolygon) = False Then
+                            If listCadastralParcels.Count > 0 Then
+                                For i As Integer = 0 To listCadastralParcels.Count - 1
+                                    Try
+                                        Dim innerPolygon As NetTopologySuite.Geometries.Polygon = listCadastralParcels.Item(i)
+                                        If IsNothing(innerPolygon) = True Then Continue For
+                                        Dim dataCadastralObject As StructureElement = innerPolygon.UserData
+                                        If IsNothing(dataCadastralObject) = True Then Continue For
+                                        Dim allPolygons As List(Of Polygon) = processor.GetIntersectionPolygonsWithCheck(outerPolygon, innerPolygon)
+                                        If allPolygons.Count > 0 Then
+                                            For j As Integer = 0 To allPolygons.Count - 1
+                                                Dim workPolygon As Polygon = allPolygons.Item(j)
+                                                If workPolygon.Area >= 1 Then
+                                                    Dim newParcels As Polyline = classDrawObject.createPolylineByPolygon(workPolygon)
+                                                    If IsNothing(dataCadastralObject) = False Then
+                                                        Dim dictDataObject As Dictionary(Of String, Object) = CadastralTools.JsonValidator.DeserializeJsonToDictionary(dataCadastralObject.KeyParameter)
+                                                        If IsNothing(dictDataObject) = False Then
+                                                            For k As Integer = 0 To dictionaryPropertiesObject.Count - 1
+                                                                Dim nameField As String = dictionaryPropertiesObject.ElementAt(k).Key
+                                                                If nameField Like "Cad_number" Then
+                                                                    If dictDataObject.ContainsKey(nameField) = True Then
+                                                                        Dim value As String = dictDataObject.Item(nameField)
+                                                                        dictionaryPropertiesObject.Item("Cad_number") = value
+                                                                    End If
+                                                                ElseIf nameField Like "Address" Then
+                                                                    If dictDataObject.ContainsKey(nameField) = True Then
+                                                                        Dim value As String = dictDataObject.Item(nameField)
+                                                                        dictionaryPropertiesObject.Item("Address") = value
+                                                                    End If
+                                                                ElseIf nameField Like "Area" Then
+                                                                    If dictDataObject.ContainsKey(nameField) = True Then
+                                                                        dictionaryPropertiesObject.Item("Area") = Math.Round(innerPolygon.Area)
+                                                                    End If
+                                                                ElseIf nameField Like "Category" Then
+                                                                    If dictDataObject.ContainsKey(nameField) = True Then
+                                                                        Dim value As String = dictDataObject.Item(nameField)
+                                                                        If value Like "Земли населенных пунктов" Then
+                                                                            dictionaryPropertiesObject.Item("Category") = value
+                                                                        End If
+                                                                    End If
+                                                                End If
+                                                            Next
+                                                        End If
+                                                    End If
+                                                    'обновляем свойства
+                                                    Dim conditionalParcel As String = numberParcel
+                                                    If numberCounter > 0 Then
+                                                        conditionalParcel = numberParcel & "(" & numberCounter & ")"
+                                                        numberCounter += 1
+                                                    Else
+                                                        numberParcel += 1
+                                                    End If
+                                                    'обновляем условный номер и локальный ID
+                                                    If dictionaryPropertiesObject.ContainsKey("ConditionalNumber") = True Then
+                                                        dictionaryPropertiesObject.Item("ConditionalNumber") = conditionalParcel
+                                                    End If
+                                                    If dictionaryPropertiesObject.ContainsKey("LOCALID") = True Then
+                                                        dictionaryPropertiesObject.Item("LOCALID") = Guid.NewGuid.ToString
+                                                    End If
+                                                    Dim keyParam As String = CadastralTools.JsonValidator.convertDictionaryToJson(dictionaryPropertiesObject)
+
+                                                    Dim newDataCadastralObject As CadastralTools.StructureElement = New CadastralTools.StructureElement
+                                                    newDataCadastralObject.Label = formCreateParcels.nameCategory
+                                                    newDataCadastralObject.NameClassObject = CadastralTools.StructureElement.classObject.TERRITORIAL_PLANNING
+                                                    newDataCadastralObject.TypeGeometry = formCreateParcels.typeGeometry
+                                                    newDataCadastralObject.NameTypeObject = nameObject
+                                                    newDataCadastralObject.TableObject = nameTableObject
+                                                    newDataCadastralObject.Description = deskObject
+                                                    newDataCadastralObject.KeyParameter = keyParam
+                                                    newDataCadastralObject.TablePS = formCreateParcels.PS
+                                                    newDataCadastralObject.IdStructure = globalID
+                                                    newDataCadastralObject.IdElement = Guid.NewGuid.ToString
+                                                    newDataCadastralObject.IdObject = newParcels.Handle.ToString
+                                                    Dim boolWriteDataOstriv As Boolean = FuncXRecords.setXRecords(newParcels, newDataCadastralObject)
+                                                    If IsNothing(IDPSTable) = False Then
+                                                        If IDPSTable.IsNull = False Then
+                                                            Dim boolPSObject As Boolean = FuncPropertySet.FuncAddDataSetProperties(newParcels, IDPSTable)
+                                                            If boolPSObject = True Then
+                                                                Dim boolRec As Boolean = FuncPropertySet.FuncWriteDataSetByStructureElement(newParcels, newDataCadastralObject)
+                                                            End If
+                                                        End If
+                                                    End If
+                                                    styleObject.setStyle(newParcels)
+                                                    '=========================================================================================================================
+                                                    'рисуем выноску
+                                                    '=========================================================================================================================
+                                                    If arrayPropertiesLeader.Length > 0 Then
+                                                        'назначаем стиль выноске
+                                                        Dim innerPoint = classTopologySuite.GetInteriorPoint(workPolygon)
+                                                        Dim styleLeaderObject As CadastralLeaderStyle = New CadastralLeaderStyle()
+                                                        styleLeaderObject.TemplateXML = fileTemlateXML1
+                                                        styleLeaderObject.TemplateDWG = fileTemplateDWG
+                                                        styleLeaderObject.DBDrawing = db
+                                                        'PS
+                                                        Dim arrayPropertiesLabelPS As String(,) = {}
+                                                        Dim boolFindLabelPS As Boolean = CadastralTools.TemplateXML.FuncReadTablePSToXML(fileTemlateXML1, "PROJECT_LABEL", arrayPropertiesLabelPS)
+                                                        Dim IDLabelPSTable As ObjectId = Nothing
+                                                        If arrayPropertiesLabelPS.Length > 0 Then
+                                                            IDLabelPSTable = FuncPropertySet.FuncCreatedSetProperties("PROJECT_LABEL", arrayPropertiesLabelPS)
+                                                        End If
+                                                        '=======================================================================================================================
+                                                        Dim tempLayerLeader As String = CadastralTools.MathFunction.findValueToArray2d(arrayPropertiesLeader, "Layer")
+                                                        If Mid(tempLayerLeader.Trim, 1, 1) Like "_" Then
+                                                            Dim boolCreateLeaderStyle As Boolean = styleLeaderObject.createStyleLeader(arrayPropertiesLeader, newParcels.Layer)
+                                                        Else
+                                                            Dim boolCreateLeaderStyle As Boolean = styleLeaderObject.createStyleLeader(arrayPropertiesLeader)
+                                                        End If
+                                                        '===============================================================
+                                                        'вторая точка
+                                                        Dim pointBound As Extents3d = newParcels.Bounds
+                                                        Dim maskLabel As String = ""
+                                                        Dim strNoteLeader As String = CadastralTools.MathFunction.findValueToArray2d(arrayPropertiesLeader, "Note")
+                                                        If strNoteLeader.Trim.Length > 0 Then
+                                                            conditionalParcel = CadastralTools.DataFormatting.getTextLeader(strNoteLeader, dictionaryPropertiesObject, maskLabel)
+                                                            If conditionalParcel.Trim.Length > 0 Then
+                                                                Dim leaderObject As MLeader = classDrawObject.createLeader(New Point3d(innerPoint.X, innerPoint.Y, 0), conditionalParcel, pointBound.MaxPoint)
+                                                                If IsNothing(leaderObject) = False Then
+                                                                    styleLeaderObject.setLeaderStyle(leaderObject)
+                                                                    Dim createXdata As StructureElement = CadastralTools.CadastralLeader.getLeaderXData(dataCadastralObject, deskLeader, maskLabel, fileTemlateXML1)
+                                                                    If IsNothing(createXdata) = False Then
+                                                                        Dim boolWriteDataLeader As Boolean = FuncXRecords.setXRecords(leaderObject, createXdata)
+                                                                        If IsNothing(IDLabelPSTable) = False Then
+                                                                            'формируем новый массив для Xrecords
+                                                                            Dim ArrayDataObj As String(,) = Nothing
+                                                                            ReDim ArrayDataObj(2, 4)
+                                                                            'условный номер
+                                                                            ArrayDataObj(0, 0) = "PROJECT_LABEL"
+                                                                            ArrayDataObj(1, 0) = "LABEL"
+                                                                            ArrayDataObj(2, 0) = deskLeader
+                                                                            'условный номер
+                                                                            ArrayDataObj(0, 1) = "PROJECT_LABEL"
+                                                                            ArrayDataObj(1, 1) = "PARENTID"
+                                                                            ArrayDataObj(2, 1) = dataCadastralObject.IdElement
+                                                                            'id контура
+                                                                            ArrayDataObj(0, 2) = "PROJECT_LABEL"
+                                                                            ArrayDataObj(1, 2) = "MASK"
+                                                                            ArrayDataObj(2, 2) = maskLabel
+                                                                            'локальный id
+                                                                            ArrayDataObj(0, 3) = "PROJECT_LABEL"
+                                                                            ArrayDataObj(1, 3) = "LOCALID"
+                                                                            ArrayDataObj(2, 3) = Guid.NewGuid.ToString
+                                                                            'примечание
+                                                                            ArrayDataObj(0, 4) = "PROJECT_LABEL"
+                                                                            ArrayDataObj(1, 4) = "NOTE"
+                                                                            ArrayDataObj(2, 4) = ""
+                                                                            If IsNothing(IDLabelPSTable) = False Then
+                                                                                If IDLabelPSTable.IsNull = False Then
+                                                                                    Dim boolADDPSTBL As Boolean = FuncPropertySet.FuncAddDataSetProperties(leaderObject, IDLabelPSTable)
+                                                                                    If boolADDPSTBL = True Then
+                                                                                        Dim boolADDPSData As Boolean = FuncPropertySet.FuncWriteAllDataSetProperties(leaderObject, ArrayDataObj)
+                                                                                    End If
+                                                                                End If
+                                                                            End If
+                                                                        End If
+                                                                    End If
+                                                                End If
+                                                            End If
+                                                        End If
+                                                    End If
+                                                    numberParcel += 1
+                                                End If
+                                            Next j
+                                        End If
+                                    Catch ex As System.Exception
+                                    End Try
+                                Next i
+                            End If
+                        End If
+                        tr.Commit()
+                    End Using
+                End Using
+            End If
+        End If
+    End Sub
+    '\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    'полуавтоматическое создание земельных участков
+    <CommandMethod("SemiAutomaticCreateCadastralObject")>
+    Public Sub SemiAutomaticCreateCadastralObject()
+        Dim acDoc As Document = Autodesk.AutoCAD.ApplicationServices.Application.DocumentManager.MdiActiveDocument
+        Dim ed As Editor = acDoc.Editor
+        Dim db As Database = acDoc.Database
+        '\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        Try
+            Dim strDWGName As String = acDoc.Name
+            Dim objBase As Object = Application.GetSystemVariable("DWGTITLED")
+            If System.Convert.ToInt16(objBase) > 0 Then
+                Dim obj1 As Object = Application.GetSystemVariable("DBMOD")
+                If Not (System.Convert.ToInt16(obj1) = 0) Then
+                    acDoc.Database.SaveAs(strDWGName, True, DwgVersion.Current, acDoc.Database.SecurityParameters)
+                End If
+            End If
+        Catch ex As Autodesk.AutoCAD.Runtime.Exception
+        End Try
+        '\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        Dim generalDidectory As String = "k:\Civil3DToolsUtility"
+        Dim formCreateParcels As CadastralTools.FormCreateCadastralObject = New CadastralTools.FormCreateCadastralObject(generalDidectory)
+        formCreateParcels.ShowDialog()
+        If formCreateParcels.boolShow = False Then
+            Exit Sub
+        End If
+        '\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        'читаем префикс участка
+        Dim numberParcel As Integer = formCreateParcels.numberParcel
+        Dim numberCounter As Integer = formCreateParcels.numberCounter
+        Dim fileTemlateXML1 As String = formCreateParcels.fileTemlateXML
+        Dim fileTemplateDWG As String = fileTemlateXML1.Replace(".xml", ".dwg")
+        Dim dictionaryPropertiesObject As Dictionary(Of String, String) = formCreateParcels.resultDictionary
+        Dim arrayPropertyObject As String(,) = formCreateParcels.arrayPropertiesZn
+        Dim arrayPropertiesLeader As String(,) = formCreateParcels.arrayPropertiesLeader
+        Dim nameObject As CadastralTools.StructureElement.nameObject = formCreateParcels.nameTypeObject
+        Dim typeGeometryObject As StructureElement.typeGeometryObject = formCreateParcels.typeGeometry
+        Dim deskObject As String = formCreateParcels.nameObject
+        Dim deskLeader As String = formCreateParcels.deskLeader
+        Dim nameTableObject As String = formCreateParcels.nameTableZn
+        Dim PS As String = formCreateParcels.PS
+        Dim globalID As String = ""
+        Dim boolCreateMleader As Boolean = formCreateParcels.boolCreateMleader
+        If dictionaryPropertiesObject.ContainsKey("GLOBALID") = True Then
+            globalID = dictionaryPropertiesObject.Item("GLOBALID")
+        End If
+        If dictionaryPropertiesObject.Count > 0 Then
+            If arrayPropertyObject.Length > 0 Then
+                Dim classTopologySuite As CadastralTools.FuncNetTopologySuite = New CadastralTools.FuncNetTopologySuite()
+                Dim acadTopologySuite As FuncNetTopologySuite = New FuncNetTopologySuite
+                Dim processor As New CadastralTools.PolygonIntersectionInnerProcessor
+                Dim classDrawingObject As CreateDWGObject = New CreateDWGObject(db)
+                'свойства линии
+                '\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+                'блокируем чертеж
+                Dim locker As Autodesk.AutoCAD.ApplicationServices.DocumentLock = Autodesk.AutoCAD.ApplicationServices.Application.DocumentManager.MdiActiveDocument.LockDocument
+                Using locker
+                    Dim tr As Transaction = db.TransactionManager.StartTransaction()
+                    Using tr
+                        '=========================================================================================================================
+                        'назначаем стиль объекту
+                        Dim styleObject As CadastralPolylineStyle = New CadastralPolylineStyle()
+                        styleObject.DBDrawing = db
+                        styleObject.TemplateXML = fileTemlateXML1
+                        styleObject.TemplateDWG = fileTemplateDWG
+                        Dim arrayProperties As String(,) = {}
+                        styleObject.createLineStyle(arrayPropertyObject)
+                        '=========================================================================================================================
+                        'PS
+                        Dim arrayPropertiesPs As String(,) = {}
+                        Dim IDPSTable As ObjectId = FuncPropertySet.FuncReturnIDDictSetProperties(PS)
+                        If IsNothing(IDPSTable) = True Then
+                            Dim boolFindPS As Boolean = CadastralTools.TemplateXML.FuncReadTablePSToXML(fileTemlateXML1, PS, arrayPropertiesPs)
+                            If arrayPropertiesPs.Length > 0 Then
+                                IDPSTable = FuncPropertySet.FuncCreatedSetProperties(PS, arrayPropertiesPs)
+                            End If
+                        ElseIf IDPSTable.IsNull = True Then
+                            Dim boolFindPS As Boolean = CadastralTools.TemplateXML.FuncReadTablePSToXML(fileTemlateXML1, PS, arrayPropertiesPs)
+                            If arrayPropertiesPs.Length > 0 Then
+                                IDPSTable = FuncPropertySet.FuncCreatedSetProperties(PS, arrayPropertiesPs)
+                            End If
+                        End If
+                        '===========================================================================================================================
+                        Dim formatLeader As String = CadastralTools.MathFunction.findValueToArray2d(arrayPropertiesLeader, "NOTE")
+                        Dim classDrawObject As CreateDWGObject = New CreateDWGObject(db)
+                        Dim outerPolygon As NetTopologySuite.Geometries.Polygon = Nothing
+                        'выбираем замкнутую полилинию из чертежа или внешней ссылки по которой будет производится обрезка
+                        '\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+                        Dim selectOuterBoundary As PromptNestedEntityResult = ed.GetNestedEntity(vbLf & "Выберите полилинию по которой будет происходить обрезка: ")
+                        If selectOuterBoundary.Status = PromptStatus.OK Then
+                            Dim ids As List(Of ObjectId) = New List(Of ObjectId)(selectOuterBoundary.GetContainers())
+                            ids.Reverse()
+                            ids.Add(selectOuterBoundary.ObjectId)
+                            For Each id As ObjectId In ids
+                                Dim idStr As String = id.ObjectClass.Name
+                                If idStr Like "AcDbPolyline" Then
+                                    Dim putchSelectBoundares = id.Database.Filename
+                                    Dim polyOuterBoundary As Polyline = New Polyline
+                                    Using startPoly As Autodesk.AutoCAD.DatabaseServices.Polyline = TryCast(id.Open(OpenMode.ForRead), Autodesk.AutoCAD.DatabaseServices.Polyline)
+                                        Dim dataOuterBoundary As StructureElement = Nothing
+                                        Dim boolReadData As Boolean = FuncXRecords.getXRecords(startPoly, dataOuterBoundary, StructureElement.tableXRecords.PROJECT_STRUCTURES, startPoly.Database)
+                                        If IsNothing(dataOuterBoundary) = False Then
+                                            Dim deskObjectOuterObject As String = dataOuterBoundary.Description
+                                            Dim dictSelectObject As Dictionary(Of String, List(Of Geometry)) = SelectCadastralObject.getCadastralPolygon(startPoly.Database, deskObjectOuterObject)
+                                            If dictSelectObject.Count > 0 Then
+                                                Dim conditionatOuterBound As String = CadastralTools.JsonValidator.GetValueFromJson(dataOuterBoundary.KeyParameter, "ConditionalNumber")
+                                                If IsNothing(conditionatOuterBound) = False Then
+                                                    If conditionatOuterBound.Trim.Length > 0 Then
+                                                        Dim listCounter As List(Of Geometry) = dictSelectObject.Item(deskObjectOuterObject)
+                                                        outerPolygon = CadastralTools.CadastralPolygon.getCounterByNumber(conditionatOuterBound, listCounter)
+                                                    End If
+                                                End If
+                                            End If
+                                        End If
+                                        If IsNothing(outerPolygon) = True Then
+                                            outerPolygon = acadTopologySuite.CreatePolygon(startPoly)
                                         End If
                                     End Using
                                 End If
@@ -1068,183 +1360,208 @@ Public Class CreateCadastralObject
                             locker.Dispose()
                             Exit Sub
                         End If
-                        '===================================================================================================================
-                        'читаем все объекты
-                        Dim sourceDb As Database = New Database(False, True)
-                        sourceDb.ReadDwgFile(putchNameKPT, FileShare.Read, True, String.Empty)
-                        Dim sourceTr As Transaction = sourceDb.TransactionManager.StartTransaction()
-                        Using sourceTr
-                            Dim sourceBtr As BlockTableRecord = sourceTr.GetObject(sourceDb.CurrentSpaceId, OpenMode.ForRead, False)
-                            For Each idObject As ObjectId In sourceBtr
-                                If idObject.IsNull = False Then
-                                    Dim idStr As String = idObject.ObjectClass.Name
-                                    If idStr Like "AcDbPolyline" Then
-                                        Dim poly As Polyline = sourceTr.GetObject(idObject, OpenMode.ForRead)
-                                        If poly.Closed = True Then
-                                            If poly.Layer Like nameLayer Then
-                                                Dim innerPolygon As NetTopologySuite.Geometries.Polygon = acadTopologySuite.CreatePolygon(poly)
-                                                If IsNothing(innerPolygon) = False Then
-                                                    Dim allPolygons As List(Of Polygon) = processor.GetIntersectionPolygonsWithCheck(outerPolygon, innerPolygon)
-                                                    If allPolygons.Count > 0 Then
-                                                        Dim dataCadastralObject As StructureElement = Nothing
-                                                        Dim boolReadData As Boolean = FuncXRecords.getXRecords(poly, dataCadastralObject, StructureElement.tableXRecords.PROJECT_STRUCTURES, sourceDb)
-                                                        For i As Integer = 0 To allPolygons.Count - 1
-                                                            Dim workPolygon As Polygon = allPolygons.Item(i)
-                                                            If workPolygon.Area >= 1 Then
-                                                                Dim newParcels As Polyline = classDrawObject.createPolylineByPolygon(workPolygon)
-                                                                If IsNothing(dataCadastralObject) = False Then
-                                                                    Dim dictDataObject As Dictionary(Of String, Object) = CadastralTools.JsonValidator.DeserializeJsonToDictionary(dataCadastralObject.KeyParameter)
-                                                                    If IsNothing(dictDataObject) = False Then
-                                                                        For k As Integer = 0 To dictionaryPropertiesObject.Count - 1
-                                                                            Dim nameField As String = dictionaryPropertiesObject.ElementAt(k).Key
-                                                                            If nameField Like "Cad_number" Then
-                                                                                If dictDataObject.ContainsKey(nameField) = True Then
-                                                                                    Dim value As String = dictDataObject.ContainsKey(nameField)
-                                                                                    dictionaryPropertiesObject.Item("Cad_number") = value
-                                                                                End If
-                                                                            ElseIf nameField Like "Address" Then
-                                                                                If dictDataObject.ContainsKey(nameField) = True Then
-                                                                                    Dim value As String = dictDataObject.ContainsKey(nameField)
-                                                                                    dictionaryPropertiesObject.Item("Address") = value
-                                                                                End If
-                                                                            ElseIf nameField Like "Category" Then
-                                                                                If dictDataObject.ContainsKey(nameField) = True Then
-                                                                                    Dim value As String = dictDataObject.ContainsKey(nameField)
-                                                                                    If value Like "Земли населенных пунктов" Then
-                                                                                        dictionaryPropertiesObject.Item("Category") = value
-                                                                                    End If
-                                                                                End If
-                                                                            End If
-                                                                        Next
-                                                                    End If
-                                                                End If
-                                                                'обновляем свойства
-                                                                Dim conditionalParcel As String = numberParcel
-                                                                If numberCounter > 0 Then
-                                                                    conditionalParcel = numberParcel & "(" & numberCounter & ")"
-                                                                    numberCounter += 1
-                                                                Else
-                                                                    numberParcel += 1
-                                                                End If
-                                                                'обновляем условный номер и локальный ID
-                                                                If dictionaryPropertiesObject.ContainsKey("ConditionalNumber") = True Then
-                                                                    dictionaryPropertiesObject.Item("ConditionalNumber") = conditionalParcel
-                                                                End If
-                                                                If dictionaryPropertiesObject.ContainsKey("LOCALID") = True Then
-                                                                    dictionaryPropertiesObject.Item("LOCALID") = Guid.NewGuid.ToString
-                                                                End If
-                                                                Dim keyParam As String = CadastralTools.JsonValidator.convertDictionaryToJson(dictionaryPropertiesObject)
-
-                                                                Dim newDataCadastralObject As CadastralTools.StructureElement = New CadastralTools.StructureElement
-                                                                newDataCadastralObject.Label = formCreateParcels.nameCategory
-                                                                newDataCadastralObject.NameClassObject = CadastralTools.StructureElement.classObject.TERRITORIAL_PLANNING
-                                                                newDataCadastralObject.TypeGeometry = formCreateParcels.typeGeometry
-                                                                newDataCadastralObject.NameTypeObject = nameObject
-                                                                newDataCadastralObject.TableObject = nameTableObject
-                                                                newDataCadastralObject.Description = deskObject
-                                                                newDataCadastralObject.KeyParameter = keyParam
-                                                                newDataCadastralObject.TablePS = formCreateParcels.PS
-                                                                newDataCadastralObject.IdStructure = globalID
-                                                                newDataCadastralObject.IdElement = Guid.NewGuid.ToString
-                                                                newDataCadastralObject.IdObject = newParcels.Handle.ToString
-                                                                Dim boolWriteDataOstriv As Boolean = FuncXRecords.setXRecords(newParcels, dataCadastralObject)
-                                                                If IsNothing(IDPSTable) = False Then
-                                                                    If IDPSTable.IsNull = False Then
-                                                                        Dim boolPSObject As Boolean = FuncPropertySet.FuncAddDataSetProperties(newParcels, IDPSTable)
-                                                                        If boolPSObject = True Then
-                                                                            Dim boolRec As Boolean = FuncPropertySet.FuncWriteDataSetByStructureElement(newParcels, dataCadastralObject)
-                                                                        End If
-                                                                    End If
-                                                                End If
-                                                                styleObject.setStyle(newParcels)
-                                                                '=========================================================================================================================
-                                                                'рисуем выноску
-                                                                '=========================================================================================================================
-                                                                If arrayPropertiesLeader.Length > 0 Then
-                                                                    'назначаем стиль выноске
-                                                                    Dim innerPoint = classTopologySuite.GetInteriorPoint(workPolygon)
-                                                                    Dim styleLeaderObject As CadastralLeaderStyle = New CadastralLeaderStyle()
-                                                                    styleLeaderObject.TemplateXML = fileTemlateXML1
-                                                                    styleLeaderObject.TemplateDWG = fileTemplateDWG
-                                                                    styleLeaderObject.DBDrawing = db
-                                                                    'PS
-                                                                    Dim arrayPropertiesLabelPS As String(,) = {}
-                                                                    Dim boolFindLabelPS As Boolean = CadastralTools.TemplateXML.FuncReadTablePSToXML(fileTemlateXML1, "PROJECT_LABEL", arrayPropertiesLabelPS)
-                                                                    Dim IDLabelPSTable As ObjectId = Nothing
-                                                                    If arrayPropertiesLabelPS.Length > 0 Then
-                                                                        IDLabelPSTable = FuncPropertySet.FuncCreatedSetProperties("PROJECT_LABEL", arrayPropertiesLabelPS)
-                                                                    End If
-                                                                    '=======================================================================================================================
-                                                                    Dim tempLayerLeader As String = CadastralTools.MathFunction.findValueToArray2d(arrayPropertiesLeader, "Layer")
-                                                                    If Mid(tempLayerLeader.Trim, 1, 1) Like "_" Then
-                                                                        Dim boolCreateLeaderStyle As Boolean = styleLeaderObject.createStyleLeader(arrayPropertiesLeader, newParcels.Layer)
-                                                                    Else
-                                                                        Dim boolCreateLeaderStyle As Boolean = styleLeaderObject.createStyleLeader(arrayPropertiesLeader)
-                                                                    End If
-                                                                    '===============================================================
-                                                                    'вторая точка
-                                                                    Dim pointBound As Extents3d = newParcels.Bounds
-                                                                    Dim maskLabel As String = ""
-                                                                    Dim strNoteLeader As String = CadastralTools.MathFunction.findValueToArray2d(arrayPropertiesLeader, "Note")
-                                                                    If strNoteLeader.Trim.Length > 0 Then
-                                                                        conditionalParcel = CadastralTools.DataFormatting.getTextLeader(strNoteLeader, dictionaryPropertiesObject, maskLabel)
-                                                                        If conditionalParcel.Trim.Length > 0 Then
-                                                                            Dim leaderObject As MLeader = classDrawObject.createLeader(New Point3d(innerPoint.X, innerPoint.Y, 0), conditionalParcel, pointBound.MaxPoint)
-                                                                            If IsNothing(leaderObject) = False Then
-                                                                                styleLeaderObject.setLeaderStyle(leaderObject)
-                                                                                Dim createXdata As StructureElement = CadastralTools.CadastralLeader.getLeaderXData(dataCadastralObject, deskLeader, maskLabel, fileTemlateXML1)
-                                                                                If IsNothing(createXdata) = False Then
-                                                                                    Dim boolWriteDataLeader As Boolean = FuncXRecords.setXRecords(leaderObject, createXdata)
-                                                                                    If IsNothing(IDLabelPSTable) = False Then
-                                                                                        'формируем новый массив для Xrecords
-                                                                                        Dim ArrayDataObj As String(,) = Nothing
-                                                                                        ReDim ArrayDataObj(2, 4)
-                                                                                        'условный номер
-                                                                                        ArrayDataObj(0, 0) = "PROJECT_LABEL"
-                                                                                        ArrayDataObj(1, 0) = "LABEL"
-                                                                                        ArrayDataObj(2, 0) = deskLeader
-                                                                                        'условный номер
-                                                                                        ArrayDataObj(0, 1) = "PROJECT_LABEL"
-                                                                                        ArrayDataObj(1, 1) = "PARENTID"
-                                                                                        ArrayDataObj(2, 1) = dataCadastralObject.IdElement
-                                                                                        'id контура
-                                                                                        ArrayDataObj(0, 2) = "PROJECT_LABEL"
-                                                                                        ArrayDataObj(1, 2) = "MASK"
-                                                                                        ArrayDataObj(2, 2) = maskLabel
-                                                                                        'локальный id
-                                                                                        ArrayDataObj(0, 3) = "PROJECT_LABEL"
-                                                                                        ArrayDataObj(1, 3) = "LOCALID"
-                                                                                        ArrayDataObj(2, 3) = Guid.NewGuid.ToString
-                                                                                        'примечание
-                                                                                        ArrayDataObj(0, 4) = "PROJECT_LABEL"
-                                                                                        ArrayDataObj(1, 4) = "NOTE"
-                                                                                        ArrayDataObj(2, 4) = ""
-                                                                                        If IsNothing(IDLabelPSTable) = False Then
-                                                                                            If IDLabelPSTable.IsNull = False Then
-                                                                                                Dim boolADDPSTBL As Boolean = FuncPropertySet.FuncAddDataSetProperties(leaderObject, IDLabelPSTable)
-                                                                                                If boolADDPSTBL = True Then
-                                                                                                    Dim boolADDPSData As Boolean = FuncPropertySet.FuncWriteAllDataSetProperties(leaderObject, ArrayDataObj)
-                                                                                                End If
-                                                                                            End If
-                                                                                        End If
-                                                                                    End If
-                                                                                End If
-                                                                            End If
-                                                                        End If
-                                                                    End If
-                                                                End If
-                                                                numberParcel += 1
-                                                            End If
-                                                        Next i
-                                                    End If
-                                                End If
+                        '\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+                        'выбираем полигоны которые необходимо загрузить
+                        'выбираем один объект, остальные будут аналогами
+                        Dim listCadastralParcels As New List(Of Geometry)
+                        Dim selectInnerBoundary As PromptNestedEntityResult = ed.GetNestedEntity(vbLf & "Выберите объект на основе которого будут созданы новые участки: ")
+                        If selectInnerBoundary.Status = PromptStatus.OK Then
+                            Dim ids As List(Of ObjectId) = New List(Of ObjectId)(selectInnerBoundary.GetContainers())
+                            ids.Reverse()
+                            ids.Add(selectInnerBoundary.ObjectId)
+                            For Each id As ObjectId In ids
+                                Dim idStr As String = id.ObjectClass.Name
+                                If idStr Like "AcDbPolyline" Then
+                                    Dim nameFileKPT As String = id.Database.Filename
+                                    Using selectObject As Autodesk.AutoCAD.DatabaseServices.Polyline = TryCast(id.Open(OpenMode.ForRead), Autodesk.AutoCAD.DatabaseServices.Polyline)
+                                        Dim dataInnerBoundary As StructureElement = Nothing
+                                        Dim boolReadData As Boolean = FuncXRecords.getXRecords(selectObject, dataInnerBoundary, StructureElement.tableXRecords.PROJECT_STRUCTURES, selectObject.Database)
+                                        If IsNothing(dataInnerBoundary) = False Then
+                                            Dim innerPolygon As Polygon = acadTopologySuite.CreatePolygon(selectObject)
+                                            If IsNothing(innerPolygon) = False Then
+                                                innerPolygon.UserData = dataInnerBoundary
+                                                listCadastralParcels.Add(innerPolygon)
                                             End If
                                         End If
-                                    End If
+                                    End Using
                                 End If
+                                If listCadastralParcels.Count > 0 Then Continue For
                             Next
-                            tr.Commit()
-                        End Using
+                        Else
+                            MsgBox("Прервано пользователем.")
+                            tr.Abort()
+                            locker.Dispose()
+                            Exit Sub
+                        End If
+                        If IsNothing(outerPolygon) = False Then
+                            If listCadastralParcels.Count > 0 Then
+                                For i As Integer = 0 To listCadastralParcels.Count - 1
+                                    Try
+                                        Dim innerPolygon As NetTopologySuite.Geometries.Polygon = listCadastralParcels.Item(i)
+                                        If IsNothing(innerPolygon) = True Then Continue For
+                                        Dim dataCadastralObject As StructureElement = innerPolygon.UserData
+                                        If IsNothing(dataCadastralObject) = True Then Continue For
+                                        Dim allPolygons As List(Of Polygon) = processor.GetIntersectionPolygonsWithCheck(outerPolygon, innerPolygon)
+                                        If allPolygons.Count > 0 Then
+                                            For j As Integer = 0 To allPolygons.Count - 1
+                                                Dim workPolygon As Polygon = allPolygons.Item(j)
+                                                If workPolygon.Area >= 1 Then
+                                                    Dim newParcels As Polyline = classDrawObject.createPolylineByPolygon(workPolygon)
+                                                    If IsNothing(dataCadastralObject) = False Then
+                                                        Dim dictDataObject As Dictionary(Of String, Object) = CadastralTools.JsonValidator.DeserializeJsonToDictionary(dataCadastralObject.KeyParameter)
+                                                        If IsNothing(dictDataObject) = False Then
+                                                            For k As Integer = 0 To dictionaryPropertiesObject.Count - 1
+                                                                Dim nameField As String = dictionaryPropertiesObject.ElementAt(k).Key
+                                                                If nameField Like "Cad_number" Then
+                                                                    If dictDataObject.ContainsKey(nameField) = True Then
+                                                                        Dim value As String = dictDataObject.Item(nameField)
+                                                                        dictionaryPropertiesObject.Item("Cad_number") = value
+                                                                    End If
+                                                                ElseIf nameField Like "Address" Then
+                                                                    If dictDataObject.ContainsKey(nameField) = True Then
+                                                                        Dim value As String = dictDataObject.Item(nameField)
+                                                                        dictionaryPropertiesObject.Item("Address") = value
+                                                                    End If
+                                                                ElseIf nameField Like "Area" Then
+                                                                    If dictDataObject.ContainsKey(nameField) = True Then
+                                                                        dictionaryPropertiesObject.Item("Area") = Math.Round(innerPolygon.Area)
+                                                                    End If
+                                                                ElseIf nameField Like "Category" Then
+                                                                    If dictDataObject.ContainsKey(nameField) = True Then
+                                                                        Dim value As String = dictDataObject.Item(nameField)
+                                                                        If value Like "Земли населенных пунктов" Then
+                                                                            dictionaryPropertiesObject.Item("Category") = value
+                                                                        End If
+                                                                    End If
+                                                                End If
+                                                            Next
+                                                        End If
+                                                    End If
+                                                    'обновляем свойства
+                                                    Dim conditionalParcel As String = numberParcel
+                                                    If numberCounter > 0 Then
+                                                        conditionalParcel = numberParcel & "(" & numberCounter & ")"
+                                                        numberCounter += 1
+                                                    Else
+                                                        numberParcel += 1
+                                                    End If
+                                                    'обновляем условный номер и локальный ID
+                                                    If dictionaryPropertiesObject.ContainsKey("ConditionalNumber") = True Then
+                                                        dictionaryPropertiesObject.Item("ConditionalNumber") = conditionalParcel
+                                                    End If
+                                                    If dictionaryPropertiesObject.ContainsKey("LOCALID") = True Then
+                                                        dictionaryPropertiesObject.Item("LOCALID") = Guid.NewGuid.ToString
+                                                    End If
+                                                    Dim keyParam As String = CadastralTools.JsonValidator.convertDictionaryToJson(dictionaryPropertiesObject)
+
+                                                    Dim newDataCadastralObject As CadastralTools.StructureElement = New CadastralTools.StructureElement
+                                                    newDataCadastralObject.Label = formCreateParcels.nameCategory
+                                                    newDataCadastralObject.NameClassObject = CadastralTools.StructureElement.classObject.TERRITORIAL_PLANNING
+                                                    newDataCadastralObject.TypeGeometry = formCreateParcels.typeGeometry
+                                                    newDataCadastralObject.NameTypeObject = nameObject
+                                                    newDataCadastralObject.TableObject = nameTableObject
+                                                    newDataCadastralObject.Description = deskObject
+                                                    newDataCadastralObject.KeyParameter = keyParam
+                                                    newDataCadastralObject.TablePS = formCreateParcels.PS
+                                                    newDataCadastralObject.IdStructure = globalID
+                                                    newDataCadastralObject.IdElement = Guid.NewGuid.ToString
+                                                    newDataCadastralObject.IdObject = newParcels.Handle.ToString
+                                                    Dim boolWriteDataOstriv As Boolean = FuncXRecords.setXRecords(newParcels, newDataCadastralObject)
+                                                    If IsNothing(IDPSTable) = False Then
+                                                        If IDPSTable.IsNull = False Then
+                                                            Dim boolPSObject As Boolean = FuncPropertySet.FuncAddDataSetProperties(newParcels, IDPSTable)
+                                                            If boolPSObject = True Then
+                                                                Dim boolRec As Boolean = FuncPropertySet.FuncWriteDataSetByStructureElement(newParcels, newDataCadastralObject)
+                                                            End If
+                                                        End If
+                                                    End If
+                                                    styleObject.setStyle(newParcels)
+                                                    '=========================================================================================================================
+                                                    'рисуем выноску
+                                                    '=========================================================================================================================
+                                                    If arrayPropertiesLeader.Length > 0 Then
+                                                        'назначаем стиль выноске
+                                                        Dim innerPoint = classTopologySuite.GetInteriorPoint(workPolygon)
+                                                        Dim styleLeaderObject As CadastralLeaderStyle = New CadastralLeaderStyle()
+                                                        styleLeaderObject.TemplateXML = fileTemlateXML1
+                                                        styleLeaderObject.TemplateDWG = fileTemplateDWG
+                                                        styleLeaderObject.DBDrawing = db
+                                                        'PS
+                                                        Dim arrayPropertiesLabelPS As String(,) = {}
+                                                        Dim boolFindLabelPS As Boolean = CadastralTools.TemplateXML.FuncReadTablePSToXML(fileTemlateXML1, "PROJECT_LABEL", arrayPropertiesLabelPS)
+                                                        Dim IDLabelPSTable As ObjectId = Nothing
+                                                        If arrayPropertiesLabelPS.Length > 0 Then
+                                                            IDLabelPSTable = FuncPropertySet.FuncCreatedSetProperties("PROJECT_LABEL", arrayPropertiesLabelPS)
+                                                        End If
+                                                        '=======================================================================================================================
+                                                        Dim tempLayerLeader As String = CadastralTools.MathFunction.findValueToArray2d(arrayPropertiesLeader, "Layer")
+                                                        If Mid(tempLayerLeader.Trim, 1, 1) Like "_" Then
+                                                            Dim boolCreateLeaderStyle As Boolean = styleLeaderObject.createStyleLeader(arrayPropertiesLeader, newParcels.Layer)
+                                                        Else
+                                                            Dim boolCreateLeaderStyle As Boolean = styleLeaderObject.createStyleLeader(arrayPropertiesLeader)
+                                                        End If
+                                                        '===============================================================
+                                                        'вторая точка
+                                                        Dim pointBound As Extents3d = newParcels.Bounds
+                                                        Dim maskLabel As String = ""
+                                                        Dim strNoteLeader As String = CadastralTools.MathFunction.findValueToArray2d(arrayPropertiesLeader, "Note")
+                                                        If strNoteLeader.Trim.Length > 0 Then
+                                                            conditionalParcel = CadastralTools.DataFormatting.getTextLeader(strNoteLeader, dictionaryPropertiesObject, maskLabel)
+                                                            If conditionalParcel.Trim.Length > 0 Then
+                                                                Dim leaderObject As MLeader = classDrawObject.createLeader(New Point3d(innerPoint.X, innerPoint.Y, 0), conditionalParcel, pointBound.MaxPoint)
+                                                                If IsNothing(leaderObject) = False Then
+                                                                    styleLeaderObject.setLeaderStyle(leaderObject)
+                                                                    Dim createXdata As StructureElement = CadastralTools.CadastralLeader.getLeaderXData(dataCadastralObject, deskLeader, maskLabel, fileTemlateXML1)
+                                                                    If IsNothing(createXdata) = False Then
+                                                                        Dim boolWriteDataLeader As Boolean = FuncXRecords.setXRecords(leaderObject, createXdata)
+                                                                        If IsNothing(IDLabelPSTable) = False Then
+                                                                            'формируем новый массив для Xrecords
+                                                                            Dim ArrayDataObj As String(,) = Nothing
+                                                                            ReDim ArrayDataObj(2, 4)
+                                                                            'условный номер
+                                                                            ArrayDataObj(0, 0) = "PROJECT_LABEL"
+                                                                            ArrayDataObj(1, 0) = "LABEL"
+                                                                            ArrayDataObj(2, 0) = deskLeader
+                                                                            'условный номер
+                                                                            ArrayDataObj(0, 1) = "PROJECT_LABEL"
+                                                                            ArrayDataObj(1, 1) = "PARENTID"
+                                                                            ArrayDataObj(2, 1) = dataCadastralObject.IdElement
+                                                                            'id контура
+                                                                            ArrayDataObj(0, 2) = "PROJECT_LABEL"
+                                                                            ArrayDataObj(1, 2) = "MASK"
+                                                                            ArrayDataObj(2, 2) = maskLabel
+                                                                            'локальный id
+                                                                            ArrayDataObj(0, 3) = "PROJECT_LABEL"
+                                                                            ArrayDataObj(1, 3) = "LOCALID"
+                                                                            ArrayDataObj(2, 3) = Guid.NewGuid.ToString
+                                                                            'примечание
+                                                                            ArrayDataObj(0, 4) = "PROJECT_LABEL"
+                                                                            ArrayDataObj(1, 4) = "NOTE"
+                                                                            ArrayDataObj(2, 4) = ""
+                                                                            If IsNothing(IDLabelPSTable) = False Then
+                                                                                If IDLabelPSTable.IsNull = False Then
+                                                                                    Dim boolADDPSTBL As Boolean = FuncPropertySet.FuncAddDataSetProperties(leaderObject, IDLabelPSTable)
+                                                                                    If boolADDPSTBL = True Then
+                                                                                        Dim boolADDPSData As Boolean = FuncPropertySet.FuncWriteAllDataSetProperties(leaderObject, ArrayDataObj)
+                                                                                    End If
+                                                                                End If
+                                                                            End If
+                                                                        End If
+                                                                    End If
+                                                                End If
+                                                            End If
+                                                        End If
+                                                    End If
+                                                    numberParcel += 1
+                                                End If
+                                            Next j
+                                        End If
+                                    Catch ex As System.Exception
+                                    End Try
+                                Next i
+                            End If
+                        End If
+                        tr.Commit()
                     End Using
                 End Using
             End If

@@ -322,11 +322,13 @@ Public Class FuncPropertySet
                                                                 End If
                                                             End If
                                                             pTempData.SetData(RealData)
+                                                            Exit For
                                                         Else
                                                             If IsNothing(tempData) = True Then
                                                                 tempData = ""
                                                             End If
                                                             pTempData.SetData(tempData)
+                                                            Exit For
                                                         End If
                                                     End If
                                                 End If
@@ -424,11 +426,13 @@ Public Class FuncPropertySet
                                                                 End If
                                                             End If
                                                             pTempData.SetData(RealData)
+                                                            Exit For
                                                         Else
                                                             If IsNothing(tempData) = True Then
                                                                 tempData = ""
                                                             End If
                                                             pTempData.SetData(tempData)
+                                                            Exit For
                                                         End If
                                                     End If
                                                 End If

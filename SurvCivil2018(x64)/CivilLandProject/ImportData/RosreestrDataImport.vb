@@ -740,9 +740,10 @@ Public Class RosreestrDataImport
         Dim locker As Autodesk.AutoCAD.ApplicationServices.DocumentLock = Autodesk.AutoCAD.ApplicationServices.Application.DocumentManager.MdiActiveDocument.LockDocument
         Using locker
             Try
+                Dim generalDirectory As String = FuncFiles.getSupportFolderPath("Civil3DToolsUtility")
                 'передаем масштаб чертежа в форму
                 Dim nameKvartal As String = ""
-                Dim FormKPTImport As CadastralTools.FormImportKPT = New CadastralTools.FormImportKPT
+                Dim FormKPTImport As CadastralTools.FormImportKPT = New CadastralTools.FormImportKPT(generalDirectory)
                 Dim tempPath As String = Path.GetTempPath()
                 tempPath = tempPath & "rosreestr"
                 FormKPTImport.initDirectory = tempPath
@@ -982,6 +983,24 @@ Public Class RosreestrDataImport
                                         tableZn = "ЕГРН-Границы территорий"
                                         dataCadastralObject.TypeGeometry = CadastralTools.StructureElement.typeGeometryObject.polyline
                                 End Select
+                                '======================================================================================================================
+                                Dim IDPSTable As ObjectId = FuncPropertySet.FuncReturnIDDictSetProperties(dataCadastralObject.TablePS)
+                                Dim createPs As Boolean = False
+                                If IsNothing(IDPSTable) = True Then
+                                    createPs = True
+                                ElseIf IDPSTable.IsNull = True Then
+                                    createPs = True
+                                End If
+                                If createPs = True Then
+                                    Dim arrayPropertiesPS As String(,) = {}
+                                    Dim boolFindPropertiesPS As Boolean = CadastralTools.TemplateXML.FuncReadTablePSToXML(templateXML, dataCadastralObject.TablePS, arrayPropertiesPS)
+                                    If arrayPropertiesPS.Length = 0 Then
+                                        Dim boolFindPS As Boolean = AcadFunction.FuncCopyTablePSDestDraw(PutchTemplateDwg, dataCadastralObject.TablePS)
+                                        IDPSTable = FuncPropertySet.FuncReturnIDDictSetProperties(dataCadastralObject.TablePS)
+                                    Else
+                                        IDPSTable = FuncPropertySet.FuncCreatedSetProperties(dataCadastralObject.TablePS, arrayPropertiesPS)
+                                    End If
+                                End If
                                 '=========================================================================================================================
                                 'назначаем стиль
                                 Dim newStyle As CadastralPolylineStyle = New CadastralPolylineStyle
@@ -1042,22 +1061,26 @@ Public Class RosreestrDataImport
                                                             dictOstrov.Add("ParentNumber", cadNumber)
                                                             Dim keyParamOstrov As String = CadastralTools.JsonValidator.convertDictionaryToJson(dictOstrov)
                                                             objOstrov.KeyParameter = keyParamOstrov
+                                                            'записываем xdata
+                                                            Dim boolWriteXRecordsOstrov As Boolean = FuncXRecords.setXRecords(acPolyline, objOstrov)
+                                                            'записываем PS
                                                             Dim boolPSObjectOstrov As Boolean = FuncPropertySet.FuncAddDataSetProperties(acPolyline, IDPSTableOstrov)
                                                             If boolPSObjectOstrov = True Then
                                                                 Dim boolRecOstrov As Boolean = FuncPropertySet.FuncWriteDataSetByStructureElement(acPolyline, objOstrov)
                                                             End If
-                                                            Dim boolWriteXRecordsOstrov As Boolean = FuncXRecords.writeXRecords(acPolyline, objOstrov)
                                                             countOstrov += 1
                                                             Continue For
                                                         End If
                                                     End If
                                                 End If
-                                                Dim IDPSTable As ObjectId = FuncPropertySet.FuncReturnIDDictSetProperties(dataCadastralObject.TablePS)
+                                                'записываем xdata
+                                                Dim boolWriteXRecords As Boolean = FuncXRecords.setXRecords(acPolyline, dataCadastralObject)
+                                                'записываем PS
+
                                                 Dim boolPSObject As Boolean = FuncPropertySet.FuncAddDataSetProperties(acPolyline, IDPSTable)
                                                 If boolPSObject = True Then
                                                     Dim boolRec As Boolean = FuncPropertySet.FuncWriteDataSetByStructureElement(acPolyline, dataCadastralObject)
                                                 End If
-                                                Dim boolWriteXRecords As Boolean = FuncXRecords.writeXRecords(acPolyline, dataCadastralObject)
                                             End If
                                         Else
                                             Dim acCircle As Circle = New Circle()
@@ -1068,13 +1091,13 @@ Public Class RosreestrDataImport
                                             tr.AddNewlyCreatedDBObject(acCircle, True)
                                             newStyle.setStyle(acCircle)
                                             dataCadastralObject.TypeGeometry = typeGeometryObject.block
-                                            Dim IDPSTable As ObjectId = FuncPropertySet.FuncReturnIDDictSetProperties(dataCadastralObject.TablePS)
+                                            'записываем xdata
+                                            Dim boolWriteXRecordsOstrov As Boolean = FuncXRecords.setXRecords(acCircle, dataCadastralObject)
+                                            'записываем PS
                                             Dim boolPSObject As Boolean = FuncPropertySet.FuncAddDataSetProperties(acCircle, IDPSTable)
                                             If boolPSObject = True Then
                                                 Dim boolRec As Boolean = FuncPropertySet.FuncWriteDataSetByStructureElement(acCircle, dataCadastralObject)
                                             End If
-                                            Dim boolWriteXRecordsOstrov As Boolean = FuncXRecords.writeXRecords(acCircle, dataCadastralObject)
-                                            Continue For
                                         End If
                                     Next i
                                 End If
@@ -1093,10 +1116,6 @@ Public Class RosreestrDataImport
             End Try
         End Using
     End Sub
-
-
-
-
 
     '\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     '=============================================================================================
