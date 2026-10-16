@@ -300,6 +300,7 @@ Public Class SelectCadastralObject
                             Dim poly As Polyline = TryCast(acEnt, Polyline)
                             If poly Is Nothing Then Continue For
                             If poly.Area <= 0 Then Continue For
+                            dataCadastralObject.HandleSource = acEnt.Handle.ToString()
                             Dim polygon As NetTopologySuite.Geometries.Polygon = classTopology.CreatePolygon(poly)
                             polygon.UserData = dataCadastralObject
                             If result.ContainsKey(deskObject) = True Then
@@ -313,6 +314,7 @@ Public Class SelectCadastralObject
                             Dim poly As Polyline = TryCast(acEnt, Polyline)
                             If poly Is Nothing Then Continue For
                             If poly.Length <= 0 Then Continue For
+                            dataCadastralObject.HandleSource = acEnt.Handle.ToString()
                             Dim lineString As NetTopologySuite.Geometries.LineString = classTopology.CreateLineString(poly)
                             lineString.UserData = dataCadastralObject
                             If result.ContainsKey(deskObject) = True Then
@@ -324,8 +326,6 @@ Public Class SelectCadastralObject
                             End If
                         End If
                     End If
-
-
                 Next
             End Using
         Catch ex As System.Exception
