@@ -66,39 +66,39 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="accoremgd">
-      <HintPath>..\..\..\Autodesk\AutoCAD 2020\accoremgd.dll</HintPath>
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2024\accoremgd.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="acdbmgd">
-      <HintPath>..\..\..\Autodesk\AutoCAD 2020\acdbmgd.dll</HintPath>
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2024\acdbmgd.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="acdbmgdbrep">
-      <HintPath>..\..\..\Autodesk\AutoCAD 2020\acdbmgdbrep.dll</HintPath>
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2024\acdbmgdbrep.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="acmgd">
-      <HintPath>..\..\..\Autodesk\AutoCAD 2020\acmgd.dll</HintPath>
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2024\acmgd.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="AcMPolygonMGD">
-      <HintPath>..\..\..\Autodesk\AutoCAD 2020\AcMPolygonMGD.dll</HintPath>
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2024\AcMPolygonMGD.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="AecBaseMgd">
-      <HintPath>..\..\..\Autodesk\AutoCAD 2020\AecBaseMgd.dll</HintPath>
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2024\AecBaseMgd.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="AeccDbMgd">
-      <HintPath>..\..\..\Autodesk\AutoCAD 2020\C3D\AeccDbMgd.dll</HintPath>
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2024\C3D\AeccDbMgd.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="AecCoreMgd">
-      <HintPath>..\..\..\Autodesk\AutoCAD 2020\ACA\AecCoreMgd.dll</HintPath>
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2024\ACA\AecCoreMgd.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="AecPropDataMgd">
-      <HintPath>..\..\..\Autodesk\AutoCAD 2020\ACA\AecPropDataMgd.dll</HintPath>
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2024\ACA\AecPropDataMgd.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Alpinechough.Srtm">
@@ -106,35 +106,35 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="Autodesk.AEC.Interop.Base">
-      <HintPath>..\..\..\Autodesk\AutoCAD 2020\ACA\Autodesk.AEC.Interop.Base.dll</HintPath>
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2024\ACA\Autodesk.AEC.Interop.Base.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="Autodesk.AEC.Interop.Details">
-      <HintPath>..\..\..\Autodesk\AutoCAD 2020\ACA\Autodesk.AEC.Interop.Details.dll</HintPath>
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2024\ACA\Autodesk.AEC.Interop.Details.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="Autodesk.AEC.Interop.UIBase">
-      <HintPath>..\..\..\Autodesk\AutoCAD 2020\ACA\Autodesk.AEC.Interop.UIBase.dll</HintPath>
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2024\ACA\Autodesk.AEC.Interop.UIBase.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="Autodesk.AECC.Interop.Land">
-      <HintPath>..\..\..\Autodesk\AutoCAD 2020\C3D\Autodesk.AECC.Interop.Land.dll</HintPath>
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2024\C3D\Autodesk.AECC.Interop.Land.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="Autodesk.AECC.Interop.Survey">
-      <HintPath>..\..\..\Autodesk\AutoCAD 2020\C3D\Autodesk.AECC.Interop.Survey.dll</HintPath>
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2024\C3D\Autodesk.AECC.Interop.Survey.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="Autodesk.AECC.Interop.UiLand">
-      <HintPath>..\..\..\Autodesk\AutoCAD 2020\C3D\Autodesk.AECC.Interop.UiLand.dll</HintPath>
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2024\C3D\Autodesk.AECC.Interop.UiLand.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="Autodesk.AutoCAD.Interop">
-      <HintPath>..\..\..\Autodesk\AutoCAD 2020\Autodesk.AutoCAD.Interop.dll</HintPath>
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2024\Autodesk.AutoCAD.Interop.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="Autodesk.AutoCAD.Interop.Common">
-      <HintPath>..\..\..\Autodesk\AutoCAD 2020\Autodesk.AutoCAD.Interop.Common.dll</HintPath>
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2024\Autodesk.AutoCAD.Interop.Common.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
     <Reference Include="CadastralTools, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a170abcdafb509a7, processorArchitecture=MSIL">
@@ -143,7 +143,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="ManagedMapApi">
-      <HintPath>..\..\..\Autodesk\AutoCAD 2020\Map\ManagedMapApi.dll</HintPath>
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2024\Map\ManagedMapApi.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=9.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
@@ -160,15 +160,15 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="OSGeo.MapGuide.Foundation">
-      <HintPath>..\..\..\Autodesk\AutoCAD 2020\Map\bin\GisPlatform\OSGeo.MapGuide.Foundation.dll</HintPath>
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2024\Map\bin\GisPlatform\OSGeo.MapGuide.Foundation.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="OSGeo.MapGuide.Geometry">
-      <HintPath>..\..\..\Autodesk\AutoCAD 2020\Map\bin\GisPlatform\OSGeo.MapGuide.Geometry.dll</HintPath>
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2024\Map\bin\GisPlatform\OSGeo.MapGuide.Geometry.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="OSGeo.MapGuide.PlatformBase">
-      <HintPath>..\..\..\Autodesk\AutoCAD 2020\Map\bin\GisPlatform\OSGeo.MapGuide.PlatformBase.dll</HintPath>
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2024\Map\bin\GisPlatform\OSGeo.MapGuide.PlatformBase.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="PresentationCore" />
@@ -246,7 +246,7 @@
     <Compile Include="BridgeProject\FormCreateBridge.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BufferZones\BufferZones.vb" />
+    <Compile Include="CivilLandProject\BufferZones\BufferZones.vb" />
     <Compile Include="CivilLandProject\CadastralObject\UpdateCadastralObject.vb" />
     <Compile Include="CivilLandProject\ForestProjectDocument\ForestProjectParcelsvb.vb" />
     <Compile Include="CivilLandProject\ForestProjectDocument\CmdForestProjectDocumentation.vb" />

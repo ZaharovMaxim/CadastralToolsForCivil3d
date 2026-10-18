@@ -30,7 +30,7 @@ Public Class CreateCadastralObject
         End Try
         '1.\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
         'вызываем диалоговое окно с первоначальными настройками
-        Dim generalDidectory As String = "k:\Civil3DToolsUtility"
+        Dim generalDidectory As String = FuncFiles.getSupportFolderPath("Civil3DToolsUtility")
         Dim formCreateParcels As CadastralTools.FormCreateCadastralObject = New CadastralTools.FormCreateCadastralObject(generalDidectory)
         formCreateParcels.ShowDialog()
         If formCreateParcels.boolShow = False Then
@@ -448,7 +448,7 @@ Public Class CreateCadastralObject
                                         'формируем свойства объекта
                                         Dim dataCadastralObject As CadastralTools.StructureElement = CadastralTools.CadastralOstrov.getProjectOstrovXData(dataParent, numberOstrov, arrayPropertiesCadastralOstrov)
                                         dataCadastralObject.IdObject = polylineRing.Handle.ToString
-                                        Dim boolWriteDataOstriv As Boolean = FuncXRecords.writeXRecords(polylineRing, dataCadastralObject, CadastralTools.StructureElement.tableXRecords.PROJECT_STRUCTURES)
+                                        Dim boolWriteDataOstriv As Boolean = FuncXRecords.setXRecords(polylineRing, dataCadastralObject, CadastralTools.StructureElement.tableXRecords.PROJECT_STRUCTURES)
                                         lineStyle.setStyle(polylineRing)
                                         parentPolygon = cadastralNetTopoSuite.AddPolygonAsHole(parentPolygon, userPolygon)
                                         '\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
@@ -498,7 +498,7 @@ Public Class CreateCadastralObject
                                 Dim rezArea As Double = Math.Round(parentPolygon.Area, 0)
                                 keyParam = CadastralTools.JsonValidator.SetJsonFieldValue(keyParam, "Area", rezArea)
                                 dataParent.KeyParameter = keyParam
-                                Dim boolNewData As Boolean = FuncXRecords.writeXRecords(parentPolyline, dataParent, CadastralTools.StructureElement.tableXRecords.PROJECT_STRUCTURES)
+                                Dim boolNewData As Boolean = FuncXRecords.setXRecords(parentPolyline, dataParent, CadastralTools.StructureElement.tableXRecords.PROJECT_STRUCTURES)
                             End If
                         End If
                     End If

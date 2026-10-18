@@ -19,16 +19,19 @@ Public Class CreateDWGObject
         End Set
     End Property
     '===================================================================================================
-    'создание полилинии из полигона
+    'создание полилинии из полигона (внешний контур + внутренние островки)
     Public Function createPolylineByPolygon(ByVal polygon As NetTopologySuite.Geometries.Polygon, Optional ByRef ringPolyline As Polyline = Nothing) As Polyline
         createPolylineByPolygon = Nothing
         If IsNothing(DBDrawing) = False Then
             If IsNothing(polygon) = False Then
-                If polygon.Coordinates.Count > 2 Then
+                If polygon.NumPoints > 2 Then
                     Using acTrans As Transaction = DBDrawing.TransactionManager.StartTransaction()
                         Dim acBlkTbl As BlockTable = acTrans.GetObject(DBDrawing.BlockTableId, OpenMode.ForRead)
                         Dim acBlkTblRec As BlockTableRecord = acTrans.GetObject(acBlkTbl(BlockTableRecord.ModelSpace), OpenMode.ForWrite)
-                        Dim listCoordPolugon As NetTopologySuite.Geometries.Coordinate() = polygon.Coordinates
+                        '=====================================================================================
+                        'внешний контур
+                        '=====================================================================================
+                        Dim listCoordPolugon As NetTopologySuite.Geometries.Coordinate() = polygon.ExteriorRing.Coordinates
                         If IsNothing(ringPolyline) = True Then
                             ringPolyline = New Polyline()
                             ringPolyline.SetDatabaseDefaults()
@@ -58,7 +61,42 @@ Public Class CreateDWGObject
                                 ringPolyline.AddVertexAt(ringPolyline.NumberOfVertices - 1, New Point2d(endVertex.X, endVertex.Y), 0, 0, 0)
                             End If
                             ringPolyline.Closed = True
+                            'сбрасываем выпуклости дуг — геометрия NTS линейная
+                            For i As Integer = 0 To ringPolyline.NumberOfVertices - 1
+                                If ringPolyline.GetBulgeAt(i) <> 0 Then
+                                    ringPolyline.SetBulgeAt(i, 0)
+                                End If
+                            Next
                         End If
+                        '=====================================================================================
+                        'островки (внутренние контуры) — строим отдельными замкнутыми полилиниями
+                        '=====================================================================================
+                        For j As Integer = 0 To polygon.NumInteriorRings - 1
+                            Dim listCoordIsland As NetTopologySuite.Geometries.Coordinate() = polygon.InteriorRings(j).Coordinates
+                            If listCoordIsland.Length > 2 Then
+                                Dim islandPolyline As Polyline = New Polyline()
+                                islandPolyline.SetDatabaseDefaults()
+                                For i As Integer = 0 To listCoordIsland.Length - 2
+                                    Dim coord As NetTopologySuite.Geometries.Coordinate = listCoordIsland(i)
+                                    islandPolyline.AddVertexAt(i, New Point2d(coord.X, coord.Y), 0, 0, 0)
+                                Next i
+                                Dim startIsland As NetTopologySuite.Geometries.Coordinate = listCoordIsland(0)
+                                Dim endIsland As NetTopologySuite.Geometries.Coordinate = listCoordIsland(listCoordIsland.Length - 1)
+                                Dim distanceIsland As Double = startIsland.Distance(endIsland)
+                                If distanceIsland > 0.01 Then
+                                    islandPolyline.AddVertexAt(islandPolyline.NumberOfVertices, New Point2d(endIsland.X, endIsland.Y), 0, 0, 0)
+                                End If
+                                islandPolyline.Closed = True
+                                'оформление как у внешнего контура
+                                islandPolyline.Layer = ringPolyline.Layer
+                                islandPolyline.ColorIndex = ringPolyline.ColorIndex
+                                islandPolyline.Linetype = ringPolyline.Linetype
+                                islandPolyline.LinetypeScale = ringPolyline.LinetypeScale
+                                islandPolyline.LineWeight = ringPolyline.LineWeight
+                                acBlkTblRec.AppendEntity(islandPolyline)
+                                acTrans.AddNewlyCreatedDBObject(islandPolyline, True)
+                            End If
+                        Next j
                         acTrans.Commit()
                     End Using
                 End If
