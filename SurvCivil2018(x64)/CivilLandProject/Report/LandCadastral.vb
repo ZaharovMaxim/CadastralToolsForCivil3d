@@ -1,12 +1,21 @@
+Imports System
 Imports Autodesk.AutoCAD.ApplicationServices
 Imports Autodesk.AutoCAD.DatabaseServices
 Imports Autodesk.AutoCAD.EditorInput
 Imports Autodesk.AutoCAD.Geometry
 Imports Autodesk.AutoCAD.Runtime
+Imports Autodesk.Civil.ApplicationServices
+Imports Autodesk.Gis.Map.MapBook
+Imports CadastralTools
+Imports Microsoft.Office.Interop
+Imports Microsoft.Office.Interop.Excel
+Imports NetTopologySuite.Geometries
+Imports OSGeo.MapGuide
+Imports Application = Autodesk.AutoCAD.ApplicationServices.Application
 
 Public Class LandCadastralReport
     '=========================================================================================================
-    'таблица с координатами участков постоянного и временного отводов в MS Excel, Word, Autocad
+    '1. таблица с координатами участков постоянного и временного отводов в MS Excel, Word, Autocad
     <CommandMethod("ListCoordinatesCadastralObject")>
     Public Sub ListCoordinatesCadastralObject()
         Dim acDoc As Document = Autodesk.AutoCAD.ApplicationServices.Application.DocumentManager.MdiActiveDocument
@@ -62,14 +71,13 @@ Public Class LandCadastralReport
                         '====================================================================================================
                         'запускаем программу по выводу координат
                         Dim classCatalogCoordinates As CadastralTools.CatalogCoordinates = New CadastralTools.CatalogCoordinates
-                        classCatalogCoordinates.CatalogExportCoordinates(dictCadastralObject, listBlockReference, formCatalogCoordinates, AddressOf DrawCatalogTableCAD, AddressOf ExportParcelDwgCAD)
+                        classCatalogCoordinates.CatalogExportCoordinates(dictCadastralObject, listBlockReference, formCatalogCoordinates, AddressOf DrawCatalogTableCAD, AddressOf ExportParcelDwgCAD, AddressOf ExportExcelWGS84)
                     End If
                 End If
                 tr.Commit()
             End Using
         End Using
     End Sub
-
     '\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     'вывод каталога координат в виде таблицы AutoCAD (делегат для CadastralTools.CatalogCoordinates)
     'таблицы размещаются последовательно с шагом 100 мм по оси X (аналог PointInsTbl1.X + 100 эталона)
@@ -162,7 +170,6 @@ Public Class LandCadastralReport
             End Using
         End If
     End Sub
-
     Private Sub DrawCatalogTableCAD(ByVal objCatalog As CadastralTools.CatalogCoordinatesObject)
         If IsNothing(objCatalog) = True Then Return
         Dim acDoc As Document = Autodesk.AutoCAD.ApplicationServices.Application.DocumentManager.MdiActiveDocument
@@ -348,4 +355,324 @@ Public Class LandCadastralReport
             tr.Commit()
         End Using
     End Sub
+    Private Sub ExportExcelWGS84(ByVal objCatalog As CadastralTools.CatalogCoordinatesObject)
+        If IsNothing(objCatalog) = True Then Return
+        Dim CoordSystemCode As String = CivilApplication.ActiveDocument.Settings.DrawingSettings.UnitZoneSettings.CoordinateSystemCode
+        Dim coordSysFactory As MgCoordinateSystemFactory = New MgCoordinateSystemFactory()
+        Dim csCatalog As MgCoordinateSystemCatalog = coordSysFactory.GetCatalog()
+        Dim csDict As MgCoordinateSystemDictionary = csCatalog.GetCoordinateSystemDictionary()
+        Dim datumDict As MgCoordinateSystemDatumDictionary = csCatalog.GetDatumDictionary()
+        Dim ellipsoidDict As MgCoordinateSystemEllipsoidDictionary = csCatalog.GetEllipsoidDictionary
+        Dim DrawingSysCoord As MgCoordinateSystem = Nothing
+        Try
+            DrawingSysCoord = csDict.GetCoordinateSystem(CoordSystemCode)
+        Catch ex As OSGeo.MapGuide.MgCoordinateSystemLoadFailedException
+            MsgBox("Чертежу не назначена система координат!!! Макро прервано!!!")
+            Exit Sub
+        End Try
+        Dim coordSystem As MgCoordinateSystem = csDict.GetCoordinateSystem("LL84")
+        Dim UserCoord_to_PseudoMarcator As MgCoordinateSystemTransform = coordSysFactory.GetTransform(DrawingSysCoord, coordSystem)
+        'запускаем Excel
+        Dim xlApp As Excel.Application = Nothing
+        Dim xlBook As Excel.Workbook = Nothing
+        Dim xlSheet As Excel.Worksheet = Nothing
+        xlApp = DirectCast(CreateObject("Excel.Application"), Microsoft.Office.Interop.Excel.Application)
+        xlBook = xlApp.Workbooks.Add()
+        xlSheet = DirectCast(xlBook.ActiveSheet, Microsoft.Office.Interop.Excel.Worksheet)
+        Dim boolExVisibl As Boolean = False
+        Dim StartRows As Integer = 1
+        StartRows += 1
+        Dim cell1 As Excel.Range 'первая ячейка в строке
+        Dim cell2 As Excel.Range 'последняя ячейка в строке(6)
+        Dim CellRng As Excel.Range 'массив ячеек
+        xlSheet = xlBook.ActiveSheet
+        If StartRows = 2 Then
+            xlSheet.Columns.Range("A:A").ColumnWidth = 15
+            xlSheet.Columns.Range("B:B").ColumnWidth = 15
+            xlSheet.Columns.Range("C:C").ColumnWidth = 15
+            xlSheet.Columns.Range("D:D").ColumnWidth = 15
+            xlSheet.Columns.Range("E:E").ColumnWidth = 15
+        End If
+        Dim flagArea As Boolean = False
+        cell1 = xlSheet.Cells(StartRows, 1) 'ссылка на первую ячейку
+        cell2 = xlSheet.Cells(StartRows, 5) 'ссылка на 6 ячейку в строке
+        CellRng = xlSheet.Range(cell1, cell2) 'выбираем строку
+        CellRng.Merge(Type.Missing)
+        cell1.Font.Name = "Times New Roman"
+        cell1.Font.Bold = 1
+        cell1.Font.Size = 12
+        cell1.HorizontalAlignment = Excel.XlHAlign.xlHAlignCenter
+        cell1.VerticalAlignment = Excel.XlVAlign.xlVAlignCenter
+        CellRng.Borders.LineStyle = Excel.XlLineStyle.xlContinuous
+        'условный номер
+        Dim conditionalParcel As String = objCatalog.ConditionNumber
+        Dim numberParcel As Integer = 1
+        If Integer.TryParse(conditionalParcel.ToString, numberParcel) = False Then
+            numberParcel = DataFormatting.GetNumberBeforeParenthesis(conditionalParcel)
+        End If
+        cell1.Value = "Условный номер (обозначение): " & numberParcel
+        '===========================================================================
+        cell1 = xlSheet.Cells(StartRows + 1, 1) 'ссылка на первую ячейку
+        cell2 = xlSheet.Cells(StartRows + 2, 1) 'ссылка на 6 ячейку в строке
+        CellRng = xlSheet.Range(cell1, cell2) 'выбираем строку
+        CellRng.Merge(Type.Missing)
+        cell1.Font.Name = "Times New Roman"
+        cell1.Font.Bold = 1
+        cell1.Font.Size = 12
+        cell1.HorizontalAlignment = Excel.XlHAlign.xlHAlignCenter
+        cell1.VerticalAlignment = Excel.XlVAlign.xlVAlignCenter
+        CellRng.Borders.LineStyle = Excel.XlLineStyle.xlContinuous
+        cell1.Value = "Обозначение" & vbLf & "характерных" & vbLf & "точек границ"
+        CellRng.WrapText = True
+        '==============================================================================
+        cell1 = xlSheet.Cells(StartRows + 1, 2) 'ссылка на первую ячейку
+        cell2 = xlSheet.Cells(StartRows + 1, 3) 'ссылка на 6 ячейку в строке
+        CellRng = xlSheet.Range(cell1, cell2) 'выбираем строку
+        CellRng.Merge(Type.Missing)
+        cell1.Font.Name = "Times New Roman"
+        cell1.Font.Bold = 1
+        cell1.Font.Size = 12
+        cell1.HorizontalAlignment = Excel.XlHAlign.xlHAlignCenter
+        cell1.VerticalAlignment = Excel.XlVAlign.xlVAlignCenter
+        CellRng.Borders.LineStyle = Excel.XlLineStyle.xlContinuous
+        cell1.Value = "Координаты МСК, м"
+        '==============================================================================
+        cell1 = xlSheet.Cells(StartRows + 1, 4) 'ссылка на первую ячейку
+        cell2 = xlSheet.Cells(StartRows + 1, 5) 'ссылка на 6 ячейку в строке
+        CellRng = xlSheet.Range(cell1, cell2) 'выбираем строку
+        CellRng.Merge(Type.Missing)
+        cell1.Font.Name = "Times New Roman"
+        cell1.Font.Bold = 1
+        cell1.Font.Size = 12
+        cell1.HorizontalAlignment = Excel.XlHAlign.xlHAlignCenter
+        cell1.VerticalAlignment = Excel.XlVAlign.xlVAlignCenter
+        CellRng.Borders.LineStyle = Excel.XlLineStyle.xlContinuous
+        cell1.Value = "Координаты WGS 84, град."
+        '==============================================================================
+        cell1 = xlSheet.Cells(StartRows + 2, 2) 'ссылка на первую ячейку
+        cell1.Font.Name = "Times New Roman"
+        cell1.Font.Bold = 1
+        cell1.Font.Size = 12
+        cell1.HorizontalAlignment = Excel.XlHAlign.xlHAlignCenter
+        cell1.VerticalAlignment = Excel.XlVAlign.xlVAlignCenter
+        cell1.Borders.LineStyle = Excel.XlLineStyle.xlContinuous
+        cell1.Value = "X"
+        '==============================================================================
+        cell1 = xlSheet.Cells(StartRows + 2, 3) 'ссылка на первую ячейку
+        cell1.Font.Name = "Times New Roman"
+        cell1.Font.Bold = 1
+        cell1.Font.Size = 12
+        cell1.HorizontalAlignment = Excel.XlHAlign.xlHAlignCenter
+        cell1.VerticalAlignment = Excel.XlVAlign.xlVAlignCenter
+        cell1.Borders.LineStyle = Excel.XlLineStyle.xlContinuous
+        cell1.Value = "Y"
+        '==============================================================================
+        cell1 = xlSheet.Cells(StartRows + 2, 4) 'ссылка на первую ячейку
+        cell1.Font.Name = "Times New Roman"
+        cell1.Font.Bold = 1
+        cell1.Font.Size = 12
+        cell1.HorizontalAlignment = Excel.XlHAlign.xlHAlignCenter
+        cell1.VerticalAlignment = Excel.XlVAlign.xlVAlignCenter
+        cell1.Borders.LineStyle = Excel.XlLineStyle.xlContinuous
+        cell1.Value = "B"
+        '==============================================================================
+        cell1 = xlSheet.Cells(StartRows + 2, 5) 'ссылка на первую ячейку
+        cell1.Font.Name = "Times New Roman"
+        cell1.Font.Bold = 1
+        cell1.Font.Size = 12
+        cell1.HorizontalAlignment = Excel.XlHAlign.xlHAlignCenter
+        cell1.VerticalAlignment = Excel.XlVAlign.xlVAlignCenter
+        cell1.Borders.LineStyle = Excel.XlLineStyle.xlContinuous
+        cell1.Value = "L"
+        '====================================================================================
+        '\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        'записываем координаты
+        Dim currentRow As Integer = StartRows + 3
+        Dim countColumnsExcel As Integer = 5
+        Dim numPoint As Integer = 1
+        Dim numberFormatZn As String = "0.00"
+        If objCatalog.PrecisionPosition = 0 Then
+            numberFormatZn = "0"
+        ElseIf objCatalog.PrecisionPosition = 1 Then
+            numberFormatZn = "0.0"
+        ElseIf objCatalog.PrecisionPosition = 2 Then
+            numberFormatZn = "0.00"
+        ElseIf objCatalog.PrecisionPosition = 3 Then
+            numberFormatZn = "0.000"
+        ElseIf objCatalog.PrecisionPosition = 4 Then
+            numberFormatZn = "0.0000"
+        Else
+            numberFormatZn = "0.000000"
+        End If
+        For Each row As CatalogCoordinatesRow In objCatalog.Rows
+            If row.kindRow = 1 Then
+                'строка контура
+                cell1 = xlSheet.Cells(currentRow, 1)
+                cell2 = xlSheet.Cells(currentRow, countColumnsExcel)
+                CellRng = xlSheet.Range(cell1, cell2)
+                CellRng.Merge(Type.Missing)
+                cell1.Font.Name = "Times New Roman"
+                cell1.Font.Size = 12
+                cell1.HorizontalAlignment = Microsoft.Office.Interop.Excel.XlHAlign.xlHAlignCenter
+                cell1.VerticalAlignment = Microsoft.Office.Interop.Excel.XlVAlign.xlVAlignCenter
+                CellRng.Borders.LineStyle = Microsoft.Office.Interop.Excel.XlLineStyle.xlContinuous
+                cell1.Value = row.Number
+                currentRow += 1
+            ElseIf row.kindRow = -1 Then
+                'остров (дырка) — пустая объединенная строка-разделитель
+                cell1 = xlSheet.Cells(currentRow, 1)
+                cell2 = xlSheet.Cells(currentRow, countColumnsExcel)
+                CellRng = xlSheet.Range(cell1, cell2)
+                CellRng.Merge(Type.Missing)
+                cell1.Font.Name = "Times New Roman"
+                cell1.Font.Size = 12
+                cell1.HorizontalAlignment = Microsoft.Office.Interop.Excel.XlHAlign.xlHAlignCenter
+                cell1.VerticalAlignment = Microsoft.Office.Interop.Excel.XlVAlign.xlVAlignCenter
+                CellRng.Borders.LineStyle = Microsoft.Office.Interop.Excel.XlLineStyle.xlContinuous
+                cell1.Value = ""
+                currentRow += 1
+            Else
+                'координаты
+                cell1 = xlSheet.Cells(currentRow, 1)
+                cell2 = xlSheet.Cells(currentRow, countColumnsExcel)
+                CellRng = xlSheet.Range(cell1, cell2)
+                CellRng.Font.Name = "Times New Roman"
+                CellRng.Font.Size = 12
+                CellRng.HorizontalAlignment = Microsoft.Office.Interop.Excel.XlHAlign.xlHAlignCenter
+                CellRng.VerticalAlignment = Microsoft.Office.Interop.Excel.XlVAlign.xlVAlignCenter
+                CellRng.Borders.LineStyle = Microsoft.Office.Interop.Excel.XlLineStyle.xlContinuous
+                'обозначение точки (с авто-нумерацией, как в CSV)
+                Dim namePoint As String = row.Number
+                If IsNothing(namePoint) = True Then namePoint = ""
+                namePoint = namePoint.Trim
+                Dim testName As String = namePoint
+                If testName.Length > 1 And IsNumeric(testName) = False Then
+                    testName = Mid(testName, 2)
+                End If
+                If testName.Length = 0 OrElse Val(testName) = 0 Then
+                    namePoint = numPoint.ToString
+                    numPoint += 1
+                End If
+                xlSheet.Cells(currentRow, 1).Value = namePoint
+                'X записывается в колонку 3, Y — в колонку 2 (порядок эталона сохранен)
+                cell1 = xlSheet.Cells(currentRow, 3)
+                cell1.NumberFormat = numberFormatZn
+                cell1.Value = row.X
+                cell1 = xlSheet.Cells(currentRow, 2)
+                cell1.NumberFormat = numberFormatZn
+                cell1.Value = row.Y
+                Dim UserCoord_to_PseudoMercatorRez As MgCoordinate = UserCoord_to_PseudoMarcator.Transform(Val(row.X), Val(row.Y))
+                Dim L As Double = UserCoord_to_PseudoMercatorRez.X
+                Dim B As Double = UserCoord_to_PseudoMercatorRez.Y
+                cell1 = xlSheet.Cells(currentRow, 4)
+                cell1.NumberFormat = ".000000"
+                cell1.Value = B
+                cell1 = xlSheet.Cells(currentRow, 5)
+                cell1.NumberFormat = ".000000"
+                cell1.Value = L
+                currentRow += 1
+            End If
+        Next
+        xlApp.Visible = True
+    End Sub
+    <CommandMethod("ListCadastralLandObject")>
+    Public Sub ListCadastralLandObject()
+        Dim acDoc As Document = Autodesk.AutoCAD.ApplicationServices.Application.DocumentManager.MdiActiveDocument
+        Dim ed As Editor = acDoc.Editor
+        Dim db As Database = acDoc.Database
+        '\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        'сохраняем документ
+        Try
+            Dim strDWGName As String = acDoc.Name
+            Dim objBase As Object = Application.GetSystemVariable("DWGTITLED")
+            If System.Convert.ToInt16(objBase) > 0 Then
+                Dim obj1 As Object = Application.GetSystemVariable("DBMOD")
+                If Not (System.Convert.ToInt16(obj1) = 0) Then
+                    acDoc.Database.SaveAs(strDWGName, True, DwgVersion.Current, acDoc.Database.SecurityParameters)
+                End If
+            End If
+        Catch ex As Autodesk.AutoCAD.Runtime.Exception
+        End Try
+        '\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        'ШАГ 1. выбираем примитив (в том числе из внешней ссылки)
+        Dim cancelled As Boolean = False
+        Dim outerPolygon As NetTopologySuite.Geometries.Polygon = SelectCadastralObject.SelectOuterPolygon(ed, cancelled)
+
+        If cancelled Then
+            MsgBox("Прервано пользователем.")
+            Exit Sub
+        End If
+
+        If outerPolygon Is Nothing Then
+            ' Полигон не удалось построить — обработайте по своему усмотрению
+            MsgBox("Не удалось определить внешний полигон.")
+            Exit Sub
+        End If
+        '\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        'шаг 2. запрашиваем тип отчета (Земельные участки, ОКС, ЗОУИТ)
+        Dim pko As New PromptKeywordOptions(vbLf & "Выберите тип объекта: ")
+        pko.Keywords.Add("ЗемельныеУчастки")
+        pko.Keywords.Add("ОКС")
+        pko.Keywords.Add("ЗОУИТ")
+        pko.Keywords.Default = "ЗемельныеУчастки"
+        pko.AllowNone = False
+
+        Dim resTypeObject As PromptResult = ed.GetKeywords(pko)
+        If resTypeObject.Status <> PromptStatus.OK Then
+            Exit Sub
+        End If
+        '\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        'шаг 3. запрашиваем тип отчета (Земельные участки, ОКС, ЗОУИТ)
+        pko = New PromptKeywordOptions(vbLf & "Выберите тип отчёта: ")
+        pko.Keywords.Add("Excel")
+        pko.Keywords.Add("Word")
+        pko.Keywords.Add("Autocad")
+        pko.Keywords.Default = "Excel"
+        pko.AllowNone = False
+
+        Dim resTypeReport As PromptResult = ed.GetKeywords(pko)
+        If resTypeReport.Status <> PromptStatus.OK Then
+            Exit Sub
+        End If
+        '\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        'шаг 4. выбираем внешнюю ссылку
+        Dim peo As New PromptEntityOptions(vbLf & "Выберите внешнюю ссылку (XREF): ")
+        peo.SetRejectMessage(vbLf & "Это не внешняя ссылка. Выберите XREF.")
+        peo.AddAllowedClass(GetType(BlockReference), False)
+
+        Dim per As PromptEntityResult = ed.GetEntity(peo)
+        If per.Status <> PromptStatus.OK Then
+            ed.WriteMessage(vbLf & "Прервано пользователем.")
+            Return
+        End If
+        Dim dbXRec As Database = per.ObjectId.Database
+        Dim dictSelectAllObject As Dictionary(Of String, List(Of Geometry)) = SelectCadastralObject.selectAllCadastralObjectByDesk(db)
+        If dictSelectAllObject.Count > 0 Then
+            If resTypeObject.StringResult Like "земельныеУчастки" Then
+                Dim dictParcels As Dictionary(Of String, List(Of Geometry)) = New Dictionary(Of String, List(Of Geometry))
+                Dim nameTypeObject As String = "Кадастровый участок"
+                dictParcels = CadastralTools.SelectCadastralObject.getCadastralObjectByDesk(dictSelectAllObject, nameTypeObject)
+            ElseIf resTypeObject.StringResult Like "ОКС" Then
+
+            ElseIf resTypeObject.StringResult Like "ЗОУИТ" Then
+
+            End If
+
+
+
+        End If
+
+
+
+        'блокируем чертеж
+        Dim locker As Autodesk.AutoCAD.ApplicationServices.DocumentLock = Autodesk.AutoCAD.ApplicationServices.Application.DocumentManager.MdiActiveDocument.LockDocument
+        Using locker
+            Dim tr As Transaction = db.TransactionManager.StartTransaction()
+            Using tr
+
+            End Using
+        End Using
+
+    End Sub
+
 End Class

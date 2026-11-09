@@ -6,7 +6,10 @@ Imports Autodesk.AutoCAD.Geometry
 Imports Autodesk.AutoCAD.Runtime
 Imports CadastralTools
 Imports NetTopologySuite
+Imports NetTopologySuite.Geometries
+
 Public Class SelectCadastralObject
+    'функция фильтрует все объекты с чертежа и заносит их в словарь key=NameObject, value=list(of Geometry)
     Public Shared Function selectAllObject(ByRef Db As Database) As Dictionary(Of StructureElement.nameObject, List(Of Geometries.Geometry))
         Dim result As Dictionary(Of StructureElement.nameObject, List(Of Geometries.Geometry)) = New Dictionary(Of StructureElement.nameObject, List(Of Geometries.Geometry))
         If IsNothing(Db) = True Then Return result
@@ -87,6 +90,87 @@ Public Class SelectCadastralObject
         End Using
         Return result
     End Function
+    'функция фильтрует все объекты с чертежа и заносит их в словарь key=Desk, value=list(of Geometry)
+    Public Shared Function selectAllCadastralObjectByDesk(ByRef Db As Database) As Dictionary(Of String, List(Of Geometries.Geometry))
+        Dim result As Dictionary(Of String, List(Of Geometries.Geometry)) = New Dictionary(Of String, List(Of Geometries.Geometry))
+        If IsNothing(Db) = True Then Return result
+        Dim acadTopoNet As FuncNetTopologySuite = New FuncNetTopologySuite
+        Using acTrans As Transaction = Db.TransactionManager.StartTransaction()
+            Dim acBlkTbl As BlockTable = acTrans.GetObject(Db.BlockTableId, OpenMode.ForRead)
+            Dim btr As BlockTableRecord = acTrans.GetObject(acBlkTbl(BlockTableRecord.ModelSpace), OpenMode.ForRead)
+            For Each id As ObjectId In btr
+                Dim selectEntity As Autodesk.AutoCAD.DatabaseServices.Entity = acTrans.GetObject(id, OpenMode.ForRead, False) 'открываем объект на чтение
+                Dim dataStructuresObject As StructureElement = Nothing
+                Dim boolRecData As Boolean = FuncXRecords.getXRecords(selectEntity, dataStructuresObject)
+                If boolRecData = True Then
+                    Dim deskObject As StructureElement.nameObject = dataStructuresObject.Description
+                    Dim typeGeometry As StructureElement.typeGeometryObject = dataStructuresObject.TypeGeometry
+                    Dim objectGeometry As Geometries.Geometry = Nothing
+                    If typeGeometry = StructureElement.typeGeometryObject.polygon Then
+                        If TypeOf selectEntity Is Polyline Then
+                            Dim polyline As Polyline = selectEntity
+                            If polyline.Area > 0 Then
+                                Dim polygon As NetTopologySuite.Geometries.Polygon = acadTopoNet.CreatePolygon(polyline)
+                                If IsNothing(polygon) = False Then
+                                    polygon.UserData = dataStructuresObject
+                                    If result.ContainsKey(deskObject) = False Then
+                                        result.Add(deskObject, New List(Of Geometries.Geometry) From {polygon})
+                                    Else
+                                        Dim listObject As List(Of Geometries.Geometry) = result.Item(deskObject)
+                                        listObject.Add(polygon)
+                                        result.Item(deskObject) = listObject
+                                    End If
+                                End If
+                            End If
+                        End If
+                    ElseIf typeGeometry = StructureElement.typeGeometryObject.polyline Then
+                        If TypeOf selectEntity Is Polyline Then
+                            Dim polyline As Polyline = selectEntity
+                            If polyline.Length > 0 Then
+                                Dim line As NetTopologySuite.Geometries.LineString = acadTopoNet.CreateLineString(polyline)
+                                If IsNothing(line) = False Then
+                                    line.UserData = dataStructuresObject
+                                    If result.ContainsKey(deskObject) = False Then
+                                        result.Add(deskObject, New List(Of Geometries.Geometry) From {line})
+                                    Else
+                                        Dim listObject As List(Of Geometries.Geometry) = result.Item(deskObject)
+                                        listObject.Add(line)
+                                        result.Item(deskObject) = listObject
+                                    End If
+                                End If
+                            End If
+                        End If
+                    Else
+                        Dim insertPoint As Point3d = New Point3d()
+                        If TypeOf selectEntity Is MLeader Then
+                            Dim acLeader As MLeader = selectEntity
+                            insertPoint = acLeader.GetFirstVertex(0)
+                        ElseIf TypeOf selectEntity Is DBText Then
+                            Dim acText As DBText = selectEntity
+                            insertPoint = acText.Position
+                        ElseIf TypeOf selectEntity Is Circle Then
+                            Dim acCircle As Circle = selectEntity
+                            insertPoint = acCircle.Center
+                        ElseIf TypeOf selectEntity Is BlockReference Then
+                            Dim acBlock As BlockReference = selectEntity
+                            insertPoint = acBlock.Position
+                        End If
+                        Dim point As Geometries.Point = New Geometries.Point(insertPoint.X, insertPoint.Y, insertPoint.Z)
+                        point.UserData = dataStructuresObject
+                        If result.ContainsKey(deskObject) = False Then
+                            result.Add(deskObject, New List(Of Geometries.Geometry) From {point})
+                        Else
+                            Dim listObject As List(Of Geometries.Geometry) = result.Item(deskObject)
+                            listObject.Add(point)
+                            result.Item(deskObject) = listObject
+                        End If
+                    End If
+                End If
+            Next
+            acTrans.Commit()
+        End Using
+        Return result
+    End Function
     Public Shared Function selectPolygonObject(ByRef Db As Database) As Dictionary(Of String, List(Of Geometries.Geometry))
         Dim result As Dictionary(Of String, List(Of Geometries.Geometry)) = New Dictionary(Of String, List(Of Geometries.Geometry))
         If IsNothing(Db) = True Then Return result
@@ -100,7 +184,7 @@ Public Class SelectCadastralObject
                 Dim boolRecData As Boolean = FuncXRecords.getXRecords(selectEntity, dataStructuresObject)
                 If boolRecData = True Then
                     Dim deskObject As String = dataStructuresObject.Description
-                    Dim dictionaryPs As Dictionary(Of String, String) = FuncPropertySet.FuncReadDataIoDictionary(selectEntity, dataStructuresObject.TablePS)
+                    Dim dictionaryPs As Dictionary(Of String, Object) = FuncPropertySet.FuncReadDataIoDictionary(selectEntity, dataStructuresObject.TablePS)
                     If dictionaryPs.ContainsKey("LABEL") = True Then
                         deskObject = dictionaryPs.Item("LABEL")
                     End If
@@ -516,6 +600,74 @@ Public Class SelectCadastralObject
         Return result
     End Function
 
+    ''' <summary>
+    ''' Запрашивает у пользователя замкнутую полилинию (из чертежа или внешней ссылки)
+    ''' и возвращает соответствующий внешний полигон для обрезки.
+    ''' </summary>
+    ''' <param name="ed">Редактор документа (Editor).</param>
+    ''' <param name="cancelled">True, если пользователь прервал выбор (Esc/Enter без выбора).</param>
+    ''' <returns>Внешний полигон или Nothing, если его не удалось построить.</returns>
+    Public Shared Function SelectOuterPolygon(ByVal ed As Editor, ByRef cancelled As Boolean) As NetTopologySuite.Geometries.Polygon
+        Dim outerPolygon As NetTopologySuite.Geometries.Polygon = Nothing
+        cancelled = False
+        Dim acadTopologySuite As FuncNetTopologySuite = New FuncNetTopologySuite
+        ' Выбираем замкнутую полилинию из чертежа или внешней ссылки,
+        ' по которой будет производиться обрезка
+        Dim selectOuterBoundary As PromptNestedEntityResult = ed.GetNestedEntity(vbLf & "Выберите внешний контур: ")
+
+        If selectOuterBoundary.Status <> PromptStatus.OK Then
+            cancelled = True
+            Return Nothing
+        End If
+
+        Dim ids As New List(Of ObjectId)(selectOuterBoundary.GetContainers())
+        ids.Reverse()
+        ids.Add(selectOuterBoundary.ObjectId)
+
+        For Each id As ObjectId In ids
+            Dim idStr As String = id.ObjectClass.Name
+            If idStr Like "AcDbPolyline" Then
+                Dim putchSelectBoundares = id.Database.Filename
+                Dim polyOuterBoundary As New Polyline()
+
+                Using startPoly As Autodesk.AutoCAD.DatabaseServices.Polyline =
+                    TryCast(id.Open(OpenMode.ForRead), Autodesk.AutoCAD.DatabaseServices.Polyline)
+
+                    Dim dataOuterBoundary As StructureElement = Nothing
+                    Dim boolReadData As Boolean = FuncXRecords.getXRecords(
+                    startPoly,
+                    dataOuterBoundary,
+                    StructureElement.tableXRecords.PROJECT_STRUCTURES,
+                    startPoly.Database)
+
+                    If dataOuterBoundary IsNot Nothing Then
+                        Dim deskObjectOuterObject As String = dataOuterBoundary.Description
+                        Dim dictSelectObject As Dictionary(Of String, List(Of Geometry)) = getCadastralPolygon(startPoly.Database, deskObjectOuterObject)
+
+                        If dictSelectObject.Count > 0 Then
+                            Dim conditionatOuterBound As String =
+                            CadastralTools.JsonValidator.GetValueFromJson(
+                                dataOuterBoundary.KeyParameter, "ConditionalNumber")
+
+                            If conditionatOuterBound IsNot Nothing AndAlso conditionatOuterBound.Trim.Length > 0 Then
+                                Dim listCounter As List(Of Geometry) =
+                                dictSelectObject.Item(deskObjectOuterObject)
+                                outerPolygon = CadastralTools.CadastralPolygon.getCounterByNumber(
+                                conditionatOuterBound, listCounter)
+                            End If
+                        End If
+                    End If
+
+                    If outerPolygon Is Nothing Then
+                        outerPolygon = acadTopologySuite.CreatePolygon(startPoly)
+                    End If
+                End Using
+            End If
+        Next
+
+        Return outerPolygon
+    End Function
+
     '\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
     'линейные объекты
     '\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
@@ -730,6 +882,32 @@ Public Class SelectCadastralObject
                 End If
             Next
             tr.Commit()
+        End Using
+        Return result
+    End Function
+    '\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    'выноски
+    '\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    'функция возвращает блоки из чертежа по имени и видимости слоя
+    Public Shared Function GetMLeaderDwg(ByRef db As Database) As Dictionary(Of String, StructureElement)
+        Dim result As Dictionary(Of String, StructureElement)
+        ' Фильтр по типу объекта и имени блока (имя слоя в фильтр не заложить — проверяем вручную)
+        Using acTrans As Transaction = db.TransactionManager.StartTransaction()
+            Dim acBlkTbl As BlockTable = acTrans.GetObject(db.BlockTableId, OpenMode.ForRead)
+            Dim btr As BlockTableRecord = acTrans.GetObject(acBlkTbl(BlockTableRecord.ModelSpace), OpenMode.ForRead)
+            For Each id As ObjectId In btr
+                Try
+                    Dim ent As Autodesk.AutoCAD.DatabaseServices.Entity = acTrans.GetObject(id, OpenMode.ForRead, False) 'открываем объект на чтение
+                    If TypeOf ent Is MLeader Then 'если объект имеет тип атрибут
+                        Dim dataStructures As StructureElement = Nothing
+                        Dim boolReadData As Boolean = FuncXRecords.getXRecords(ent, dataStructures)
+                        If IsNothing(dataStructures) = False Then
+                            result.Add(ent.Handle.ToString, dataStructures)
+                        End If
+                    End If
+                Catch ex As Autodesk.AutoCAD.Runtime.Exception
+                End Try
+            Next
         End Using
         Return result
     End Function

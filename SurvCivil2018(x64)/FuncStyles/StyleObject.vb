@@ -199,6 +199,23 @@ Public Class StyleCadastralObject
         End If
         Return result
     End Function
+    'функция возвращает массив со всеми слоями активного чертежа
+    Public Shared Function getAllLayersDWG(ByRef db As Database) As List(Of String)
+        Dim result As New List(Of String)
+        Try
+            Using acTrans As Transaction = db.TransactionManager.StartTransaction()
+                Dim acLyrTbl As LayerTable = acTrans.GetObject(db.LayerTableId, OpenMode.ForRead)
+                For Each id As ObjectId In acLyrTbl
+                    Dim acLyrTblRec As LayerTableRecord
+                    acLyrTblRec = acTrans.GetObject(id, OpenMode.ForRead)
+                    result.Add(acLyrTblRec.Name)
+                Next
+            End Using
+        Catch
+            Exit Function
+        End Try
+        Return result
+    End Function
     'создать текстовый стиль
     Public Function createTextStyle(ByVal NameTextStyle As String, ByVal NameFont As String, ByVal NameItalic As Boolean) As ObjectId
         Dim result As ObjectId = Nothing
@@ -336,6 +353,46 @@ Public Class StyleCadastralObject
         End If
         Return result
     End Function
+    'функция возвращает массив со всеми стилями текста
+    Public Shared Function getAllTextStyleDwg(ByRef db As Database) As List(Of String)
+        Dim result As New List(Of String)
+        Try
+            Using acTrans As Transaction = db.TransactionManager.StartTransaction()
+                Dim acTextStyleTbl As TextStyleTable = acTrans.GetObject(db.TextStyleTableId, OpenMode.ForRead)
+                For Each id As ObjectId In acTextStyleTbl
+                    Dim acTextStyleRec As TextStyleTableRecord = acTrans.GetObject(id, OpenMode.ForRead)
+                    If acTextStyleRec.Name.Trim.Length > 0 Then
+                        result.Add(acTextStyleRec.Name)
+                    End If
+                Next
+            End Using
+        Catch
+        End Try
+        Return result
+    End Function
+    'функция возвращает id стиля текста по его имени
+    Public Shared Function getIDTextStyleByName(ByRef db As Database, ByVal NameTextStyle As String) As ObjectId
+        Dim result As ObjectId = Nothing
+        Try
+            Using acTrans As Transaction = db.TransactionManager.StartTransaction()
+                Dim acTextStyleTbl As TextStyleTable = acTrans.GetObject(db.TextStyleTableId, OpenMode.ForRead)
+                For Each id As ObjectId In acTextStyleTbl
+                    Dim acTextStyleRec As TextStyleTableRecord = acTrans.GetObject(id, OpenMode.ForRead)
+                    Dim NameStyle As String = acTextStyleRec.Name.Trim
+                    If NameTextStyle Like NameStyle Then
+                        result = acTextStyleRec.Id
+                        Exit Function
+                    End If
+                Next
+            End Using
+        Catch ex As System.Exception
+            Exit Function
+        End Try
+        Return result
+    End Function
+
+
+
     'Функция позволяет найти текстовый стиль по строке пути к файлу форм (вспомогательная функция)
     Public Function GetObjectIdOfTextStyleWithFileName(ByVal tst As TextStyleTable, ByVal shxFileName As String) As ObjectId
         Dim result As ObjectId = Nothing
@@ -522,22 +579,38 @@ Public Class StyleCadastralObject
         End If
         Return result
     End Function
+
+
+
 End Class
 '\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 'класс выноски
 Public Class CadastralLeaderStyle
     Inherits StyleCadastralObject
+    Private _label As String
     Private _idStyle As ObjectId
     Private _textStyle As String
     Private _heightText As Double
     Private _sizeArraow As Double
     Public Sub New()
         MyBase.New()
+        _label = ""
         _idStyle = Nothing
         _textStyle = ""
         _heightText = 2
         _sizeArraow = 2
     End Sub
+
+    'стиль текста
+    Public Property Label As String
+        Get
+            Return _label
+        End Get
+        Set(value As String)
+            _label = value
+        End Set
+    End Property
+
     'стиль текста
     Public Property IDLeaderStyle As ObjectId
         Get
@@ -577,6 +650,19 @@ Public Class CadastralLeaderStyle
             _sizeArraow = value
         End Set
     End Property
+    '\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    'функция возвращает возвращает id стиля мультивыноски по его имени
+    Public Shared Function getStyleId(ByRef db As Database, ByVal nameStyle As String) As ObjectId
+        Dim result As ObjectId = Nothing
+        Try
+            Using acTrans As Transaction = db.TransactionManager.StartTransaction()
+                Dim mlstyles As DBDictionary = acTrans.GetObject(db.MLeaderStyleDictionaryId, OpenMode.ForRead)
+                result = mlstyles.Item(nameStyle)
+            End Using
+        Catch ex As Autodesk.AutoCAD.Runtime.Exception
+        End Try
+        Return result
+    End Function
     '===========================================================================================================================
     'функция создает все необходимые стили для выносок
     Public Function createStyleLeader(ByVal arrayPropertiesLeader As String(,), Optional ByVal parentLayer As String = "") As Boolean
@@ -854,32 +940,80 @@ Public Class CadastralLeaderStyle
     Public Function copyStyle(ByVal templateDwg As String, ByVal NameMLeaderStyle As String, Optional boolReplase As Boolean = False) As Boolean
         copyStyle = False
         Dim sourceDb As Database = New Database(False, True)
-        sourceDb.ReadDwgFile(templateDwg, FileShare.Read, True, String.Empty)
-        Dim sourceTr As Transaction = sourceDb.TransactionManager.StartTransaction()
-        Using sourceTr
-            Dim acMleaderStyleTbl As DBDictionary = sourceTr.GetObject(sourceDb.MLeaderStyleDictionaryId, OpenMode.ForRead)
-            Dim MLeaderStyleCollection As ObjectIdCollection = New ObjectIdCollection
-            For Each id As DBDictionaryEntry In acMleaderStyleTbl
-                If id.Key Like NameMLeaderStyle Then
-                    MLeaderStyleCollection.Add(id.Value)
+
+        Try
+                sourceDb.ReadDwgFile(templateDwg, FileShare.Read, True, String.Empty)
+            Catch ex As Autodesk.AutoCAD.Runtime.Exception
+                ' Здесь можно залогировать ex.ErrorStatus (например, eFileNotFound)
+                sourceDb.Dispose()
+                Return False
+            End Try
+        Try
+            Dim MLeaderStyleCollection As ObjectIdCollection = New ObjectIdCollection()
+            Using sourceTr As Transaction = sourceDb.TransactionManager.StartTransaction()
+                Dim acMleaderStyleTbl As DBDictionary =
+                sourceTr.GetObject(sourceDb.MLeaderStyleDictionaryId, OpenMode.ForRead)
+                For Each entry As DBDictionaryEntry In acMleaderStyleTbl
+                    If String.Equals(entry.Key, NameMLeaderStyle, StringComparison.OrdinalIgnoreCase) Then
+                        MLeaderStyleCollection.Add(entry.Value)
+                        Exit For
+                    End If
+                Next
+                If MLeaderStyleCollection.Count = 0 Then Return False
+                ' commit не обязателен — только читали; можно и без него
+                ' sourceTr.Commit()
+            End Using
+            If MLeaderStyleCollection.Count = 0 Then Return False
+            Dim destDictId As ObjectId = DBDrawing.MLeaderStyleDictionaryId
+            Dim iMap As IdMapping = New IdMapping()
+            ' Выбираем режим клонирования в зависимости от флага замены
+            Dim mode As DuplicateRecordCloning
+
+            If boolReplase = True Then
+                ' Если стиль с таким именем уже есть — заменить его
+                mode = DuplicateRecordCloning.Replace
+            Else
+                ' Если стиль с таким именем уже есть — оставить существующий (пропустить)
+                mode = DuplicateRecordCloning.Ignore
+            End If
+
+            ' Клонируем найденный стиль(и) в словарь мультивыносок текущего чертежа
+            DBDrawing.WblockCloneObjects(
+    MLeaderStyleCollection, _   ' что клонируем (коллекция ObjectId исходных стилей)
+    destDictId, _               ' куда клонируем (словарь MLeaderStyle целевой БД)
+    iMap, _                     ' сюда вернётся карта соответствия "исходный Id -> новый Id"
+    mode, _                     ' как вести себя при совпадении имён (Replace / Ignore)
+    False)                      ' False = не клонировать зависимости рекурсивно
+
+            ' проверяем, что клон действительно создан/заменён
+            Dim cloningSucceeded As Boolean = False
+            For Each pair As IdPair In iMap
+                ' Проверяем, что пара содержит валидные ID (клон создан)
+                ' IsCloned в IdPair нет, но можно проверить, что клон не Null
+                If Not pair.Value.IsNull Then
+                    cloningSucceeded = True
                     Exit For
                 End If
             Next
-            If MLeaderStyleCollection.Count > 0 Then
-                Dim destDictId1 As ObjectId = DBDrawing.MLeaderStyleDictionaryId
-                Dim iMap1 As IdMapping = New IdMapping()
-                If boolReplase = True Then
-                    DBDrawing.WblockCloneObjects(MLeaderStyleCollection, destDictId1, iMap1, DuplicateRecordCloning.Replace, False)
-                Else
-                    DBDrawing.WblockCloneObjects(MLeaderStyleCollection, destDictId1, iMap1, DuplicateRecordCloning.Ignore, False)
-                End If
+
+            If cloningSucceeded Then
+                copyStyle = True
             Else
-                Return False
+                ' Если при Ignore стиль уже существовал, клона не будет, 
+                ' и это тоже может считаться успехом, если стиль уже есть.
+                ' Но если вам нужно именно скопировать, то возвращайте False.
+                copyStyle = False
             End If
-            sourceTr.Commit()
-        End Using
-        copyStyle = True
+        Catch ex As Autodesk.AutoCAD.Runtime.Exception
+            ' можно залогировать ex.ErrorStatus
+            copyStyle = False
+        Finally
+            sourceDb.Dispose()
+        End Try
     End Function
+
+
+
 End Class
 '\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 'класс полилиний

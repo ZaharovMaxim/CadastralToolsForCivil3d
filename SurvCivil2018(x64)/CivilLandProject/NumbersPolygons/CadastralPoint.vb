@@ -2170,4 +2170,174 @@ Public Class CadastralPoint
         End Using
         MsgBox("Всего преобразовано " & CountPoint & " точек.")
     End Sub
+    '===================================================================================================================
+    'нумерация полигонов с определенным шагом
+    <CommandMethod("InsertBlocksToPolylineByStep")>
+    Public Sub InsertBlocksToPolylineByStep()
+        Dim acDoc As Document = Autodesk.AutoCAD.ApplicationServices.Application.DocumentManager.MdiActiveDocument
+        Dim Db As Database = acDoc.Database
+        Dim ed As Editor = acDoc.Editor
+        Try
+            Dim strDWGName As String = acDoc.Name
+            Dim objBase As Object = Application.GetSystemVariable("DWGTITLED")
+            If System.Convert.ToInt16(objBase) > 0 Then
+                Dim obj1 As Object = Application.GetSystemVariable("DBMOD")
+                If Not (System.Convert.ToInt16(obj1) = 0) Then
+                    acDoc.Database.SaveAs(strDWGName, True, DwgVersion.Current, acDoc.Database.SecurityParameters)
+                End If
+            End If
+        Catch ex As Autodesk.AutoCAD.Runtime.Exception
+        End Try
+        Dim MAnno As Integer = AcadFunction.FuncReadCurrentAnnotativeScaleDWG
+        Dim generalDidectory As String = FuncFiles.getSupportFolderPath("Civil3DToolsUtility")
+        Dim listLayer As List(Of String) = StyleCadastralObject.getAllLayersDWG(Db)
+        Dim formInsertBlock As CadastralTools.FormCreateCadastralPointByStep = New FormCreateCadastralPointByStep(1000, generalDidectory, listLayer)
+        formInsertBlock.ShowDialog()
+        If formInsertBlock.boolShow = False Then
+            Exit Sub
+        End If
+        Dim locker As Autodesk.AutoCAD.ApplicationServices.DocumentLock = Autodesk.AutoCAD.ApplicationServices.Application.DocumentManager.MdiActiveDocument.LockDocument
+        Dim acadNetTopology As FuncNetTopologySuite = New FuncNetTopologySuite
+        Dim cadastralnetTopology As CadastralTools.FuncNetTopologySuite = New CadastralTools.FuncNetTopologySuite
+        Using acTrans As Transaction = Db.TransactionManager.StartTransaction()
+            Dim acBlkTbl As BlockTable = acTrans.GetObject(Db.BlockTableId, OpenMode.ForRead)
+            Dim acBlkTblRec As BlockTableRecord = acTrans.GetObject(acBlkTbl(BlockTableRecord.ModelSpace), OpenMode.ForWrite)
+            Dim NameLayer As String = "0" 'слой начальный
+            Dim indColor As Integer = 7 'цвет по блоку
+            Dim MScale As Double = 1 'начальный масштаб (не правильный)
+            Dim RotBlk As Double = 0 'угол поворота блока
+            Dim NameBlk As String = ""
+            Dim arrayPropertiesObject As String(,) = formInsertBlock.propertyObject
+            Dim offset As Double = formInsertBlock.offsetInsBlk
+            If IsArray(arrayPropertiesObject) = False Then
+                acTrans.Abort()
+                GoTo endprg
+            End If
+            NameBlk = CadastralTools.MathFunction.findValueToArray2d(arrayPropertiesObject, "Name")
+            If NameBlk.Trim.Length = 0 Then
+                acTrans.Abort()
+                GoTo endprg
+            End If
+            NameLayer = formInsertBlock.layerName
+            indColor = CadastralTools.MathFunction.findValueToArray2d(arrayPropertiesObject, "Color")
+            MScale = formInsertBlock.scalePoint
+            Dim numberPoint As Integer = formInsertBlock.startNumber
+            Dim nameAttrib As String = formInsertBlock.nameAttribyteNumber
+            Dim distance As Double = formInsertBlock.distance
+            Try
+                If Not acBlkTbl.Has(NameBlk) Then
+                    Dim putchDwg As String = formInsertBlock.PutchTemlateDwg
+                    Dim boolCopyBlk As Boolean = CadastralBlockStyle.CopyBlockReferenceByDestDraw(putchDwg, NameBlk)
+                End If
+                If acBlkTbl.Has(NameBlk) = True Then
+                    'выбираем полилинии
+                    Dim acSSPrompt As PromptSelectionResult = acDoc.Editor.GetSelection()
+                    If acSSPrompt.Status = PromptStatus.OK Then
+                        Dim acSSet As SelectionSet = acSSPrompt.Value
+                        For Each acSSObj As SelectedObject In acSSet
+                            If Not IsDBNull(acSSObj) Then
+                                Dim acEnt As Autodesk.AutoCAD.DatabaseServices.Entity = acTrans.GetObject(acSSObj.ObjectId, OpenMode.ForWrite)
+                                If Not IsDBNull(acEnt) Then
+                                    If TypeOf acEnt Is Autodesk.AutoCAD.DatabaseServices.Polyline Then
+                                        Dim Pline As Autodesk.AutoCAD.DatabaseServices.Polyline = acEnt
+                                        Dim polyline As LineString = acadNetTopology.CreateLineString(Pline)
+                                        polyline = cadastralnetTopology.CreateOffsetLineString(polyline, offset)
+                                        'начинаем перебор вершин полилинии
+                                        Dim vn As Integer = polyline.Coordinates.Length
+                                        ' --- Предварительная подготовка: получаем координаты линии ---
+                                        Dim coords As Coordinate() = polyline.Coordinates
+                                        Dim newCoords As New List(Of Coordinate)(coords) ' копия для возможной модификации
+
+                                        ' Флаг, если геометрия была изменена (для пересоздания LineString)
+                                        Dim geometryChanged As Boolean = False
+
+                                        For i As Integer = 0 To vn - 2
+                                            ' Получаем точки из локального списка (а не из polyline, который может измениться)
+                                            Dim prevPoint As Coordinate = newCoords(i)
+                                            Dim nextPoint As Coordinate = newCoords(i + 1)
+
+                                            ' Расстояние между точками сегмента
+                                            Dim seg As LineString = polyline.Factory.CreateLineString(New Coordinate() {prevPoint, nextPoint})
+                                            Dim dist As Double = seg.Length
+
+                                            ' Накопленное расстояние от начала всей линии до prevPoint
+                                            ' (можно вычислить один раз вне цикла для оптимизации)
+                                            Dim tempDistPrevPoint As Double = cadastralnetTopology.GetDistAtPoint(polyline, prevPoint)
+
+                                            If dist > distance Then
+                                                ' Если сегмент длиннее шага — вставляем блоки с шагом distance
+                                                Dim j As Double = 0
+                                                While j <= dist
+                                                    Dim tempDist As Double = tempDistPrevPoint + j
+                                                    Dim deltaL As Double = dist - j ' остаток до конца сегмента
+
+                                                    ' --- Обработка допуска ---
+                                                    If deltaL < distance Then
+                                                        If formInsertBlock.boolTolerance = True Then
+                                                            If deltaL <= formInsertBlock.dopusk Then
+                                                                ' Пропускаем вставку, если остаток меньше допуска
+                                                                Exit While
+                                                            End If
+                                                        ElseIf formInsertBlock.boolTrim = True Then
+                                                            ' Сдвигаем nextPoint, чтобы сегмент стал ровно distance
+                                                            Dim adjustedNext As Coordinate = nextPoint
+                                                            Dim wasAdjusted As Boolean = cadastralnetTopology.EnsureMinDistance(prevPoint, adjustedNext, distance)
+                                                            If wasAdjusted Then
+                                                                ' Обновляем координату в локальном списке
+                                                                newCoords(i + 1) = adjustedNext
+                                                                geometryChanged = True
+                                                                ' Пересчитываем длину сегмента
+                                                                dist = prevPoint.Distance(adjustedNext)
+                                                                ' Выходим из цикла, так как сегмент теперь ровно distance
+                                                                Exit While
+                                                            End If
+                                                        End If
+                                                    ElseIf Math.Abs(deltaL - distance) < 0.000001 Then
+                                                        ' Остаток ровно равен distance — вставляем и выходим
+                                                        Exit While
+                                                    End If
+
+                                                    ' --- Вставка блока ---
+                                                    Dim tempPoint As Coordinate = cadastralnetTopology.GetPointAtDist(polyline, tempDist)
+                                                    Dim pt3D As Point3d = New Point3d(tempPoint.X, tempPoint.Y, 0)
+                                                    Dim InsBlk As BlockReference = AcadFunction.FuncInsertDrawingBlk(pt3D, NameBlk, NameLayer, indColor, MScale, 20, 0)
+                                                    Dim dictAttrib As New Dictionary(Of String, String)
+                                                    dictAttrib.Add(nameAttrib, numberPoint)
+                                                    AttributeCadastralBlock.UpdateAttributesInBlockReference(Db, InsBlk, dictAttrib)
+
+                                                    numberPoint += 1
+                                                    j += distance
+                                                End While
+                                            Else
+                                                ' Сегмент короче шага — вставляем блок в prevPoint
+                                                Dim pt3D As Point3d = New Point3d(prevPoint.X, prevPoint.Y, 0)
+                                                Dim InsBlk As BlockReference = AcadFunction.FuncInsertDrawingBlk(pt3D, NameBlk, NameLayer, indColor, MScale, 20, 0)
+                                                Dim dictAttrib As New Dictionary(Of String, String)
+                                                dictAttrib.Add(nameAttrib, numberPoint)
+                                                AttributeCadastralBlock.UpdateAttributesInBlockReference(Db, InsBlk, dictAttrib)
+                                                numberPoint += 1
+                                            End If
+                                        Next i
+                                        ' --- Если геометрия была изменена, создаём новую LineString ---
+                                        If geometryChanged Then
+                                            Dim newPolyline As LineString = polyline.Factory.CreateLineString(newCoords.ToArray())
+                                            ' Здесь можно заменить исходную polyline на newPolyline или сохранить куда-то
+                                            polyline = newPolyline
+                                        End If
+                                        Dim InsBlk2 As BlockReference = AcadFunction.FuncInsertDrawingBlk(Pline.EndPoint, NameBlk, NameLayer, indColor, MScale, 20, 0)
+                                        Dim dictAttrib2 As Dictionary(Of String, String) = New Dictionary(Of String, String)
+                                        dictAttrib2.Add(nameAttrib, numberPoint)
+                                        Dim boolRecAttrab2 As Boolean = AttributeCadastralBlock.UpdateAttributesInBlockReference(Db, InsBlk2, dictAttrib2)
+                                    End If
+                                End If
+                            End If
+                        Next
+                    End If
+                End If
+                acTrans.Commit()
+            Catch ex As Autodesk.AutoCAD.Runtime.Exception
+            End Try
+endprg:
+        End Using
+    End Sub
 End Class

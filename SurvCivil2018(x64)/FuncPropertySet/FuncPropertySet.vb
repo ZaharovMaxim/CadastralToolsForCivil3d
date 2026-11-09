@@ -121,8 +121,8 @@ Public Class FuncPropertySet
         FuncReadDataSetPropertiesTbl = True
     End Function
     'функция читает все данные объекта из определенной таблицы (выходные данные словарь)
-    Public Shared Function FuncReadDataIoDictionary(ByVal dbObj As Autodesk.AutoCAD.DatabaseServices.DBObject, ByVal NameTBL As String) As Dictionary(Of String, String)
-        Dim result As New Dictionary(Of String, String)
+    Public Shared Function FuncReadDataIoDictionary(ByVal dbObj As Autodesk.AutoCAD.DatabaseServices.DBObject, ByVal NameTBL As String) As Dictionary(Of String, Object)
+        Dim result As New Dictionary(Of String, Object)
         Dim acDoc As Document = Autodesk.AutoCAD.ApplicationServices.Application.DocumentManager.MdiActiveDocument
         Dim loc As Autodesk.AutoCAD.ApplicationServices.DocumentLock = acDoc.LockDocument
         Using loc
